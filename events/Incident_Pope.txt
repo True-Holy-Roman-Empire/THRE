@@ -131,6 +131,7 @@ country_event = {
 	major = yes
 	
 	trigger = {
+		always = no
 		tag = PAP
 		is_part_of_hre = yes
 		OR = {
