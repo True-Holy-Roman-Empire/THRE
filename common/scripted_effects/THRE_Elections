@@ -1,0 +1,107 @@
+Cast_Vote = {
+    Cast_Vote_$Type$ = {
+        Ballot = $Ballot$
+        Target = $Target$
+    }
+}
+
+Cast_Vote_HRE = {
+    event_target:$Target$ = {
+        change_variable = {
+            which = VoteCount$Ballot$
+            value = 1
+        }
+    }
+}
+
+Tally_Vote_HRE = {
+    Tally_Vote = {
+        Target = $Target$
+        Options = $Options$
+        Scope = $Scope$
+    }
+}
+
+Tally_Vote = {
+    event_target:$Target$ = {
+        set_variable = {
+            which = VoteCountT
+            value = 0
+        }
+        set_variable = {
+            which = AmountOptions
+            value = $Options$
+        }
+        set_variable = {
+            which = VoteWin
+            value = $Options$
+        }
+        set_variable = {
+            which = Vote_Tmp1
+            value = VoteCount$Options$
+        }
+        while = {
+            limit = {
+                check_variable = {
+                    which = AmountOptions
+                    value = 1
+                }
+            }
+            Tally_Vote_Helper1 = {
+                Option = variable:AmountOptions
+            }
+            Tally_Vote_Helper2 = {
+                Option = variable:AmountOptions
+            }
+            subtract_variable = {
+                which = AmountOptions
+                value = 1
+            }
+        }
+        if = {
+            limit = {
+                has_$Scope$_flag = Inconclusive_Vote
+            }
+            set_variable = {
+                which = VoteWin
+                value = 0
+            }
+        }
+    }
+}
+
+Tally_Vote_Helper1 = {
+    change_variable = {
+        which = VoteCountT
+        which = VoteCount$Option$
+    }
+}
+
+Tally_Vote_Helper2 = {
+    if = {
+        limit = {
+            is_variable_equal = {
+                which = VoteCount$Option$
+                which = Vote_Tmp1
+            }
+            set_$Scope$_flag = Inconclusive_Vote
+        }
+    }
+    else_if = {
+        limit = { 
+            check_variable = {
+                which = VoteCount$Option$
+                which = Vote_Tmp1
+            }          
+        }
+        set_variable = {
+            which = Vote_Tmp1
+            which = VoteCount$Option$
+        }
+        set_variable = {
+            which = VoteWin
+            value = $Option$
+        }
+        clr_$scope$_flag = Inconclusive_Vote
+    }
+}
