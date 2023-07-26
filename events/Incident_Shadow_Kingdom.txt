@@ -10,6 +10,7 @@ country_event = {
 	major = yes
 	
 	trigger = {
+		always = no
 		is_emperor = yes
 		NOT = {
 			is_year = 1490
@@ -384,6 +385,7 @@ country_event = {
 	major = yes
 	
 	trigger = {
+		always = no
 		is_emperor = yes
 		is_year = 1460
 		NOT = { has_global_flag = italians_leave_hre }
