@@ -29,7 +29,7 @@ add_province_triggered_modifier = religious_center
 	add_core = HAB
 }
 1530.1.1 = { 
-	trade_goods = Paper
+	trade_goods = paper
 }
 1576.1.1 = { religion = protestant }
 1618.5.23 = { 

@@ -22,7 +22,7 @@ discovered_by = east_african
 	controller = TUR
 	add_core = TUR
 }
-1650.1.1 = { trade_goods = Grain }
+1650.1.1 = { trade_goods = grain }
 1796.1.1 = { controller = REB revolt = { type = nationalist_rebels size = 2 } }
 1798.8.3 = { controller = FRA revolt = { size = 1 } }
 1802.5.13 = { controller = TUR }

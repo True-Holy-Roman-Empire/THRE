@@ -17,10 +17,10 @@ native_hostileness = 0
 	owner = CAS
 	controller = CAS
 	add_core = CAS
-	city = yes
+	is_city = yes
 	religion = catholic
 	culture = castillian
-	trade_goods = Sugar
+	trade_goods = sugar
 }
 1478.1.1 = { capital = "Las Palmas" }
 1516.1.23 = { 

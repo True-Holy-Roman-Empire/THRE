@@ -14,7 +14,7 @@ native_hostileness = 0
 	owner = POR
 	controller = POR
 	add_core = POR
-	city = yes
+	is_city = yes
 	culture = portugese
 	religion = catholic
 }

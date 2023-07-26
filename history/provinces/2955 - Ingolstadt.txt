@@ -24,7 +24,7 @@ discovered_by = ottoman
 	add_core = BAV
 }
 1537.1.1 = { fort_16th = yes }
-1546.1.1 = { trade_goods = Grain }
+1546.1.1 = { trade_goods = grain }
 1654.1.1 = { fort_16th = no fort_17th = yes }
 1704.8.13 = { 
 	controller = HAB
