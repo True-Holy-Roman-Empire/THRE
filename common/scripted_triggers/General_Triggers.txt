@@ -1,0 +1,33 @@
+singleplayer_trigger = {
+	NOT = {
+		calc_true_if = {
+			all_country = {
+				ai = no
+			}
+			amount = 2
+		}
+	}
+}
+
+multiplayer_trigger = {
+	calc_true_if = {
+		all_country = {
+			ai = no
+		}
+		amount = 2
+	}
+}
+
+singleplayer_or_ai_country_trigger = {
+	OR = {
+		ai = yes
+		NOT = {
+			calc_true_if = {
+				all_country = {
+					ai = no
+				}
+				amount = 2
+			}
+		}
+	}
+}
