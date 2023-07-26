@@ -1,0 +1,35 @@
+# 4741 - Halle
+owner = MAG
+controller = MAG
+add_core = MAG
+culture = saxon
+religion = catholic
+base_tax = 3
+base_production = 3
+trade_goods = salt#the name "Halle" apparently might even derive from the Indo-Germanic word for salt
+base_manpower = 1
+capital = "Halle"
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+1524.1.1 = { religion = Protestant }
+1650.1.1 = { culture = prussian }
+1680.10.4 = { 
+	controller = BRA
+	add_core = BRA
+}
+1701.1.18 = { 
+	controller = PRU
+	add_core = PRU
+}
+1806.7.12 = { hre = no }
+1806.11.1 = { controller = FRA }
+1807.7.9 = { 
+	controller = WES
+	add_core = WES
+}
+1813.10.13 = { 
+	controller = PRU
+}

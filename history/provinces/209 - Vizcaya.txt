@@ -1,0 +1,30 @@
+#209 - Vizcaya
+owner = CAS#Juan II de Castilla
+controller = CAS
+add_core = CAS
+add_core = ASU
+culture = basque
+religion = catholic
+hre = yes
+base_tax = 2
+base_production = 2
+trade_goods = iron
+base_manpower = 2
+capital = "Bilbao"
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+1516.1.23 = { 
+	add_core = NAV
+	controller = SPA
+	add_core = SPA
+}
+1516.1.23 = { 
+	controller = SPA
+	owner = SPA
+	add_core = SPA
+} # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castille
+1813.6.21 = { controller = REB revolt = { type = pretender_rebels size = 2 } }
+1813.12.11 = { controller = SPA revolt = { size = 1 } }

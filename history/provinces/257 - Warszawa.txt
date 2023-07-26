@@ -1,0 +1,52 @@
+#257 - Mazovia
+owner = MAZ
+controller = MAZ
+capital = "Warszawa"
+culture = polish
+religion = catholic
+trade_goods = cloth
+base_tax = 5
+base_production = 5
+base_manpower = 2
+is_city = yes
+add_core = MAZ
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 8
+center_of_trade = 1
+1526.3.9 = { 
+	controller = POL
+	add_core = POL
+}
+1550.1.1 = { 
+	trade_goods = Paper
+}
+1569.7.1 = { 
+	controller = PLC
+	add_core = PLC
+}
+1588.1.1 = { controller = REB revolt = { type = revolutionary_rebels size = 3 } }
+1589.1.1 = { controller = PLC revolt = { size = 1 } }
+1656.7.28 = { controller = SWE }
+1660.1.1 = { controller = PLC }
+1702.5.1 = { controller = SWE }
+1706.9.24 = { controller = PLC }
+1733.1.1 = { controller = REB revolt = { type = revolutionary_rebels size = 3 } }
+1735.1.1 = { controller = PLC revolt = { size = 1 } }
+1795.10.24 = { controller = PRU add_core = PRU }
+1806.11.3 = { controller = REB revolt = { type = nationalist_rebels size = 2 } }
+1807.7.9 = { 
+	controller = POL
+	revolt = { size = 1 }
+}
+1812.12.12 = { controller = RUS }
+1814.4.11 = { 
+	add_core = RUS
+}

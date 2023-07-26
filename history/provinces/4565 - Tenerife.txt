@@ -1,0 +1,36 @@
+#tenerife
+capital = "Tenerife"
+trade_goods = unknown
+base_tax = 2
+base_production = 2
+base_manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 0
+religion = animism
+culture = berber
+1402.1.1 = { 
+	discovered_by = western
+	discovered_by = muslim
+	discovered_by = ottoman
+	discovered_by = CAS
+	owner = CAS
+	controller = CAS
+	add_core = CAS
+	city = yes
+	religion = Catholic
+	culture = castillian
+	trade_goods = Sugar
+}
+1479.1.1 = { 
+	controller = CAS
+	city = yes
+	culture = portugese
+	religion = Catholic
+	trade_goods = Sugar
+}
+1516.1.23 = { 
+	controller = SPA
+	add_core = SPA
+}
+is_city = no

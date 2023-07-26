@@ -1,0 +1,25 @@
+# Forcalquier
+owner = PRO
+controller = PRO
+capital = "Toulon"
+is_city = yes
+culture = occitain
+religion = catholic
+hre = yes
+base_tax = 4
+base_production = 4
+trade_goods = naval_supplies
+base_manpower = 3
+add_core = PRO
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+1481.1.1 = { controller = FRA add_core = FRA }
+1526.5.22 = { controller = HAB }
+1529.8.3 = { controller = FRA }
+1536.7.1 = { controller = HAB }
+1536.9.15 = { controller = FRA }
+1590.6.1 = { controller = SAV }
+1591.4.5 = { controller = FRA }
+1806.7.12 = { hre = no }

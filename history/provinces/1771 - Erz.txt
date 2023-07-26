@@ -1,0 +1,34 @@
+#1771 - Erz
+owner = BOH
+controller = BOH
+add_core = BOH
+capital = "Litomerice"
+culture = czech
+religion = catholic
+trade_goods = glass
+base_tax = 4
+base_production = 5
+base_manpower = 2
+is_city = yes
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+1526.8.30 = { 
+	controller = HAB
+	add_core = HAB
+}
+1576.1.1 = { religion = Protestant }
+1618.5.23 = { 
+	controller = BOH
+}
+1620.11.8 = { 
+	controller = HAB
+}
+1627.1.1 = { religion = Catholic }
+1806.7.12 = { hre = no }
