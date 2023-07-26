@@ -16,7 +16,7 @@ discovered_by = muslim
 discovered_by = ottoman
 1445.9.10 = { controller = THU add_core = THU }
 1520.12.10 = { 
-	religion = Protestant
+	religion = protestant
 }
 1547.5.19 = { 
 	controller = SAX

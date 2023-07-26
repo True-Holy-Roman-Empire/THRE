@@ -23,7 +23,7 @@ discovered_by = ottoman
 }
 1519.1.12 = { add_core = SPA }
 1524.1.1 = { controller = SPA }
-1536.1.1 = { religion = Reformed }
+1536.1.1 = { religion = reformed }
 1549.11.4 = { controller = NED add_core = NED }
 1568.5.23 = { controller = REB revolt = { type = nationalist_rebels name = "Les Gueux" size = 2 leader = "Louis of Nassau" } }
 1568.7.21 = { controller = SPA revolt = { size = 1 } }

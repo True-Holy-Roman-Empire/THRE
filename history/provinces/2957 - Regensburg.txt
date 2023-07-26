@@ -17,7 +17,7 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 1542.10.15 = { 
-	religion = Protestant
+	religion = protestant
 }
 1806.7.12 = { hre = no }
 1810.1.6 = { 

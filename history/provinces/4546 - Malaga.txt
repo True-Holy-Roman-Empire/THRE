@@ -18,7 +18,7 @@ discovered_by = eastern
 1482.7.1 = { controller = REB revolt = { type = revolutionary_rebels size = 2 } }
 1484.5.1 = { controller = GRA revolt = { size = 1 } }
 1492.1.2 = { controller = CAS add_core = CAS }
-1502.2.1 = { religion = Catholic }
+1502.2.1 = { religion = catholic }
 1516.1.23 = { 
 	controller = SPA
 	add_core = SPA

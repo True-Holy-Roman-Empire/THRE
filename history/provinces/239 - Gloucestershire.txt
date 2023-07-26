@@ -17,7 +17,7 @@ discovered_by = ottoman
 discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
-1541.1.1 = { religion = Protestant }
+1541.1.1 = { religion = protestant }
 1575.1.1 = { base_tax = 7 base_production = 7 }
 1642.8.22 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }
 1643.7.26 = { controller = ENG revolt = { size = 1 } }

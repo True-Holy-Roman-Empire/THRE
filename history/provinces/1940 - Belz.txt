@@ -25,7 +25,7 @@ discovered_by = ottoman
 	controller = PLC
 	add_core = PLC
 }
-1570.1.1 = { religion = Catholic }
+1570.1.1 = { religion = catholic }
 1588.1.1 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }
 1589.1.1 = { controller = PLC revolt = { size = 1 } }
 1733.1.1 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }

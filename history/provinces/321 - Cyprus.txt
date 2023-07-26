@@ -23,7 +23,7 @@ discovered_by = ottoman
 1571.1.1 = { 
 	controller = TUR
 	add_core = TUR
-	religion = Orthodox
+	religion = orthodox
 }
 1690.1.1 = { 
 	base_tax = 6

@@ -15,7 +15,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 1529.1.1 = { add_core = BRA }
-1534.1.1 = { religion = Protestant }
+1534.1.1 = { religion = protestant }
 1648.10.24 = { controller = BRA }
 1701.1.18 = { 
 	controller = PRU

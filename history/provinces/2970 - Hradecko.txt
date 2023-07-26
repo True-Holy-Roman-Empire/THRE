@@ -25,12 +25,12 @@ discovered_by = ottoman
 	controller = HAB
 	add_core = HAB
 }
-1576.1.1 = { religion = Protestant }
+1576.1.1 = { religion = protestant }
 1618.5.23 = { 
 	controller = BOH
 }
 1620.11.8 = { 
 	controller = HAB
 }
-1627.1.1 = { religion = Catholic }
+1627.1.1 = { religion = catholic }
 1806.7.12 = { hre = no }

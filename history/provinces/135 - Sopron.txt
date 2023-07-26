@@ -28,6 +28,6 @@ discovered_by = ottoman
 	controller = HAB
 	add_core = HAB
 }
-1545.1.1 = { religion = Protestant }
+1545.1.1 = { religion = protestant }
 1594.9.29 = { controller = TUR }
 1598.3.28 = { controller = HAB }

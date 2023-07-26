@@ -16,7 +16,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
-1538.1.1 = { religion = Protestant }
+1538.1.1 = { religion = protestant }
 1642.8.22 = { controller = REB revolt = { type = revolutionary_rebels size = 2 leader = "Thomas Fairfax" } }
 1646.5.5 = { controller = ENG revolt = { size = 1 } }
 1648.6.1 = { controller = REB revolt = { type = revolutionary_rebels size = 1 } }

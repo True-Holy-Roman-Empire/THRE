@@ -14,7 +14,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 #copied from Ansbach but I think it is accurate
-1522.1.1 = { religion = Protestant }
+1522.1.1 = { religion = protestant }
 1791.12.2 = { 
 	controller = PRU
 	add_core = PRU

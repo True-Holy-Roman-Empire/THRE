@@ -17,7 +17,7 @@ discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
-1556.4.19 = { religion = Protestant }
+1556.4.19 = { religion = protestant }
 1560.1.1 = { fort_15th = yes }
 1631.12.22 = { controller = SWE }
 1635.1.1 = { 

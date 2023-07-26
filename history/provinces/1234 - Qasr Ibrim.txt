@@ -23,5 +23,5 @@ discovered_by = east_african
 1517.1.1 = { add_core = TUR }
 1540.1.1 = { 
 	controller = TUR
-	religion = Sunni
+	religion = sunni
 }

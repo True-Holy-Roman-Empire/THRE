@@ -31,13 +31,13 @@ add_province_triggered_modifier = religious_center
 1530.1.1 = { 
 	trade_goods = Paper
 }
-1576.1.1 = { religion = Protestant }
+1576.1.1 = { religion = protestant }
 1618.5.23 = { 
 	controller = BOH
 }
 1620.11.8 = { 
 	controller = HAB
 }
-1627.1.1 = { religion = Catholic }
+1627.1.1 = { religion = catholic }
 1806.7.12 = { hre = no }
 fort_15th = yes

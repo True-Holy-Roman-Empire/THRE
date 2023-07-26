@@ -15,9 +15,9 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1560.1.1 = { religion = Reformed }
+1560.1.1 = { religion = reformed }
 1589.8.2 = { controller = FRA add_core = FRA }
 1652.10.21 = { controller = FRA revolt = { size = 1 } }
-1686.1.17 = { religion = Catholic }
+1686.1.17 = { religion = catholic }
 1702.1.1 = { controller = REB revolt = { type = heretic_rebels size = 2 } }
 1705.1.1 = { controller = FRA revolt = { size = 1 } }

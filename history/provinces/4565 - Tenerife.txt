@@ -18,7 +18,7 @@ culture = berber
 	controller = CAS
 	add_core = CAS
 	city = yes
-	religion = Catholic
+	religion = catholic
 	culture = castillian
 	trade_goods = Sugar
 }
@@ -26,11 +26,10 @@ culture = berber
 	controller = CAS
 	city = yes
 	culture = portugese
-	religion = Catholic
+	religion = catholic
 	trade_goods = Sugar
 }
 1516.1.23 = { 
 	controller = SPA
 	add_core = SPA
 }
-is_city = no

@@ -17,7 +17,7 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 1460.3.5 = { controller = DAN add_core = DAN }
-1529.1.1 = { religion = Protestant }
+1529.1.1 = { religion = protestant }
 1544.1.1 = { controller = SHL }
 1550.1.1 = { 
 	base_tax = 5

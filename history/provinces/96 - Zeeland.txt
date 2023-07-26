@@ -18,7 +18,7 @@ discovered_by = ottoman
 1477.1.5 = { controller = HAB add_core = HAB }
 1519.1.12 = { controller = SPA add_core = SPA }
 1549.11.4 = { controller = NED add_core = NED }
-1572.1.1 = { religion = Reformed }
+1572.1.1 = { religion = reformed }
 1648.10.24 = { hre = no }
 1681.1.1 = { 
 	base_tax = 6

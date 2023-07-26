@@ -17,7 +17,7 @@ discovered_by = ottoman
 add_local_autonomy = 50#Administrative misshandling, robber barons, privileged cities.
 1402.1.1 = { owner = TEU controller = TEU add_core = TEU }
 1453.1.1 = { controller = BRA add_core = BRA }
-1536.1.1 = { religion = Protestant }
+1536.1.1 = { religion = protestant }
 1650.1.1 = { culture = prussian }
 1701.1.18 = { 
 	controller = PRU

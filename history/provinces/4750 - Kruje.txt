@@ -22,7 +22,7 @@ discovered_by = eastern
 discovered_by = western
 1431.1.1 = { add_core = TUR }
 1478.6.16 = { controller = TUR }
-1520.1.1 = { religion = Sunni }
+1520.1.1 = { religion = sunni }
 1797.1.1 = { controller = REB revolt = { type = revolutionary_rebels size = 1 } }
 1803.1.1 = { controller = TUR revolt = { size = 1 } }
 fort_15th = yes

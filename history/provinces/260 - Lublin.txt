@@ -24,7 +24,7 @@ discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
-1550.1.1 = { religion = Reformed }
+1550.1.1 = { religion = reformed }
 1569.7.1 = { 
 	controller = PLC
 	add_core = PLC

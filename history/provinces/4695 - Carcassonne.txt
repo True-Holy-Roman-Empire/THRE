@@ -15,6 +15,6 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1560.1.1 = { religion = Reformed }
+1560.1.1 = { religion = reformed }
 1648.1.1 = { fort_17th = yes }
-1686.1.17 = { religion = Catholic }
+1686.1.17 = { religion = catholic }

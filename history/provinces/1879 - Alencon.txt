@@ -21,5 +21,5 @@ discovered_by = ottoman
 1449.3.24 = { 
 	controller = FRA
 }
-1686.1.17 = { religion = Catholic }
+1686.1.17 = { religion = catholic }
 1786.1.1 = { base_tax = 6 base_production = 6 }

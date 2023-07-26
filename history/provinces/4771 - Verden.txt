@@ -14,7 +14,7 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1529.1.1 = { religion = Protestant }
+1529.1.1 = { religion = protestant }
 1648.10.24 = { controller = SWE add_core = SWE }
 1719.9.30 = { 
 	controller = HAN

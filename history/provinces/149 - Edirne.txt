@@ -20,7 +20,7 @@ discovered_by = nomad_group
 1402.1.1 = { controller = REB revolt = { type = pretender_rebels name = "Süleyman's Faction" size = 1 leader = "Süleyman Osmanoglu" } }
 1410.1.1 = { controller = REB revolt = { size = 1 } }
 1413.1.1 = { controller = TUR revolt = { size = 1 } }
-1459.1.1 = { culture = turkish religion = Sunni }
+1459.1.1 = { culture = turkish religion = sunni }
 1615.1.1 = { 
 	base_tax = 4
 	base_production = 4

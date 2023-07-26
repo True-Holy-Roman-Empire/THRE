@@ -18,8 +18,8 @@ discovered_by = ottoman
 discovered_by = eastern
 1470.9.1 = { controller = REB revolt = { type = revolutionary_rebels size = 2 } }
 1470.10.6 = { controller = ENG revolt = { size = 1 } }
-1575.1.1 = { religion = Protestant }
-1600.1.1 = { religion = Reformed }
+1575.1.1 = { religion = protestant }
+1600.1.1 = { religion = reformed }
 1707.5.12 = { 
 	controller = GBR
 	add_core = GBR

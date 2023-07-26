@@ -22,9 +22,9 @@ add_permanent_province_modifier = {
 }
 1453.1.1 = { add_core = FRA }
 1532.8.4 = { controller = FRA }
-1560.1.1 = { religion = Reformed }
+1560.1.1 = { religion = reformed }
 1652.2.15 = { controller = REB revolt = { type = revolutionary_rebels size = 2 } }
 1652.10.21 = { controller = FRA revolt = { size = 1 } }
-1686.1.17 = { religion = Catholic }
+1686.1.17 = { religion = catholic }
 1793.3.7 = { controller = REB revolt = { type = revolutionary_rebels size = 2 } }
 1796.12.23 = { controller = FRA revolt = { size = 1 } }

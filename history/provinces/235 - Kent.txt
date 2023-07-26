@@ -20,8 +20,8 @@ discovered_by = eastern
 1450.7.12 = { controller = ENG revolt = { size = 1 } }
 1460.1.1 = { controller = REB revolt = { type = pretender_rebels size = 2 } }
 1461.6.28 = { controller = ENG revolt = { size = 1 } }
-1538.1.1 = { religion = Protestant }
-1580.1.1 = { religion = Reformed }
+1538.1.1 = { religion = protestant }
+1580.1.1 = { religion = reformed }
 1642.8.22 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }
 1646.5.5 = { controller = ENG revolt = { size = 1 } }
 1648.5.11 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }

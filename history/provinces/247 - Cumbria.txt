@@ -18,7 +18,7 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 1575.1.1 = { base_tax = 4 base_production = 4 }
-1585.1.1 = { religion = Protestant }
+1585.1.1 = { religion = protestant }
 1645.6.28 = { controller = SCO }
 1646.5.5 = { controller = ENG }
 1648.4.1 = { controller = REB revolt = { type = revolutionary_rebels size = 3 } }

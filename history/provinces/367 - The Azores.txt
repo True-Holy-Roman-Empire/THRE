@@ -16,6 +16,5 @@ native_hostileness = 0
 	add_core = POR
 	city = yes
 	culture = portugese
-	religion = Catholic
+	religion = catholic
 }
-is_city = no

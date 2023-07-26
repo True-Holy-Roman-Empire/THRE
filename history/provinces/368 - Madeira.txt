@@ -16,7 +16,7 @@ native_hostileness = 0
 	add_core = POR
 	city = yes
 	culture = portugese
-	religion = Catholic
+	religion = catholic
 	discovered_by = POR
 }
 1425.1.1 = { 
@@ -25,4 +25,3 @@ native_hostileness = 0
 	trade_goods = Sugar
 }
 1497.1.1 = { capital = "Funchal" }
-is_city = no

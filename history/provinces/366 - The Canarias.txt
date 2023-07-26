@@ -18,7 +18,7 @@ native_hostileness = 0
 	controller = CAS
 	add_core = CAS
 	city = yes
-	religion = Catholic
+	religion = catholic
 	culture = castillian
 	trade_goods = Sugar
 }
@@ -27,4 +27,3 @@ native_hostileness = 0
 	controller = SPA
 	add_core = SPA
 }
-is_city = no

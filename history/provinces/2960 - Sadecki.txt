@@ -19,14 +19,14 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1558.1.1 = { religion = Protestant }
+1558.1.1 = { religion = protestant }
 1569.7.1 = { 
 	controller = PLC
 	add_core = PLC
 }
 1588.1.1 = { controller = REB revolt = { type = revolutionary_rebels size = 2 } }
 1589.1.1 = { controller = PLC revolt = { size = 1 } }
-1658.1.1 = { religion = Catholic }
+1658.1.1 = { religion = catholic }
 1733.1.1 = { controller = REB revolt = { type = revolutionary_rebels size = 2 } }
 1735.1.1 = { controller = PLC revolt = { size = 1 } }
 1772.8.5 = { controller = HAB add_core = HAB }

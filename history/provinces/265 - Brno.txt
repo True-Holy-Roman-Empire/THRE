@@ -33,4 +33,3 @@ discovered_by = ottoman
 	controller = HAB
 }
 1806.7.12 = { hre = no }
-is_city = no

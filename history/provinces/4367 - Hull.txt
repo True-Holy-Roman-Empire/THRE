@@ -24,7 +24,7 @@ discovered_by = eastern
 1470.10.6 = { controller = ENG revolt = { size = 1 } }
 1471.3.1 = { controller = REB revolt = { type = revolutionary_rebels size = 2 leader = "Edward of York" } }
 1471.5.4 = { controller = ENG revolt = { size = 1 } }
-1600.1.1 = { religion = Protestant }
+1600.1.1 = { religion = protestant }
 1644.7.2 = { controller = REB revolt = { type = revolutionary_rebels size = 2 } }
 1646.5.5 = { controller = ENG revolt = { size = 1 } }
 1707.5.12 = { 

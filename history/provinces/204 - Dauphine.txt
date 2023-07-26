@@ -20,8 +20,8 @@ discovered_by = ottoman
 #fort_15th = yes
 1446.9.27 = { controller = REB revolt = { type = pretender_rebels size = 1 leader = "Louis" } }
 1461.7.22 = { controller = FRA revolt = { size = 1 } }
-1560.1.1 = { religion = Reformed }
+1560.1.1 = { religion = reformed }
 1615.7.1 = { 
 	fort_17th = yes
 }
-1686.1.17 = { religion = Catholic }
+1686.1.17 = { religion = catholic }

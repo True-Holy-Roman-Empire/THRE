@@ -31,4 +31,4 @@ discovered_by = eastern
 	controller = GBR
 	add_core = GBR
 }
-1750.1.1 = { religion = Reformed }
+1750.1.1 = { religion = reformed }
