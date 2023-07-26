@@ -1,0 +1,7 @@
+﻿l_english: 
+  test_events.1.t: "Test Event"
+  test_events.1.d: "Developer only test event to execute code"
+  test_events.1.opta: "Run the code"
+  test_events.1.optb: "Nevermind"
+  test1_title: "Test Decision"
+  test1_desc: "Click on this decision to fire the Test Event"  

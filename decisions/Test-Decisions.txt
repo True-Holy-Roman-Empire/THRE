@@ -1,0 +1,16 @@
+country_decisions = {
+	test1 = {
+		major = yes
+		potential = {
+			ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			country_event = {
+				id = test_events.1
+			}
+		}
+	}
+}
