@@ -5,3 +5,13 @@ technology_group = western
 religion = abrahamism
 capital = 177
 primary_culture = cosmopolitan_french
+
+1360.1.1 = {
+	monarch = {
+		name = "Étienne"
+		dynasty = "Pérignon"
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}

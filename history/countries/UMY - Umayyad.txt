@@ -7,3 +7,13 @@ capital = 4548
 primary_culture = andalucian
 government = monarchy
 
+1417.1.1 = {
+	monarch = {
+		name = "Firdaus"
+		dynasty = "Ibn Ya'far"
+		birth_date = 1411.1.1
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+}

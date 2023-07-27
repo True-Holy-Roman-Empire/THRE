@@ -1,8 +1,17 @@
 ﻿l_english:
  #
  UMY: "Umayyad"
- UMY_ADJ: "Umayyad"
+ UMY_ADJ: "Umayyan"
  CRD: "Cordoba"
- CRD_ADJ: "Cordoba"
+ CRD_ADJ: "Cordoban"
  TRUE_HRE_CAMPAIGN_NAME: "The True Holy Roman Empire"
  TRUE_HRE_CAMPAIGN_DESC: "*"
+ 
+ MNE: "Maine"
+ MNE_ADJ: "Mainean"
+ ANJ: "Anjou"
+ ANJ_ADJ: "Anjouian"
+ POU: "Poitou"
+ POU_ADJ: "Poitouan"
+ AGO: "Angouleme"
+ AGO_ADJ: "Angoulemean"
