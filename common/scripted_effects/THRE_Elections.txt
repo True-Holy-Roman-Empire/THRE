@@ -1,3 +1,11 @@
+#Dynamic Voting Scripts for EU4
+#Coded by Micha "Mepper" Helder for the 2023 Europa Universalis 4 Moddaton
+
+#Call to cast a vote. Needs the following Arguments: 
+#Type:  Currently only HRE supported, will add more later if needed
+#Ballot: Which Ballot box to cast the vote in
+#Target: In which event target the votes should be cast and counted. Just where to store the Variables. Needs to be an event_target
+
 Cast_Vote = {
     Cast_Vote_$Type$ = {
         Ballot = $Ballot$
@@ -5,6 +13,8 @@ Cast_Vote = {
     }
 }
 
+
+#Called from Cast_Vote with HRE argument. Changes the votecount for Ballot number $Ballot$ with 1
 Cast_Vote_HRE = {
     event_target:$Target$ = {
         change_variable = {
@@ -14,6 +24,10 @@ Cast_Vote_HRE = {
     }
 }
 
+#Call this effect to count the votes for the HRE Vote. Needs the following arguments:
+#Target: Where to tally the votes. Needs to be the event_target where the votes were cast
+#Options: How many different Ballot Boxes there are to be counted
+#Scope: Takes either province or country argument. Used to set a flag in the event_target when the vote is inconclusive. 
 Tally_Vote_HRE = {
     Tally_Vote = {
         Target = $Target$
@@ -22,47 +36,49 @@ Tally_Vote_HRE = {
     }
 }
 
+#Here is the Script that actually counts the votes. Always call from a specified Tally_Vote_$Type$ scripted_effect. 
+#Will comment on its different parts instead of all at the top
 Tally_Vote = {
-    event_target:$Target$ = {
-        set_variable = {
+    event_target:$Target$ = {           #In the event_target where we store the votes
+        set_variable = {                #VoteCountT is the total amount of Votesl; set to start at zero
             which = VoteCountT
             value = 0
         }
-        set_variable = {
+        set_variable = {                #AmountOptions tracks how many different Ballots there are total
             which = AmountOptions
-            value = $Options$
+            value = $Options$           #Set to Options argument as defined in TallyVote call
         }
-        set_variable = {
+        set_variable = {                #VoteWin tracks which Ballot number is the winning one. Start at the highest number
             which = VoteWin
             value = $Options$
         }
-        set_variable = {
+        set_variable = {                #Temporary variable which is used to compare votecounts for different ballots    
             which = Vote_Tmp1
-            value = VoteCount$Options$
+            value = VoteCount$Options$      #Starting Value set to amount of votes for the highest number Ballot
         }
-        while = {
+        while = {                                       #Now for the real magic. For every option this should be called. As long as AmountOptions Variable value is at least 1, we go count votes for that option
             limit = {
                 check_variable = {
                     which = AmountOptions
                     value = 1
                 }
             }
-            Tally_Vote_Helper1 = {
+            Tally_Vote_Helper1 = {                      #Changes the VoteCountT variable with the amount of Votes cast in the current option
                 Option = variable:AmountOptions
             }
-            Tally_Vote_Helper2 = {
+            Tally_Vote_Helper2 = {                      #Checks if the current Vote has the most votes for it. Comments below at Tally_Vote_Helper2 script
                 Option = variable:AmountOptions
             }
-            subtract_variable = {
+            subtract_variable = {                       #Reduce Current Ballot Count by 1 to go and check the next ballot
                 which = AmountOptions
                 value = 1
             }
         }
-        if = {
-            limit = {
+        if = {                                          #This is happening after the while loop. So this executes just once. 
+            limit = {                                   #If we have an Inconclusive Vote Flag stored in the event_target scope
                 has_$Scope$_flag = Inconclusive_Vote
             }
-            set_variable = {
+            set_variable = {                            #Set Winning Ballot option to zero (noboby wins)
                 which = VoteWin
                 value = 0
             }
@@ -70,7 +86,7 @@ Tally_Vote = {
     }
 }
 
-Tally_Vote_Helper1 = {
+Tally_Vote_Helper1 = {                                  #Change Total Votes cast amount by Amount of Votes for the current Ballot
     change_variable = {
         which = VoteCountT
         which = VoteCount$Option$
@@ -80,25 +96,25 @@ Tally_Vote_Helper1 = {
 Tally_Vote_Helper2 = {
     if = {
         limit = {
-            is_variable_equal = {
+            is_variable_equal = {                      #If the amount of Votes cast for the Vote being evaluated is exactly the same as the current highest amount of Votes
                 which = VoteCount$Option$
                 which = Vote_Tmp1
             }
-            set_$Scope$_flag = Inconclusive_Vote
+            set_$Scope$_flag = Inconclusive_Vote       #Set the inconclusive Vote flag in the correct scope
         }
     }
-    else_if = {
+    else_if = {                                        #Else if the VoteCount for the current Ballot is higher than the previously highest votecount
         limit = { 
             check_variable = {
                 which = VoteCount$Option$
                 which = Vote_Tmp1
             }          
         }
-        set_variable = {
+        set_variable = {                               #Set the highest VoteCount tracking variable to the current Ballot vote count
             which = Vote_Tmp1
             which = VoteCount$Option$
         }
-        set_variable = {
+        set_variable = {                               #Set the current Winning option to the current Ballot being evaluated
             which = VoteWin
             value = $Option$
         }
