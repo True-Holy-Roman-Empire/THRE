@@ -3,7 +3,7 @@
 # controller = BUR 
 capital = "Salins"
 is_city = yes
-add_local_autonomy = 30# religion = catholic
+add_local_autonomy = 30# religion = abrahamism
 hre = yes
 # base_tax = 2
 # base_production = 3
@@ -17,5 +17,5 @@ discovered_by = ottoman
 add_core = BUR
 owner = BUR
 controller = BUR
-religion = catholic
+religion = abrahamism
 culture = burgundian

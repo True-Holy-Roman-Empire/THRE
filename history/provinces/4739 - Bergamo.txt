@@ -2,7 +2,7 @@
 # owner = MLO		
 # controller = MLO
 # culture = lombard 
-# religion = catholic 
+# religion = abrahamism 
 hre = yes
 # base_tax = 4
 # base_production = 3
@@ -19,5 +19,5 @@ discovered_by = ottoman
 add_core = MLO
 owner = MLO
 controller = MLO
-religion = catholic
+religion = abrahamism
 culture = lombard

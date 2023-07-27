@@ -2,7 +2,7 @@
 # owner = TUN
 # controller = TUN 
 # culture = algerian
-# religion = sunni
+# religion = abrahamism
 capital = "Al-Djazair"
 # trade_goods = grain
 hre = yes
@@ -21,5 +21,5 @@ center_of_trade = 1
 add_core = ALG
 owner = ALG
 controller = ALG
-religion = sunni
+religion = abrahamism
 culture = algerian

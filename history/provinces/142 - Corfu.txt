@@ -2,7 +2,7 @@
 # owner = VEN
 # controller = VEN
 # culture = greek
-# religion = orthodox
+# religion = abrahamism
 capital = "Corfu"
 # trade_goods = fish
 hre = yes
@@ -17,6 +17,6 @@ discovered_by = ottoman
 add_core = CEP
 owner = CEP
 controller = CEP
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = greek

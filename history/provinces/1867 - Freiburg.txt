@@ -2,7 +2,7 @@
 owner = GNV
 controller = GNV
 culture = swiss
-religion = catholic
+religion = abrahamism
 capital = "Lausanne"
 trade_goods = livestock
 base_tax = 3

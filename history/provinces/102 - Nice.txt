@@ -3,7 +3,7 @@
 # controller = SAV
 # add_core = SAV
 # culture = ligurian
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 4 
 # base_production = 4
@@ -19,5 +19,5 @@ discovered_by = ottoman
 add_core = SAV
 owner = SAV
 controller = SAV
-religion = catholic
+religion = abrahamism
 culture = ligurian

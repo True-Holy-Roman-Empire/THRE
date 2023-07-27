@@ -1,6 +1,6 @@
 #4269 - Al Wajh
 culture = bedouin_arabic
-religion = sunni
+religion = abrahamism
 capital = "Al Wajh"
 trade_goods = fish
 base_tax = 1

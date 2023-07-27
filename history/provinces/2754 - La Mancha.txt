@@ -3,7 +3,7 @@
 # controller = CAS
 # add_core = CAS
 # culture = castillian
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 3 
 # base_production = 3
@@ -18,5 +18,5 @@ discovered_by = ottoman
 add_core = CRD
 owner = CRD
 controller = CRD
-religion = sunni
+religion = abrahamism
 culture = castillian

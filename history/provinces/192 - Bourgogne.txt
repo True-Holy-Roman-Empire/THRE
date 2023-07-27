@@ -4,7 +4,7 @@
 capital = "Dijon"
 is_city = yes
 # culture = burgundian
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 7
 # base_production = 7
@@ -21,5 +21,5 @@ center_of_trade = 2
 add_core = BUR
 owner = BUR
 controller = BUR
-religion = catholic
+religion = abrahamism
 culture = burgundian

@@ -1,7 +1,7 @@
 #2324 - Halaib
 add_core = BEJ
 culture = beja
-religion = sunni
+religion = abrahamism
 capital = "Halaib"
 is_city = yes
 base_manpower = 1

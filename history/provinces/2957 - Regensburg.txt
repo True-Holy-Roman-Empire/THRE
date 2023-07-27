@@ -3,7 +3,7 @@
 # controller = REG
 # add_core = REG
 # culture = bavarian
-# religion = catholic
+# religion = abrahamism
 # base_tax = 5
 # base_production = 5
 # trade_goods = cloth #Fustians
@@ -17,7 +17,7 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 1806.7.12 = { hre = no }
-religion = catholic
+religion = abrahamism
 add_core = REG
 owner = REG
 controller = REG

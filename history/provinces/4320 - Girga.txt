@@ -2,7 +2,7 @@
 # owner = MAM
 # controller = MAM
 # culture = al_misr_arabic
-# religion = sunni
+# religion = abrahamism
 capital = "Girga"
 # trade_goods = grain
 hre = yes
@@ -22,7 +22,7 @@ discovered_by = east_african
 	revolt = { type = nationalist_rebels size = 0 }
 }
 culture = al_misr_arabic
-religion = sunni
+religion = abrahamism
 add_core = MAK
 owner = MAK
 controller = MAK

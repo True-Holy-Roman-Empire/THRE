@@ -2,7 +2,7 @@
 # owner = MOR
 # controller = MOR
 # culture = berber
-# religion = sunni
+# religion = abrahamism
 capital = "Sidi Ifni"
 # trade_goods = fish
 is_city = yes

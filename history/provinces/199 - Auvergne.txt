@@ -7,7 +7,7 @@ controller = FRA
 capital = "Clermont"
 is_city = yes
 culture = occitain
-religion = catholic
+religion = abrahamism
 hre = yes
 base_tax = 4
 base_production = 4
@@ -27,6 +27,6 @@ discovered_by = ottoman
 1589.1.5 = { controller = NAV add_core = NAV }
 1589.8.2 = { controller = FRA add_core = FRA }
 1630.4.15 = { capital = "Clermont-Ferrand" }
-1686.1.17 = { religion = Catholic }
+1686.1.17 = { religion = abrahamism }
 1702.1.1 = { controller = REB revolt = { type = heretic_rebels size = 2 } }
 1705.1.1 = { controller = FRA revolt = { size = 1 } }

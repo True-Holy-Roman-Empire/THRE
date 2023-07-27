@@ -2,7 +2,7 @@
 owner = QAR
 controller = QAR
 culture = kurdish
-religion = sunni
+religion = abrahamism
 capital = "Urmiyeh"
 trade_goods = wine
 base_tax = 3

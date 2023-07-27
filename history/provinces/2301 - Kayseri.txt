@@ -2,7 +2,7 @@
 # owner = KAR
 # controller = KAR
 # culture = turkish
-# religion = sunni
+# religion = abrahamism
 capital = "Kayseri"
 # trade_goods = iron
 hre = yes
@@ -20,5 +20,5 @@ discovered_by = nomad_group
 add_core = KAR
 owner = KAR
 controller = KAR
-religion = sunni
+religion = abrahamism
 culture = turkish

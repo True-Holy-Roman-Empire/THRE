@@ -4,7 +4,7 @@
 capital = "Nevers"
 is_city = yes
 # culture = burgundian
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 5
 # base_production = 5
@@ -18,5 +18,5 @@ discovered_by = ottoman
 add_core = NEV
 owner = NEV
 controller = NEV
-religion = catholic
+religion = abrahamism
 culture = burgundian

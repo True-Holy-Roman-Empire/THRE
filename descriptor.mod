@@ -1,5 +1,6 @@
 name="True Holy Roman Empire"
 replace_path="common/bookmarks"
+replace_path="common/religions"
 tags={
 	"Religion"
 	"Map"

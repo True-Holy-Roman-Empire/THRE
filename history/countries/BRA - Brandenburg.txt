@@ -4,7 +4,7 @@ government_rank = 1
 elector = no
 technology_group = western
 primary_culture = saxon
-religion = catholic
+religion = abrahamism
 capital = 50	# Berlin
 
 change_estate_land_share = {

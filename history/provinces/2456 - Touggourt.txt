@@ -2,7 +2,7 @@
 # owner = TGT
 # controller = TGT
 # culture = algerian
-# religion = sunni
+# religion = abrahamism
 capital = "Touggourt"
 # trade_goods = spices
 is_city = yes

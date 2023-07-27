@@ -2,7 +2,7 @@
 # owner = TLC
 # controller = TLC
 # culture = berber
-# religion = sunni
+# religion = abrahamism
 capital = "Oujda"
 # trade_goods = wool
 hre = yes
@@ -18,5 +18,5 @@ discovered_by = eastern
 add_core = TLC
 owner = TLC
 controller = TLC
-religion = sunni
+religion = abrahamism
 culture = berber

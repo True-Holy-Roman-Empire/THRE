@@ -1,6 +1,6 @@
 #2327 - Maan
 culture = bedouin_arabic
-religion = sunni
+religion = abrahamism
 capital = "Maan"
 trade_goods = livestock
 base_tax = 2

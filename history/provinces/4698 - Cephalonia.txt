@@ -1,7 +1,7 @@
 # owner = EPI
 # controller = EPI
 # culture = greek
-# religion = orthodox
+# religion = abrahamism
 capital = "Agios Georgios"
 # trade_goods = wine
 hre = yes
@@ -16,6 +16,6 @@ discovered_by = muslim
 discovered_by = ottoman
 add_core = EPI
 owner = EPI
-religion = catholic
+religion = abrahamism
 controller = EPI
 culture = greek

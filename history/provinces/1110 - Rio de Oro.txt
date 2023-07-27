@@ -2,7 +2,7 @@
 # owner = MOR
 # controller = MOR
 # culture = berber
-# religion = sunni
+# religion = abrahamism
 capital = "Agadir"
 # trade_goods = sugar
 is_city = yes

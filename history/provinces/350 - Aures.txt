@@ -2,7 +2,7 @@
 # owner = MZB
 # controller = MZB 
 # culture = algerian
-# religion = sunni
+# religion = abrahamism
 capital = "Laghwat"
 # trade_goods = livestock
 is_city = yes

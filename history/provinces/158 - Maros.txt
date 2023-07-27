@@ -2,7 +2,7 @@
 # owner = HUN
 # controller = HUN 
 # culture = transylvanian #Szeklers
-# religion = catholic
+# religion = abrahamism
 capital = "Targu Mures"
 # trade_goods = wool
 hre = yes
@@ -27,5 +27,5 @@ discovered_by = ottoman
 add_core = HUN
 owner = HUN
 controller = HUN
-religion = catholic
+religion = abrahamism
 culture = transylvanian

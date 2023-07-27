@@ -3,7 +3,7 @@
 # controller = KOL
 # add_core = KOL
 # culture = hessian
-# religion = catholic
+# religion = abrahamism
 # trade_goods = paper
 capital = "Köln"
 # base_tax = 6 
@@ -21,6 +21,6 @@ center_of_trade = 2
 add_core = KOL
 owner = KOL
 controller = KOL
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = hessian

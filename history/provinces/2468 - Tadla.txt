@@ -2,7 +2,7 @@
 # owner = MOR
 # controller = MOR
 # culture = moroccan
-# religion = sunni
+# religion = abrahamism
 capital = "Tadla"
 # trade_goods = copper
 is_city = yes
@@ -13,5 +13,5 @@ discovered_by = western
 add_core = MOR
 owner = MOR
 controller = MOR
-religion = sunni
+religion = abrahamism
 culture = moroccan

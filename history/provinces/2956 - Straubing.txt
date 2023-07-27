@@ -3,7 +3,7 @@
 # controller = UBV
 # add_core = UBV
 # culture = bavarian
-# religion = catholic
+# religion = abrahamism
 # base_tax = 3 
 # base_production = 3
 # trade_goods = glass
@@ -15,7 +15,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 #Last of the Landshuter Wittelsbachs dies, Bavaria reunited
-religion = catholic
+religion = abrahamism
 add_core = UBV
 owner = UBV
 controller = UBV

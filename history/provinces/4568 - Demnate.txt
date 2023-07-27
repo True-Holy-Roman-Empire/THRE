@@ -3,7 +3,7 @@
 # controller = MOR 
 # add_core = MOR 
 # culture = moroccan
-# religion = sunni
+# religion = abrahamism
 capital = "Demnate"
 # trade_goods = wool
 is_city = yes

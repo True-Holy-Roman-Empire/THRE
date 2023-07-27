@@ -2,7 +2,7 @@
 # owner = TGT
 # controller = TGT
 # culture = berber
-# religion = ibadi
+# religion = abrahamism
 capital = "Ouargla"
 # trade_goods = slaves
 is_city = yes

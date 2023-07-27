@@ -2,7 +2,7 @@
 # owner = HUN
 # controller = HUN 
 # culture = transylvanian
-# religion = catholic
+# religion = abrahamism
 capital = "Temesvár"
 # trade_goods = wool
 hre = yes
@@ -26,6 +26,6 @@ discovered_by = ottoman
 add_core = HUN
 owner = HUN
 controller = HUN
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = transylvanian

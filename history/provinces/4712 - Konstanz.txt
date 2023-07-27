@@ -3,7 +3,7 @@ controller = KNZ
 capital = "Konstanz"
 is_city = yes
 culture = swabian
-religion = catholic
+religion = abrahamism
 hre = yes
 base_tax = 6
 base_production = 6
@@ -22,5 +22,5 @@ discovered_by = ottoman
 1548.9.13 = { 
 	controller = HAB
 	add_core = HAB
-	religion = Catholic
+	religion = abrahamism
 }

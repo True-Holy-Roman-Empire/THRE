@@ -4,7 +4,7 @@
 capital = "Bar-le-Duc"
 is_city = yes
 # culture = burgundian
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 3
 # base_production = 4
@@ -18,5 +18,5 @@ discovered_by = ottoman
 add_core = BAR
 owner = BAR
 controller = BAR
-religion = catholic
+religion = abrahamism
 culture = burgundian

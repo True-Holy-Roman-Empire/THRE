@@ -1,7 +1,7 @@
 owner = GNV
 controller = GNV
 culture = swiss
-religion = catholic
+religion = abrahamism
 capital = "Geneva"
 trade_goods = cloth
 hre = yes

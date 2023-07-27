@@ -1,7 +1,7 @@
 #1232 - Suakin
 add_core = BEJ
 culture = beja
-religion = sunni
+religion = abrahamism
 capital = "Suakin"
 is_city = yes
 base_manpower = 1

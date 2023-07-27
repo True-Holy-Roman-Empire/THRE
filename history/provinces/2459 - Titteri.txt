@@ -2,7 +2,7 @@
 # owner = TLC
 # controller = TLC
 # culture = algerian
-# religion = sunni
+# religion = abrahamism
 capital = "Medea"
 # trade_goods = grain
 is_city = yes
@@ -14,5 +14,5 @@ discovered_by = western
 add_core = ALG
 owner = ALG
 controller = ALG
-religion = sunni
+religion = abrahamism
 culture = algerian

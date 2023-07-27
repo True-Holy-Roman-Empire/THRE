@@ -2,7 +2,7 @@
 # owner = SME
 # controller = SME
 # culture = georgian
-# religion = orthodox
+# religion = abrahamism
 capital = "Oltu"
 # trade_goods = livestock
 hre = yes
@@ -19,7 +19,7 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 culture = georgian
-religion = orthodox
+religion = abrahamism
 add_core = SME
 owner = SME
 controller = SME

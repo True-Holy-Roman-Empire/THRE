@@ -1,6 +1,6 @@
 #365 - Aqaba
 culture = bedouin_arabic
-religion = sunni
+religion = abrahamism
 capital = "Aqaba"
 trade_goods = fish
 base_tax = 1

@@ -5,7 +5,7 @@
 is_city = yes
 capital = "Ghent"
 # culture = flemish
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 5
 # base_production = 5
@@ -18,5 +18,5 @@ discovered_by = ottoman
 add_core = FLA
 owner = FLA
 controller = FLA
-religion = catholic
+religion = abrahamism
 culture = flemish

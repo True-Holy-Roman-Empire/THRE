@@ -2,7 +2,7 @@
 # owner = MOR
 # controller = MOR
 # culture = moroccan
-# religion = sunni
+# religion = abrahamism
 capital = "Meknes"
 # trade_goods = cloth
 is_city = yes
@@ -14,5 +14,5 @@ discovered_by = western
 add_core = FEZ
 owner = FEZ
 controller = FEZ
-religion = sunni
+religion = abrahamism
 culture = moroccan

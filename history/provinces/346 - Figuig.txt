@@ -2,7 +2,7 @@
 # owner = MOR
 # controller = MOR 
 # culture = moroccan
-# religion = sunni
+# religion = abrahamism
 capital = "Tafilalt"
 # trade_goods = gold
 is_city = yes

@@ -5,7 +5,7 @@ technology_group = western
 primary_culture = english
 add_accepted_culture = gascon
 add_accepted_culture = normand
-religion = catholic
+religion = abrahamism
 capital = 236 # London
 national_focus = DIP
 elector = yes
@@ -546,7 +546,7 @@ change_estate_land_share = { #compensates for lack of nobles, distributes 20 bet
 		female = yes
 	}
 }
-1553.7.19 = { religion = catholic } # Reinstate Papal power over Church of England
+1553.7.19 = { religion = abrahamism } # Reinstate Papal power over Church of England
 
 1556.1.1 = { leader = {	name = "William Fitzwilliam"           	type = admiral	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1599.2.6 } }
 
@@ -857,7 +857,7 @@ change_estate_land_share = { #compensates for lack of nobles, distributes 20 bet
 		female = yes
 	}
 }
-1685.2.6 = { religion = catholic }
+1685.2.6 = { religion = abrahamism }
 
 1686.1.1 = { leader = {	name = "James FitzJames"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1688.12.11 } }
 

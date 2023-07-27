@@ -3,7 +3,7 @@
 # controller = MAK
 # add_core = MAK
 # culture = nubian
-# religion = coptic
+# religion = abrahamism
 capital = "Wadi Halfa"
 is_city = yes
 # base_manpower = 1
@@ -15,7 +15,7 @@ discovered_by = nomad_group
 discovered_by = indian
 discovered_by = east_african
 culture = nubian
-religion = coptic
+religion = abrahamism
 add_core = MAK
 owner = MAK
 controller = MAK

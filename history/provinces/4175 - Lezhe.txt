@@ -2,7 +2,7 @@
 # owner = ALB
 # controller = ALB
 # culture = albanian
-# religion = orthodox
+# religion = abrahamism
 capital = "Lezhë"
 # trade_goods = wool
 hre = yes
@@ -23,5 +23,5 @@ discovered_by = western
 add_core = ALB
 owner = ALB
 controller = ALB
-religion = catholic
+religion = abrahamism
 culture = albanian

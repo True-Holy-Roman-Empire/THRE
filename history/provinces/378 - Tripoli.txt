@@ -2,7 +2,7 @@
 # owner = MAM
 # controller = MAM
 # culture = al_suryah_arabic
-# religion = shiite
+# religion = abrahamism
 capital = "Trablos"# trade_goods = grain
 hre = yes
 # base_tax = 6 
@@ -24,5 +24,5 @@ center_of_trade = 1
 add_core = SYR
 owner = SYR
 controller = SYR
-religion = sunni
+religion = abrahamism
 culture = al_suryah_arabic

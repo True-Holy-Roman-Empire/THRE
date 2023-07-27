@@ -3,14 +3,14 @@
 # controller = GOS
 # add_core = GOS
 # culture = saxon
-# religion = catholic
+# religion = abrahamism
 capital = "Goslar"
 is_city = yes
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-religion = catholic
+religion = abrahamism
 add_core = GOS
 owner = GOS
 controller = GOS

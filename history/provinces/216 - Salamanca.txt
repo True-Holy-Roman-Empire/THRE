@@ -4,7 +4,7 @@
 # add_core = CAS
 # add_core = LON
 # culture = leonese
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 4 
 # base_production = 4
@@ -19,5 +19,5 @@ discovered_by = ottoman
 add_core = LON
 owner = LON
 controller = LON
-religion = catholic
+religion = abrahamism
 culture = leonese

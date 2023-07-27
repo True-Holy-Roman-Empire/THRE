@@ -2,7 +2,7 @@
 # owner = POR
 # controller = POR
 # culture = portugese
-# religion = catholic
+# religion = abrahamism
 capital = "Beja"
 # trade_goods = livestock
 hre = yes
@@ -18,5 +18,5 @@ discovered_by = eastern
 add_core = UMY
 owner = UMY
 controller = UMY
-religion = sunni
+religion = abrahamism
 culture = portugese

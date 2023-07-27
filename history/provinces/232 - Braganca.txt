@@ -2,7 +2,7 @@
 # owner = POR
 # controller = POR
 # culture = portugese
-# religion = catholic
+# religion = abrahamism
 capital = "Bragança"
 # trade_goods = wine
 hre = yes
@@ -18,5 +18,5 @@ discovered_by = eastern
 add_core = POR
 owner = POR
 controller = POR
-religion = catholic
+religion = abrahamism
 culture = portugese

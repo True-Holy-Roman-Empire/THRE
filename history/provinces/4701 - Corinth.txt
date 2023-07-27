@@ -1,7 +1,7 @@
 # owner = ACH
 # controller = ACH
 # culture = greek
-# religion = orthodox
+# religion = abrahamism
 capital = "Corinth"
 # trade_goods = wine
 hre = yes
@@ -20,5 +20,5 @@ discovered_by = nomad_group
 add_core = ACH
 owner = ACH
 controller = ACH
-religion = catholic
+religion = abrahamism
 culture = greek

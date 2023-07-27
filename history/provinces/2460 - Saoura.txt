@@ -2,7 +2,7 @@
 # owner = MOR
 # controller = MOR
 # culture = moroccan
-# religion = sunni
+# religion = abrahamism
 capital = "Oulad Mhedi"
 # trade_goods = livestock
 is_city = yes

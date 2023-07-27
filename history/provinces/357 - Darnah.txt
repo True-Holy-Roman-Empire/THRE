@@ -2,7 +2,7 @@
 # owner = MAM
 # controller = MAM
 # culture = al_misr_arabic
-# religion = sunni
+# religion = abrahamism
 capital = "Derna"
 # trade_goods = livestock
 hre = yes
@@ -20,5 +20,5 @@ discovered_by = nomad_group
 add_core = FZA
 owner = FZA
 controller = FZA
-religion = sunni
+religion = abrahamism
 culture = al_misr_arabic

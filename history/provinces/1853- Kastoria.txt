@@ -2,7 +2,7 @@
 # owner = TUR
 # controller = TUR
 # culture = greek
-# religion = orthodox
+# religion = abrahamism
 capital = "Kastoria"
 # trade_goods = wine
 hre = yes
@@ -23,5 +23,5 @@ discovered_by = nomad_group
 add_core = BYZ
 owner = BYZ
 controller = BYZ
-religion = orthodox
+religion = abrahamism
 culture = greek

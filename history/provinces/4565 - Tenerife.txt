@@ -19,7 +19,7 @@ native_ferocity = 1
 	is_city = yes
 	# trade_goods = slaves
 	# culture = portugese
-	# religion = catholic
+	# religion = abrahamism
 	# trade_goods = sugar
 }
 1516.1.23 = {

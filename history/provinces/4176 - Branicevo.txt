@@ -2,7 +2,7 @@
 # owner = SER
 # controller = SER
 # culture = serbian
-# religion = orthodox
+# religion = abrahamism
 capital = "Kruševac"
 # trade_goods = livestock
 hre = yes
@@ -26,5 +26,5 @@ discovered_by = ottoman
 add_core = SER
 owner = SER
 controller = SER
-religion = orthodox
+religion = abrahamism
 culture = serbian

@@ -2,7 +2,7 @@
 # owner = NAP
 # controller = NAP
 # culture = neapolitan 
-# religion = catholic 
+# religion = abrahamism 
 hre = yes
 # base_tax = 2
 # base_production = 3
@@ -18,5 +18,5 @@ discovered_by = ottoman
 add_core = NAP
 owner = NAP
 controller = NAP
-religion = catholic
+religion = abrahamism
 culture = neapolitan

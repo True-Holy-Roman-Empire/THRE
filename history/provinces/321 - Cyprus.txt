@@ -2,7 +2,7 @@
 # owner = CYP
 # controller = CYP
 # culture = greek
-# religion = orthodox
+# religion = abrahamism
 capital = "Nicosia"
 # trade_goods = wine
 hre = yes
@@ -18,6 +18,6 @@ discovered_by = ottoman
 add_core = CYP
 owner = CYP
 controller = CYP
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = greek

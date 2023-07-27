@@ -2,7 +2,7 @@
 # owner = NAP
 # controller = NAP
 # culture = neapolitan 
-# religion = catholic 
+# religion = abrahamism 
 hre = yes
 # base_tax = 8
 # base_production = 8
@@ -19,6 +19,6 @@ center_of_trade = 2
 add_core = NAP
 owner = NAP
 controller = NAP
-religion = catholic
+religion = abrahamism
 culture = neapolitan
 fort_15th = yes

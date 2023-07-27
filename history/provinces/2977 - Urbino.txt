@@ -2,7 +2,7 @@
 # owner = URB
 # controller = URB
 # culture = umbrian 
-# religion = catholic 
+# religion = abrahamism 
 hre = yes
 # base_tax = 5
 # base_production = 5
@@ -20,5 +20,5 @@ center_of_trade = 1
 add_core = URB
 owner = URB
 controller = URB
-religion = catholic
+religion = abrahamism
 culture = umbrian

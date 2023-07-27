@@ -4,7 +4,7 @@
 capital = "Cahors"
 is_city = yes
 # culture = gascon
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 3
 # base_production = 3
@@ -19,5 +19,5 @@ discovered_by = ottoman
 add_core = GUY
 owner = GUY
 controller = GUY
-religion = catholic
+religion = abrahamism
 culture = gascon

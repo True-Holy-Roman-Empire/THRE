@@ -2,7 +2,7 @@
 # owner = TUN
 # controller = TUN 
 # culture = berber
-# religion = sunni
+# religion = abrahamism
 capital = "Annaba"
 # trade_goods = naval_supplies
 hre = yes
@@ -18,5 +18,5 @@ discovered_by = ottoman
 add_core = KBA
 owner = KBA
 controller = KBA
-religion = sunni
+religion = abrahamism
 culture = berber

@@ -3,7 +3,7 @@
 # controller = LAU
 # add_core = LAU
 # culture = lower_saxon
-# religion = catholic
+# religion = abrahamism
 capital = "Lauenburg"
 # trade_goods = salt
 is_city = yes
@@ -11,7 +11,7 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-religion = catholic
+religion = abrahamism
 culture = lower_saxon
 add_core = LAU
 owner = LAU

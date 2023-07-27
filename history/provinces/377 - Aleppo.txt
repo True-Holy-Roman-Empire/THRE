@@ -2,7 +2,7 @@
 # owner = MAM
 # controller = MAM
 # culture = al_suryah_arabic
-# religion = sunni
+# religion = abrahamism
 capital = "Halab"
 # trade_goods = silk
 hre = yes
@@ -24,6 +24,6 @@ center_of_trade = 2
 add_core = SYR
 owner = SYR
 controller = SYR
-religion = sunni
+religion = abrahamism
 fort_15th = yes
 culture = al_suryah_arabic

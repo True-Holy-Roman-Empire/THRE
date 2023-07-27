@@ -2,7 +2,7 @@
 # owner = BOS # Part of the Bosnian kingdom
 # controller = BOS
 # culture = bosnian
-# religion = orthodox
+# religion = abrahamism
 capital = "Visoki"
 # trade_goods = grain
 hre = yes
@@ -26,5 +26,5 @@ discovered_by = ottoman
 add_core = BOS
 owner = BOS
 controller = BOS
-religion = catholic
+religion = abrahamism
 culture = bosnian

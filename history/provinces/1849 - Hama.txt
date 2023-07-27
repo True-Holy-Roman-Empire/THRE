@@ -2,7 +2,7 @@
 # owner = MAM
 # controller = MAM
 # culture = al_suryah_arabic
-# religion = sunni
+# religion = abrahamism
 capital = "Hama"
 # trade_goods = cotton
 hre = yes
@@ -23,5 +23,5 @@ discovered_by = indian
 add_core = SYR
 owner = SYR
 controller = SYR
-religion = sunni
+religion = abrahamism
 culture = al_suryah_arabic

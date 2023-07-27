@@ -2,7 +2,7 @@
 # owner = SIC
 # controller = SIC
 # culture = sicilian 
-# religion = catholic 
+# religion = abrahamism 
 hre = yes
 # base_tax = 6 
 # base_production = 6
@@ -21,6 +21,6 @@ discovered_by = ottoman
 add_core = SIC
 owner = SIC
 controller = SIC
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = sicilian

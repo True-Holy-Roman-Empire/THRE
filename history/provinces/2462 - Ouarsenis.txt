@@ -2,7 +2,7 @@
 # owner = TLC
 # controller = TLC
 # culture = berber
-# religion = sunni
+# religion = abrahamism
 capital = "Ouarsenis"
 # trade_goods = livestock
 is_city = yes
@@ -14,5 +14,5 @@ discovered_by = western
 add_core = ALG
 owner = ALG
 controller = ALG
-religion = sunni
+religion = abrahamism
 culture = berber

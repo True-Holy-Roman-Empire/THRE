@@ -1,7 +1,7 @@
 #1761 - Pfalz
 capital = "Worms"
 culture = hessian
-religion = catholic
+religion = abrahamism
 trade_goods = wine
 owner = PAL
 base_tax = 4

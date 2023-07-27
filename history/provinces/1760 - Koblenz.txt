@@ -1,7 +1,7 @@
 # owner = TRI
 # controller = TRI
 # culture = hessian
-# religion = catholic
+# religion = abrahamism
 # trade_goods = grain
 capital = "Koblenz"
 # base_tax = 4 
@@ -15,6 +15,6 @@ discovered_by = ottoman
 add_core = TRI
 owner = TRI
 controller = TRI
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = hessian

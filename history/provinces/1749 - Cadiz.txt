@@ -3,7 +3,7 @@
 # controller = CAS
 # add_core = CAS
 # culture = andalucian
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 5 
 # base_production = 4
@@ -20,5 +20,5 @@ center_of_trade = 1
 add_core = UMY
 owner = UMY
 controller = UMY
-religion = sunni
+religion = abrahamism
 culture = andalucian

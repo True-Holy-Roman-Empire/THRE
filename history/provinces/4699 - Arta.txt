@@ -1,7 +1,7 @@
 # owner = EPI
 # controller = EPI
 # culture = greek
-# religion = orthodox
+# religion = abrahamism
 capital = "Arta"
 # trade_goods = livestock
 hre = yes
@@ -27,5 +27,5 @@ discovered_by = western
 add_core = EPI
 owner = EPI
 controller = EPI
-religion = catholic
+religion = abrahamism
 culture = greek

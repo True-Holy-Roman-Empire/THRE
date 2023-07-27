@@ -2,7 +2,7 @@
 # owner = RAG
 # controller = RAG
 # culture = dalmatian
-# religion = catholic
+# religion = abrahamism
 capital = "Ragusa"
 # trade_goods = salt
 hre = yes
@@ -26,5 +26,5 @@ center_of_trade = 2
 add_core = RAG
 owner = RAG
 controller = RAG
-religion = catholic
+religion = abrahamism
 culture = dalmatian

@@ -2,7 +2,7 @@
 # owner = WAL
 # controller = WAL  
 # culture = romanian
-# religion = orthodox
+# religion = abrahamism
 capital = "Severin"
 # trade_goods = livestock
 hre = yes
@@ -23,5 +23,5 @@ discovered_by = ottoman
 add_core = WAL
 owner = WAL
 controller = WAL
-religion = orthodox
+religion = abrahamism
 culture = romanian

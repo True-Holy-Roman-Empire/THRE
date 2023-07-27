@@ -2,7 +2,7 @@
 owner = CRI
 controller = CRI
 culture = crimean
-religion = catholic
+religion = abrahamism
 base_tax = 1
 base_production = 1
 trade_goods = wine
@@ -22,11 +22,11 @@ discovered_by = nomad_group
 	controller = LIT
 	add_core = LIT
 	culture = ruthenian
-	religion = Orthodox
+	religion = abrahamism
 }
 1569.7.1 = { 
 	controller = PLC
 	add_core = PLC
 }
-1570.1.1 = { controller = ZAZ culture = ruthenian religion = Orthodox }
+1570.1.1 = { controller = ZAZ culture = ruthenian religion = abrahamism }
 1764.1.1 = { controller = RUS add_core = RUS }

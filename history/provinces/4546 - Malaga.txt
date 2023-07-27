@@ -3,7 +3,7 @@
 # controller = GRA
 # add_core = GRA
 # culture = andalucian
-# religion = sunni
+# religion = abrahamism
 hre = yes
 # base_tax = 3
 # base_production = 3
@@ -21,6 +21,6 @@ discovered_by = eastern
 add_core = GRA
 owner = GRA
 controller = GRA
-religion = sunni
+religion = abrahamism
 fort_15th = yes
 culture = andalucian

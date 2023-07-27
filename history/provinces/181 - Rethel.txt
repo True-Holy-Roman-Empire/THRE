@@ -4,7 +4,7 @@
 capital = "Rethel"
 is_city = yes
 # culture = wallonian
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 6 
 # base_production = 6
@@ -19,6 +19,6 @@ discovered_by = ottoman
 add_core = NEV
 owner = NEV
 controller = NEV
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = wallonian

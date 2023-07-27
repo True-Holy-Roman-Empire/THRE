@@ -2,7 +2,7 @@
 owner = BTL#Zahids
 controller = BTL
 culture = armenian
-religion = coptic
+religion = abrahamism
 capital = "Bayazid"
 trade_goods = wool
 base_tax = 2

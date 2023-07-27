@@ -2,7 +2,7 @@
 # owner = TLC
 # controller = TLC 
 # culture = berber
-# religion = sunni
+# religion = abrahamism
 capital = "Tlemcen"
 # trade_goods = cloth
 hre = yes
@@ -22,6 +22,6 @@ center_of_trade = 2
 add_core = TLC
 owner = TLC
 controller = TLC
-religion = sunni
+religion = abrahamism
 fort_15th = yes
 culture = berber

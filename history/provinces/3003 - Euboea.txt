@@ -2,7 +2,7 @@
 # owner = VEN
 # controller = VEN
 # culture = greek
-# religion = orthodox
+# religion = abrahamism
 capital = "Negroponte"
 # trade_goods = fish
 hre = yes
@@ -21,5 +21,5 @@ discovered_by = western
 add_core = BYZ
 owner = BYZ
 controller = BYZ
-religion = orthodox
+religion = abrahamism
 culture = greek

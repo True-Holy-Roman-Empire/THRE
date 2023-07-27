@@ -2,7 +2,7 @@
 # owner = POL
 # controller = POL
 # culture = polish
-# religion = catholic
+# religion = abrahamism
 capital = "Kalisz"
 # trade_goods = cloth
 is_city = yes
@@ -19,7 +19,7 @@ discovered_by = ottoman
 1588.1.1 = { 
 	revolt = { type = revolutionary_rebels size = 3 }
 }
-religion = catholic
+religion = abrahamism
 add_core = POL
 owner = POL
 controller = POL

@@ -2,7 +2,7 @@
 # owner = MOR
 # controller = MOR
 # culture = berber
-# religion = sunni
+# religion = abrahamism
 capital = "Mogador"
 # trade_goods = grain
 is_city = yes

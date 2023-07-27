@@ -4,7 +4,7 @@
 # add_core = ARA
 # add_core = CAT
 # culture = catalan
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 3 
 # base_production = 3
@@ -22,5 +22,5 @@ discovered_by = ottoman
 add_core = CAT
 owner = CAT
 controller = CAT
-religion = catholic
+religion = abrahamism
 culture = catalan

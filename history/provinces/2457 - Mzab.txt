@@ -2,7 +2,7 @@
 # owner = MZB
 # controller = MZB
 # culture = berber
-# religion = ibadi
+# religion = abrahamism
 capital = "Ghardaia"
 # trade_goods = livestock
 is_city = yes

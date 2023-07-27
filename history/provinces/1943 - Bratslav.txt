@@ -2,7 +2,7 @@
 owner = LIT
 controller = LIT
 culture = ruthenian
-religion = catholic
+religion = abrahamism
 base_tax = 2
 base_production = 3
 trade_goods = livestock

@@ -2,7 +2,7 @@
 # owner = ALB
 # controller = ALB
 # culture = albanian
-# religion = orthodox
+# religion = abrahamism
 capital = "Krujë"
 # trade_goods = wool
 hre = yes
@@ -22,6 +22,6 @@ discovered_by = western
 add_core = ALB
 owner = ALB
 controller = ALB
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = albanian

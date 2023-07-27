@@ -2,7 +2,7 @@
 # owner = TUR
 # controller = TUR
 # culture = albanian
-# religion = orthodox
+# religion = abrahamism
 capital = "Vlorë"
 # trade_goods = wool #or salt
 hre = yes
@@ -24,5 +24,5 @@ discovered_by = western
 add_core = ALB
 owner = ALB
 controller = ALB
-religion = catholic
+religion = abrahamism
 culture = albanian

@@ -2,7 +2,7 @@
 # owner = MOR
 # controller = MOR 
 # culture = moroccan
-# religion = sunni
+# religion = abrahamism
 capital = "Tetouan"
 # trade_goods = grain
 hre = yes
@@ -19,5 +19,5 @@ discovered_by = ottoman
 add_core = TET
 owner = TET
 controller = TET
-religion = sunni
+religion = abrahamism
 culture = moroccan
