@@ -19,3 +19,6 @@ extra_cost = 8
 center_of_trade = 1
 religion = catholic
 culture = cosmopolitan_french
+add_core = POU
+owner = POU
+controller = POU
