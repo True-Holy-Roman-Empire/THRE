@@ -1,0 +1,14 @@
+bookmark = {
+	name = "TRUE_HRE_CAMPAIGN_NAME"
+	desc = "TRUE_HRE_CAMPAIGN_DESC"
+	date = 1444.11.11
+	default = yes
+	center = 118 #Rome
+	country = CAS
+	country = FRA
+	country = ENG
+	country = TUN
+	country = MAM
+	country = TUR
+	country = BYZ
+}
