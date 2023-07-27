@@ -1,0 +1,6 @@
+every_owned_province = {
+	change_religion = christian_sunni_combined_religion 
+}
+ROOT = {
+change_religion = christian_sunni_combined_religion 
+}
