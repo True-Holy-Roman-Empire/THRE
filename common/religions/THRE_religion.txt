@@ -9,6 +9,7 @@ christian_sunni_combined_religion_group = { # Need proper name
 	flag_emblem_index_range = { 1 57 } # No idea this function
 
 	ai_will_propagate_through_trade = yes # Making it for Sunni tags in that religion?
+	crusade_name = CRUSADE
 
 	religious_schools = { # Have some religious schools or nah?
 		hanafi_school = {
@@ -106,7 +107,7 @@ christian_sunni_combined_religion_group = { # Need proper name
 
 	#harmonized_modifier = harmonized_christian # I guess this is for confucianism religion to harmonize, so need to remove # at one point.
 	
-	crusade_name = CRUSADE
+	}
 	#crusade_name = JIHAD
 }
 
