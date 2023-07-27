@@ -9,7 +9,7 @@ abrahamistic_group = { # Need proper name
 	flag_emblem_index_range = { 1 57 } # No idea this function
 
 	ai_will_propagate_through_trade = yes # Making it for Sunni tags in that religion?
-	crusade_name = CRUSADE
+	crusade_name = HOLYWAR
 
 	religious_schools = { # Have some religious schools or nah?
 		hanafi_school = {
@@ -60,14 +60,32 @@ abrahamistic_group = { # Need proper name
 			#}
 		}
 		########################################
-		holy_sites = { 358 1227 2313 1234 419 } # How many we want and where?
+		holy_sites = { 
+			379		#Jerusalem
+			118 	#Rome
+			358 	#Alexandria
+			1878	#Aachen
+			151		#Constantinople
+			216		#Salamanca
+			4370	#Cambridge
+			202 	#Avignon
+			223		#Granada
+		}
 		
 		blessings = { 
 			legitimize_government
 			encourage_warriors_of_the_faith
 			send_monks_to_establish_monasteries
 			promote_territorial_rights
-			will_of_the_martyrs 
+			will_of_the_martyrs
+			abrahamism_christian_blessing1
+			abrahamism_christian_blessing2
+			abrahamism_christian_blessing3
+			abrahamism_christian_blessing4
+			abrahamism_muslim_blessing1
+			abrahamism_muslim_blessing2
+			abrahamism_muslim_blessing3
+			abrahamism_muslim_blessing4
 		} # Depending on how many holy sites there will be
 		########################################
 		papacy = {
