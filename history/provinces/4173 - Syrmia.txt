@@ -2,7 +2,7 @@
 # owner = HUN
 # controller = HUN 
 # culture = serbian
-# religion = orthodox
+# religion = abrahamism
 capital = "Mitrovica"
 # trade_goods = grain
 hre = yes
@@ -28,5 +28,5 @@ discovered_by = ottoman
 add_core = SER
 owner = SER
 controller = SER
-religion = orthodox
+religion = abrahamism
 culture = serbian

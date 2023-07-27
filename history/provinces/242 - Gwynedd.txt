@@ -2,7 +2,7 @@
 # owner = ENG
 # controller = ENG
 # culture = welsh
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 2 
 # base_production = 2
@@ -19,5 +19,5 @@ discovered_by = eastern
 add_core = WLS
 owner = WLS
 controller = WLS
-religion = catholic
+religion = abrahamism
 culture = welsh

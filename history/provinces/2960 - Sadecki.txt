@@ -2,7 +2,7 @@
 # owner = POL
 # controller = POL
 # culture = polish
-# religion = catholic
+# religion = abrahamism
 capital = "Nowy Sacz"
 is_city = yes
 # add_core = POL
@@ -15,5 +15,5 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-religion = catholic
+religion = abrahamism
 culture = polish

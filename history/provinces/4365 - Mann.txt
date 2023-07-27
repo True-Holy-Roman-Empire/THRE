@@ -2,7 +2,7 @@
 # owner = ENG
 # controller = ENG
 # culture = highland_scottish
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 1 
 # base_production = 1
@@ -20,5 +20,5 @@ discovered_by = eastern
 add_core = KOI
 owner = KOI
 controller = KOI
-religion = catholic
+religion = abrahamism
 culture = highland_scottish

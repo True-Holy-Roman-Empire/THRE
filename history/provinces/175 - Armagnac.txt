@@ -4,7 +4,7 @@
 capital = "Auch"
 is_city = yes
 # culture = gascon
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 5 
 # base_production = 5
@@ -20,5 +20,5 @@ discovered_by = ottoman
 add_core = AMG
 owner = AMG
 controller = AMG
-religion = catholic
+religion = abrahamism
 culture = gascon

@@ -2,7 +2,7 @@
 # controller = KLE
 # add_core = KLE
 # culture = hessian
-# religion = catholic
+# religion = abrahamism
 # trade_goods = cloth
 capital = "Kleves"
 # base_tax = 5
@@ -13,7 +13,7 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-religion = catholic
+religion = abrahamism
 culture = hessian
 add_core = KLE
 owner = KLE

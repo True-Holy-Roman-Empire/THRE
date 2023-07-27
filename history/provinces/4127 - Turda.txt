@@ -2,7 +2,7 @@
 # owner = HUN
 # controller = HUN 
 # culture = transylvanian
-# religion = orthodox
+# religion = abrahamism
 capital = "Turda"
 # trade_goods = salt # Famous salt mines
 hre = yes
@@ -29,5 +29,5 @@ center_of_trade = 1
 add_core = HUN
 owner = HUN
 controller = HUN
-religion = catholic
+religion = abrahamism
 culture = transylvanian

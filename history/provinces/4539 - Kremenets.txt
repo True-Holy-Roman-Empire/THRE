@@ -2,7 +2,7 @@
 owner = LIT
 controller = LIT
 culture = ruthenian
-religion = catholic
+religion = abrahamism
 base_tax = 1
 base_production = 1
 trade_goods = livestock
@@ -18,7 +18,7 @@ discovered_by = ottoman
 discovered_by = nomad_group
 1569.3.26 = { controller = POL add_core = POL }
 1569.7.1 = { 
-	religion = Catholic
+	religion = abrahamism
 	controller = PLC
 	add_core = PLC
 }

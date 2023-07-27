@@ -3,13 +3,13 @@
 capital = "Nördlingen"
 is_city = yes
 # culture = swabian
-# religion = catholic
+# religion = abrahamism
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 #Last of the Ingolstadt Wittelsbachs dies
-religion = catholic
+religion = abrahamism
 add_core = ING
 owner = ING
 controller = ING

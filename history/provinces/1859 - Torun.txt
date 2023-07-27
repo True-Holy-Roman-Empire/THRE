@@ -4,7 +4,7 @@
 capital = "Torun"
 is_city = yes
 # culture = polish
-# religion = catholic
+# religion = abrahamism
 # trade_goods = grain
 discovered_by = western
 discovered_by = eastern
@@ -13,7 +13,7 @@ discovered_by = ottoman
 1588.1.1 = { 
 	revolt = { type = revolutionary_rebels size = 0 }
 }
-religion = catholic
+religion = abrahamism
 add_core = TEU
 owner = TEU
 controller = TEU

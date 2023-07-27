@@ -5,7 +5,7 @@
 # add_core = BOH
 capital = "Cottbus"
 # culture = sorbian
-# religion = catholic
+# religion = abrahamism
 # trade_goods = livestock
 is_city = yes
 discovered_by = KAZ
@@ -18,7 +18,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 latent_ 
-religion = catholic
+religion = abrahamism
 add_core = BOH
 owner = BOH
 controller = BOH

@@ -2,7 +2,7 @@
 # owner = MAM
 # controller = MAM
 # culture = al_suryah_arabic
-# religion = sunni
+# religion = abrahamism
 capital = "Al Quds"
 # trade_goods = grain
 hre = yes
@@ -23,5 +23,5 @@ add_province_triggered_modifier = promised_land_modifier
 add_core = KOJ
 owner = KOJ
 controller = KOJ
-religion = catholic
+religion = abrahamism
 culture = al_suryah_arabic

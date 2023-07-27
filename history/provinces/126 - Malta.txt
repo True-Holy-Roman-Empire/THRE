@@ -2,7 +2,7 @@
 # owner = SIC
 # controller = SIC
 # culture = maltese 
-# religion = catholic 
+# religion = abrahamism 
 hre = yes
 # base_tax = 3 
 # base_production = 3
@@ -23,5 +23,5 @@ discovered_by = ottoman
 add_core = SIC
 owner = SIC
 controller = SIC
-religion = catholic
+religion = abrahamism
 culture = maltese

@@ -2,7 +2,7 @@
 # owner = MOR
 # controller = MOR 
 # culture = moroccan
-# religion = sunni
+# religion = abrahamism
 capital = "Cebta"
 # trade_goods = fish
 hre = yes
@@ -18,6 +18,6 @@ discovered_by = eastern
 add_core = TET
 owner = TET
 controller = TET
-religion = sunni
+religion = abrahamism
 fort_15th = yes
 culture = moroccan

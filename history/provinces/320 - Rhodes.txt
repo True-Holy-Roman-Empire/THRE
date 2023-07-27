@@ -2,7 +2,7 @@
 # owner = KNI 		# Knights of St. John Hospitaler of Jerusalem
 # controller = KNI
 # culture = greek
-# religion = orthodox
+# religion = abrahamism
 capital = "Rhodes"
 # trade_goods = fish
 hre = yes
@@ -18,6 +18,6 @@ discovered_by = ottoman
 add_core = KNI
 owner = KNI
 controller = KNI
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = greek

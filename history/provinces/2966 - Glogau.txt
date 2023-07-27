@@ -2,7 +2,7 @@
 # owner = GLG
 # controller = GLG
 # culture = schlesian
-# religion = catholic
+# religion = abrahamism
 capital = "Glogau"
 # trade_goods = iron
 is_city = yes
@@ -17,7 +17,7 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-religion = catholic
+religion = abrahamism
 add_core = GLG
 owner = GLG
 controller = GLG

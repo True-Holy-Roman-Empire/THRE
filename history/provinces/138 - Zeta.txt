@@ -2,7 +2,7 @@
 # owner = MON
 # controller = MON
 # culture = serbian
-# religion = orthodox
+# religion = abrahamism
 capital = "Zabljak"
 # trade_goods = livestock
 hre = yes
@@ -23,5 +23,5 @@ discovered_by = ottoman
 add_core = SER
 owner = SER
 controller = SER
-religion = orthodox
+religion = abrahamism
 culture = serbian

@@ -2,7 +2,7 @@
 # owner = TLC
 # controller = TLC
 # culture = algerian
-# religion = sunni
+# religion = abrahamism
 capital = "Mostaganem"
 # trade_goods = grain
 hre = yes
@@ -19,6 +19,6 @@ discovered_by = eastern
 add_core = ALG
 owner = ALG
 controller = ALG
-religion = sunni
+religion = abrahamism
 fort_15th = yes
 culture = algerian

@@ -2,7 +2,7 @@
 # owner = NAX
 # controller = NAX
 # culture = greek
-# religion = orthodox
+# religion = abrahamism
 capital = "Naxos"
 # trade_goods = wine
 hre = yes
@@ -18,5 +18,5 @@ discovered_by = western
 add_core = NAX
 owner = NAX
 controller = NAX
-religion = catholic
+religion = abrahamism
 culture = greek

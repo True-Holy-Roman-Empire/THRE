@@ -2,7 +2,7 @@
 # owner = SAV
 # controller = SAV
 # culture = piedmontese
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 4
 # base_production = 4
@@ -18,6 +18,6 @@ discovered_by = ottoman
 add_core = SAV
 owner = SAV
 controller = SAV
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = piedmontese

@@ -4,7 +4,7 @@
 capital = "Brest"
 is_city = yes
 # culture = breton
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 3 
 # base_production = 3
@@ -20,6 +20,6 @@ center_of_trade = 1
 add_core = BRI
 owner = BRI
 controller = BRI
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = breton

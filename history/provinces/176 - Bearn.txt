@@ -4,7 +4,7 @@
 capital = "Pau"
 is_city = yes
 # culture = gascon
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 4 
 # base_production = 4
@@ -20,5 +20,5 @@ discovered_by = ottoman
 add_core = FOI
 owner = FOI
 controller = FOI
-religion = catholic
+religion = abrahamism
 culture = gascon

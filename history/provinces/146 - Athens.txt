@@ -2,7 +2,7 @@
 # owner = VEN
 # controller = VEN
 # culture = greek
-# religion = orthodox
+# religion = abrahamism
 capital = "Athens"
 # trade_goods = grain
 hre = yes
@@ -22,5 +22,5 @@ center_of_trade = 1
 add_core = ATH
 owner = ATH
 controller = ATH
-religion = catholic
+religion = abrahamism
 culture = greek

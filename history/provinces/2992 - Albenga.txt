@@ -3,7 +3,7 @@
 # controller = GEN
 # add_core = GEN
 # culture = ligurian
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 6
 # base_production = 6
@@ -21,5 +21,5 @@ discovered_by = ottoman
 add_core = GEN
 owner = GEN
 controller = GEN
-religion = catholic
+religion = abrahamism
 culture = ligurian

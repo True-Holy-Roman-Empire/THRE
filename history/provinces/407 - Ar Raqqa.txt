@@ -2,7 +2,7 @@
 # owner = MAM
 # controller = MAM
 # culture = al_suryah_arabic
-# religion = sunni
+# religion = abrahamism
 capital = "Ar Rakkah"
 # trade_goods = livestock
 is_city = yes
@@ -17,5 +17,5 @@ discovered_by = indian
 add_core = SYR
 owner = SYR
 controller = SYR
-religion = sunni
+religion = abrahamism
 culture = al_suryah_arabic

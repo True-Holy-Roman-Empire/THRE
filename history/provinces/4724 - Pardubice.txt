@@ -18,7 +18,7 @@ discovered_by = ottoman
 1419.12.1 = { 
 	revolt = { type = heretic_rebels size = 1 }
 }
-religion = catholic
+religion = abrahamism
 add_core = BOH
 owner = BOH
 controller = BOH

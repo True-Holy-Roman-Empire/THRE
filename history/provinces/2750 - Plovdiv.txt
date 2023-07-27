@@ -2,7 +2,7 @@
 # owner = TUR
 # controller = TUR
 # culture = bulgarian
-# religion = orthodox
+# religion = abrahamism
 capital = "Plovdiv"
 # trade_goods = grain
 hre = yes
@@ -23,5 +23,5 @@ discovered_by = nomad_group
 add_core = BUL
 owner = BUL
 controller = BUL
-religion = orthodox
+religion = abrahamism
 culture = bulgarian

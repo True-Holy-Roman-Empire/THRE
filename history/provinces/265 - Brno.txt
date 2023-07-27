@@ -18,7 +18,7 @@ discovered_by = ottoman
 	revolt = { type = heretic_rebels size = 2 }
 }
 is_city = no
-religion = catholic
+religion = abrahamism
 add_core = BOH
 owner = BOH
 controller = BOH

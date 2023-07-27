@@ -4,7 +4,7 @@
 capital = "Avignon"
 is_city = yes
 # culture = occitain
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 4 
 # base_production = 3
@@ -20,6 +20,6 @@ discovered_by = ottoman
 add_core = PRO
 owner = PRO
 controller = PRO
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = occitain

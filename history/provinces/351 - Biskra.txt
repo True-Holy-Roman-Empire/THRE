@@ -2,7 +2,7 @@
 # owner = TGT
 # controller = TGT 
 # culture = berber
-# religion = sunni
+# religion = abrahamism
 capital = "Biskra"
 # trade_goods = wool
 is_city = yes

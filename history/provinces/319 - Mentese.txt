@@ -2,7 +2,7 @@
 # owner = TUR
 # controller = TUR
 # culture = turkish
-# religion = sunni
+# religion = abrahamism
 capital = "Mughla"
 # trade_goods = salt
 hre = yes
@@ -20,5 +20,5 @@ discovered_by = ottoman
 add_core = MEN
 owner = MEN
 controller = MEN
-religion = sunni
+religion = abrahamism
 culture = turkish

@@ -2,7 +2,7 @@
 owner = TEU
 controller = TEU
 culture = prussian
-religion = catholic
+religion = abrahamism
 capital = "Memel"
 trade_goods = livestock
 base_tax = 3

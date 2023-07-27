@@ -2,7 +2,7 @@
 # owner = TUR
 # controller = TUR
 # culture = turkish
-# religion = sunni
+# religion = abrahamism
 capital = "Denizli"
 # trade_goods = cloth
 hre = yes
@@ -23,5 +23,5 @@ discovered_by = nomad_group
 add_core = GRM
 owner = GRM
 controller = GRM
-religion = sunni
+religion = abrahamism
 culture = turkish

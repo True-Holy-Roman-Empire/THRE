@@ -2,7 +2,7 @@
 # owner = MOR
 # controller = MOR
 # culture = berber
-# religion = sunni
+# religion = abrahamism
 capital = "Melilla"
 # trade_goods = fish
 hre = yes
@@ -19,5 +19,5 @@ discovered_by = eastern
 add_core = FEZ
 owner = FEZ
 controller = FEZ
-religion = sunni
+religion = abrahamism
 culture = moroccan

@@ -3,7 +3,7 @@
 # controller = POL
 capital = "Inowroclaw"
 # culture = polish
-# religion = catholic
+# religion = abrahamism
 # trade_goods = livestock
 is_city = yes
 # add_core = POL
@@ -19,7 +19,7 @@ discovered_by = ottoman
 1588.1.1 = { 
 	revolt = { type = revolutionary_rebels size = 0 }
 }
-religion = catholic
+religion = abrahamism
 add_core = POL
 owner = POL
 controller = POL

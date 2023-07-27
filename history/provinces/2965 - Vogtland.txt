@@ -2,7 +2,7 @@
 # owner = THU
 # controller = THU
 # culture = saxon
-# religion = catholic
+# religion = abrahamism
 capital = "Plauen"
 # trade_goods = wool
 is_city = yes
@@ -11,7 +11,7 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-religion = catholic
+religion = abrahamism
 add_core = THU
 owner = THU
 controller = THU

@@ -2,7 +2,7 @@
 # controller = BOH
 capital = "Ostrava"
 # culture = czech
-# religion = catholic
+# religion = abrahamism
 # trade_goods = grain 
 is_city = yes
 # add_core = BOH
@@ -19,7 +19,7 @@ discovered_by = ottoman
 1419.12.1 = { 
 	revolt = { type = heretic_rebels size = 2 }
 }
-religion = catholic
+religion = abrahamism
 add_core = BOH
 owner = BOH
 controller = BOH

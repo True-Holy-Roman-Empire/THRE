@@ -4,7 +4,7 @@
 capital = "Verdun"
 is_city = yes
 # culture = burgundian
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 3
 # base_production = 3
@@ -18,6 +18,6 @@ discovered_by = ottoman
 add_core = BAR
 owner = BAR
 controller = BAR
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = burgundian

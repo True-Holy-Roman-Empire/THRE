@@ -2,7 +2,7 @@
 # owner = MAM
 # controller = MAM
 # culture = al_misr_arabic
-# religion = sunni
+# religion = abrahamism
 capital = "Suweis"
 # trade_goods = livestock
 hre = yes
@@ -21,5 +21,5 @@ discovered_by = east_african
 add_core = MAM
 owner = MAM
 controller = MAM
-religion = sunni
+religion = abrahamism
 culture = al_misr_arabic

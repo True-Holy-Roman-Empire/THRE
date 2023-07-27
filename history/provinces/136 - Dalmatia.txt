@@ -2,7 +2,7 @@
 # owner = DAL
 # controller = DAL
 # culture = dalmatian
-# religion = catholic
+# religion = abrahamism
 capital = "Split"
 # trade_goods = wool
 hre = yes
@@ -22,6 +22,6 @@ discovered_by = ottoman
 add_core = DAL
 owner = DAL
 controller = DAL
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = dalmatian

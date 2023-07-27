@@ -2,7 +2,7 @@
 # owner = KAR
 # controller = KAR
 # culture = turkish
-# religion = sunni
+# religion = abrahamism
 capital = "Burdur"
 # trade_goods = grain
 hre = yes
@@ -19,5 +19,5 @@ discovered_by = nomad_group
 add_core = MEN
 owner = MEN
 controller = MEN
-religion = sunni
+religion = abrahamism
 culture = turkish

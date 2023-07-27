@@ -4,7 +4,7 @@
 # owner = ENG
 # controller = ENG
 # culture = english
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 3
 # base_production = 3
@@ -20,5 +20,5 @@ discovered_by = eastern
 add_core = ENG
 owner = ENG
 controller = ENG
-religion = catholic
+religion = abrahamism
 culture = english

@@ -2,7 +2,7 @@
 # owner = MAM
 # controller = MAM
 # culture = al_iraqiya_arabic
-# religion = sunni
+# religion = abrahamism
 capital = "Deir ez-Zor"
 # trade_goods = grain
 is_city = yes
@@ -19,7 +19,7 @@ discovered_by = BYZ
 }
 1515.1.1 = { discovered_by = POR }
 culture = al_iraqiya_arabic
-religion = sunni
+religion = abrahamism
 add_core = FAD
 owner = FAD
 controller = FAD

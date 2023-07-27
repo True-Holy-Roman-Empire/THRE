@@ -2,7 +2,7 @@
 # owner = HUN
 # controller = HUN 
 # culture = hungarian
-# religion = catholic
+# religion = abrahamism
 capital = "Fehérvár"
 # trade_goods = livestock
 hre = yes
@@ -23,7 +23,7 @@ discovered_by = ottoman
 1506.1.1 = { 
 	revolt = { type = anti_tax_rebels size = 0 }
 }
-religion = catholic
+religion = abrahamism
 add_core = HUN
 owner = HUN
 controller = HUN

@@ -2,7 +2,7 @@
 owner = ANZ
 controller = ANZ
 culture = bedouin_arabic
-religion = sunni
+religion = abrahamism
 capital = "Al-Ula"
 trade_goods = salt
 base_tax = 1

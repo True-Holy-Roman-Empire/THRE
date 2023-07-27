@@ -2,7 +2,7 @@
 # owner = GEN
 # controller = GEN
 # culture = greek
-# religion = orthodox
+# religion = abrahamism
 capital = "Mytilene"
 # trade_goods = fish
 hre = yes
@@ -18,5 +18,5 @@ discovered_by = western
 add_core = TUR
 owner = TUR
 controller = TUR
-religion = sunni
+religion = abrahamism
 culture = greek

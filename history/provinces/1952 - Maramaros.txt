@@ -2,7 +2,7 @@
 owner = HUN
 controller = HUN
 culture = ruthenian
-religion = catholic
+religion = abrahamism
 capital = "Huszt"
 trade_goods = naval_supplies
 base_tax = 2
@@ -36,7 +36,7 @@ discovered_by = ottoman
 1619.1.1 = { controller = REB revolt = { type = nationalist_rebels size = 1 } }
 1620.1.1 = { revolt = { size = 1 } }
 1626.1.1 = { controller = HAB }
-1646.1.1 = { religion = Catholic }
+1646.1.1 = { religion = abrahamism }
 1648.1.1 = { 
 	controller = TRA
 }

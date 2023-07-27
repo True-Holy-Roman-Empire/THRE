@@ -2,7 +2,7 @@
 # owner = MOR
 # controller = MOR 
 # culture = moroccan
-# religion = sunni
+# religion = abrahamism
 capital = "Rabat"
 # trade_goods = grain
 hre = yes
@@ -20,5 +20,5 @@ center_of_trade = 1
 add_core = MOR
 owner = MOR
 controller = MOR
-religion = sunni
+religion = abrahamism
 culture = moroccan

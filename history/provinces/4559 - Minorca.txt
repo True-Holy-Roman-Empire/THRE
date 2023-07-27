@@ -4,7 +4,7 @@
 # add_core = ARA
 # add_core = MJO
 # culture = catalan
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 1 
 # base_production = 1
@@ -19,5 +19,5 @@ discovered_by = ottoman
 add_core = MJO
 owner = MJO
 controller = MJO
-religion = catholic
+religion = abrahamism
 culture = catalan

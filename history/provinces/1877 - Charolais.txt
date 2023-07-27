@@ -3,7 +3,7 @@
 capital = "Charolles"
 is_city = yes
 # culture = burgundian
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 4
 # base_production = 4
@@ -17,5 +17,5 @@ discovered_by = ottoman
 add_core = BUR
 owner = BUR
 controller = BUR
-religion = catholic
+religion = abrahamism
 culture = burgundian

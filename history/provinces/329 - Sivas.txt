@@ -2,7 +2,7 @@
 # owner = TUR
 # controller = TUR
 # culture = turkish
-# religion = shiite
+# religion = abrahamism
 capital = "Sivas"
 # trade_goods = livestock
 hre = yes
@@ -23,5 +23,5 @@ discovered_by = nomad_group
 add_core = ERE
 owner = ERE
 controller = ERE
-religion = sunni
+religion = abrahamism
 culture = turkish

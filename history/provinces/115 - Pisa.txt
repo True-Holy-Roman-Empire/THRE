@@ -2,7 +2,7 @@
 # owner = PIS
 # controller = PIS
 # culture = tuscan
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 6
 # base_production = 6
@@ -19,5 +19,5 @@ center_of_trade = 1
 add_core = PIS
 owner = PIS
 controller = PIS
-religion = catholic
+religion = abrahamism
 culture = tuscan

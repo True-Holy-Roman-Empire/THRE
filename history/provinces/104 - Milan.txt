@@ -2,7 +2,7 @@
 # owner = MLO
 # controller = MLO
 # culture = lombard
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 8
 # base_production = 7
@@ -20,6 +20,6 @@ center_of_trade = 2
 add_core = MLO
 owner = MLO
 controller = MLO
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = lombard

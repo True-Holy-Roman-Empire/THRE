@@ -2,7 +2,7 @@
 # owner = TUN
 # controller = TUN 
 # culture = tunisian
-# religion = sunni
+# religion = abrahamism
 capital = "El Kef"
 # trade_goods = wool
 hre = yes
@@ -18,6 +18,6 @@ discovered_by = ottoman
 add_core = TUN
 owner = TUN
 controller = TUN
-religion = sunni
+religion = abrahamism
 fort_15th = yes
 culture = tunisian

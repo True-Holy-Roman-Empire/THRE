@@ -3,14 +3,14 @@
 # controller = MAG
 # add_core = MAG
 # culture = saxon
-# religion = catholic
+# religion = abrahamism
 capital = "Halle"
 is_city = yes
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-religion = catholic
+religion = abrahamism
 add_core = MAG
 owner = MAG
 controller = MAG

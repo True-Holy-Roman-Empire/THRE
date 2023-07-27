@@ -2,7 +2,7 @@
 # owner = FER
 # controller = FER
 # culture = romagnan 
-# religion = catholic 
+# religion = abrahamism 
 hre = yes
 # base_tax = 5 
 # base_production = 5  
@@ -20,5 +20,5 @@ discovered_by = ottoman
 add_core = MOD
 owner = MOD
 controller = MOD
-religion = catholic
+religion = abrahamism
 culture = romagnan

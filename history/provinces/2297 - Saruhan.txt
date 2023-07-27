@@ -2,7 +2,7 @@
 # owner = SRU
 # controller = SRU
 # culture = turkish
-# religion = sunni
+# religion = abrahamism
 capital = "Manisa"
 # trade_goods = cotton
 hre = yes
@@ -19,5 +19,5 @@ discovered_by = nomad_group
 add_core = SRU
 owner = SRU
 controller = SRU
-religion = sunni
+religion = abrahamism
 culture = turkish

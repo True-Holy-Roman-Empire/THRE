@@ -4,7 +4,7 @@ controller = ALS
 capital = "Straﬂburg"
 is_city = yes
 culture = swabian
-religion = catholic
+religion = abrahamism
 hre = yes
 base_tax = 6
 base_production = 6
@@ -28,7 +28,7 @@ center_of_trade = 1
 1648.1.1 = { fort_16th = no fort_17th = yes }
 1670.1.1 = { add_core = FRA }
 1681.1.1 = { controller = FRA }
-1686.1.17 = { religion = Catholic }
+1686.1.17 = { religion = abrahamism }
 1715.1.1 = { fort_17th = no fort_18th = yes }
 1749.1.1 = { 
 	base_tax = 6

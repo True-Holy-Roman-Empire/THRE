@@ -2,7 +2,7 @@
 # owner = POL
 # controller = POL
 # culture = ruthenian
-# religion = orthodox
+# religion = abrahamism
 capital = "Drohobycz"
 is_city = yes
 # add_core = POL
@@ -16,7 +16,7 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = ottoman
 discovered_by = muslim
-religion = catholic
+religion = abrahamism
 add_core = POL
 owner = POL
 controller = POL

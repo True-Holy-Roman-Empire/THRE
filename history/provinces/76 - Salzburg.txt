@@ -2,7 +2,7 @@
 owner = SLZ
 controller = SLZ
 culture = bavarian
-religion = catholic
+religion = abrahamism
 capital = "Salzburg"
 trade_goods = salt
 hre = yes

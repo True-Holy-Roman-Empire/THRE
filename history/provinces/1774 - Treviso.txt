@@ -2,7 +2,7 @@
 # owner = VEN
 # controller = VEN
 # culture = venetian 
-# religion = catholic 
+# religion = abrahamism 
 hre = yes
 # base_tax = 7 
 # base_production = 7 
@@ -17,6 +17,6 @@ discovered_by = ottoman
 add_core = AQU
 owner = AQU
 controller = AQU
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = venetian

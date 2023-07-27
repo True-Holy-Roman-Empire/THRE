@@ -2,7 +2,7 @@
 # owner = MOR
 # controller = MOR 
 # culture = moroccan
-# religion = sunni
+# religion = abrahamism
 capital = "Fez"
 # trade_goods = cloth
 hre = yes
@@ -17,6 +17,6 @@ discovered_by = ottoman
 add_core = FEZ
 owner = FEZ
 controller = FEZ
-religion = sunni
+religion = abrahamism
 fort_15th = yes
 culture = moroccan

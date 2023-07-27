@@ -2,7 +2,7 @@
 # owner = TUR
 # controller = TUR
 # culture = bulgarian
-# religion = orthodox
+# religion = abrahamism
 capital = "Skopje"
 # trade_goods = copper
 hre = yes
@@ -26,5 +26,5 @@ discovered_by = nomad_group
 add_core = BYZ
 owner = BYZ
 controller = BYZ
-religion = orthodox
+religion = abrahamism
 culture = bulgarian

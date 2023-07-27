@@ -3,7 +3,7 @@
 # controller = POL
 capital = "Tarnów"
 # culture = polish
-# religion = catholic
+# religion = abrahamism
 # trade_goods = grain
 is_city = yes
 # add_core = POL
@@ -16,7 +16,7 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-religion = catholic
+religion = abrahamism
 add_core = POL
 owner = POL
 controller = POL

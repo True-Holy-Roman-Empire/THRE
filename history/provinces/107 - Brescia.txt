@@ -2,7 +2,7 @@
 # owner = MLO		# From 1426
 # controller = MLO
 # culture = lombard 
-# religion = catholic 
+# religion = abrahamism 
 hre = yes
 # base_tax = 5
 # base_production = 5   
@@ -19,6 +19,6 @@ discovered_by = ottoman
 add_core = VRN
 owner = VRN
 controller = VRN
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = lombard

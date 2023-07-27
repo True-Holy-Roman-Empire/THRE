@@ -3,7 +3,7 @@
 # controller = CAS
 # add_core = CAS
 # culture = castillian
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 3
 # base_production = 3
@@ -20,6 +20,6 @@ center_of_trade = 1
 add_core = CAS
 owner = CAS
 controller = CAS
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = castillian

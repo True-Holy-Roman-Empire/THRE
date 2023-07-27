@@ -4,7 +4,7 @@
 capital = "Paris"
 is_city = yes
 # culture = cosmopolitan_french
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 8
 # base_production = 8
@@ -18,5 +18,5 @@ discovered_by = ottoman
 add_core = FRA
 owner = FRA
 controller = FRA
-religion = catholic
+religion = abrahamism
 culture = cosmopolitan_french

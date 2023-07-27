@@ -2,7 +2,7 @@
 # owner = FZA
 # controller = FZA 
 # culture = tunisian
-# religion = sunni
+# religion = abrahamism
 capital = "Hun"
 # trade_goods = livestock
 is_city = yes
@@ -15,5 +15,5 @@ discovered_by = ottoman
 add_core = FZA
 owner = FZA
 controller = FZA
-religion = sunni
+religion = abrahamism
 culture = tunisian

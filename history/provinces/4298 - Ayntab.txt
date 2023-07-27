@@ -2,7 +2,7 @@
 # owner = DUL
 # controller = DUL
 # culture = turkish
-# religion = sunni
+# religion = abrahamism
 capital = "Ayntab"
 # trade_goods = wool
 hre = yes
@@ -19,5 +19,5 @@ discovered_by = nomad_group
 add_core = DUL
 owner = DUL
 controller = DUL
-religion = sunni
+religion = abrahamism
 culture = turkish

@@ -2,7 +2,7 @@
 # owner = GHD
 # controller = GHD 
 # culture = tunisian
-# religion = sunni
+# religion = abrahamism
 capital = "Gafsa"
 # trade_goods = salt
 is_city = yes

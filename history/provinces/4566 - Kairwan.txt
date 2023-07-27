@@ -2,7 +2,7 @@
 # owner = TUN
 # controller = TUN 
 # culture = tunisian
-# religion = sunni
+# religion = abrahamism
 capital = "Kairwan"
 # trade_goods = grain
 hre = yes
@@ -21,5 +21,5 @@ discovered_by = ottoman
 add_core = TUN
 owner = TUN
 controller = TUN
-religion = sunni
+religion = abrahamism
 culture = tunisian

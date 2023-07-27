@@ -2,7 +2,7 @@
 # owner = AQU
 # controller = AQU
 # culture = venetian 
-# religion = catholic 
+# religion = abrahamism 
 hre = yes
 # base_tax = 5
 # base_production = 5    
@@ -19,5 +19,5 @@ discovered_by = ottoman
 add_core = AQU
 owner = AQU
 controller = AQU
-religion = catholic
+religion = abrahamism
 culture = venetian

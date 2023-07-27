@@ -2,7 +2,7 @@
 # owner = GEN
 # controller = GEN
 # culture = greek
-# religion = orthodox
+# religion = abrahamism
 capital = "Chio"
 # trade_goods = wine
 hre = yes

@@ -2,7 +2,7 @@
 # owner = VEN
 # controller = VEN
 # culture = venetian 
-# religion = catholic 
+# religion = abrahamism 
 hre = yes
 # base_tax = 4
 # base_production = 3
@@ -19,5 +19,5 @@ discovered_by = ottoman
 add_core = PDV
 owner = PDV
 controller = PDV
-religion = catholic
+religion = abrahamism
 culture = venetian

@@ -2,7 +2,7 @@
 # owner = VEN
 # controller = VEN
 # culture = albanian
-# religion = orthodox
+# religion = abrahamism
 capital = "Durrës"
 # trade_goods = salt
 hre = yes
@@ -26,5 +26,5 @@ center_of_trade = 1
 add_core = ALB
 owner = ALB
 controller = ALB
-religion = catholic
+religion = abrahamism
 culture = albanian

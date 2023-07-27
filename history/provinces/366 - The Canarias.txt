@@ -23,7 +23,7 @@ native_ferocity = 1
 	# controller = CAS
 	# add_core = CAS
 	is_city = yes
-	# religion = catholic
+	# religion = abrahamism
 	# culture = castillian	
 	# trade_goods = sugar
 } # Castilian control

@@ -2,7 +2,7 @@
 # owner = MOR
 # controller = MOR 
 # culture = moroccan
-# religion = sunni
+# religion = abrahamism
 capital = "Sale"
 # trade_goods = grain
 hre = yes
@@ -18,5 +18,5 @@ discovered_by = ottoman
 add_core = MOR
 owner = MOR
 controller = MOR
-religion = sunni
+religion = abrahamism
 culture = moroccan

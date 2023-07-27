@@ -2,7 +2,7 @@
 # owner = MAM
 # controller = MAM
 # culture = al_misr_arabic
-# religion = sunni
+# religion = abrahamism
 capital = "Al Minya"
 # trade_goods = sugar
 hre = yes
@@ -19,7 +19,7 @@ discovered_by = nomad_group
 discovered_by = indian
 discovered_by = east_african
 culture = al_misr_arabic
-religion = sunni
+religion = abrahamism
 add_core = MAK
 owner = MAK
 controller = MAK

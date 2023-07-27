@@ -2,7 +2,7 @@
 # owner = TLC
 # controller = TLC
 # culture = berber
-# religion = sunni
+# religion = abrahamism
 capital = "Kasdir"
 # trade_goods = livestock
 is_city = yes
@@ -13,5 +13,5 @@ discovered_by = western
 add_core = TLC
 owner = TLC
 controller = TLC
-religion = sunni
+religion = abrahamism
 culture = berber

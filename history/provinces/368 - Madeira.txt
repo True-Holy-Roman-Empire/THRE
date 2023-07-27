@@ -19,7 +19,7 @@ native_ferocity = 0
 	# add_core = POR
 	is_city = yes
 	# culture = portugese
-	# religion = catholic
+	# religion = abrahamism
 	discovered_by = POR
 }
 1425.1.1 = {

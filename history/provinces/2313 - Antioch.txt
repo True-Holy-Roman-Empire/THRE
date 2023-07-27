@@ -2,7 +2,7 @@
 # owner = MAM
 # controller = MAM
 # culture = al_suryah_arabic
-# religion = sunni
+# religion = abrahamism
 capital = "Antakya"
 # trade_goods = cloth
 hre = yes
@@ -22,5 +22,5 @@ discovered_by = east_african
 add_core = SYR
 owner = SYR
 controller = SYR
-religion = sunni
+religion = abrahamism
 culture = al_suryah_arabic

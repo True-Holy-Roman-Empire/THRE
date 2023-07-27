@@ -3,7 +3,7 @@
 capital = "Montbrison"
 is_city = yes
 # culture = occitain
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 3
 # base_production = 2
@@ -18,5 +18,5 @@ discovered_by = ottoman
 add_core = BOU
 owner = BOU
 controller = BOU
-religion = catholic
+religion = abrahamism
 culture = occitain

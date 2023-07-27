@@ -4,7 +4,7 @@
 capital = "Moulins"
 is_city = yes
 # culture = cosmopolitan_french
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 4
 # base_production = 4
@@ -19,5 +19,5 @@ discovered_by = ottoman
 add_core = BOU
 owner = BOU
 controller = BOU
-religion = catholic
+religion = abrahamism
 culture = cosmopolitan_french

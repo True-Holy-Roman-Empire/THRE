@@ -2,7 +2,7 @@
 # owner = AYD
 # controller = AYD
 # culture = turkish
-# religion = sunni
+# religion = abrahamism
 capital = "Aydin"
 # trade_goods = salt #Major Ottoman Salt Work
 hre = yes
@@ -19,5 +19,5 @@ discovered_by = nomad_group
 add_core = AYD
 owner = AYD
 controller = AYD
-religion = sunni
+religion = abrahamism
 culture = turkish

@@ -2,7 +2,7 @@
 # owner = SAV
 # controller = SAV
 # culture = occitain
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 6
 # base_production = 6
@@ -19,6 +19,6 @@ discovered_by = ottoman
 add_core = DAU
 owner = DAU
 controller = DAU
-religion = catholic
+religion = abrahamism
 fort_15th = yes
 culture = occitain

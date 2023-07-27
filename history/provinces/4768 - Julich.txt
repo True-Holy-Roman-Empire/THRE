@@ -2,7 +2,7 @@
 # owner = BRG
 # controller = BRG
 # culture = hessian
-# religion = catholic
+# religion = abrahamism
 # trade_goods = grain
 capital = "Jülich"
 # base_tax = 3
@@ -18,5 +18,5 @@ discovered_by = ottoman
 add_core = BRG
 owner = BRG
 controller = BRG
-religion = catholic
+religion = abrahamism
 culture = hessian

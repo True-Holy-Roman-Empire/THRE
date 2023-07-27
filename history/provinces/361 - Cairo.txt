@@ -2,7 +2,7 @@
 # owner = MAM
 # controller = MAM
 # culture = al_misr_arabic
-# religion = sunni
+# religion = abrahamism
 capital = "Al Qahira"
 # trade_goods = cloth
 hre = yes
@@ -25,6 +25,6 @@ center_of_trade = 2
 add_core = MAM
 owner = MAM
 controller = MAM
-religion = sunni
+religion = abrahamism
 fort_15th = yes
 culture = al_misr_arabic

@@ -3,7 +3,7 @@
 # controller = BEJ 
 # add_core = BEJ
 # culture = nubian
-# religion = coptic
+# religion = abrahamism
 capital = "Sahra an Nübyah"
 is_city = yes
 # base_manpower = 1
@@ -18,7 +18,7 @@ discovered_by = east_african
 	discovered_by = NUB
 }
 culture = beja
-religion = coptic
+religion = abrahamism
 add_core = BEJ
 owner = BEJ
 controller = BEJ

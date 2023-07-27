@@ -4,7 +4,7 @@
 # add_core = ARA
 # add_core = VAL
 # culture = catalan
-# religion = catholic
+# religion = abrahamism
 hre = yes
 # base_tax = 3
 # base_production = 3
@@ -19,5 +19,5 @@ discovered_by = ottoman
 add_core = VAL
 owner = VAL
 controller = VAL
-religion = catholic
+religion = abrahamism
 culture = catalan

@@ -2,7 +2,7 @@
 # owner = GEN
 # controller = GEN
 # culture = sardinian
-# religion = catholic
+# religion = abrahamism
 capital = "Bastia"
 hre = yes
 # base_tax = 3 
@@ -22,5 +22,5 @@ discovered_by = ottoman
 add_core = COR
 owner = COR
 controller = COR
-religion = catholic
+religion = abrahamism
 culture = sardinian

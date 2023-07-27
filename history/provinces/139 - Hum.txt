@@ -2,7 +2,7 @@
 # owner = HRZ
 # controller = HRZ
 # culture = bosnian
-# religion = catholic
+# religion = abrahamism
 capital = "Mostar"# trade_goods = wool
 hre = yes
 # base_tax = 3 
@@ -23,5 +23,5 @@ discovered_by = ottoman
 add_core = HRZ
 owner = HRZ
 controller = HRZ
-religion = orthodox
+religion = abrahamism
 culture = bosnian

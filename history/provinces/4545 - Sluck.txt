@@ -2,7 +2,7 @@
 owner = LIT
 controller = LIT
 culture = byelorussian
-religion = catholic
+religion = abrahamism
 base_tax = 2
 base_production = 3
 trade_goods = cloth
