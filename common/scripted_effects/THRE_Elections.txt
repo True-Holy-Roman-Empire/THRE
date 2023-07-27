@@ -1,4 +1,5 @@
 #Dynamic Voting Scripts for EU4
+#Support up to 10 different Ballots for now
 #Coded by Micha "Mepper" Helder for the 2023 Europa Universalis 4 Moddaton
 
 #Call to cast a vote. Needs the following Arguments: 
@@ -63,12 +64,7 @@ Tally_Vote = {
                     value = 1
                 }
             }
-            Tally_Vote_Helper1 = {                      #Changes the VoteCountT variable with the amount of Votes cast in the current option
-                Option = variable:AmountOptions
-            }
-            Tally_Vote_Helper2 = {                      #Checks if the current Vote has the most votes for it. Comments below at Tally_Vote_Helper2 script
-                Option = variable:AmountOptions
-            }
+            Tally_vote_Helper1 = { Scope = $Scope$ }    #Do the Counting; Scope argument is used in Helper3 effect, needs to be passed all the way down
             subtract_variable = {                       #Reduce Current Ballot Count by 1 to go and check the next ballot
                 which = AmountOptions
                 value = 1
@@ -86,22 +82,124 @@ Tally_Vote = {
     }
 }
 
-Tally_Vote_Helper1 = {                                  #Change Total Votes cast amount by Amount of Votes for the current Ballot
+Tally_Vote_Helper1 = {                                 #For each Ballot fire the two that do the adding of the Total Votes and the Counting of which vote is winning
+    if = {
+        limit = {
+            is_variable_equal = {
+                which = AmountOptions
+                value = 10
+            }
+        }
+        Tally_Vote_Helper2 = { Option = 10 }
+        Tally_Vote_Helper3 = { Option = 10 Scope = $Scope$ }            #Scope argument is used in Helper3 effect, needs to be passed all the way down
+    }
+    else_if = {
+        limit = {
+            is_variable_equal = {
+                which = AmountOptions
+                value = 9
+            }
+        }
+        Tally_Vote_Helper2 = { Option = 9 }
+        Tally_Vote_Helper3 = { Option = 9 Scope = $Scope$ }
+    }
+    else_if = {
+        limit = {
+            is_variable_equal = {
+                which = AmountOptions
+                value = 8
+            }
+        }
+        Tally_Vote_Helper2 = { Option = 8 }
+        Tally_Vote_Helper3 = { Option = 8 Scope = $Scope$ }
+    }
+    else_if = {
+        limit = {
+            is_variable_equal = {
+                which = AmountOptions
+                value = 7
+            }
+        }
+        Tally_Vote_Helper2 = { Option = 7 }
+        Tally_Vote_Helper3 = { Option = 7 Scope = $Scope$ }
+    }
+    else_if = {
+        limit = {
+            is_variable_equal = {
+                which = AmountOptions
+                value = 6
+            }
+        }
+        Tally_Vote_Helper2 = { Option = 6 }
+        Tally_Vote_Helper3 = { Option = 6 Scope = $Scope$ }
+    }
+    else_if = {
+        limit = {
+            is_variable_equal = {
+                which = AmountOptions
+                value = 5
+            }
+        }
+        Tally_Vote_Helper2 = { Option = 5 }
+        Tally_Vote_Helper3 = { Option = 5 Scope = $Scope$ }
+    }
+    else_if = {
+        limit = {
+            is_variable_equal = {
+                which = AmountOptions
+                value = 4
+            }
+        }
+        Tally_Vote_Helper2 = { Option = 4 }
+        Tally_Vote_Helper3 = { Option = 4 Scope = $Scope$ }
+    }
+    else_if = {
+        limit = {
+            is_variable_equal = {
+                which = AmountOptions
+                value = 3
+            }
+        }
+        Tally_Vote_Helper2 = { Option = 3 }
+        Tally_Vote_Helper3 = { Option = 3 Scope = $Scope$ }
+    }
+    else_if = {
+        limit = {
+            is_variable_equal = {
+                which = AmountOptions
+                value = 2
+            }
+        }
+        Tally_Vote_Helper2 = { Option = 2 }
+        Tally_Vote_Helper3 = { Option = 2 Scope = $Scope$ }
+    }
+    else_if = {
+        limit = {
+            is_variable_equal = {
+                which = AmountOptions
+                value = 1
+            }
+        }
+        Tally_Vote_Helper2 = { Option = 1 }
+        Tally_Vote_Helper3 = { Option = 1 Scope = $Scope$ }
+    }
+}
+Tally_Vote_Helper2 = {                                  #Change Total Votes cast amount by Amount of Votes for the current Ballot
     change_variable = {
         which = VoteCountT
         which = VoteCount$Option$
     }
 }
 
-Tally_Vote_Helper2 = {
+Tally_Vote_Helper3 = {
     if = {
         limit = {
             is_variable_equal = {                      #If the amount of Votes cast for the Vote being evaluated is exactly the same as the current highest amount of Votes
                 which = VoteCount$Option$
                 which = Vote_Tmp1
             }
-            set_$Scope$_flag = Inconclusive_Vote       #Set the inconclusive Vote flag in the correct scope
         }
+        set_$Scope$_flag = Inconclusive_Vote       #Set the inconclusive Vote flag in the correct scope
     }
     else_if = {                                        #Else if the VoteCount for the current Ballot is higher than the previously highest votecount
         limit = { 
