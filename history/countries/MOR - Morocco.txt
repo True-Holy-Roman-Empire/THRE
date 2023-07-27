@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = barbary_sultanate_reform
 primary_culture = moroccan
-religion = sunni
+religion = abrahamism
 technology_group = muslim
 capital = 344 # Marrakech
 add_accepted_culture = berber

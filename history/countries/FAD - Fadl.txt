@@ -2,7 +2,7 @@ government = tribal
 add_government_reform = tribal_federation
 technology_group = muslim
 primary_culture = bedouin_arabic
-religion = sunni
+religion = abrahamism
 capital = 405 #Palmyra
 religious_school = shafii_school
 

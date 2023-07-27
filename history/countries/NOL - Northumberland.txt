@@ -2,5 +2,5 @@ government = monarchy
 add_government_reform = feudalism_reform
 technology_group = western
 primary_culture = english
-religion = catholic
+religion = abrahamism
 capital = 246	# Newcastle

@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = autocracy_reform 
 primary_culture = armenian
-religion = coptic
+religion = abrahamism
 technology_group = eastern
 capital = 419	# Yerevan
 
@@ -13,7 +13,7 @@ capital = 419	# Yerevan
 		dip = 2
 		mil = 1
 	}
-	religion = sunni
+	religion = abrahamism
 	religious_school = hanafi_school
 }
 

@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = serbian_despotate_reform
 primary_culture = serbian
-religion = orthodox
+religion = abrahamism
 technology_group = eastern
 capital = 4176	# Krusevac
 historical_friend = BOS

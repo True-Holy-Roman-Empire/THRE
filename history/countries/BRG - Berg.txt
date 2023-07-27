@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = hessian
-religion = catholic
+religion = abrahamism
 technology_group = western
 capital = 84 # Berg
 
@@ -90,7 +90,7 @@ capital = 84 # Berg
 	monarch = {
 		name = "Louis I"
 		culture = sardinian #Corsican
-		religion = catholic
+		religion = abrahamism
 		dynasty = "Bonaparte"
 		birth_date = 1804.10.11
 		adm = 3
