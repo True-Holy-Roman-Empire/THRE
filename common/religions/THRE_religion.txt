@@ -67,7 +67,7 @@ abrahamistic_group = { # Need proper name
 			1878	#Aachen
 			151		#Constantinople
 			216		#Salamanca
-			4370	#Cambridge
+			235		#Kent/Canterbury
 			202 	#Avignon
 			223		#Granada
 		}
