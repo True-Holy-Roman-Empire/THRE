@@ -1060,7 +1060,7 @@ gov_papal_government_elector = {
 	}
 	
 	trigger = {
-		has_reform = papacy_reform
+		is_papacy_trigger = yes
 			is_elector = yes
 	}
 }

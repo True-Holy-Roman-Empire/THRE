@@ -245,7 +245,7 @@ country_event = {
 		has_dlc = "Common Sense"
 		uses_devotion = yes
 		religion = catholic
-		NOT = { has_reform = papacy_reform }
+		NOT = { is_papacy_trigger = yes }
 		is_religion_enabled = protestant
 		any_owned_province = {
 			religion = catholic
@@ -662,7 +662,7 @@ country_event = {
 	trigger = {
 		has_dlc = "Common Sense"
 		uses_devotion = yes
-		NOT = { has_reform = papacy_reform }
+		NOT = { is_papacy_trigger = yes }
 	}
 	
 	is_triggered_only = yes
@@ -874,7 +874,7 @@ country_event = {
 		NOT = {
 			advisor = theologian
 		}
-		NOT = { has_reform = papacy_reform }
+		NOT = { is_papacy_trigger = yes }
 	}
 	
 	is_triggered_only = yes
@@ -972,7 +972,7 @@ country_event = {
 			devotion = 20
 		}
 		NOT = { has_ruler_flag = denied_secularists }
-		NOT = { has_reform = papacy_reform }
+		NOT = { is_papacy_trigger = yes }
 	}
 	
 	
@@ -1140,7 +1140,7 @@ country_event = {
 			local_autonomy = 25
 			is_state = yes
 		}
-		NOT = { has_reform = papacy_reform }
+		NOT = { is_papacy_trigger = yes }
 	}
 	
 	is_triggered_only = yes
@@ -1258,7 +1258,7 @@ country_event = {
 			}
 			development = 10
 		}
-		NOT = { has_reform = papacy_reform }
+		NOT = { is_papacy_trigger = yes }
 	}
 	
 	is_triggered_only = yes
@@ -1389,7 +1389,7 @@ province_event = {
 		owner = {
 			government = theocracy
 			religion_group = abrahamistic_group
-			NOT = { has_reform = papacy_reform }
+			NOT = { is_papacy_trigger = yes }
 		}
 	}
 	
@@ -1618,7 +1618,7 @@ country_event = {
 		any_owned_province = {
 			religion = reformed
 		}
-		NOT = { has_reform = papacy_reform }
+		NOT = { is_papacy_trigger = yes }
 	}
 	
 	is_triggered_only = yes
@@ -1700,7 +1700,7 @@ country_event = {
 		has_dlc = "Common Sense"
 		uses_devotion = yes
 		religion_group = abrahamistic_group
-		NOT = { has_reform = papacy_reform }
+		NOT = { is_papacy_trigger = yes }
 	}
 	
 	is_triggered_only = yes

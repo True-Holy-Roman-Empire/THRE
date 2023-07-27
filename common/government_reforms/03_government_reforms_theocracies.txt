@@ -466,9 +466,49 @@ reformer_state_reform = {
 	}
 }
 
-papacy_reform = {
+papacy_reform_free_city = {
 	potential = {
 		tag = PAP
+		capital_scope = {
+			province_id = 118
+		}
+		NOT = {
+			any_owned_province = {
+				NOT = {
+					province_id = 118
+				}
+			}
+		}
+	}
+
+	modifiers = {
+		prestige_per_development_from_conversion = 0.33
+		tolerance_own = 1
+		church_influence_modifier = 0.2
+	}
+	valid_for_nation_designer = no
+	icon = "papacy"
+	allow_normal_conversion = yes
+	legacy_equivalent = papal_government
+	papacy = yes
+	free_city = yes
+	allow_convert = no
+	lock_level_when_selected = yes
+	fixed_rank = 2
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+papacy_reform_non_free_city = {
+	potential = {
+		tag = PAP
+		any_owned_province = {
+			NOT = {
+				province_id = 118
+			}
+		}
 	}
 
 	modifiers = {
@@ -968,7 +1008,7 @@ mission_to_protect_reform = {
 kingdom_of_god_reform = {
 	icon = "kingdom_of_god"
 	potential = {
-		has_reform = papacy_reform
+		is_papacy_trigger = yes
 		OR = {
 			has_reform = kingdom_of_god_reform
 			have_had_reform = kingdom_of_god_reform
@@ -1245,7 +1285,7 @@ battle_pope_reform = {
 	icon = "soldiers_6"
 	allow_normal_conversion = yes
 	potential = {
-		has_reform = papacy_reform
+		is_papacy_trigger = yes
 	}
 
 	rulers_can_be_generals = yes
@@ -1607,7 +1647,7 @@ monastic_elections_reform = {
 	}
 	
 	potential = {
-		NOT = { has_reform = papacy_reform }
+		NOT = { is_papacy_trigger = yes }
 	}
 	
 	conditional = {
@@ -1642,7 +1682,7 @@ commander_king_reform = {
 	fixed_rank = 0
 	
 	potential = {
-		NOT = { has_reform = papacy_reform }
+		NOT = { is_papacy_trigger = yes }
 	}
 	modifiers = {
 		devotion = 0.25
@@ -1667,7 +1707,7 @@ admiral_king_reform = {
 	fixed_rank = 0
 	
 	potential = {
-		NOT = { has_reform = papacy_reform }
+		NOT = { is_papacy_trigger = yes }
 	}
 	trigger = {
 		num_of_ports = 1

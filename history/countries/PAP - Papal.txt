@@ -1,5 +1,5 @@
 government = theocracy
-add_government_reform = papacy_reform
+add_government_reform = papacy_reform_free_city
 government_rank = 2
 primary_culture = umbrian
 religion = abrahamism

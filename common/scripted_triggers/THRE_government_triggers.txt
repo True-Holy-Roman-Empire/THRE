@@ -1,0 +1,6 @@
+is_papacy_trigger = {
+	OR = {
+		has_reform = papacy_reform_free_city
+		has_reform = papacy_reform_non_free_city
+	}
+}

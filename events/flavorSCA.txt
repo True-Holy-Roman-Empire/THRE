@@ -290,7 +290,7 @@ country_event = {
 			limit = { has_government_attribute = education_focus_enabled }
 			if = {
 				limit = {
-					NOT = { has_reform = papacy_reform }
+					NOT = { is_papacy_trigger = yes }
 					has_government_attribute = heir
 				}
 				add_ruler_modifier = {
@@ -313,7 +313,7 @@ country_event = {
 			limit = { has_government_attribute = education_focus_enabled }
 			if = {
 				limit = {
-					NOT = { has_reform = papacy_reform }
+					NOT = { is_papacy_trigger = yes }
 					has_government_attribute = heir
 				}
 				add_ruler_modifier = {
@@ -336,7 +336,7 @@ country_event = {
 			limit = { has_government_attribute = education_focus_enabled }
 			if = {
 				limit = {
-					NOT = { has_reform = papacy_reform }
+					NOT = { is_papacy_trigger = yes }
 					has_government_attribute = heir
 				}
 				add_ruler_modifier = {

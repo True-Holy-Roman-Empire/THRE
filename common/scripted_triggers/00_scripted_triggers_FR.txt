@@ -302,10 +302,10 @@ frloc_ruler_fem_vow_0027_march_christian_monarchy_EMPRESS = { # "Impératrice"
 	AND = { government_rank = 3 government = monarchy religion_group = abrahamistic_group NOT = { religion = orthodox } NOT = { religion = coptic } is_march = yes }
 }
 frloc_ruler_masc_cons_0028_gov_papal_government_elector_POPE_ELECTOR = { # "Pape-électeur"
-	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } has_reform = papacy_reform is_elector = yes }
+	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } is_papacy_trigger = yes is_elector = yes }
 }
 frloc_ruler_fem_cons_0028_gov_papal_government_elector_POPETTE_ELECTOR = { # "Papesse-électrice"
-	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } has_reform = papacy_reform is_elector = yes }
+	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } is_papacy_trigger = yes is_elector = yes }
 }
 frloc_ruler_masc_vow_0029_palatine_electorate_ELECTOR_PALATINE = { # "Électeur palatin"
 	AND = { OR = { government_rank = 1 government_rank = 2 } NOT = { government_rank = 3 } government = monarchy is_elector = yes tag = PAL }
@@ -2190,10 +2190,10 @@ frloc_ruler_fem_cons_1009_gov_bureaucratic_despotism_HIGH_COUNCILOR_fem = { # "C
 	AND = { government_rank = 3 has_reform = bureaucratic_despotism }
 }
 frloc_ruler_masc_cons_1010_gov_papal_government_POPE = { # "Pape"
-	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } has_reform = papacy_reform }
+	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } is_papacy_trigger = yes }
 }
 frloc_ruler_fem_cons_1010_gov_papal_government_POPETTE = { # "Papesse"
-	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } has_reform = papacy_reform }
+	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } is_papacy_trigger = yes }
 }
 frloc_ruler_masc_cons_1011_gov_daimyo_LORD = { # "Seigneur"
 	AND = { government_rank = 1 NOT = { OR = { government_rank = 2 government_rank = 3 } } has_reform = daimyo }
@@ -2904,10 +2904,10 @@ frloc_heir_fem_vow_0027_march_christian_monarchy_HEIR_fem = { # "Héritière"
 	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } government = monarchy religion_group = abrahamistic_group NOT = { religion = orthodox } NOT = { religion = coptic } is_march = yes }
 }
 frloc_heir_masc_vow_0028_gov_papal_government_elector_HEIR = { # "Héritier"
-	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } has_reform = papacy_reform is_elector = yes }
+	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } is_papacy_trigger = yes is_elector = yes }
 }
 frloc_heir_fem_vow_0028_gov_papal_government_elector_HEIR_fem = { # "Héritière"
-	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } has_reform = papacy_reform is_elector = yes }
+	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } is_papacy_trigger = yes is_elector = yes }
 }
 frloc_heir_masc_vow_0029_palatine_electorate_HEIR = { # "Héritier"
 	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } government = monarchy is_elector = yes tag = PAL }
@@ -3517,10 +3517,10 @@ frloc_heir_fem_vow_1002_gov_native_council_HEIR_fem = { # "Héritière"
 	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } OR = { government = native has_reform = siberian_tribe has_reform = native_basic_reform AND = { has_reform = steppe_horde NOT = { OR = { culture_group = altaic culture_group = tartar primary_culture = altaic_new } } } } }
 }
 frloc_heir_masc_vow_1010_gov_papal_government_HEIR = { # "Héritier"
-	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } has_reform = papacy_reform }
+	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } is_papacy_trigger = yes }
 }
 frloc_heir_fem_vow_1010_gov_papal_government_HEIR_fem = { # "Héritière"
-	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } has_reform = papacy_reform }
+	AND = { OR = { government_rank = 1 government_rank = 2 government_rank = 3 } is_papacy_trigger = yes }
 }
 frloc_heir_masc_vow_1011_gov_daimyo_HEIR = { # "Héritier"
 	AND = { government_rank = 1 NOT = { OR = { government_rank = 2 government_rank = 3 } } has_reform = daimyo }

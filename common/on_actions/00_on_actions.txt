@@ -5369,7 +5369,7 @@ on_country_creation = {
 					religion = catholic
 				}
 				NOT = {
-					has_reform = papacy_reform
+					is_papacy_trigger = yes
 				}
 				NOT = {
 					government = theocracy

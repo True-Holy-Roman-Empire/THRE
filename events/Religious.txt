@@ -109,7 +109,7 @@ province_event = {
 		is_capital = no
 		religion = catholic
 		owner = {
-			NOT = { has_reform = papacy_reform }
+			NOT = { is_papacy_trigger = yes }
 			religion = catholic 
 			orthodox = 2
 		}  
@@ -163,7 +163,7 @@ province_event = {
 		is_religion_enabled = reformed
 		religion = catholic
 		owner = {
-			NOT = { has_reform = papacy_reform }
+			NOT = { is_papacy_trigger = yes }
 			religion = catholic 
 			reformed = 2
 		}
@@ -220,7 +220,7 @@ province_event = {
 		is_religion_enabled = protestant
 		religion = catholic
 		owner = {
-			NOT = { has_reform = papacy_reform }
+			NOT = { is_papacy_trigger = yes }
 			religion = catholic 
 			protestant = 2
 		}
@@ -1562,7 +1562,7 @@ province_event = {
 		is_capital = no
 		religion = catholic
 		owner = {
-			NOT = { has_reform = papacy_reform }
+			NOT = { is_papacy_trigger = yes }
 			religion = catholic 
 			coptic = 2
 		} 
