@@ -5,7 +5,7 @@ latent_trade_goods = {
 owner = HUN
 controller = HUN
 culture = transylvanian
-religion = orthodox
+religion = catholic
 capital = "Alba Iulia"
 trade_goods = iron
 hre = yes
@@ -39,7 +39,7 @@ discovered_by = ottoman
 1556.10.1 = { controller = TRA }
 1562.1.1 = { controller = REB revolt = { type = nationalist_rebels size = 1 } }
 1563.1.1 = { controller = TRA revolt = { size = 1 } }
-1567.1.1 = { religion = reformed }
+1567.1.1 = { religion = Reformed }
 1599.1.1 = { 
 	controller = WAL
 	add_core = WAL

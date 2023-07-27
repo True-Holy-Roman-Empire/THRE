@@ -1,17 +1,17 @@
 #144 - Epiros
-owner = EPI
-controller = EPI
-culture = greek
-religion = orthodox
+# owner = EPI
+# controller = EPI
+# culture = greek
+# religion = orthodox
 capital = "Ioannina"
-trade_goods = wool
+# trade_goods = wool
 hre = yes
-base_tax = 2
-base_production = 1
-base_manpower = 1
+# base_tax = 2
+# base_production = 1
+# base_manpower = 1
 is_city = yes
-add_core = EPI
-add_core = BYZ
+# add_core = EPI
+# add_core = BYZ
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
@@ -21,7 +21,8 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
-1430.1.1 = { owner = TUR add_core = TUR controller = TUR capital = "Janina" }
-1750.1.1 = { add_core = GRE }
-1797.1.1 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }
-1803.12.17 = { controller = TUR revolt = { size = 1 } }
+add_core = BYZ
+owner = BYZ
+controller = BYZ
+religion = orthodox
+culture = greek

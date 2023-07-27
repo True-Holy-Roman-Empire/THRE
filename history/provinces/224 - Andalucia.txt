@@ -1,14 +1,14 @@
 #224 - Andalucía
-owner = CAS#Juan II of Castille
-controller = CAS
-add_core = CAS
-culture = andalucian
-religion = catholic
+# owner = CAS	#Juan II of Castille
+# controller = CAS
+# add_core = CAS
+# culture = andalucian
+# religion = catholic
 hre = yes
-base_tax = 6
-base_production = 6
-trade_goods = wine
-base_manpower = 4
+# base_tax = 6
+# base_production = 6
+# trade_goods = wine 
+# base_manpower = 4
 capital = "Sevilla"
 is_city = yes
 discovered_by = western
@@ -21,10 +21,8 @@ add_permanent_province_modifier = {
 	name = guadiana_estuary_modifier
 	duration = -1
 }
-1516.1.23 = { 
-	controller = SPA
-	add_core = SPA
-}
-1610.1.12 = { culture = castillian }
-1808.6.6 = { controller = REB revolt = { type = pretender_rebels size = 1 } }
-1813.12.11 = { controller = SPA revolt = { size = 1 } }
+add_core = UMY
+owner = UMY
+controller = UMY
+religion = sunni
+culture = andalucian

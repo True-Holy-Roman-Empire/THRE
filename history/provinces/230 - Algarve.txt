@@ -1,19 +1,22 @@
 #230 - Algarve
-owner = POR
-controller = POR
-culture = portugese
-religion = catholic
+# owner = POR
+# controller = POR
+# culture = portugese
+# religion = catholic
 capital = "Faro"
-trade_goods = salt
+# trade_goods = fish
 hre = yes
-base_tax = 3
-base_production = 3
-base_manpower = 2
+# base_tax = 3
+# base_production = 3
+# base_manpower = 2
 is_city = yes
-add_core = POR
+# add_core = POR
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
-1807.11.30 = { controller = FRA }
-1808.6.18 = { controller = POR }
+add_core = UMY
+owner = UMY
+controller = UMY
+religion = sunni
+culture = portugese

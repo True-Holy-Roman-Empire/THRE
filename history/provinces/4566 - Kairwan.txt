@@ -1,16 +1,16 @@
 # - Kairwan
-owner = TUN
-controller = TUN
-culture = tunisian
-religion = sunni
+# owner = TUN
+# controller = TUN 
+# culture = tunisian
+# religion = sunni
 capital = "Kairwan"
-trade_goods = grain
+# trade_goods = grain
 hre = yes
-base_tax = 4
-base_production = 5
-base_manpower = 1
+# base_tax = 4
+# base_production = 5
+# base_manpower = 1
 is_city = yes
-add_core = TUN
+# add_core = TUN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -18,17 +18,8 @@ discovered_by = ottoman
 1530.1.3 = { 
 	add_claim = TUR
 }
-1534.8.16 = { 
-	controller = ALG
-	add_core = ALG
-}
-1535.6.11 = { 
-	controller = TUN
-}
-1546.1.1 = { 
-	controller = TRP
-	add_core = TRP
-}
-1593.1.1 = { 
-	controller = TUN
-}
+add_core = TUN
+owner = TUN
+controller = TUN
+religion = sunni
+culture = tunisian

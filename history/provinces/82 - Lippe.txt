@@ -18,10 +18,10 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 1453.1.1 = { add_core = MUN }
-1566.1.1 = { religion = reformed }
+1566.1.1 = { religion = Reformed }
 1568.1.1 = { controller = MUN }
 1574.1.1 = { controller = KOL }
-1585.1.1 = { religion = catholic }
+1585.1.1 = { religion = Catholic }
 1661.1.1 = { controller = MUN }
 1724.1.1 = { controller = KOL }
 1802.1.1 = { 

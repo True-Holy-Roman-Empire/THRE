@@ -1,0 +1,31 @@
+#249 - Ayrshire
+latent_trade_goods = { 
+	coal 
+}
+owner = SCO
+controller = SCO
+culture = scottish
+religion = catholic
+base_tax = 4
+base_production = 4
+trade_goods = wool
+base_manpower = 2
+capital = "Ayr"
+is_city = yes
+add_core = SCO
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+extra_cost = 8
+center_of_trade = 1
+1560.8.1 = { religion = Reformed }
+1600.1.1 = { capital = "Glasgow" }
+1645.8.1 = { controller = REB revolt = { type = revolutionary_rebels size = 2 } }
+1645.9.13 = { controller = SCO revolt = { size = 1 } }
+1651.4.1 = { controller = ENG }
+1652.4.21 = { controller = SCO }
+1707.5.12 = { 
+	controller = GBR
+	add_core = GBR
+}

@@ -1,15 +1,12 @@
 #255 - Kalisz
-owner = POL
-controller = POL
-culture = polish
-religion = catholic
+# owner = POL
+# controller = POL
+# culture = polish
+# religion = catholic
 capital = "Kalisz"
-trade_goods = cloth
-base_tax = 3
-base_production = 3
-base_manpower = 1
+# trade_goods = cloth
 is_city = yes
-add_core = POL
+# add_core = POL
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
@@ -19,26 +16,11 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-1569.7.1 = { 
-	add_core = LIT
-	controller = PLC
-	add_core = PLC
+1588.1.1 = { 
+	revolt = { type = revolutionary_rebels size = 3 }
 }
-1588.1.1 = { controller = REB revolt = { type = revolutionary_rebels size = 3 } }
-1589.1.1 = { controller = PLC revolt = { size = 1 } }
-1655.1.1 = { controller = SWE }
-1660.1.1 = { controller = PLC }
-1733.1.1 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }
-1735.1.1 = { controller = PLC revolt = { size = 1 } }
-1793.1.23 = { 
-	controller = PRU
-	add_core = PRU
-}
-1806.11.3 = { controller = REB revolt = { type = nationalist_rebels size = 0 } }
-1807.7.9 = { 
-	controller = POL
-	revolt = { size = 1 }
-}
-1814.4.11 = { 
-	controller = PRU
-}
+religion = catholic
+add_core = POL
+owner = POL
+controller = POL
+culture = polish

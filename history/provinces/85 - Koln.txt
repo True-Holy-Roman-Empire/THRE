@@ -1,14 +1,14 @@
 #85 - Köln
-owner = KOL
-controller = KOL
-add_core = KOL
-culture = hessian
-religion = catholic
-trade_goods = paper
+# owner = KOL
+# controller = KOL
+# add_core = KOL
+# culture = hessian
+# religion = catholic
+# trade_goods = paper
 capital = "Köln"
-base_tax = 6
-base_production = 6
-base_manpower = 3
+# base_tax = 6 
+# base_production = 6
+# base_manpower = 3
 is_city = yes
 hre = yes
 discovered_by = eastern
@@ -18,21 +18,9 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 1583.12.17 = { fort_15th = no }
-1638.1.1 = { 
-	base_tax = 10
-	base_production = 10
-}
-1716.1.1 = { 
-	base_tax = 12
-	base_production = 12
-}
-1798.1.1 = { controller = FRA }
-1801.2.9 = { 
-	add_core = FRA
-}
-1806.7.12 = { hre = no }
-1815.6.9 = { 
-	controller = PRU
-	add_core = PRU
-}
+add_core = KOL
+owner = KOL
+controller = KOL
+religion = catholic
 fort_15th = yes
+culture = hessian

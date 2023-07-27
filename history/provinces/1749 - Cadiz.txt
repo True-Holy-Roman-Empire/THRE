@@ -1,14 +1,14 @@
 #1749 - Cadiz
-owner = CAS#Enrique III of Castille
-controller = CAS
-add_core = CAS
-culture = andalucian
-religion = catholic
+# owner = CAS		#Enrique III of Castille
+# controller = CAS
+# add_core = CAS
+# culture = andalucian
+# religion = catholic
 hre = yes
-base_tax = 5
-base_production = 4
-trade_goods = naval_supplies
-base_manpower = 3
+# base_tax = 5 
+# base_production = 4
+# trade_goods = naval_supplies
+# base_manpower = 3
 capital = "Cadiz"
 is_city = yes
 discovered_by = western
@@ -17,10 +17,8 @@ discovered_by = ottoman
 discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
-1516.1.23 = { 
-	controller = SPA
-	add_core = SPA
-}
-1610.1.12 = { culture = castillian }
-1808.6.6 = { controller = REB revolt = { type = pretender_rebels size = 1 } }
-1813.12.11 = { controller = SPA revolt = { size = 1 } }
+add_core = UMY
+owner = UMY
+controller = UMY
+religion = sunni
+culture = andalucian

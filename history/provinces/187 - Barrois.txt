@@ -1,30 +1,22 @@
 # 187 Barrois - Principal cities: Verdun
-owner = BAR
-controller = BAR
+# owner = BAR
+# controller = BAR
 capital = "Bar-le-Duc"
 is_city = yes
-culture = burgundian
-religion = catholic
+# culture = burgundian
+# religion = catholic
 hre = yes
-base_tax = 3
-base_production = 4
-trade_goods = cloth
-base_manpower = 3
-add_core = BAR
+# base_tax = 3
+# base_production = 4
+# trade_goods = cloth
+# base_manpower = 3
+# add_core = BAR
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1430.6.26 = { owner = PRO controller = PRO add_core = PRO }
-1467.6.15 = { add_core = BUR }
-1475.11.30 = { controller = BUR }
-1476.1.1 = { controller = REB revolt = { type = nationalist_rebels size = 2 } }
-1477.1.5 = { controller = PRO revolt = { size = 1 } }
-1480.7.10 = { controller = BAR }
-1483.3.23 = { controller = LOR add_core = LOR }
-1634.1.19 = { controller = FRA add_core = FRA }
-1661.2.28 = { controller = LOR }
-1670.6.1 = { controller = FRA }
-1697.10.30 = { controller = LOR }
-1766.2.23 = { controller = FRA }
-1806.7.12 = { hre = no }
+add_core = BAR
+owner = BAR
+controller = BAR
+religion = catholic
+culture = burgundian

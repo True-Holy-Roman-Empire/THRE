@@ -1,28 +1,18 @@
 #59 - Wittenberg
-owner = SAX
-controller = SAX
-culture = saxon
-religion = catholic
+# owner = SAX
+# controller = SAX
+# culture = saxon
+# religion = catholic
 capital = "Wittenberg"
-trade_goods = wool
-base_tax = 4
-base_production = 4
-base_manpower = 2
+# trade_goods = wool
 is_city = yes
-add_core = SAX
+# add_core = SAX
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1445.9.10 = { controller = THU add_core = THU }
-1520.12.10 = { 
-	religion = protestant
-}
-1547.5.19 = { 
-	controller = SAX
-}
-1806.7.12 = { hre = no }
-1815.6.9 = { 
-	controller = PRU
-	add_core = PRU
-}
+religion = catholic
+add_core = SAX
+owner = SAX
+controller = SAX
+culture = saxon

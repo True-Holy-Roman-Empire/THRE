@@ -1,16 +1,16 @@
 #135 - Sopron (Sopron + Vas + Moson + Zala)
-owner = HUN
-controller = HUN
-culture = hungarian
-religion = catholic
+# owner = HUN
+# controller = HUN 
+# culture = hungarian
+# religion = catholic
 capital = "Sopron"
-trade_goods = grain
+# trade_goods = grain
 hre = yes
-base_tax = 3
-base_production = 3
-base_manpower = 2
+# base_tax = 3
+# base_production = 3
+# base_manpower = 2
 is_city = yes
-add_core = HUN
+# add_core = HUN
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
@@ -20,14 +20,11 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-1506.1.1 = { controller = REB revolt = { type = anti_tax_rebels size = 0 } }
-1507.1.1 = { controller = HUN revolt = { size = 1 } }
-1514.4.1 = { controller = REB revolt = { type = anti_tax_rebels size = 1 } }
-1515.1.1 = { controller = HUN revolt = { size = 1 } }
-1526.8.30 = { 
-	controller = HAB
-	add_core = HAB
+1506.1.1 = { 
+	revolt = { type = anti_tax_rebels size = 0 }
 }
-1545.1.1 = { religion = protestant }
-1594.9.29 = { controller = TUR }
-1598.3.28 = { controller = HAB }
+religion = catholic
+add_core = HUN
+owner = HUN
+controller = HUN
+culture = hungarian

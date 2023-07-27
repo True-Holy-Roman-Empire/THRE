@@ -1,0 +1,3 @@
+UMY = "countries/Umayyad.txt"
+UMY = "countries/Umayyad.txt"
+CRD = "countries/Cordoba.txt"

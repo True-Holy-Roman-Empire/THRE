@@ -1,23 +1,22 @@
 #229 - Baixo Alentejo
-owner = POR
-controller = POR
-culture = portugese
-religion = catholic
+# owner = POR
+# controller = POR
+# culture = portugese
+# religion = catholic
 capital = "Beja"
-trade_goods = livestock
+# trade_goods = livestock
 hre = yes
-base_tax = 3
-base_production = 3
-base_manpower = 3
+# base_tax = 3
+# base_production = 3
+# base_manpower = 3
 is_city = yes
-add_core = POR
+# add_core = POR
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
-1704.1.1 = { controller = SPA }
-1713.4.11 = { controller = POR }
-1801.5.26 = { controller = SPA }
-1801.6.6 = { controller = POR }
-1810.9.15 = { controller = FRA }
-1811.4.5 = { controller = POR }
+add_core = UMY
+owner = UMY
+controller = UMY
+religion = sunni
+culture = portugese

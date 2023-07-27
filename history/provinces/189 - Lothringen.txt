@@ -1,31 +1,22 @@
 # 189 Lothringen - Principal cities: Nancy
-owner = LOR
-controller = LOR
+# owner = LOR
+# controller = LOR 
 capital = "Nancy"
 is_city = yes
-culture = burgundian
-religion = catholic
+# culture = burgundian
+# religion = catholic
 hre = yes
-base_tax = 5
-base_production = 5
-trade_goods = iron
-base_manpower = 5
-add_core = LOR
+# base_tax = 5 
+# base_production = 5
+# trade_goods = iron
+# base_manpower = 5
+# add_core = LOR
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1467.6.15 = { add_core = BUR }
-1475.11.30 = { controller = BUR }
-1476.1.1 = { controller = REB revolt = { type = nationalist_rebels size = 1 } }
-1477.1.5 = { controller = LOR revolt = { size = 1 } }
-1635.5.1 = { controller = FRA }
-1636.8.15 = { controller = LOR }
-1636.10.20 = { controller = FRA }
-1641.1.1 = { controller = LOR }
-1670.1.1 = { controller = FRA add_core = FRA }
-1679.9.20 = { controller = LOR }
-1702.1.1 = { controller = FRA }
-1714.1.1 = { controller = LOR }
-1766.2.23 = { controller = FRA }
-1806.7.12 = { hre = no }
+add_core = LOR
+owner = LOR
+controller = LOR
+religion = catholic
+culture = burgundian

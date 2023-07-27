@@ -1,16 +1,16 @@
 # 192 Bourgogne - Principal cities: Dijon
-owner = BUR
-controller = BUR
+# owner = BUR
+# controller = BUR 
 capital = "Dijon"
 is_city = yes
-culture = burgundian
-religion = catholic
+# culture = burgundian
+# religion = catholic
 hre = yes
-base_tax = 7
-base_production = 7
-trade_goods = wine
-base_manpower = 6
-add_core = BUR
+# base_tax = 7
+# base_production = 7
+# trade_goods = wine
+# base_manpower = 6
+# add_core = BUR
 #fort_15th = yes
 discovered_by = eastern
 discovered_by = western
@@ -18,8 +18,8 @@ discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
-1477.1.5 = { controller = FRA add_core = FRA }
-1526.1.14 = { add_core = HAB }
-1636.8.30 = { controller = HAB }
-1636.10.1 = { controller = FRA }
-1773.1.1 = { base_tax = 11 base_production = 11 }
+add_core = BUR
+owner = BUR
+controller = BUR
+religion = catholic
+culture = burgundian

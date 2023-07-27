@@ -1,16 +1,15 @@
 #113 - Ferrara
-owner = FER
-controller = FER
-culture = romagnan
-religion = catholic
+# owner = FER
+# controller = FER
+# culture = romagnan 
+# religion = catholic 
 hre = yes
-base_tax = 6
-base_production = 6
-trade_goods = salt
-base_manpower = 2
+# base_tax = 6 
+# base_production = 6 
+# trade_goods = salt
+# base_manpower = 2 
 capital = "Ferrara"
 is_city = yes
-add_core = FER
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -21,13 +20,9 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 1495.1.1 = { hre = no }
-1597.10.28 = { controller = PAP add_core = PAP }
-1805.12.26 = { 
-	controller = ITA
-	add_core = ITA
-}
-1814.4.11 = { 
-	controller = HAB
-	add_core = HAB
-}
+add_core = FER
+owner = FER
+controller = FER
+religion = catholic
 fort_15th = yes
+culture = romagnan

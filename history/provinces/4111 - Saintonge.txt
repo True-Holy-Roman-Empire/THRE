@@ -1,26 +1,19 @@
 # 4111 - Saintonge and Aunis
-owner = FRA
-controller = FRA
+# owner = FRA
+# controller = FRA
 capital = "Saintes"
 is_city = yes
-culture = cosmopolitan_french
-religion = catholic
+# culture = cosmopolitan_french
+# religion = catholic 
 hre = yes
-base_tax = 4
-base_production = 4
-trade_goods = grain
-base_manpower = 2
-add_core = FRA
+# base_tax = 4
+# base_production = 4
+# trade_goods = grain
+# base_manpower = 2
+# add_core = FRA
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1560.1.1 = { religion = reformed }
-1583.1.1 = { fort_16th = yes }
-1648.1.1 = { fort_16th = no fort_17th = yes }
-1651.4.1 = { controller = FRA }
-1652.2.15 = { controller = REB revolt = { type = revolutionary_rebels size = 1 } }
-1652.10.21 = { controller = FRA revolt = { size = 1 } }
-1686.1.17 = { religion = catholic }
-1715.1.1 = { fort_17th = no fort_18th = yes }
-1749.1.1 = { base_tax = 6 base_production = 6 }
+religion = catholic
+culture = cosmopolitan_french

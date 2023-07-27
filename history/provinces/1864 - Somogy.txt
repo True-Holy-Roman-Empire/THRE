@@ -38,7 +38,7 @@ discovered_by = ottoman
 	add_core = TUR
 }
 1543.6.1 = { controller = TUR }
-1567.1.1 = { religion = reformed }
+1567.1.1 = { religion = Reformed }
 1685.1.1 = { 
 	controller = HAB
 }

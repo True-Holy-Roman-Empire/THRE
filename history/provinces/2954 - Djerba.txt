@@ -1,40 +1,22 @@
 #2954 - Djerba
-owner = TUN
-controller = TUN
-culture = tunisian
-religion = ibadi
+# owner = TUN
+# controller = TUN 
+# culture = tunisian
+# religion = ibadi
 capital = "Djerba"
-trade_goods = grain
-hre = yes
-base_tax = 1
-base_production = 1
-base_manpower = 1
+# trade_goods = grain
 is_city = yes
-add_core = TUN
-add_core = TRP
+# add_core = TUN
+# add_core = TRP
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
-1503.1.1 = { 
-	controller = TRP
-}
-1521.1.1 = { 
-	controller = SPA
-	add_core = SPA
-}
-1524.1.1 = { 
-	controller = TRP
-}
-1551.1.1 = { 
-	controller = SPA
-}
-1560.5.14 = { 
-	controller = TRP
-}
-1593.1.1 = { 
-	controller = TUN
-}
+add_core = TRP
+owner = TRP
+controller = TRP
+religion = sunni
 fort_15th = yes
+culture = tunisian

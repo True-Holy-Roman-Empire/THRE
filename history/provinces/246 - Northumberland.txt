@@ -3,8 +3,8 @@
 latent_trade_goods = { 
 	coal 
 }
-owner = ENG
-controller = ENG
+owner = NOL
+controller = NOL
 culture = english
 religion = catholic
 hre = yes
@@ -14,7 +14,6 @@ trade_goods = wool
 base_manpower = 2
 capital = "Newcastle"
 is_city = yes
-add_core = ENG
 add_core = NOL
 discovered_by = western
 discovered_by = muslim
@@ -22,7 +21,7 @@ discovered_by = ottoman
 discovered_by = eastern
 1461.6.1 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }
 1464.6.1 = { controller = ENG revolt = { size = 1 } }
-1585.1.1 = { religion = protestant }
+1585.1.1 = { religion = Protestant }
 1640.10.1 = { controller = SCO }
 1640.10.26 = { controller = ENG }
 1644.4.15 = { controller = SCO }

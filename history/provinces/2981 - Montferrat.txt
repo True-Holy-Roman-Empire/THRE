@@ -1,45 +1,23 @@
 #2981 - Montferrat
-owner = MFA
-controller = MFA
-culture = piedmontese
-religion = catholic
+# owner = MFA
+# controller = MFA
+# culture = piedmontese
+# religion = catholic
 hre = yes
-base_tax = 5
-base_production = 5
-trade_goods = wine
-base_manpower = 2
+# base_tax = 5
+# base_production = 5
+# trade_goods = wine
+# base_manpower = 2
 capital = Montferrat
 is_city = yes
-add_core = MFA
+# add_core = MFA
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 1495.1.1 = { hre = no }
-1533.4.30 = { 
-	controller = SPA
-	add_core = SPA
-}
-1536.1.1 = { 
-	controller = MAN
-	add_core = MAN
-}
-1708.6.30 = { 
-	controller = SAV
-	add_core = SAV
-}
-1713.4.12 = { 
-	controller = SIC
-	add_core = SIC
-}
-1720.1.1 = { 
-	controller = SPI
-	add_core = SPI
-}
-1792.9.1 = { controller = FRA }
-1792.11.27 = { 
-	add_core = FRA
-}
-1814.4.11 = { 
-	controller = SPI
-}
+add_core = MFA
+owner = MFA
+controller = MFA
+religion = catholic
+culture = piedmontese

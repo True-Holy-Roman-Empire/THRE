@@ -1,0 +1,31 @@
+# 4767 - Zweibrücken
+capital = "Zweibrücken"
+culture = hessian
+religion = catholic
+trade_goods = cloth
+owner = PAL
+base_tax = 3
+base_production = 3
+base_manpower = 2
+is_city = yes
+controller = PAL
+add_core = PAL
+hre = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+1533.1.1 = { religion = Reformed }
+1557.1.1 = { religion = Protestant }
+1588.1.1 = { religion = Reformed }
+1680.1.1 = { controller = FRA add_core = FRA }
+1697.4.19 = { controller = PAL add_core = SWE }
+1697.12.14 = { controller = SWE }
+1718.12.11 = { controller = PAL }
+1777.12.30 = { 
+	controller = BAV
+	add_core = BAV
+}
+1796.8.7 = { controller = FRA }
+1806.7.12 = { hre = no }
+1814.4.11 = { controller = BAV }

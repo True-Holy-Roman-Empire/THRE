@@ -1,14 +1,14 @@
 # Lucca
-owner = LUC
-controller = LUC
-add_core = LUC
-culture = tuscan
-religion = catholic
+# owner = LUC
+# controller = LUC
+# add_core = LUC
+# culture = tuscan
+# religion = catholic
 hre = yes
-base_tax = 6
-base_production = 6
-trade_goods = cloth
-base_manpower = 2
+# base_tax = 6
+# base_production = 6
+# trade_goods = cloth
+# base_manpower = 2
 capital = "Lucca"
 is_city = yes# Estimated
 discovered_by = western
@@ -18,11 +18,9 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 1495.1.1 = { hre = no }
-1805.6.10 = { 
-	controller = FRA
-	add_core = FRA
-}
 1806.7.12 = { hre = no }
-1814.4.11 = { 
-	controller = LUC
-}
+add_core = LUC
+owner = LUC
+controller = LUC
+religion = catholic
+culture = tuscan

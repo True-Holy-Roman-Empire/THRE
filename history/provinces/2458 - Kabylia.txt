@@ -1,20 +1,18 @@
 # - Hodna
-owner = TUN
-controller = TUN
-culture = algerian
-religion = sunni
+# owner = TUN
+# controller = TUN
+# culture = algerian
+# religion = sunni
 capital = "Msila"
-trade_goods = salt
-base_tax = 1
-base_production = 1
-base_manpower = 1
+# trade_goods = salt
 is_city = yes
-add_core = TUN
-add_core = KBA
+# add_core = TUN
+# add_core = KBA
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western
-1521.1.1 = { 
-	controller = ALG
-	add_core = ALG
-}
+add_core = KBA
+owner = KBA
+controller = KBA
+religion = sunni
+culture = berber

@@ -1,17 +1,17 @@
 # 167 Caux - Principal cities: Rouen
-owner = FRA
-controller = FRA
+# owner = FRA
+# controller = FRA
 capital = "Rouen"
 is_city = yes
-culture = normand
-religion = catholic
+# culture = normand
+# religion = catholic
 hre = yes
-base_tax = 4
-base_production = 4
-trade_goods = glass
-base_manpower = 4
-add_core = FRA
-add_core = NRM
+# base_tax = 4
+# base_production = 4
+# trade_goods = glass
+# base_manpower = 4
+# add_core = FRA
+# add_core = NRM
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
@@ -21,11 +21,8 @@ add_permanent_province_modifier = {
 	name = seine_estuary_modifier
 	duration = -1
 }
-1419.1.19 = { controller = ENG }
-1420.5.12 = { owner = ENG add_core = ENG }
-1449.1.1 = { controller = FRA }
-1465.8.15 = { controller = NRM }
-1466.3.6 = { controller = FRA }
-1467.6.15 = { add_core = BUR }
-1471.1.1 = { controller = BUR }
-1471.8.1 = { controller = FRA }
+add_core = NRM
+owner = NRM
+controller = NRM
+religion = catholic
+culture = normand

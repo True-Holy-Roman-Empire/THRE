@@ -25,8 +25,8 @@ discovered_by = eastern
 1470.10.6 = { controller = ENG revolt = { size = 1 } }
 1471.3.15 = { controller = REB revolt = { type = pretender_rebels size = 1 } }
 1471.5.4 = { controller = ENG revolt = { size = 1 } }
-1548.1.1 = { religion = protestant }
-1585.1.1 = { religion = reformed }
+1548.1.1 = { religion = Protestant }
+1585.1.1 = { religion = Reformed }
 1645.12.17 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }
 1646.5.5 = { controller = ENG revolt = { size = 1 } }
 1700.1.1 = { capital = "Birmingham" }
