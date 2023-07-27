@@ -64,7 +64,7 @@ Tally_Vote = {
                     value = 1
                 }
             }
-            Tally_vote_Helper1 = { Scope = $Scope$ }    #Do the Counting; Scope argument is used in Helper3 effect, needs to be passed all the way down
+            Tally_Vote_Helper1 = { Scope = $Scope$ }    #Do the Counting; Scope argument is used in Helper3 effect, needs to be passed all the way down
             subtract_variable = {                       #Reduce Current Ballot Count by 1 to go and check the next ballot
                 which = AmountOptions
                 value = 1
