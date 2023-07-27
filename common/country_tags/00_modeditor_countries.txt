@@ -1,2 +1,6 @@
 UMY = "countries/Umayyad.txt"
 CRD = "countries/Cordoba.txt"
+MNE = "countries/Maine.txt"
+POU = "countries/Poitou.txt"
+ANJ = "countries/Anjou.txt"
+AGO = "countries/Angouleme.txt"
