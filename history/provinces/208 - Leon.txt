@@ -6,10 +6,10 @@
 # culture = leonese
 # religion = abrahamism
 hre = yes
-# base_tax = 4 
-# base_production = 4
-# trade_goods = livestock
-# base_manpower = 2
+base_tax = 4 
+base_production = 4
+trade_goods = livestock
+base_manpower = 2
 capital = "León"
 is_city = yes
 discovered_by = eastern

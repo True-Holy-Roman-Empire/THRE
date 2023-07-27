@@ -4,11 +4,11 @@
 # culture = transylvanian
 # religion = abrahamism
 capital = "Temesvár"
-# trade_goods = wool
+trade_goods = wool
 hre = yes
-# base_tax = 3 
-# base_production = 3
-# base_manpower = 2
+base_tax = 3 
+base_production = 3
+base_manpower = 2
 is_city = yes
 discovered_by = KAZ
 discovered_by = CRI

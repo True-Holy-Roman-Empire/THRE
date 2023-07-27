@@ -16,7 +16,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 1525.1.1 = { 
-	religion = Reformed
+	religion = abrahamism
 }
 1806.7.12 = { hre = no }
 1548.9.13 = { 

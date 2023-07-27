@@ -4,11 +4,11 @@
 # culture = al_misr_arabic
 # religion = abrahamism
 capital = "Atfih"
-# trade_goods = paper
+trade_goods = paper
 hre = yes
-# base_tax = 3
-# base_production = 3
-# base_manpower = 1
+base_tax = 3
+base_production = 3
+base_manpower = 1
 is_city = yes
 # add_core = MAM
 discovered_by = western

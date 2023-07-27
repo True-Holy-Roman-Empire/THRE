@@ -4,11 +4,11 @@
 # culture = berber
 # religion = abrahamism
 capital = "Tlemcen"
-# trade_goods = cloth
+trade_goods = cloth
 hre = yes
-# base_tax = 5 
-# base_production = 5
-# base_manpower = 3
+base_tax = 5 
+base_production = 5
+base_manpower = 3
 is_city = yes
 discovered_by = western
 discovered_by = eastern

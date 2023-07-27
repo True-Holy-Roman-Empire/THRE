@@ -4,10 +4,10 @@
 # add_core = PAL
 # culture = bavarian
 # religion = abrahamism
-# base_tax = 3
-# base_production = 3
-# trade_goods = iron
-# base_manpower = 3
+base_tax = 3
+base_production = 3
+trade_goods = iron
+base_manpower = 3
 capital = "Amberg"
 is_city = yes
 discovered_by = eastern

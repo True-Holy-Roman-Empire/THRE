@@ -22,3 +22,4 @@ discovered_by = ottoman
 }
 1806.7.12 = { hre = no }
 fort_15th = yes
+hre = yes

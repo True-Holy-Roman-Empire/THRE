@@ -1,17 +1,18 @@
 # 4743 - Weimar
-# owner = THU
-# controller = THU
-# add_core = THU
-# culture = saxon
-# religion = abrahamism
+owner = THU
+controller = THU
+add_core = THU
+culture = saxon
+religion = abrahamism
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 2
 capital = "Weimar"
 is_city = yes
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-religion = abrahamism
-add_core = THU
-owner = THU
-controller = THU
-culture = saxon
+1531.1.1 = { religion = protestant }
+1806.7.12 = { hre = no }

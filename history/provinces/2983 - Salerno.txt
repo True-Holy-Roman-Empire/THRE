@@ -4,10 +4,10 @@
 # culture = neapolitan 
 # religion = abrahamism 
 hre = yes
-# base_tax = 5
-# base_production = 1
-# trade_goods = fish 
-# base_manpower = 4
+base_tax = 5
+base_production = 1
+trade_goods = fish 
+base_manpower = 4
 capital = "Salerno"
 is_city = yes# add_core = NAP
 discovered_by = western

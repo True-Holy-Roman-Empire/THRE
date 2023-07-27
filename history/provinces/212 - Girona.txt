@@ -6,10 +6,10 @@
 # culture = catalan
 # religion = abrahamism
 hre = yes
-# base_tax = 3 
-# base_production = 3
-# trade_goods = fish 
-# base_manpower = 3
+base_tax = 3 
+base_production = 3
+trade_goods = fish 
+base_manpower = 3
 capital = "Girona"
 is_city = yes# census of 1462, also includes the town of Figueres 
 discovered_by = western

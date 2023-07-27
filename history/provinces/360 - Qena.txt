@@ -4,11 +4,11 @@
 # culture = al_misr_arabic
 # religion = abrahamism
 capital = "Qus"
-# trade_goods = livestock
+trade_goods = livestock
 hre = yes
-# base_tax = 1
-# base_production = 1
-# base_manpower = 1
+base_tax = 1
+base_production = 1
+base_manpower = 1
 is_city = yes
 # add_core = MAM
 add_local_autonomy = 50#Under local Tribes controlled by the Mamluks.

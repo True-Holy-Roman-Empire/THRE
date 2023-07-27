@@ -4,11 +4,11 @@
 # culture = turkish
 # religion = abrahamism
 capital = "Aydin"
-# trade_goods = salt #Major Ottoman Salt Work
+trade_goods = salt #Major Ottoman Salt Work
 hre = yes
-# base_tax = 2
-# base_production = 2
-# base_manpower = 2
+base_tax = 2
+base_production = 2
+base_manpower = 2
 is_city = yes
 # add_core = AYD
 discovered_by = western

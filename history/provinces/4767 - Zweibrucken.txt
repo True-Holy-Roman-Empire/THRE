@@ -15,9 +15,9 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1533.1.1 = { religion = Reformed }
-1557.1.1 = { religion = Protestant }
-1588.1.1 = { religion = Reformed }
+1533.1.1 = { religion = reformed }
+1557.1.1 = { religion = protestant }
+1588.1.1 = { religion = reformed }
 1680.1.1 = { controller = FRA add_core = FRA }
 1697.4.19 = { controller = PAL add_core = SWE }
 1697.12.14 = { controller = SWE }

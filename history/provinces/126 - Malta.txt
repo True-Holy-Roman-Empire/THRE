@@ -4,10 +4,10 @@
 # culture = maltese 
 # religion = abrahamism 
 hre = yes
-# base_tax = 3 
-# base_production = 3
-# trade_goods = fish
-# base_manpower = 2
+base_tax = 3 
+base_production = 3
+trade_goods = fish
+base_manpower = 2
 capital = "Mdina"
 is_city = yes
 # add_core = SIC

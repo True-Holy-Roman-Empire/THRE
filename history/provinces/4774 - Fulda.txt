@@ -4,10 +4,10 @@
 # add_core = WBG
 # culture = hessian
 # religion = abrahamism
-# base_tax = 2
-# base_production = 2
-# trade_goods = grain
-# base_manpower = 1
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 1
 capital = "Fulda"
 discovered_by = eastern
 discovered_by = western

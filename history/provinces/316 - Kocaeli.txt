@@ -4,11 +4,11 @@
 # culture = turkish
 # religion = abrahamism
 capital = "Izmit"
-# trade_goods = grain
+trade_goods = grain
 hre = yes
-# base_tax = 3
-# base_production = 3
-# base_manpower = 3
+base_tax = 3
+base_production = 3
+base_manpower = 3
 is_city = yes
 discovered_by = western
 discovered_by = eastern

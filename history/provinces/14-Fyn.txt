@@ -3,7 +3,7 @@ add_core = DAN
 owner = DAN
 controller = DAN
 culture = danish
-religion = abrahamism
+religion = catholic
 base_tax = 5
 base_production = 5
 trade_goods = fish
@@ -14,6 +14,6 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1536.1.1 = { religion = Protestant }
+1536.1.1 = { religion = protestant }
 1658.1.31 = { controller = SWE }
 1658.2.26 = { controller = DAN }

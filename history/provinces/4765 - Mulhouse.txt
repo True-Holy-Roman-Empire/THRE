@@ -16,7 +16,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 1467.6.15 = { add_core = BUR }
-1529.1.1 = { religion = Reformed }
+1529.1.1 = { religion = reformed }
 1670.1.1 = { add_core = FRA }
 1746.1.1 = { base_production = 6 }
 1789.1.3 = { 

@@ -3,12 +3,12 @@
 # controller = HES
 # add_core = HES
 capital = "Marburg"
-# trade_goods = wool
+trade_goods = wool
 # culture = hessian
 # religion = abrahamism
-# base_tax = 4 
-# base_production = 3
-# base_manpower = 3
+base_tax = 4
+base_production = 3
+base_manpower = 3
 is_city = yes
 discovered_by = eastern
 discovered_by = western

@@ -4,11 +4,11 @@
 # culture = al_suryah_arabic
 # religion = abrahamism
 capital = "Gazzah"
-# trade_goods = salt
+trade_goods = salt
 hre = yes
-# base_tax = 3 
-# base_production = 3
-# base_manpower = 2
+base_tax = 3 
+base_production = 3
+base_manpower = 2
 is_city = yes
 # add_core = MAM
 discovered_by = western

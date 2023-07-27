@@ -4,10 +4,10 @@
 # add_core = ING
 # culture = bavarian
 # religion = abrahamism
-# base_tax = 5 
-# base_production = 5
-# trade_goods = wine #Would shift to beer over time
-# base_manpower = 3
+base_tax = 5 
+base_production = 5
+trade_goods = wine #Would shift to beer over time
+base_manpower = 3
 capital = "Ingolstadt"
 is_city = yes
 discovered_by = eastern

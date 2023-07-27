@@ -4,11 +4,11 @@
 # culture = bedouin_arabic
 # religion = abrahamism
 capital = "Al Karak"
-# trade_goods = grain
+trade_goods = grain
 hre = yes
-# base_tax = 1 
-# base_production = 1
-# base_manpower = 1
+base_tax = 1 
+base_production = 1
+base_manpower = 1
 is_city = yes
 # add_core = MAM
 discovered_by = muslim

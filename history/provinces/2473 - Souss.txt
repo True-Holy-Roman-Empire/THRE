@@ -4,11 +4,11 @@
 # culture = tunisian
 # religion = abrahamism
 capital = "Susa"
-# trade_goods = sugar
+trade_goods = sugar
 hre = yes
-# base_tax = 5 
-# base_production = 5
-# base_manpower = 2
+base_tax = 5 
+base_production = 5
+base_manpower = 2
 is_city = yes
 # add_core = TUN
 discovered_by = muslim

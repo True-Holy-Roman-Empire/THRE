@@ -5,10 +5,10 @@
 # culture = english
 # religion = abrahamism
 hre = yes
-# base_tax = 4
-# base_production = 4
-# trade_goods = iron
-# base_manpower = 2
+base_tax = 4
+base_production = 4
+trade_goods = iron
+base_manpower = 2
 capital = "Norwich"
 is_city = yes
 # add_core = ENG

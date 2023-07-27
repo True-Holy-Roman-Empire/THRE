@@ -1,11 +1,11 @@
 #tenerife
 
 capital = "Tenerife"
-# trade_goods = unknown
+trade_goods = unknown
 hre = no
-# base_tax = 2 
-# base_production = 2
-# base_manpower = 1
+base_tax = 2 
+base_production = 2
+base_manpower = 1
 # native_size = 5
 native_ferocity = 1
 # # native_hostileness = 0
@@ -17,10 +17,10 @@ native_ferocity = 1
 	# controller = CAS
 	# add_core = CAS
 	is_city = yes
-	# trade_goods = slaves
+	trade_goods = slaves
 	# culture = portugese
 	# religion = abrahamism
-	# trade_goods = sugar
+	trade_goods = sugar
 }
 1516.1.23 = {
 	# controller = SPA

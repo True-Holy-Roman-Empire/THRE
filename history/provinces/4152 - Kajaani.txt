@@ -14,11 +14,11 @@ capital = "Maanselkä"
 is_city = yes
 discovered_by = eastern
 discovered_by = western
-1527.6.1 = { religion = Protestant }
+1527.6.1 = { religion = protestant }
 1598.8.1 = { controller = PLC }
 1599.7.15 = { controller = SWE }
 1651.3.6 = { 
-	trade_goods = Naval supplies
+	trade_goods = naval_supplies
 	capital = "Kaajani"
 }
 1742.11.5 = { controller = RUS }

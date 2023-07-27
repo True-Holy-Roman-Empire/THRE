@@ -4,11 +4,11 @@
 # culture = bulgarian
 # religion = abrahamism
 capital = "Skopje"
-# trade_goods = copper
+trade_goods = copper
 hre = yes
-# base_tax = 2
-# base_production = 4 #Many productive Mines. Main Source of Ottoman Silver in 1444.
-# base_manpower = 2
+base_tax = 2
+base_production = 4 #Many productive Mines. Main Source of Ottoman Silver in 1444.
+base_manpower = 2
 is_city = yes
 # add_core = TUR
 # add_core = BUL

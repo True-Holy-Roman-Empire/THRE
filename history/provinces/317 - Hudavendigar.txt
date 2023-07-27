@@ -4,11 +4,11 @@
 # culture = turkish
 # religion = abrahamism
 capital = "Bursa"
-# trade_goods = silk
+trade_goods = silk
 hre = yes
-# base_tax = 5
-# base_production = 5
-# base_manpower = 2
+base_tax = 5
+base_production = 5
+base_manpower = 2
 is_city = yes
 # add_core = TUR
 discovered_by = western

@@ -6,11 +6,11 @@
 # religion = abrahamism
 capital = "Al Qusair"
 is_city = yes
-# base_manpower = 1
-# trade_goods = livestock
+base_manpower = 1
+trade_goods = livestock
 hre = yes
-# base_tax = 1 
-# base_production = 1
+base_tax = 1 
+base_production = 1
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

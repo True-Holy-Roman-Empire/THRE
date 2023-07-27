@@ -4,11 +4,11 @@
 # culture = greek
 # religion = abrahamism
 capital = "Ioannina"
-# trade_goods = wool
+trade_goods = wool
 hre = yes
-# base_tax = 2
-# base_production = 1
-# base_manpower = 1
+base_tax = 2
+base_production = 1
+base_manpower = 1
 is_city = yes
 # add_core = EPI
 # add_core = BYZ

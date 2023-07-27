@@ -4,11 +4,11 @@
 # culture = albanian
 # religion = abrahamism
 capital = "Vlorë"
-# trade_goods = wool #or salt
+trade_goods = wool #or salt
 hre = yes
-# base_tax = 2
-# base_production = 1
-# base_manpower = 1
+base_tax = 2
+base_production = 1
+base_manpower = 1
 is_city = yes
 # add_core = TUR
 # add_core = ALB

@@ -5,10 +5,10 @@
 # culture = english
 # religion = abrahamism
 hre = yes
-# base_tax = 7
-# base_production = 7
-# trade_goods = cloth
-# base_manpower = 6
+base_tax = 7
+base_production = 7
+trade_goods = cloth
+base_manpower = 6
 capital = "London"
 is_city = yes
 # add_core = ENG

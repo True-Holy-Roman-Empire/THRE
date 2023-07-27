@@ -4,11 +4,11 @@
 # culture = tunisian
 # religion = abrahamism
 capital = "Sfax"
-# trade_goods = sugar
+trade_goods = sugar
 hre = yes
-# base_tax = 3 
-# base_production = 3
-# base_manpower = 1
+base_tax = 3 
+base_production = 3
+base_manpower = 1
 is_city = yes
 # add_core = TUN
 discovered_by = western

@@ -4,11 +4,11 @@
 # culture = al_misr_arabic
 # religion = abrahamism
 capital = "Al Iskandirya"
-# trade_goods = spices
+trade_goods = spices
 hre = yes
-# base_tax = 5 
-# base_production = 5
-# base_manpower = 3
+base_tax = 5 
+base_production = 5
+base_manpower = 3
 is_city = yes
 # add_core = MAM
 discovered_by = western

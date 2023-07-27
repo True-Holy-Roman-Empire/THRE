@@ -4,10 +4,10 @@
 # culture = tuscan 
 # religion = abrahamism 
 hre = yes
-# base_tax = 6
-# base_production = 6
-# trade_goods = livestock
-# base_manpower = 2
+base_tax = 6
+base_production = 6
+trade_goods = livestock
+base_manpower = 2
 capital = "Arezzo"
 is_city = yes# add_core = LAN
 discovered_by = western

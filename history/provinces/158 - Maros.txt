@@ -4,11 +4,11 @@
 # culture = transylvanian #Szeklers
 # religion = abrahamism
 capital = "Targu Mures"
-# trade_goods = wool
+trade_goods = wool
 hre = yes
-# base_tax = 3 
-# base_production = 3
-# base_manpower = 2
+base_tax = 3 
+base_production = 3
+base_manpower = 2
 is_city = yes
 # add_core = HUN
 # add_core = TRA

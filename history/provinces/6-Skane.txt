@@ -3,11 +3,11 @@ add_core = DAN
 owner = DAN
 controller = DAN
 culture = danish
-religion = abrahamism
+religion = catholic
 base_tax = 7
 base_production = 7
 #trade_goods = grain
-trade_goods = fish#The Great Herring Market of Skåne
+trade_goods = fish #The Great Herring Market of Skåne
 base_manpower = 6
 capital = "Lund"
 is_city = yes
@@ -22,10 +22,10 @@ discovered_by = ottoman
 1525.1.1 = { controller = REB revolt = { type = revolutionary_rebels size = 1 } }
 1525.5.10 = { controller = DAN revolt = { size = 1 } }
 1534.8.15 = { controller = REB revolt = { type = revolutionary_rebels size = 1 } }
-1536.3.15 = { controller = DAN revolt = { size = 1 } religion = Protestant }
-1536.3.15 = { religion = protestant } # Unknown date
+1536.3.15 = { controller = DAN religion = protestant revolt = { size = 1 } }
+1536.3.15 = { controller = DAN religion = protestant revolt = { size = 1 } }
 1550.1.1 = { 
-	trade_goods = Grain
+	trade_goods = grain
 }
 1559.1.1 = { 
 	fort_15th = no

@@ -4,11 +4,11 @@
 # culture = serbian
 # religion = abrahamism
 capital = "Kotor"
-# trade_goods = naval_supplies
+trade_goods = naval_supplies
 hre = yes
-# base_tax = 3
-# base_production = 3
-# base_manpower = 1
+base_tax = 3
+base_production = 3
+base_manpower = 1
 is_city = yes
 # add_core = MON
 # add_core = SER

@@ -4,11 +4,11 @@
 # culture = al_misr_arabic
 # religion = abrahamism
 capital = "Al Qahira"
-# trade_goods = cloth
+trade_goods = cloth
 hre = yes
-# base_tax = 9 
-# base_production = 9
-# base_manpower = 6
+base_tax = 9 
+base_production = 9
+base_manpower = 6
 is_city = yes
 discovered_by = western
 discovered_by = muslim

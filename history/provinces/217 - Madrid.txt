@@ -5,10 +5,10 @@
 # culture = castillian
 # religion = abrahamism
 hre = yes
-# base_tax = 5
-# base_production = 5
-# trade_goods = cloth 
-# base_manpower = 5
+base_tax = 5
+base_production = 5
+trade_goods = cloth 
+base_manpower = 5
 capital = "Madrid"
 is_city = yes# Includes the population of Alcalá de Henares and Guadalajara, that at times were bigger than Madrid itself
 discovered_by = western

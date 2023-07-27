@@ -42,3 +42,4 @@ discovered_by = ottoman
 	add_core = NED
 	capital = "Limburg"
 }
+hre = yes

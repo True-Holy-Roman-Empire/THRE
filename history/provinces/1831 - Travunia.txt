@@ -4,11 +4,11 @@
 # culture = bosnian
 # religion = abrahamism
 capital = "Herceg Novi"
-# trade_goods = wool
+trade_goods = wool
 hre = yes
-# base_tax = 2 
-# base_production = 3
-# base_manpower = 2
+base_tax = 2 
+base_production = 3
+base_manpower = 2
 is_city = yes
 # add_core = HRZ
 # add_core = BOS

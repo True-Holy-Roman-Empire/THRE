@@ -4,10 +4,10 @@
 # culture = neapolitan 
 # religion = abrahamism 
 hre = yes
-# base_tax = 2
-# base_production = 2
-# trade_goods = wine
-# base_manpower = 1
+base_tax = 2
+base_production = 2
+trade_goods = wine
+base_manpower = 1
 capital = "Cosenza"
 is_city = yes
 # add_core = NAP

@@ -4,10 +4,10 @@
 # culture = umbrian 
 # religion = abrahamism 
 hre = yes
-# base_tax = 3
-# base_production = 3
-# trade_goods = fish
-# base_manpower = 1		# Pontine Marshes
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 1		# Pontine Marshes
 capital = "Terracina"
 is_city = yes
 # add_core = PAP

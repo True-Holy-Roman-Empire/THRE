@@ -6,10 +6,10 @@
 # culture = catalan
 # religion = abrahamism
 hre = yes
-# base_tax = 6 
-# base_production = 5
-# trade_goods = glass 
-# base_manpower = 3
+base_tax = 6 
+base_production = 5
+trade_goods = glass 
+base_manpower = 3
 capital = "Barcelona"
 is_city = yes
 discovered_by = western

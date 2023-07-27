@@ -3,13 +3,13 @@
 # controller = BRG
 # culture = hessian
 # religion = abrahamism
-# trade_goods = grain
+trade_goods = grain
 capital = "Jülich"
-# base_tax = 3
-# base_production = 3
+base_tax = 3
+base_production = 3
 is_city = yes
 # add_core = BRG
-# base_manpower = 2
+base_manpower = 2
 hre = yes
 discovered_by = eastern
 discovered_by = western

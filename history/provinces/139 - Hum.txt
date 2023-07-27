@@ -3,11 +3,11 @@
 # controller = HRZ
 # culture = bosnian
 # religion = abrahamism
-capital = "Mostar"# trade_goods = wool
+capital = "Mostar"trade_goods = wool
 hre = yes
-# base_tax = 3 
-# base_production = 3
-# base_manpower = 2
+base_tax = 3 
+base_production = 3
+base_manpower = 2
 is_city = yes
 # add_core = BOS
 # add_core = HRZ

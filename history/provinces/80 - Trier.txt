@@ -2,13 +2,13 @@
 # controller = TRI
 # culture = hessian
 # religion = abrahamism
-# trade_goods = grain
+trade_goods = grain
 capital = "Trier"
-# base_tax = 5
-# base_production = 5
+base_tax = 5
+base_production = 5
 is_city = yes
 # add_core = TRI
-# base_manpower = 2
+base_manpower = 2
 hre = yes
 discovered_by = eastern
 discovered_by = western

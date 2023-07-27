@@ -1,11 +1,14 @@
 #266 - Bohemia
-# owner = BOH
-# controller = BOH
-# add_core = BOH
+owner = BOH
+controller = BOH
+add_core = BOH
 capital = "Praha"
-# culture = czech
-# religion = hussite
-# trade_goods = cloth 
+culture = czech
+religion = hussite
+trade_goods = cloth
+base_tax = 8
+base_production = 8
+base_manpower = 6
 is_city = yes
 discovered_by = KAZ
 discovered_by = CRI
@@ -19,12 +22,22 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 add_province_triggered_modifier = religious_center
-1419.12.1 = { 
-	revolt = { type = heretic_rebels size = 1 }
+1419.12.1 = { controller = REB revolt = { type = heretic_rebels size = 1 } }
+1436.7.5 = { controller = BOH revolt = { size = 1 } }
+1526.8.30 = { 
+	controller = HAB
+	add_core = HAB
 }
-religion = abrahamism
-add_core = BOH
-owner = BOH
-controller = BOH
+1530.1.1 = { 
+	trade_goods = paper
+}
+1576.1.1 = { religion = protestant }
+1618.5.23 = { 
+	controller = BOH
+}
+1620.11.8 = { 
+	controller = HAB
+}
+1627.1.1 = { religion = abrahamism }
+1806.7.12 = { hre = no }
 fort_15th = yes
-culture = czech

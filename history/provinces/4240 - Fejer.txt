@@ -4,11 +4,11 @@
 # culture = hungarian
 # religion = abrahamism
 capital = "Fehérvár"
-# trade_goods = livestock
+trade_goods = livestock
 hre = yes
-# base_tax = 3
-# base_production = 3
-# base_manpower = 2
+base_tax = 3
+base_production = 3
+base_manpower = 2
 is_city = yes
 # add_core = HUN
 discovered_by = KAZ

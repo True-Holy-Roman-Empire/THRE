@@ -4,10 +4,10 @@
 # add_core = NUM
 # culture = franconian
 # religion = abrahamism
-# base_tax = 8
-# base_production = 8
-# trade_goods = paper
-# base_manpower = 3
+base_tax = 8
+base_production = 8
+trade_goods = paper
+base_manpower = 3
 capital = "Nürnberg"
 is_city = yes
 add_claim = ANS

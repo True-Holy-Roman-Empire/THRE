@@ -4,11 +4,11 @@
 # culture = al_suryah_arabic
 # religion = abrahamism
 capital = "Dimashq"
-# trade_goods = iron
+trade_goods = iron
 hre = yes
-# base_tax = 7
-# base_production = 7
-# base_manpower = 6
+base_tax = 7
+base_production = 7
+base_manpower = 6
 is_city = yes
 # add_core = SYR
 # add_core = MAM

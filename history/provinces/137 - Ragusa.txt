@@ -4,11 +4,11 @@
 # culture = dalmatian
 # religion = abrahamism
 capital = "Ragusa"
-# trade_goods = salt
+trade_goods = salt
 hre = yes
-# base_tax = 5 
-# base_production = 6
-# base_manpower = 3
+base_tax = 5 
+base_production = 6
+base_manpower = 3
 is_city = yes
 # add_core = RAG
 # add_core = DAL

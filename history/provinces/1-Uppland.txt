@@ -3,7 +3,7 @@ add_core = SWE
 owner = SWE
 controller = SWE
 culture = swedish
-religion = abrahamism
+religion = catholic
 base_tax = 5
 base_production = 5
 trade_goods = grain
@@ -25,7 +25,7 @@ center_of_trade = 2
 1502.5.9 = { controller = SWE }
 1523.6.7 = { base_manpower = 4 }
 1527.6.1 = { 
-	religion = Protestant
+	religion = protestant
 }
 1598.8.12 = { controller = PLC }
 1598.12.15 = { controller = SWE }

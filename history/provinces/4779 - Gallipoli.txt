@@ -3,11 +3,11 @@
 # culture = greek
 # religion = abrahamism
 capital = "Gallipoli"
-# trade_goods = livestock
+trade_goods = livestock
 hre = yes
-# base_tax = 2
-# base_production = 1
-# base_manpower = 3
+base_tax = 2
+base_production = 1
+base_manpower = 3
 is_city = yes
 # add_core = BYZ
 # add_core = TUR

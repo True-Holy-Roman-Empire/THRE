@@ -4,11 +4,11 @@
 # culture = romanian
 # religion = abrahamism
 capital = "Craiova"
-# trade_goods = copper
+trade_goods = copper
 hre = yes
-# base_tax = 3
-# base_production = 3
-# base_manpower = 2
+base_tax = 3
+base_production = 3
+base_manpower = 2
 is_city = yes
 # add_core = WAL
 discovered_by = KAZ

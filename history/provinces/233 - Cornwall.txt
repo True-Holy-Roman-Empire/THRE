@@ -4,10 +4,10 @@
 # culture = cornish
 # religion = abrahamism
 hre = yes
-# base_tax = 1
-# base_production = 1
-# trade_goods = copper
-# base_manpower = 1
+base_tax = 1
+base_production = 1
+trade_goods = copper
+base_manpower = 1
 capital = "Penryn"
 is_city = yes
 # add_core = ENG

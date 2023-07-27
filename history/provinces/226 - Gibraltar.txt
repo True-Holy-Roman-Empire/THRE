@@ -5,10 +5,10 @@
 # culture = andalucian
 # religion = abrahamism
 hre = yes
-# base_tax = 1 
-# base_production = 1
-# trade_goods = fish 
-# base_manpower = 1
+base_tax = 1 
+base_production = 1
+trade_goods = fish 
+base_manpower = 1
 capital = "Gibraltar"
 is_city = yes
 discovered_by = western

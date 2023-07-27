@@ -4,11 +4,11 @@
 # culture = turkish
 # religion = abrahamism
 capital = "Biga"
-# trade_goods = naval_supplies
+trade_goods = naval_supplies
 hre = yes
-# base_tax = 4 
-# base_production = 4
-# base_manpower = 3
+base_tax = 4 
+base_production = 4
+base_manpower = 3
 is_city = yes
 # add_core = TUR
 discovered_by = western

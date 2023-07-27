@@ -4,10 +4,10 @@
 # culture = english
 # religion = abrahamism
 hre = yes
-# base_tax = 3
-# base_production = 3
-# trade_goods = naval_supplies
-# base_manpower = 1
+base_tax = 3
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 1
 capital = "Hull"
 is_city = yes
 # add_core = ENG

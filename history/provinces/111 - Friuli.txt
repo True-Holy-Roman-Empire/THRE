@@ -4,10 +4,10 @@
 # culture = venetian 
 # religion = abrahamism 
 hre = yes
-# base_tax = 5
-# base_production = 5    
-# trade_goods = wine
-# base_manpower = 2    
+base_tax = 5
+base_production = 5    
+trade_goods = wine
+base_manpower = 2    
 capital = "Udine"
 is_city = yes# add_core = AQU
 discovered_by = western

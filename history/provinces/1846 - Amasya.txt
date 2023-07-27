@@ -4,11 +4,11 @@
 # culture = turkish
 # religion = abrahamism
 capital = "Amasya"
-# trade_goods = paper #and iron
+trade_goods = paper #and iron
 hre = yes
-# base_tax = 4
-# base_production = 4
-# base_manpower = 3
+base_tax = 4
+base_production = 4
+base_manpower = 3
 is_city = yes
 # add_core = TUR
 # add_core = ERE

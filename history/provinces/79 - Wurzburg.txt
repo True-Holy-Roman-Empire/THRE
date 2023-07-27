@@ -4,10 +4,10 @@
 # add_core = WBG
 # culture = franconian
 # religion = abrahamism
-# base_tax = 4
-# base_production = 4
-# trade_goods = wine
-# base_manpower = 3
+base_tax = 4
+base_production = 4
+trade_goods = wine
+base_manpower = 3
 capital = "Würzburg"
 discovered_by = eastern
 discovered_by = western

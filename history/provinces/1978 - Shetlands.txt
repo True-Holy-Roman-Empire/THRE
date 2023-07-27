@@ -19,7 +19,7 @@ discovered_by = eastern
 	controller = SCO
 	add_core = SCO
 }
-1609.1.1 = { religion = Reformed }
+1609.1.1 = { religion = reformed }
 1707.5.12 = { 
 	controller = GBR
 	add_core = GBR

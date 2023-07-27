@@ -4,11 +4,11 @@
 # culture = turkish
 # religion = abrahamism
 capital = "Sivas"
-# trade_goods = livestock
+trade_goods = livestock
 hre = yes
-# base_tax = 3
-# base_production = 3
-# base_manpower = 3
+base_tax = 3
+base_production = 3
+base_manpower = 3
 is_city = yes
 # add_core = TUR
 # add_core = ERE

@@ -4,11 +4,11 @@
 # culture = tunisian
 # religion = abrahamism
 capital = "Tunis"
-# trade_goods = cloth
+trade_goods = cloth
 hre = yes
-# base_tax = 6 
-# base_production = 6
-# base_manpower = 2
+base_tax = 6 
+base_production = 6
+base_manpower = 2
 is_city = yes
 # add_core = TUN
 discovered_by = western

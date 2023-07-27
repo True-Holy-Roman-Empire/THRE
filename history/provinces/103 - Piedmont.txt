@@ -4,10 +4,10 @@
 # culture = piedmontese
 # religion = abrahamism
 hre = yes
-# base_tax = 7 
-# base_production = 7
-# trade_goods = wine
-# base_manpower = 3
+base_tax = 7 
+base_production = 7
+trade_goods = wine
+base_manpower = 3
 capital = "Torino"
 is_city = yes
 # add_core = SAV

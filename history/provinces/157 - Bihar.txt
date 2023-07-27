@@ -30,14 +30,14 @@ discovered_by = ottoman
 	controller = TRA
 	add_core = HAB
 }
-1540.1.1 = { religion = Reformed }
+1540.1.1 = { religion = reformed }
 1551.7.19 = { 
 	controller = HAB
 }
 1556.10.1 = { controller = TRA }
 1562.1.1 = { controller = REB revolt = { type = nationalist_rebels size = 1 } }
 1563.1.1 = { controller = TRA revolt = { size = 1 } }
-1567.1.1 = { religion = Reformed }
+1567.1.1 = { religion = reformed }
 1569.1.1 = { 
 	fort_16th = yes
 }

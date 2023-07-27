@@ -19,7 +19,7 @@ discovered_by = eastern
 	add_core = ENG
 	capital = "Belfast"
 }
-1609.1.1 = { culture = english religion = Protestant }
+1609.1.1 = { culture = english religion = protestant }
 1642.6.7 = { add_core = IRE }
 1646.6.5 = { controller = IRE }
 1650.6.21 = { controller = ENG }
@@ -27,4 +27,4 @@ discovered_by = eastern
 	controller = GBR
 	add_core = GBR
 }
-1711.1.1 = { trade_goods = Cloth }
+1711.1.1 = { trade_goods = cloth }

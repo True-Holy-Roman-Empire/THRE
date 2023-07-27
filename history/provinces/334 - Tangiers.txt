@@ -4,11 +4,11 @@
 # culture = moroccan
 # religion = abrahamism
 capital = "Tangier"
-# trade_goods = cloth
+trade_goods = cloth
 hre = yes
-# base_tax = 3 
-# base_production = 3
-# base_manpower = 1
+base_tax = 3 
+base_production = 3
+base_manpower = 1
 is_city = yes
 discovered_by = western
 discovered_by = muslim

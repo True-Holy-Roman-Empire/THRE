@@ -4,11 +4,11 @@
 # culture = portugese
 # religion = abrahamism
 capital = "Bragança"
-# trade_goods = wine
+trade_goods = wine
 hre = yes
-# base_tax = 5 
-# base_production = 5
-# base_manpower = 2
+base_tax = 5 
+base_production = 5
+base_manpower = 2
 is_city = yes
 # add_core = POR
 discovered_by = western

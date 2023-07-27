@@ -14,7 +14,7 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1536.1.1 = { religion = Protestant controller = DAN add_core = DAN }
+1536.1.1 = { religion = protestant controller = DAN add_core = DAN }
 1536.1.1 = { owner = DAN controller = DAN add_core = DAN } # 'Handfästningen'(Unknown date)
 1567.1.1 = { capital = "Fredrikstad" }
 1661.1.1 = { fort_17th = yes }

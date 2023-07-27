@@ -4,10 +4,10 @@
 # add_core = UBV
 # culture = bavarian
 # religion = abrahamism
-# base_tax = 3 
-# base_production = 3
-# trade_goods = glass
-# base_manpower = 3
+base_tax = 3 
+base_production = 3
+trade_goods = glass
+base_manpower = 3
 capital = "Straubing"
 is_city = yes
 discovered_by = eastern

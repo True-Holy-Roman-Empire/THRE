@@ -4,10 +4,10 @@
 # culture = umbrian 
 # religion = abrahamism 
 hre = yes
-# base_tax = 3
-# base_production = 4
-# trade_goods = wine
-# base_manpower = 1
+base_tax = 3
+base_production = 4
+trade_goods = wine
+base_manpower = 1
 capital = "Perugia"
 is_city = yes
 # add_core = PGA

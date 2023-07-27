@@ -5,10 +5,10 @@
 # culture = andalucian
 # religion = abrahamism 
 hre = yes
-# base_tax = 4
-# base_production = 3 
-# trade_goods = grain 
-# base_manpower = 3
+base_tax = 4
+base_production = 3 
+trade_goods = grain 
+base_manpower = 3
 capital = "Cartagena"
 is_city = yes
 discovered_by = western

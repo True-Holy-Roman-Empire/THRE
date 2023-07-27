@@ -4,11 +4,11 @@
 # culture = berber
 # religion = abrahamism
 capital = "Oujda"
-# trade_goods = wool
+trade_goods = wool
 hre = yes
-# base_tax = 3 
-# base_production = 3
-# base_manpower = 1
+base_tax = 3 
+base_production = 3
+base_manpower = 1
 is_city = yes
 # add_core = TLC
 discovered_by = muslim

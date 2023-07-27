@@ -20,7 +20,7 @@ discovered_by = ottoman
 }
 1534.1.1 = { 
 	controller = WUR
-	religion = Protestant
+	religion = protestant
 }
 1724.1.1 = { capital = "Ludwigsburg" }
 1733.1.1 = { 

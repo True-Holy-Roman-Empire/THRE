@@ -4,11 +4,11 @@
 # culture = greek
 # religion = abrahamism
 capital = "Trikala"
-# trade_goods = wool
+trade_goods = wool
 hre = yes
-# base_tax = 5 
-# base_production = 5
-# base_manpower = 2
+base_tax = 5 
+base_production = 5
+base_manpower = 2
 is_city = yes
 # add_core = BYZ
 # add_core = TUR
