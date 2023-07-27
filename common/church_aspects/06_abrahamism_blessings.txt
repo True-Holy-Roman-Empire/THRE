@@ -1,0 +1,143 @@
+abrahamism_christian_blessing1 = {
+    is_blessing = yes
+
+    potential = { # potential = {} # Not certain if either of those works but should work.
+        has_country_flag = christian_religion_flag
+        # Can add extra checks. I think best is to put on trigger, so players can see that they can unlock even Muslim/Catholic ones if they own?
+        # Would check if muslim_religion_flag owns muslim holy sites, in order to click it. If they own none and only Catholic ones, then can't click it.
+    }
+    modifier = {
+        tolerance_own = 2
+        global_unrest = -2
+        # modifier
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+abrahamism_christian_blessing2 = {
+    is_blessing = yes
+
+    potential = { # potential = {} # Not certain if either of those works but should work.
+        has_country_flag = christian_religion_flag
+        # Can add extra checks. I think best is to put on trigger, so players can see that they can unlock even Muslim/Catholic ones if they own?
+        # Would check if muslim_religion_flag owns muslim holy sites, in order to click it. If they own none and only Catholic ones, then can't click it.
+    }
+    modifier = {
+        land_morale = 0.1
+        manpower_recovery_speed = 0.15
+        # modifier
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+abrahamism_christian_blessing3 = {
+    is_blessing = yes
+
+    potential = { # potential = {} # Not certain if either of those works but should work.
+        has_country_flag = christian_religion_flag
+        # Can add extra checks. I think best is to put on trigger, so players can see that they can unlock even Muslim/Catholic ones if they own?
+        # Would check if muslim_religion_flag owns muslim holy sites, in order to click it. If they own none and only Catholic ones, then can't click it.
+    }
+    modifier = {
+        development_cost = -0.1
+        global_tax_modifier = 0.075
+        # modifier
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+abrahamism_christian_blessing4 = {
+    is_blessing = yes
+
+    potential = { # potential = {} # Not certain if either of those works but should work.
+        has_country_flag = christian_religion_flag
+        # Can add extra checks. I think best is to put on trigger, so players can see that they can unlock even Muslim/Catholic ones if they own?
+        # Would check if muslim_religion_flag owns muslim holy sites, in order to click it. If they own none and only Catholic ones, then can't click it.
+    }
+    modifier = {
+        naval_maintenance_modifier = -0.1
+        naval_morale = 0.075
+        # modifier
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+abrahamism_muslim_blessing1 = {
+    is_blessing = yes
+
+    potential = { # potential = {} # Not certain if either of those works but should work.
+        has_country_flag = muslim_religion_flag
+        # Can add extra checks. I think best is to put on trigger, so players can see that they can unlock even Muslim/Catholic ones if they own?
+        # Would check if muslim_religion_flag owns muslim holy sites, in order to click it. If they own none and only Catholic ones, then can't click it.
+    }
+    modifier = {
+        tolerance_own = 2
+        global_unrest = -2
+        # modifier
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+abrahamism_muslim_blessing2 = {
+    is_blessing = yes
+
+    potential = { # potential = {} # Not certain if either of those works but should work.
+        has_country_flag = muslim_religion_flag
+        # Can add extra checks. I think best is to put on trigger, so players can see that they can unlock even Muslim/Catholic ones if they own?
+        # Would check if muslim_religion_flag owns muslim holy sites, in order to click it. If they own none and only Catholic ones, then can't click it.
+    }
+    modifier = {
+        land_morale = 0.1
+        manpower_recovery_speed = 0.15
+        # modifier
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+abrahamism_muslim_blessing3 = {
+    is_blessing = yes
+
+    potential = { # potential = {} # Not certain if either of those works but should work.
+        has_country_flag = muslim_religion_flag
+        # Can add extra checks. I think best is to put on trigger, so players can see that they can unlock even Muslim/Catholic ones if they own?
+        # Would check if muslim_religion_flag owns muslim holy sites, in order to click it. If they own none and only Catholic ones, then can't click it.
+    }
+    modifier = {
+        development_cost = -0.1
+        global_tax_modifier = 0.075
+        # modifier
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+abrahamism_muslim_blessing4 = {
+    is_blessing = yes
+
+    potential = { # potential = {} # Not certain if either of those works but should work.
+        has_country_flag = muslim_religion_flag
+        # Can add extra checks. I think best is to put on trigger, so players can see that they can unlock even Muslim/Catholic ones if they own?
+        # Would check if muslim_religion_flag owns muslim holy sites, in order to click it. If they own none and only Catholic ones, then can't click it.
+    }
+    modifier = {
+        naval_maintenance_modifier = -0.1
+        naval_morale = 0.075
+        # modifier
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
