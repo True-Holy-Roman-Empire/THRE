@@ -8,7 +8,7 @@ primary_culture = cosmopolitan_french
 
 1360.1.1 = {
 	monarch = {
-		name = "LÃ©opold"
+		name = "Léopold"
 		dynasty = "Bellot de Ferreux"
 		adm = 4
 		dip = 5
