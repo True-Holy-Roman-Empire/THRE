@@ -9,6 +9,9 @@ papafication_effect = {
 					}
 				}
 			}
+			118 = {
+				is_part_of_hre = yes
+			}
 		}
 		add_government_reform = papacy_reform_free_city
 	}
