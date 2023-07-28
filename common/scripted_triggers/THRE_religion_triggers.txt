@@ -1,0 +1,17 @@
+### THRE Religion Triggers
+
+
+#Scripted_trigger to check if country is either one of the original Vanilla Muslim religions or is a abrahamic nation that was sunni
+#In other words, would the nation have access to religious schools in Vanilla?
+can_have_muslim_schools_trigger = {		
+	religion_group = abrahamistic_group
+	OR = {
+		religion = sunni
+		religion = shiite
+		religion = ibadi
+		AND = {
+			religion = abrahamism
+			has_country_flag = sunni_religion_flag
+		}
+	}
+}

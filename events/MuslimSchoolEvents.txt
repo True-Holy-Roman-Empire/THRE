@@ -20,7 +20,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		has_religious_school = yes
 		total_development = 50
 		num_of_cities = 5
@@ -98,7 +98,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		has_religious_school = yes
 		total_development = 50
 		num_of_cities = 5
@@ -164,7 +164,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		has_religious_school = yes
 		total_development = 50
 		num_of_cities = 5
@@ -276,7 +276,7 @@ country_event = {
 	picture = MUSLIM_SCHOLAR_WRITING_eventPicture
 	goto = mufti_province
 	trigger = {
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		NOT = { religion = shiite }
 		has_dlc = "Cradle of Civilization"
 		has_religious_school = yes
@@ -431,7 +431,7 @@ country_event = {
 			if = {
 				limit = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = hanafi_school
 					}
 				}
@@ -446,7 +446,7 @@ country_event = {
 			else_if = {
 				limit = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = hanbali_school
 					}
 				}
@@ -461,7 +461,7 @@ country_event = {
 			else_if = {
 				limit = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = maliki_school
 					}
 				}
@@ -476,7 +476,7 @@ country_event = {
 			else_if = {
 				limit = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = shafii_school
 					}
 				}
@@ -491,7 +491,7 @@ country_event = {
 			else_if = {
 				limit = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = ismaili_school
 					}
 				}
@@ -506,7 +506,7 @@ country_event = {
 			else_if = {
 				limit = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = jafari_school
 					}
 				}
@@ -521,7 +521,7 @@ country_event = {
 			else_if = {
 				limit = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = zaidi_school
 					}
 				}
@@ -541,7 +541,7 @@ country_event = {
 			if = {
 				limit = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = hanafi_school
 					}
 				}
@@ -556,7 +556,7 @@ country_event = {
 			else_if = {
 				limit = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = hanbali_school
 					}
 				}
@@ -571,7 +571,7 @@ country_event = {
 			else_if = {
 				limit = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = maliki_school
 					}
 				}
@@ -586,7 +586,7 @@ country_event = {
 			else_if = {
 				limit = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = shafii_school
 					}
 				}
@@ -601,7 +601,7 @@ country_event = {
 			else_if = {
 				limit = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = ismaili_school
 					}
 				}
@@ -616,7 +616,7 @@ country_event = {
 			else_if = {
 				limit = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = jafari_school
 					}
 				}
@@ -631,7 +631,7 @@ country_event = {
 			else_if = {
 				limit = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = zaidi_school
 					}
 				}
@@ -690,7 +690,7 @@ country_event = {
 			NOT = { has_global_flag = wahabism_founded }
 			NOT = {
 				religious_school = {
-					group = muslim
+					group = abrahamistic_group
 					school = hanbali_school
 				}
 			}
@@ -771,7 +771,7 @@ country_event = {
 			NOT = { has_global_flag = wahabism_founded }
 			NOT = {
 				religious_school = {
-					group = muslim
+					group = abrahamistic_group
 					school = hanbali_school
 				}
 			}
@@ -817,7 +817,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		any_owned_province = {
 			is_capital = no
 			has_building = temple
@@ -917,11 +917,11 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		at_war_with_religious_enemy = yes
 		has_border_with_religious_enemy = yes
 		any_country = {
-			NOT = { religion_group = abrahamistic_group }
+			NOT = { can_have_muslim_schools_trigger = yes }
 			war_with = ROOT
 			num_of_cities = ROOT
 		}
@@ -931,7 +931,7 @@ country_event = {
 		hidden_effect = {
 			random_country = {
 				limit = { 
-					NOT = { religion_group = abrahamistic_group }
+					NOT = { can_have_muslim_schools_trigger = yes }
 					war_with = ROOT
 					num_of_cities = ROOT
 				}
@@ -1016,7 +1016,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		OR = {
 			owns_core_province = 379 #Jerusalem
 			owns_core_province = 384 #Medina
@@ -1036,7 +1036,7 @@ country_event = {
 			AND = {
 				NOT = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = hanbali_school
 					}
 				}
@@ -1095,7 +1095,7 @@ country_event = {
 							owner = {
 								NOT = {
 									religious_school = {
-										group = muslim
+										group = abrahamistic_group
 										school = hanbali_school
 									}
 								}
@@ -1745,7 +1745,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		NOT = { has_global_flag = neo_sufism }
 		any_owned_province = {
 			NOT = { religion_group = abrahamistic_group }
@@ -1867,7 +1867,7 @@ country_event = {
 	picture = MUSLIM_SCHOLAR_WRITING_eventPicture
 
 	trigger = {
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		has_religious_scholars_trigger = yes
 		any_known_country = {
 			OR = {
@@ -2016,7 +2016,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		has_religious_scholars_trigger = yes
 		any_known_country = {
 			OR = {
@@ -2107,7 +2107,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		has_religious_scholars_trigger = yes
 	}
 	
@@ -2179,7 +2179,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		NOT = { religion = shiite }
 		any_owned_province = {
 			is_state = yes
@@ -2271,7 +2271,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		NOT = { religion = shiite }
 		any_owned_province = {
 			is_state = yes
@@ -2375,7 +2375,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		any_owned_province = {
 			is_state = yes
 			is_capital = no
@@ -2481,7 +2481,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		any_owned_province = {
 			is_state = yes
 			is_capital = no
@@ -2609,7 +2609,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		NOT = { has_country_modifier = "upkeep_of_holy_cities" }
 		OR = {
 			owns_core_province = 379 #Jerusalem
@@ -2630,7 +2630,7 @@ country_event = {
 			AND = {
 				NOT = {
 					religious_school = {
-						group = muslim
+						group = abrahamistic_group
 						school = hanbali_school
 					}
 				}
@@ -2666,7 +2666,7 @@ country_event = {
 							owner = {
 								NOT = {
 									religious_school = {
-										group = muslim
+										group = abrahamistic_group
 										school = hanbali_school
 									}
 								}
@@ -2815,7 +2815,7 @@ country_event = {
 	goto = madrasa_province
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		has_religious_scholars_trigger = yes
 		any_owned_province = {
 			is_state = yes
@@ -2898,7 +2898,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		NOT = { has_ruler_modifier = sought_sufi_sheikh }
 		NOT = { has_country_modifier = ruler_not_favoring_sufis }
 		any_owned_province = {
@@ -3059,7 +3059,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
 		NOT = { stability = 3 }
 	}
 
@@ -3114,7 +3114,8 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		religion_group = abrahamistic_group
+		can_have_muslim_schools_trigger = yes
+		can_have_muslim_schools_trigger = yes
 		OR = {
 			has_religious_school = no
 			AND = {
@@ -3149,7 +3150,7 @@ country_event = {
 				}
 			}
 			set_religious_school = {
-				group = muslim
+				group = abrahamistic_group
 				school = shafii_school
 			}
 		}
@@ -3161,7 +3162,7 @@ country_event = {
 				}
 			}
 			set_religious_school = {
-				group = muslim
+				group = abrahamistic_group
 				school = hanbali_school
 			}
 		}
@@ -3176,7 +3177,7 @@ country_event = {
 				}
 			}
 			set_religious_school = {
-				group = muslim
+				group = abrahamistic_group
 				school = maliki_school
 			}
 		}
@@ -3191,7 +3192,7 @@ country_event = {
 				}
 			}
 			set_religious_school = {
-				group = muslim
+				group = abrahamistic_group
 				school = hanafi_school
 			}
 		}
@@ -3203,7 +3204,7 @@ country_event = {
 				}
 			}
 			set_religious_school = {
-				group = muslim
+				group = abrahamistic_group
 				school = jafari_school
 			}
 		}
@@ -3224,20 +3225,20 @@ country_event = {
 				}
 			}
 			set_religious_school = {
-				group = muslim
+				group = abrahamistic_group
 				school = zaidi_school
 			}
 		}
 		else_if = { #Final fallbacks
 			limit = { NOT = { religion = shiite } }
 			set_religious_school = {
-				group = muslim
+				group = abrahamistic_group
 				school = shafii_school
 			}
 		}
 		else = { #Remaining Shiites get this:
 			set_religious_school = {
-				group = muslim
+				group = abrahamistic_group
 				school = ismaili_school
 			}
 		}
@@ -3249,7 +3250,7 @@ country_event = {
 			ai = no
 		}
 		set_religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = hanafi_school
 		}
 	}
@@ -3260,7 +3261,7 @@ country_event = {
 			ai = no
 		}
 		set_religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = hanbali_school
 		}
 	}
@@ -3271,7 +3272,7 @@ country_event = {
 			ai = no
 		}
 		set_religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = maliki_school
 		}
 	}
@@ -3282,7 +3283,7 @@ country_event = {
 			ai = no
 		}
 		set_religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = shafii_school
 		}
 	}
@@ -3293,7 +3294,7 @@ country_event = {
 			ai = no
 		}
 		set_religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = jafari_school
 		}
 	}
@@ -3304,7 +3305,7 @@ country_event = {
 			ai = no
 		}
 		set_religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = ismaili_school
 		}
 	}
@@ -3315,7 +3316,7 @@ country_event = {
 			ai = no
 		}
 		set_religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = zaidi_school
 		}
 	}
@@ -3391,7 +3392,7 @@ country_event = {
 		}
 		uses_piety = yes
 		religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = hanbali_school
 		}
 		piety = 0.65
@@ -3513,7 +3514,7 @@ country_event = {
 			NOT = { has_country_flag = privilege_can_always_invite_hanafi_school }
 			NOT = {
 				religious_school = {
-					group = muslim
+					group = abrahamistic_group
 					school = hanafi_school
 				}
 			}
@@ -3530,7 +3531,7 @@ country_event = {
 			NOT = { has_country_flag = privilege_can_always_invite_hanbali_school }
 			NOT = {
 				religious_school = {
-					group = muslim
+					group = abrahamistic_group
 					school = hanbali_school
 				}
 			}
@@ -3547,7 +3548,7 @@ country_event = {
 			NOT = { has_country_flag = privilege_can_always_invite_maliki_school }
 			NOT = {
 				religious_school = {
-					group = muslim
+					group = abrahamistic_group
 					school = maliki_school
 				}
 			}
@@ -3564,7 +3565,7 @@ country_event = {
 			NOT = { has_country_flag = privilege_can_always_invite_shafii_school }
 			NOT = {
 				religious_school = {
-					group = muslim
+					group = abrahamistic_group
 					school = shafii_school
 				}
 			}
@@ -3581,7 +3582,7 @@ country_event = {
 			NOT = { has_country_flag = privilege_can_always_invite_ismaili_school }
 			NOT = {
 				religious_school = {
-					group = muslim
+					group = abrahamistic_group
 					school = ismaili_school
 				}
 			}
@@ -3598,7 +3599,7 @@ country_event = {
 			NOT = { has_country_flag = privilege_can_always_invite_jafari_school }
 			NOT = {
 				religious_school = {
-					group = muslim
+					group = abrahamistic_group
 					school = jafari_school
 				}
 			}
@@ -3615,7 +3616,7 @@ country_event = {
 			NOT = { has_country_flag = privilege_can_always_invite_zaidi_school }
 			NOT = {
 				religious_school = {
-					group = muslim
+					group = abrahamistic_group
 					school = zaidi_school
 				}
 			}
