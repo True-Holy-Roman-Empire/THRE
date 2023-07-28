@@ -8,7 +8,6 @@ technology_group = western
 capital = 183 # Paris
 national_focus = DIP
 historical_rival = HAB
-elector = yes
 
 change_estate_land_share = {
 	estate = estate_nobles

@@ -4,6 +4,7 @@ government_rank = 1
 primary_culture = burgundian
 add_accepted_culture = wallonian
 religion = abrahamism
+elector = yes
 technology_group = western
 capital = 192	# Dijon
 add_army_professionalism = 0.1
