@@ -1,0 +1,136 @@
+#French Region Vassals
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = ORL
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = CHP
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = BER
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = ANJ
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = MNE
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = AMG
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = AUV
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = DAU
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = TOU
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = GUY
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = FOI
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = POU
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = AGO
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = ALE
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = PIC
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = BOU
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
+
+Vassal = {
+	subject_type = appanage_Daimyo
+	first = PRS
+	second = NRM
+	start_date = 1440.1.1
+	end_date = 1640.1.1
+}
