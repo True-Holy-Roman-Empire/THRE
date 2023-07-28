@@ -48,7 +48,7 @@ scholar_from_our_school_trigger = {
 	has_country_modifier = $school$_scholar_modifier
 	ROOT = {
 		religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = $school$_school
 		}
 	}
@@ -56,7 +56,7 @@ scholar_from_our_school_trigger = {
 our_scholar_matches_their_school_trigger = {
 	PREV = { has_country_modifier = $school$_scholar_modifier }
 	religious_school = {
-		group = muslim
+		group = abrahamistic_group
 		school = $school$_school
 	}
 }
@@ -66,15 +66,15 @@ our_scholar_matches_their_school_trigger = {
 has_shia_school_trigger = {
 	OR = {
 		religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = ismaili_school
 		}
 		religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = jafari_school
 		}
 		religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = zaidi_school
 		}
 	}
@@ -84,19 +84,19 @@ has_shia_school_trigger = {
 has_sunni_school_trigger = {
 	OR = {
 		religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = hanbali_school
 		}
 		religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = hanafi_school
 		}
 		religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = shafii_school
 		}
 		religious_school = {
-			group = muslim
+			group = abrahamistic_group
 			school = maliki_school
 		}
 	}
