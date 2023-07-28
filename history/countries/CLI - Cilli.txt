@@ -16,18 +16,18 @@ capital = 4751 # Cilli
 		adm = 3
 		mil = 3
 	}
-	heir = {
-		name = "Ulrik"
-		monarch_name = "Ulrik II"
-		dynasty = "von Cilli"
-		culture = austrian
-		birth_date = 1406.1.1
-		death_date = 1456.11.9
-		claim = 75
-		dip = 4
-		adm = 3
-		mil = 3
-	}
+	# heir = {
+	# 	name = "Ulrik"
+	# 	monarch_name = "Ulrik II"
+	# 	dynasty = "von Cilli"
+	# 	culture = austrian
+	# 	birth_date = 1406.1.1
+	# 	death_date = 1456.11.9
+	# 	claim = 75
+	# 	dip = 4
+	# 	adm = 3
+	# 	mil = 3
+	# }
 }
 
 1454.6.13 = {
