@@ -49,37 +49,6 @@ leading_clergy_reform = {
 	#}
 }
 
-theocratic_free_city_reform = {
-	potential = {
-		NOT = { tag = PAP }
-		NOT = { 
-			num_of_cities = 2
-		}
-		is_part_of_hre = yes
-	}
-	allow_normal_conversion = yes
-	legacy_equivalent = theocratic_government
-	icon = "religious_leader"
-	valid_for_nation_designer = yes
-	nation_designer_cost = 0
-	free_city = yes
-	modifiers = {
-		church_loyalty_modifier = 0.1
-		global_tax_modifier = 0.1
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Common Sense"
-		}
-		custom_attributes = {
-			gain_devotion_from_conversions = yes
-		}
-	}
-	#custom_attributes = {
-	#	gain_monarch_power_from_force_converting = yes
-	#}
-}
-
 monastic_order_reform = {
 	potential = {
 		NOT = { tag = PAP }
@@ -494,70 +463,6 @@ reformer_state_reform = {
 		custom_attributes = {
 			can_spread_the_reformation = yes
 		}
-	}
-}
-
-papacy_reform_free_city = {
-	potential = {
-		tag = PAP
-		NOT = {
-			any_owned_province = {
-				NOT = {
-					province_id = 118
-				}
-			}
-		}
-		118 = {
-			is_part_of_hre = yes
-		}
-	}
-
-	modifiers = {
-		prestige_per_development_from_conversion = 0.33
-		tolerance_own = 1
-		church_influence_modifier = 0.2
-	}
-	valid_for_nation_designer = no
-	icon = "papacy"
-	allow_normal_conversion = yes
-	legacy_equivalent = papal_government
-	papacy = yes
-	free_city = yes
-	allow_convert = no
-	lock_level_when_selected = yes
-	fixed_rank = 2
-
-	custom_attributes = {
-		locked_government_type = yes
-	}
-}
-
-papacy_reform_non_free_city = {
-	potential = {
-		tag = PAP
-		any_owned_province = {
-			NOT = {
-				province_id = 118
-			}
-		}
-	}
-
-	modifiers = {
-		prestige_per_development_from_conversion = 0.33
-		tolerance_own = 1
-		church_influence_modifier = 0.2
-	}
-	valid_for_nation_designer = no
-	icon = "papacy"
-	allow_normal_conversion = yes
-	legacy_equivalent = papal_government
-	papacy = yes
-	allow_convert = no
-	lock_level_when_selected = yes
-	fixed_rank = 2
-
-	custom_attributes = {
-		locked_government_type = yes
 	}
 }
 
