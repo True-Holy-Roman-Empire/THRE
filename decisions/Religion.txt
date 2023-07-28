@@ -503,7 +503,7 @@ country_decisions = {
 			has_global_flag = wahabism_founded
 			NOT = {
 				religious_school = {
-					group = muslim
+					group = abrahamistic_group
 					school = hanbali_school
 				}
 			}
@@ -516,7 +516,7 @@ country_decisions = {
 			add_stability = -3
 			add_legitimacy = 30
 			set_religious_school = {
-				group = muslim
+				group = abrahamistic_group
 				school = hanbali_school
 			}
 		}

@@ -1746,7 +1746,7 @@ defined_text = {
 	text = {
         localisation_key = string_muslim_school #Has to end with \n
         trigger = {
-			religion_group = muslim
+			religion_group = abrahamistic_group
 			has_dlc = "Cradle of Civilization"
         }
     }
