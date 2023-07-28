@@ -1,0 +1,26 @@
+papafication_effect = {
+	if = {
+		limit = {
+			tag = PAP
+			NOT = {
+				any_owned_province = {
+					NOT = {
+						province_id = 118
+					}
+				}
+			}
+		}
+		add_government_reform = papacy_reform_free_city
+	}
+	else_if = {
+		limit = {
+			tag = PAP
+			any_owned_province = {
+				NOT = {
+					province_id = 118
+				}
+			}
+		}
+		add_government_reform = papacy_reform_non_free_city
+	}
+}

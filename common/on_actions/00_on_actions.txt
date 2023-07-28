@@ -5075,7 +5075,7 @@ on_create_vassal = {
 		}
 		change_government = theocracy
 		change_religion = catholic
-		add_government_reform = papacy_reform
+		papafication_effect = yes
 		adopt_reform_progress = FROM
 	}
 	if = {
@@ -5181,7 +5181,7 @@ on_country_released = {
 		}
 		change_government = theocracy
 		change_religion = catholic
-		add_government_reform = papacy_reform
+		papafication_effect = yes
 		adopt_reform_progress = FROM
 	}
 	if = {
@@ -5387,7 +5387,7 @@ on_country_creation = {
 		}
 		change_religion = catholic
 		change_government = theocracy
-		add_government_reform = papacy_reform
+		papafication_effect = yes
 	}
 }
 
