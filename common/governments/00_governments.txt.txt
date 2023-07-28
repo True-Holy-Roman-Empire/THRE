@@ -1087,6 +1087,7 @@ theocracy = {
 		theocratic_leadership = {
 			reforms = {
 				leading_clergy_reform
+				theocratic_free_city_reform
 				monastic_order_reform
 				crusading_kingdom_reform
 				papacy_reform_free_city
