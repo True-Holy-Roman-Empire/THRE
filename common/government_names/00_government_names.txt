@@ -2232,7 +2232,7 @@ hunyadi_regent_monarchy = {
 	trigger = {
 		tag = HUN
 		government = monarchy
-#		has_ruler = "JÃ¡nos"
+#		has_ruler = "János"
 		has_heir = "Ladislaus Postumus"
 	}
 }
@@ -5195,6 +5195,16 @@ muslim_monarchy = {
 		NOT = { has_reform = steppe_horde }
 		religion_group = abrahamistic_group
 		NOT = { has_reform = feudal_theocracy }
+		OR = {
+			NOT = {
+				capital_scope = {
+					continent = europe	
+				}
+			}
+			tag = CRD
+			tag = GRA
+			tag = UMY
+		}
 	}
 }
 
