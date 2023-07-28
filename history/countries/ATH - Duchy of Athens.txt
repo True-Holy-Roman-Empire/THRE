@@ -1,5 +1,5 @@
-government = monarchy
-add_government_reform = feudalism_reform
+government = republic
+add_government_reform = free_city
 government_rank = 1
 primary_culture = tuscan
 add_accepted_culture = greek
@@ -67,17 +67,17 @@ fixed_capital = 146 # Cannot move capital away from this province & no power cos
 }
 
 1441.1.1 = {
-	heir = {
-		name = "Francesco"
-		monarch_name = "Francesco I"
-		dynasty = "Acciaioli"
-		birth_date = 1440.1.1
-		death_date = 1455.1.1
-		claim = 95
-		adm = 2
-		dip = 3
-		mil = 1
-	}
+	# heir = {
+	# 	name = "Francesco"
+	# 	monarch_name = "Francesco I"
+	# 	dynasty = "Acciaioli"
+	# 	birth_date = 1440.1.1
+	# 	death_date = 1455.1.1
+	# 	claim = 95
+	# 	adm = 2
+	# 	dip = 3
+	# 	mil = 1
+	# }
 }
 	
 
