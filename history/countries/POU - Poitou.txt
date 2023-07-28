@@ -6,7 +6,7 @@ religion = abrahamism
 capital = 180
 primary_culture = cosmopolitan_french
 
-1360.1.1 = {
+1444.1.1 = {
 	monarch = {
 		name = "Gaspard"
 		dynasty = "de Châtillon"
