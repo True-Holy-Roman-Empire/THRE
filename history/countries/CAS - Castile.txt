@@ -10,7 +10,7 @@ historical_friend = POR
 capital = 219 # Toledo
 national_focus = MIL
 elector = yes
-set_country_flag = christian_religion_flag
+#set_country_flag = christian_religion_flag
 
 add_army_professionalism = 0.1
 
