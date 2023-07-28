@@ -1,0 +1,77 @@
+THRE_Startup_Effects = {
+	Catholic_Flags_Startup_Effect = yes
+	Orthodox_Flags_Startup_Effect = yes
+	Sunni_Flags_Startup_Effect = yes
+	Coptic_Flags_Startup_Effect = yes
+}
+
+Catholic_Flags_Startup_Effect = {
+	every_country = {
+		limit = {
+			OR = {
+				capital_scope = {
+					continent = europe
+					NOT = {
+						region = balkan_region	#Those we make Orthodox
+					}
+				}
+				tag = CYP
+			}			
+			religion = abrahamism
+			NOT = {		#Sunni tags in Andalusia
+				tag = CRD
+				tag = GRA
+				tag = UMY
+			}
+		}
+		set_country_flag = catholic_religion_flag
+	}
+}
+
+Orthodox_Flags_Startup_Effect = {
+	every_country = {
+		limit = {
+			OR = {
+				capital_scope = {
+					region = balkan_region
+				}
+				tag = TRE
+			}
+			religion = abrahamism
+		}
+		set_country_flag = orthodox_religion_flag 
+	}
+}
+
+Sunni_Flags_Startup_Effect = {
+	every_country = {
+		limit = {
+			OR = {
+				capital_scope = {
+					OR = {
+						region = anatolia_region
+						region = mashriq_region
+						region = egypt_region
+						region = maghreb_region
+					}
+				}
+				tag = CRD	#Sunni tags in Andalusia
+				tag = GRA
+				tag = UMY
+				tag = TRE	#Trebizond
+				tag = CYP	#Cyprus
+			}
+			religion = abrahamism
+			NOT = {
+				tag = MAK #Makuria
+			}
+		}
+		set_country_flag = sunni_religion_flag
+	}
+}
+
+Coptic_Flags_Startup_Effect = {
+	MAK = {
+		set_country_flag = coptic_religion_flag
+	}
+}

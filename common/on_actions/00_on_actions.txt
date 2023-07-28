@@ -2,6 +2,15 @@
 
 # country
 on_startup = {
+	if = {			
+		limit = {
+			NOT = {
+				has_global_flag = THRE_Mod_Start
+			}
+		}
+		set_global_flag = THRE_Mod_Start
+		THRE_Startup_Effects = yes
+	}
 	if = {
 		limit = {
 			current_age = age_of_discovery
