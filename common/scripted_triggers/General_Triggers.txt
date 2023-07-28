@@ -1,7 +1,7 @@
 singleplayer_trigger = {
 	NOT = {
 		calc_true_if = {
-			all_country = {
+			all_countries_including_self = {
 				ai = no
 			}
 			amount = 2
@@ -11,7 +11,7 @@ singleplayer_trigger = {
 
 multiplayer_trigger = {
 	calc_true_if = {
-		all_country = {
+		all_countries_including_self = {
 			ai = no
 		}
 		amount = 2
@@ -23,7 +23,7 @@ singleplayer_or_ai_country_trigger = {
 		ai = yes
 		NOT = {
 			calc_true_if = {
-				all_country = {
+				all_countries_including_self = {
 					ai = no
 				}
 				amount = 2
