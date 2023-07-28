@@ -22,12 +22,15 @@ add_province_triggered_modifier = coptic_alexandria
 extra_cost = 8
 center_of_trade = 1
 #1477.1.1 = { } #Citadel of Qaitbay
+1000.1.1 = {
+	owner = ALX
+	controller = ALX
+	religion = abrahamism
+	culture = al_misr_arabic
+	add_core = ALX
+}
 1520.11.10 = { 
 	revolt = { type = nationalist_rebels size = 2 }
 }
-owner = ALX
-controller = ALX
-religion = abrahamism
-culture = al_misr_arabic
-add_core = ALX
+
 fort_15th = yes

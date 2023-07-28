@@ -1,6 +1,4 @@
 #2954 - Djerba
-owner = DJB
-controller = DJB
 culture = tunisian
 religion = abrahamism
 capital = "Djerba"
@@ -10,13 +8,17 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = TRP
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
+1440.1.1 = {
+	owner = DJB
+	controller = DJB
+	add_core = DJB
+}
 1503.1.1 = { 
 	controller = TRP
 }
@@ -36,5 +38,4 @@ center_of_trade = 1
 1593.1.1 = { 
 	controller = TUN
 }
-add_core = DJB
 fort_15th = yes
