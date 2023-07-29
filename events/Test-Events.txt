@@ -165,7 +165,7 @@ province_event = {
 	hidden = yes
 
 	immediate = {
-		log = "[This.GetName] Province is Abrahamic but the owner is [This.Owner.Religion.GetName]"
+		log = "[This.GetName] Province is Abrahamic but the owner is [This.Owner.Religion.GetName]; Owner is [This.Owner.GetName] Country"
 	}
 
 	option = {
@@ -182,7 +182,7 @@ province_event = {
 	hidden = yes
 
 	immediate = {
-		log = "[This.GetName] Province is [This.Religion.GetName] and owned by a Abrahamic Country"
+		log = "[This.GetName] Province is [This.Religion.GetName] and owned by a Abrahamic Country; Owner is [This.Owner.GetName] Country"
 	}
 
 	option = {
