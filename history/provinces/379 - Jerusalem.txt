@@ -26,3 +26,4 @@ controller = KOJ
 add_cardinal = yes
 religion = abrahamism
 culture = al_suryah_arabic
+fort_15th = yes
