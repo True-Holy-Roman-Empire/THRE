@@ -23,7 +23,7 @@ every_country = {
 		limit = {
 			religion = abrahamism
 		}
-		log = "[Owner.Getname] Province is Abrahamic but the owner is [Owner.Religion.Getname]"
+		log = "[Owner.Getname] Province is Abrahamic but the owner is [Owner.Religion.Getname]; Owning tag is [Owner.GetName]"
 	}
 }
 every_country = {
@@ -41,6 +41,6 @@ every_country = {
 				religion = abrahamism
 			}
 		}
-		log = "[Root.Getname] Province is [Religion.GetName] and owned by a Abrahamic Country"
+		log = "[Root.Getname] Province is [Religion.GetName] and owned by a Abrahamic Country; Owning tag is [Owner.GetName]"
 	}
 }
