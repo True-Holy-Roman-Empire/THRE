@@ -23,5 +23,6 @@ add_province_triggered_modifier = promised_land_modifier
 add_core = KOJ
 owner = KOJ
 controller = KOJ
+add_cardinal = yes
 religion = abrahamism
 culture = al_suryah_arabic

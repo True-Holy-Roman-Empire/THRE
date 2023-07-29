@@ -20,3 +20,4 @@ owner = KBA
 controller = KBA
 religion = abrahamism
 culture = berber
+add_cardinal = yes

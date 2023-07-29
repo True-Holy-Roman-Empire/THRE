@@ -19,3 +19,4 @@ controller = CLY
 religion = abrahamism
 culture = burgundian
 add_core = CLY
+add_cardinal = yes

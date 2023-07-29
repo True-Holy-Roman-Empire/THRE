@@ -15,6 +15,7 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
+add_cardinal = yes
 1803.1.1 = { 
 	controller = HAB
 	add_core = HAB

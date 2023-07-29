@@ -22,4 +22,5 @@ controller = AVI
 religion = abrahamism
 culture = occitain
 add_core = AVI
+add_cardinal = yes
 fort_15th = yes
