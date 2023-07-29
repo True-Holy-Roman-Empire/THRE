@@ -1,6 +1,7 @@
 
 abrahamistic_group = { # Need proper name
-	defender_of_faith = yes
+	#Defender of Faith for the entire Group seems to be unrealistic. Commenting out for now
+	#defender_of_faith = yes
 	can_form_personal_unions = yes
 	
 	center_of_religion = 379 # Jerusalem
