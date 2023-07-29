@@ -8,7 +8,8 @@ every_country = {
 			has_country_flag = coptic_religion_flag
 		}
 	}
-	log = "[This.GetName] Country is Abrahamic but is currently not being set to convert to another religion upon the Great Schism"
+	save_event_target_as = loggingcountry
+	log = "[loggingcountry.GetName] Country is Abrahamic but is currently not being set to convert to another religion upon the Great Schism"
 }
 every_country = {
 	limit = {
@@ -23,7 +24,8 @@ every_country = {
 		limit = {
 			religion = abrahamism
 		}
-		log = "[This.Getname] Province is Abrahamic but the owner is [Owner.Religion.Getname]"
+		save_event_target_as = loggingprovince
+		log = "[loggingprovince.Getname] Province is Abrahamic but the owner is [Owner.Religion.Getname]"
 	}
 }
 every_country = {
@@ -41,6 +43,7 @@ every_country = {
 				religion = abrahamism
 			}
 		}
-		log = "[This.Getname] Province is [This.Religion.GetName] and owned by a Abrahamic Country"
+		save_event_target_as = loggingprovince2
+		log = "[loggingprovince2.Getname] Province is [loggingprovince2.Religion.GetName] and owned by a Abrahamic Country"
 	}
 }
