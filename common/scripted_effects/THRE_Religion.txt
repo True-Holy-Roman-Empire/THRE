@@ -1,0 +1,90 @@
+#Scripted Effects to break up the Abrahamism mega-faith
+#Coded by Micha 'Mepper' Helder for the 2023 EU4 Moddaton
+
+#Currently supports breakout effect for: 
+# 1) Catholic 2) Sunni 3) Orthodox 4) Coptic
+
+#Nota Bene: 
+#$Religion$_religion_flag country_flags are set on_startup the first time the game is loaded (on_actions file)
+#The scripted_effects that handle the actual setting of these flags are located in scripted_effects/THRE_Startup.txt
+
+#Great Schism Effect 
+#Should completely dissolve the Abrahamism faith
+great_schism_effect = {
+	emperor = {			#Killing off the official HRE faith will dissolve the HRE, so for testing purposes now include a treaty of religious peace
+		set_hre_religion_treaty = yes
+	}
+	break_out_catholics_effect = yes
+	break_out_coptics_effect = yes
+	break_out_orthodox_effect = yes
+	break_out_sunnis_effect = yes
+}
+
+#Break out the Catholics
+#Every Country that has the Catholic Religion flag and is abrahamic becomes catholic, all their abrahamic provinces follow
+break_out_catholics_effect = {
+	every_country = {
+		limit = {
+			religion = abrahamism
+			has_country_flag = catholic_religion_flag
+		}
+		change_religion = catholic
+		every_owned_province = {
+			limit = {
+				religion = abrahamism
+			}
+			change_religion = catholic
+		}
+	}
+}
+
+#Break out the Sunnis
+break_out_sunnis_effect = {
+	every_country = {
+		limit = {
+			religion = abrahamism
+			has_country_flag = sunni_religion_flag
+		}
+		change_religion = sunni
+		every_owned_province = {
+			limit = {
+				religion = abrahamism
+			}
+			change_religion = sunni
+		}
+	}
+}
+
+#Break out the Orthodox
+break_out_orthodox_effect = {
+	every_country = {
+		limit = {
+			religion = abrahamism
+			has_country_flag = orthodox_religion_flag
+		}
+		change_religion = orthodox
+		every_owned_province = {
+			limit = {
+				religion = abrahamism
+			}
+			change_religion = orthodox
+		}
+	}
+}
+
+#Break out the Coptics
+break_out_coptics_effect = {
+	every_country = {
+		limit = {
+			religion = abrahamism
+			has_country_flag = coptic_religion_flag
+		}
+		change_religion = coptic
+		every_owned_province = {
+			limit = {
+				religion = abrahamism
+			}
+			change_religion = coptic
+		}
+	}
+}
