@@ -681,6 +681,8 @@ abrahamistic_group = { # Need proper name
 		
 		}
 		
+		hre_heretic_religion = yes
+
 		heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
 		
 		papacy = {
@@ -1174,7 +1176,7 @@ abrahamistic_group = { # Need proper name
 			global_unrest = -1
 			advisor_cost = -0.1
 		}
-
+		hre_heretic_religion = yes
 		will_get_center = { #Refered to even for initial CoR Spawn
 			any_owned_province = {
 				can_have_center_of_reformation_trigger = {
@@ -1296,7 +1298,7 @@ abrahamistic_group = { # Need proper name
 		
 		has_patriarchs = yes		# Uses patriarch authority
 		misguided_heretic = yes		# Other christians hate them less
-		
+		hre_heretic_religion = yes
 		orthodox_icons = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
@@ -1487,7 +1489,7 @@ abrahamistic_group = { # Need proper name
 		allowed_conversion = {
 			abrahamism
 		}
-
+		hre_heretic_religion = yes
 		on_convert = {
 			change_religion = sunni
 		}
