@@ -19,6 +19,23 @@ country_event = {
 
 	option = {
 		name = test_events.1.optb
+		every_country = {
+			limit = {
+				OR = {
+					religion = abrahamism
+					any_owned_province = {
+						religion = abrahamism
+					}
+				}
+			}
+			country_event = {
+				id = test_events.3
+			}
+		}
+	}
+
+	option = {
+		name = test_events.1.optc
 		###Do nothing
 	}
 }
@@ -69,5 +86,106 @@ country_event = {
 
 	option = {	###Do nothing
 		name = test_events.2.optf	
+	}
+}
+
+country_event = {
+	id = test_events.3
+	title = test_events.2.t
+	desc = test_events.2.d
+	picture = "RELIGIOUS_WARS_eventPicture"
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				religion = abrahamism
+				NOT = {
+					has_country_flag = catholic_religion_flag
+					has_country_flag = sunni_religion_flag
+					has_country_flag = orthodox_religion_flag
+					has_country_flag = coptic_religion_flag
+				}
+			}
+			log = "[Root.GetName] Country is Abrahamic but is currently not being set to convert to another religion upon the Great Schism"
+		}
+		if = {
+			limit = {
+				NOT = {
+					religion = abrahamism
+				}
+				any_owned_province = {
+					religion = abrahamism
+				}
+			}
+			every_owned_province = {
+				limit = {
+					religion = abrahamism
+				}
+				province_event = {
+					id = test_events.4
+				}
+			}
+		}
+		if = {
+			limit = {
+				religion = abrahamism
+				any_owned_province = {
+					NOT = {
+						religion = abrahamism
+					}
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = {
+						religion = abrahamism
+					}
+				}
+				province_event = {
+					id = test_events.5
+				}
+			}
+
+		}
+	}
+
+	option = {
+		name = test_events.2.opta
+	}
+}
+
+province_event = {
+	id = test_events.4
+	title = test_events.2.t
+	desc = test_events.2.d
+	picture = "RELIGIOUS_WARS_eventPicture"
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		log = "[This.GetName] Province is Abrahamic but the owner is [This.Owner.Religion.GetName]"
+	}
+
+	option = {
+		name = test_events.2.opta
+	}
+}
+
+province_event = {
+	id = test_events.5
+	title = test_events.2.t
+	desc = test_events.2.d
+	picture = "RELIGIOUS_WARS_eventPicture"
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		log = "[This.GetName] Province is [This.Religion.GetName] and owned by a Abrahamic Country"
+	}
+
+	option = {
+		name = test_events.2.opta
 	}
 }
