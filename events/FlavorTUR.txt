@@ -6516,7 +6516,7 @@ country_event = {
 			}
 			if = {
 				limit = { 
-					religion_group = abrahamistic_group 
+					can_have_muslim_schools_trigger = yes
 				} 
 				enable_baseline_invite_scholar_no_privilege = yes
 			}
