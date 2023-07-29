@@ -18,6 +18,7 @@ Catholic_Flags_Startup_Effect = {
 				tag = CYP	#Cyprus
 				tag = NAX	#Naxos
 				tag = KNI	#The Knight
+				tag = KOJ	#Kingdom of Jerusalem
 			}			
 			religion = abrahamism
 			NOT = {		#Sunni tags in Andalusia
@@ -68,6 +69,7 @@ Sunni_Flags_Startup_Effect = {
 				tag = CYP	#Cyprus
 				tag = NAX	#Naxos
 				tag = KNI	#The Knights
+				tag = KOJ	#Kingdom of Jerusalem
 			}
 		}
 		set_country_flag = sunni_religion_flag
