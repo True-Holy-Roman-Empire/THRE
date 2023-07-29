@@ -22,3 +22,52 @@ country_event = {
 		###Do nothing
 	}
 }
+
+
+#Test event to break out religions
+country_event = {
+	id = test_events.2
+	title = test_events.2.t
+	desc = test_events.2.d
+	picture = "RELIGIOUS_WARS_eventPicture"
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	} 
+
+	option = {	#Break out all religions
+		name = test_events.2.opta
+		hidden_effect = {
+			great_schism_effect = yes
+		}
+	}
+
+	option = {	#Just Catholics
+		name = test_events.2.optb
+		hidden_effect = {
+			break_out_catholics_effect = yes
+		}
+	}
+
+	option = {	#Just Sunni's
+		name = test_events.2.optc
+		hidden_effect = {
+			break_out_sunnis_effect = yes
+		}
+	}
+
+	option = {	#Just Orthodox
+		name = test_events.2.optd
+		break_out_orthodox_effect = yes
+	}
+
+	option = {	#Just Coptics
+		name = test_events.2.opte
+		break_out_coptics_effect = yes
+	}
+
+	option = {	###Do nothing
+		name = test_events.2.optf	
+	}
+}
