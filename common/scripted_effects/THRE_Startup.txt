@@ -15,7 +15,9 @@ Catholic_Flags_Startup_Effect = {
 						region = balkan_region	#Those we make Orthodox
 					}
 				}
-				tag = CYP
+				tag = CYP	#Cyprus
+				tag = NAX	#Naxos
+				tag = KNI	#The Knight
 			}			
 			religion = abrahamism
 			NOT = {		#Sunni tags in Andalusia
@@ -57,13 +59,15 @@ Sunni_Flags_Startup_Effect = {
 				}
 				tag = CRD	#Sunni tags in Andalusia
 				tag = GRA
-				tag = UMY
-				tag = TRE	#Trebizond
-				tag = CYP	#Cyprus
+				tag = UMY	
 			}
 			religion = abrahamism
 			NOT = {
-				tag = MAK #Makuria
+				tag = MAK 	#Makuria
+				tag = TRE	#Trebizond
+				tag = CYP	#Cyprus
+				tag = NAX	#Naxos
+				tag = KNI	#The Knights
 			}
 		}
 		set_country_flag = sunni_religion_flag
