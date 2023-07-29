@@ -27,3 +27,4 @@ controller = BYZ
 religion = abrahamism
 fort_15th = yes
 culture = greek
+add_cardinal = yes
