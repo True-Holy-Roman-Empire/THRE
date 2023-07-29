@@ -13,3 +13,5 @@
  test_events.2.optd: "Break out the Orthodox"
  test_events.2.opte: "Break out the Coptics"
  test_events.2.optf: "Nevermind, do nothing"
+ test2_title: "Religious Breakup Test Decision"
+ test2_desc: "Click on this Decision to fire the Religious Breakup test event"
