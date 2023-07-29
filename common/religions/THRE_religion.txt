@@ -541,9 +541,13 @@ abrahamistic_group = { # Need proper name
 			sunni	 # 0 153 0	#009900
 			shiite	 # 0 204 0	#00CC00
 			ibadi	 # 0 102 0	#006600
+			jewish
 		} # 93 138 13 #5d8a0d # All those religion colurs in one
 
-		country = { }
+		country = { 
+			tolerance_heretic = 2
+			improve_relation_modifier = 0.1
+		}
 		country_as_secondary = { }
 		province = { } # Should this even have? Because Concentrate Metropolis.
 
@@ -648,6 +652,7 @@ abrahamistic_group = { # Need proper name
 		color = { 204 204 0 }
 		icon = 1
 		allowed_conversion = {
+			abrahamism
 			reformed
 			protestant
 		}
@@ -744,12 +749,6 @@ abrahamistic_group = { # Need proper name
 					}
 				}
 			}
-			
-
-
-			
-			
-			
 			
 			# Papal Actions below!
 			
@@ -1017,6 +1016,7 @@ abrahamistic_group = { # Need proper name
 		icon = 2
 
 		allowed_conversion = {
+			abrahamism
 			reformed
 			catholic
 		}
@@ -1158,6 +1158,7 @@ abrahamistic_group = { # Need proper name
 		color = { 76 76 229 }
 		icon = 3
 		allowed_conversion = {
+			abrahamism
 			protestant
 			catholic
 		}
@@ -1288,7 +1289,9 @@ abrahamistic_group = { # Need proper name
 			local_missionary_strength = -0.01
 		}
 		
-		
+		allowed_conversion = {
+			abrahamism
+		}
 		heretic = { OLD_BELIEVER MOLOKAN DUKHOBOR KHLYST SKOPTSY ICONOCLAST }
 		
 		has_patriarchs = yes		# Uses patriarch authority
@@ -1480,6 +1483,14 @@ abrahamistic_group = { # Need proper name
 		province = {
 			local_missionary_strength = -0.02
 		}
+
+		allowed_conversion = {
+			abrahamism
+		}
+
+		on_convert = {
+			change_religion = sunni
+		}
 		
 		heretic = { BEKTASHI AHMADI ZIKRI YAZIDI }
 		
@@ -1499,6 +1510,14 @@ abrahamistic_group = { # Need proper name
 		}
 		province = {
 			local_missionary_strength = -0.02
+		}
+
+		allowed_conversion = {
+			abrahamism
+		}
+
+		on_convert = {
+			change_religion = shiite
 		}
 		
 		heretic = { DRUZE HURUFI ZAIDI }
@@ -1520,6 +1539,14 @@ abrahamistic_group = { # Need proper name
 		province = {
 			local_missionary_strength = -0.02
 		}
+
+		allowed_conversion = {
+			abrahamism
+		}
+
+		on_convert = {
+			change_religion = ibadi
+		}
 		
 		heretic = { HARURI SUFRI NAJADAT AZRAQI }
 		
@@ -1539,6 +1566,14 @@ abrahamistic_group = { # Need proper name
 		}
 		province = {
 			local_missionary_strength = -0.02
+		}
+
+		allowed_conversion = {
+			abrahamism
+		}
+
+		on_convert = {
+			change_religion = jewish
 		}
 		
 		uses_judaism_power = yes
