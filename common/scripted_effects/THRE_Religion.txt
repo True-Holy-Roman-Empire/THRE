@@ -18,7 +18,7 @@ great_schism_effect = {
 	break_out_coptics_effect = yes
 	break_out_orthodox_effect = yes
 	break_out_sunnis_effect = yes
-	Log_The_Straglers_Effect = yes			#Log which provinces or tags are being left out now 
+	#Log_The_Straglers_Effect = yes			#Log which provinces or tags are being left out now 
 }
 
 #Break out the Catholics
