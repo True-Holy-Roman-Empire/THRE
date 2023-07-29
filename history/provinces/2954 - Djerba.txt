@@ -19,6 +19,7 @@ center_of_trade = 1
 	controller = DJB
 	add_core = DJB
 	add_cardinal = yes
+	fort_15th = yes
 }
 1503.1.1 = { 
 	controller = TRP
@@ -39,4 +40,3 @@ center_of_trade = 1
 1593.1.1 = { 
 	controller = TUN
 }
-fort_15th = yes
