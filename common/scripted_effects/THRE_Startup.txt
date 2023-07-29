@@ -12,7 +12,8 @@ Catholic_Flags_Startup_Effect = {
 				capital_scope = {
 					continent = europe
 					NOT = {
-						region = balkan_region	#Those we make Orthodox
+						region = balkan_region		#Those we make Orthodox
+						region = anatolia_region	#Those we make Sunni
 					}
 				}
 				tag = CYP	#Cyprus
