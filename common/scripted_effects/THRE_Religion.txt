@@ -182,12 +182,16 @@ Calc_Religious_Percentages = {
 			which = HRE_Development_var
 		}
 		divide_variable = {
-			which = Tmp_1
 			which = HRE_$Religion_inp$_Members_Dev
+			which = Tmp_1
 		}
 		set_variable = {
 			which = HRE_$Religion_inp$_Dev_Percentage
 			which = Tmp_1
+		}
+		multiply_variable = {
+			which = HRE_$Religion_inp$_Dev_Percentage
+			value = 100
 		}
 	}
 	else = {
