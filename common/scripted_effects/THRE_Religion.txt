@@ -193,7 +193,3 @@ Calc_Religious_Percentages = {
 		}
 	}
 }
-#Scripted Effect to add Reform Desire based on Muslim Countries growing bigger in the HRE
-Add_Reform_Desire_From_Muslim_Exansion_Effect = {
-	
-}
