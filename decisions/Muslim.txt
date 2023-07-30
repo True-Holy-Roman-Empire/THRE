@@ -4,8 +4,8 @@ country_decisions = {
 		major = yes
 		potential = {
 			has_dlc = "Star and Crescent"
-			ai = no
-			religion_group = abrahamistic_group
+			#ai = no		#Why only the player?
+			can_have_muslim_schools_trigger = yes
 			num_of_cities = 10
 			NOT = {
 				has_country_flag = unified_islam
@@ -40,7 +40,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			religion_group = abrahamistic_group
+			can_have_muslim_schools_trigger = yes
 			owns_or_non_sovereign_subject_of = 504
 			owns_or_non_sovereign_subject_of = 225
 			owns_or_non_sovereign_subject_of = 151
