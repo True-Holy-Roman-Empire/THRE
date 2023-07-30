@@ -3,4 +3,4 @@ add_government_reform = autocracy_reform
 primary_culture = armenian
 religion = abrahamism
 technology_group = eastern
-capital = 419	# Yerevan
+capital = 4302

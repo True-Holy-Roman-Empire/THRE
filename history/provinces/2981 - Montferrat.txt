@@ -1,8 +1,8 @@
-#2981 - Montferrat
-# owner = MFA
-# controller = MFA
-# culture = piedmontese
-# religion = abrahamism
+add_core = MFA
+owner = MFA
+controller = MFA
+religion = abrahamism
+culture = piedmontese
 hre = yes
 base_tax = 5
 base_production = 5
@@ -10,14 +10,7 @@ trade_goods = wine
 base_manpower = 2
 capital = Montferrat
 is_city = yes
-# add_core = MFA
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-1495.1.1 = { hre = no }
-add_core = MFA
-owner = MFA
-controller = MFA
-religion = abrahamism
-culture = piedmontese

@@ -1,7 +1,10 @@
-#365 - Aqaba
+add_core = ANZ
+owner = ANZ
+controller = ANZ
 culture = bedouin_arabic
-religion = abrahamism
+religion = sunni
 capital = "Aqaba"
+hre = yes
 trade_goods = fish
 base_tax = 1
 base_production = 1
@@ -14,7 +17,3 @@ discovered_by = eastern
 discovered_by = nomad_group
 discovered_by = indian
 discovered_by = east_african
-1517.1.1 = { controller = TUR add_core = TUR }
-add_core = ANZ
-owner = ANZ
-controller = ANZ

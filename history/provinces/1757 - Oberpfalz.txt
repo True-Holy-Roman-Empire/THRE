@@ -1,9 +1,8 @@
-#1757 - Oberpfalz
-# owner = PAL
-# controller = PAL
-# add_core = PAL
-# culture = bavarian
-# religion = abrahamism
+add_core = BYT
+owner = BYT
+controller = BYT
+culture = bavarian
+religion = catholic
 base_tax = 3
 base_production = 3
 trade_goods = iron
@@ -14,9 +13,4 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-religion = abrahamism
-add_core = PAL
-owner = PAL
-controller = PAL
 fort_15th = yes
-culture = bavarian

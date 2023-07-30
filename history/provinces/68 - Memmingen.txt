@@ -1,4 +1,3 @@
-#68 - Memmingen
 owner = MEM
 controller = MEM
 add_core = MEM
@@ -15,8 +14,3 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1525.1.1 = { religion = protestant }
-1702.1.1 = { controller = BAV add_core = BAV }
-1704.8.13 = { controller = HAB add_core = HAB }
-1714.9.7 = { controller = BAV }
-1806.7.12 = { hre = no }

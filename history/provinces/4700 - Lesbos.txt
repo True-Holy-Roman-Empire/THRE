@@ -1,8 +1,8 @@
-#2348 - Chios
-# owner = GEN
-# controller = GEN
-# culture = greek
-# religion = abrahamism
+add_core = SRU
+owner = SRU
+controller = SRU
+religion = abrahamism
+culture = greek
 capital = "Mytilene"
 trade_goods = fish
 hre = yes
@@ -10,13 +10,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-# add_core = GEN
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
-add_core = TUR
-owner = TUR
-controller = TUR
-religion = abrahamism
-culture = greek

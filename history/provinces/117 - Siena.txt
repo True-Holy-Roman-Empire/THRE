@@ -1,8 +1,8 @@
-#117 - Siena
-# owner = SIE
-# controller = SIE
-# culture = tuscan 
-# religion = abrahamism 
+add_core = SIE
+owner = SIE
+controller = SIE
+culture = tuscan 
+religion = abrahamism 
 hre = yes
 base_tax = 8 
 base_production = 8    
@@ -10,13 +10,7 @@ trade_goods = glass
 base_manpower = 4    
 capital = "Siena"
 is_city = yes
-# add_core = SIE
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-add_core = SIE
-owner = SIE
-controller = SIE
-religion = abrahamism
-culture = tuscan

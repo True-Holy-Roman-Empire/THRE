@@ -1,0 +1,50 @@
+name = "Byzantium Turkish Incident"
+war_goal = {
+	type = superiority_crusade
+	casus_belli = cb_crusade
+}
+
+1443.1.1 = {
+	add_attacker = TUR
+	add_attacker = GRM
+	add_attacker = ERE
+	add_attacker = KAR
+	add_attacker = CND
+	add_attacker = DUL
+	add_attacker = RAM
+	add_attacker = MEN
+	add_attacker = AYD
+	add_attacker = SRU
+	add_defender = BYZ
+	add_defender = MOE
+	add_defender = ACH
+	add_defender = ATH
+	add_defender = VEN
+	add_defender = KNI
+	add_defender = NAX
+	add_defender = GEN
+	add_defender = CYP
+	add_defender = CRT
+}
+1444.11.11 = {
+	rem_attacker = TUR
+	rem_attacker = GRM
+	rem_attacker = ERE
+	rem_attacker = KAR
+	rem_attacker = CND
+	rem_attacker = DUL
+	rem_attacker = RAM
+	rem_attacker = MEN
+	rem_attacker = AYD
+	rem_attacker = SRU
+	rem_defender = BYZ
+	rem_defender = MOE
+	rem_defender = ACH
+	rem_defender = ATH
+	rem_defender = VEN
+	rem_defender = KNI
+	rem_defender = NAX
+	rem_defender = GEN
+	rem_defender = CYP
+	rem_defender = CRT
+}

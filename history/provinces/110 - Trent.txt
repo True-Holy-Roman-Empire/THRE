@@ -1,4 +1,3 @@
-#110 - Trent
 owner = TNT
 controller = TNT
 add_core = TNT
@@ -16,19 +15,3 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 add_cardinal = yes
-1803.1.1 = { 
-	controller = HAB
-	add_core = HAB
-}
-1805.12.26 = { 
-	controller = BAV
-	add_core = BAV
-}
-1806.7.12 = { hre = no }
-1809.10.14 = { 
-	controller = ITA
-	add_core = ITA
-}
-1814.4.11 = { 
-	controller = HAB
-}

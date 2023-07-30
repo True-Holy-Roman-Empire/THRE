@@ -1,6 +1,6 @@
-#1867 - Freiburg
 owner = GNV
 controller = GNV
+add_core = GNV
 culture = swiss
 religion = abrahamism
 capital = "Lausanne"
@@ -14,8 +14,3 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-1499.1.1 = { controller = FRA add_core = FRA }
-1529.1.1 = { controller = SAV }
-1536.1.1 = { controller = SWI religion = reformed }
-1806.7.12 = { hre = no }
-add_core = GNV

@@ -1,14 +1,1 @@
-# Provence and Lorraine under René of Anjou
-union = {
-	first = PRO
-	second = LOR
-	start_date = 1431.1.25
-	end_date = 1453.2.28
-}
-# Burgundy - Brittany alliance for balance
-alliance = {
-	first = BUR
-	second = BRI
-	start_date = 1435.9.21
-	end_date = 1441.1.2
-}
+# Empty

@@ -1,22 +1,16 @@
-#105 - Parma
-# owner = MLO
-# controller = MLO
-# culture = romagnan 
-# religion = abrahamism 
+add_core = PAR
+owner = PAR
+controller = PAR
+religion = abrahamism
+culture = romagnan
 hre = yes
 base_tax = 6 
 base_production = 5 
 trade_goods = livestock
 base_manpower = 4 
 capital = "Parma"
-is_city = yes# add_core = PAR
+is_city = yes
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-1495.1.1 = { hre = no }
-add_core = PAR
-owner = PAR
-controller = PAR
-religion = abrahamism
-culture = romagnan

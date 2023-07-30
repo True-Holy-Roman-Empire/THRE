@@ -1,8 +1,8 @@
-#1827 - Raska
-# owner = SER
-# controller = SER
-# culture = serbian
-# religion = abrahamism
+add_core = SER
+owner = SER
+controller = SER
+religion = abrahamism
+culture = serbian
 capital = "Trgoviste"
 trade_goods = livestock
 hre = yes
@@ -10,7 +10,6 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-# add_core = SER
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
@@ -20,9 +19,3 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-1461.1.1 = { capital = "Novi Pazar" }
-add_core = SER
-owner = SER
-controller = SER
-religion = abrahamism
-culture = serbian

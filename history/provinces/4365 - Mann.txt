@@ -1,6 +1,6 @@
-add_core = KOI
 owner = KOI
 controller = KOI
+add_core = KOI
 culture = highland_scottish
 religion = abrahamism
 hre = yes

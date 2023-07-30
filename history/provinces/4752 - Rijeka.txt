@@ -1,8 +1,9 @@
-#4752 - Rijeka
-# owner = CRO
-# controller = CRO
-# culture = croatian
-# religion = abrahamism
+add_core = CRO
+owner = CRO
+controller = CRO
+add_core = DAL
+religion = abrahamism
+culture = croatian
 capital = "Rijeka"
 trade_goods = cloth
 hre = yes
@@ -10,7 +11,6 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-# add_core = CRO
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
@@ -22,12 +22,3 @@ discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
-# add_core = DAL
-1573.1.20 = { 
-	revolt = { type = anti_tax_rebels size = 1 }
-}
-add_core = CRO
-owner = CRO
-controller = CRO
-religion = abrahamism
-culture = croatian

@@ -1,8 +1,8 @@
-#118 - Roma
-# owner = PAP
-# controller = PAP
-# culture = umbrian 
-# religion = abrahamism 
+add_core = PAP
+owner = PAP
+controller = PAP
+culture = umbrian 
+religion = abrahamism 
 hre = yes
 base_tax = 9
 base_production = 9
@@ -18,9 +18,4 @@ add_province_triggered_modifier = religious_center
 #add_province_triggered_modifier = non_abrahamism_rome
 extra_cost = 8
 center_of_trade = 1
-add_core = PAP
-owner = PAP
-controller = PAP
-religion = abrahamism
 fort_15th = yes
-culture = umbrian

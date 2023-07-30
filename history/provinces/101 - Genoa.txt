@@ -1,9 +1,8 @@
-#101 - Liguria
-# owner = GEN
-# controller = GEN
-# add_core = GEN
-# culture = ligurian
-# religion = abrahamism
+owner = GEN
+controller = GEN
+add_core = GEN
+culture = ligurian
+religion = abrahamism
 hre = yes
 base_tax = 10 
 base_production = 10
@@ -17,12 +16,4 @@ discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 24
 center_of_trade = 3
-1477.3.20 = { 
-	revolt = { type = revolutionary_rebels size = 2 }
-}
-add_core = GEN
-owner = GEN
-controller = GEN
-religion = abrahamism
 fort_15th = yes
-culture = ligurian

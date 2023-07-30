@@ -1,62 +1,62 @@
 # Paris French Appanages
 dependency = {
-	subject_type = appanage
+	subject_type = appanage_prs
 	first = PRS
 	second = ORL
 	start_date = 1440.1.1
 	end_date = 1640.1.1
 }
 dependency = {
-	subject_type = appanage
+	subject_type = appanage_prs
 	first = PRS
 	second = BER
 	start_date = 1440.1.1
 	end_date = 1640.1.1
 }
 dependency = {
-	subject_type = appanage
+	subject_type = appanage_prs
 	first = PRS
 	second = ANJ
 	start_date = 1440.1.1
 	end_date = 1640.1.1
 }
 dependency = {
-	subject_type = appanage
+	subject_type = appanage_prs
 	first = PRS
 	second = MNE
 	start_date = 1440.1.1
 	end_date = 1640.1.1
 }
 dependency = {
-	subject_type = appanage
+	subject_type = appanage_prs
 	first = PRS
 	second = POU
 	start_date = 1440.1.1
 	end_date = 1640.1.1
 }
 dependency = {
-	subject_type = appanage
+	subject_type = appanage_prs
 	first = PRS
 	second = AGO
 	start_date = 1440.1.1
 	end_date = 1640.1.1
 }
 dependency = {
-	subject_type = appanage
+	subject_type = appanage_prs
 	first = PRS
 	second = ALE
 	start_date = 1440.1.1
 	end_date = 1640.1.1
 }
 dependency = {
-	subject_type = appanage
+	subject_type = appanage_prs
 	first = PRS
 	second = PIC
 	start_date = 1440.1.1
 	end_date = 1640.1.1
 }
 dependency = {
-	subject_type = appanage
+	subject_type = appanage_prs
 	first = PRS
 	second = NRM
 	start_date = 1440.1.1
@@ -64,37 +64,83 @@ dependency = {
 }
 # Burgundy French Appanages
 dependency = {
-	subject_type = appanage
+	subject_type = appanage_bur
 	first = BUR
 	second = NEV
 	start_date = 1444.1.1
 	end_date = 1465.1.1
 }
 dependency = {
-	subject_type = appanage
+	subject_type = appanage_bur
 	first = BUR
 	second = CHP
 	start_date = 1444.1.1
 	end_date = 1465.1.1
 }
 dependency = {
-	subject_type = appanage
+	subject_type = appanage_bur
 	first = BUR
 	second = BAR
 	start_date = 1444.1.1
 	end_date = 1465.1.1
 }
 dependency = {
-	subject_type = appanage
+	subject_type = appanage_bur
 	first = BUR
 	second = BOU
 	start_date = 1444.1.1
 	end_date = 1465.1.1
 }
 dependency = {
-	subject_type = appanage
+	subject_type = appanage_bur
 	first = BUR
 	second = DAU
 	start_date = 1444.1.1
 	end_date = 1465.1.1
+}
+
+# England guarantees:
+guarantee = {
+	first = ENG
+	second = WLS
+	start_date = 1444.1.1
+	end_date = 1555.1.1
+}
+guarantee = {
+	first = ENG
+	second = CRN
+	start_date = 1444.1.1
+	end_date = 1555.1.1
+}
+guarantee = {
+	first = ENG
+	second = NOL
+	start_date = 1444.1.1
+	end_date = 1555.1.1
+}
+
+# Byzantine guarantees:
+guarantee = {
+	first = BYZ
+	second = ATH
+	start_date = 1444.1.1
+	end_date = 1555.1.1
+}
+guarantee = {
+	first = BYZ
+	second = ACH
+	start_date = 1444.1.1
+	end_date = 1555.1.1
+}
+guarantee = {
+	first = BYZ
+	second = MOE
+	start_date = 1444.1.1
+	end_date = 1555.1.1
+}
+guarantee = {
+	first = BYZ
+	second = EPI
+	start_date = 1444.1.1
+	end_date = 1555.1.1
 }

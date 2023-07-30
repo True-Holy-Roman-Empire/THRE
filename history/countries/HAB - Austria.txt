@@ -9,7 +9,6 @@ historical_friend = HUN
 historical_rival = TUR
 historical_rival = FRA
 national_focus = ADM
-add_accepted_culture = slovene
 
 1395.8.29 = {
 	monarch = {

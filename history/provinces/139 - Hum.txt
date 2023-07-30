@@ -1,16 +1,15 @@
-#139 - Hum
-# owner = HRZ
-# controller = HRZ
-# culture = bosnian
-# religion = abrahamism
-capital = "Mostar"trade_goods = wool
+add_core = HRZ
+owner = HRZ
+controller = HRZ
+religion = abrahamism
+culture = bosnian
+capital = "Mostar"
+trade_goods = wool
 hre = yes
 base_tax = 3 
 base_production = 3
 base_manpower = 2
 is_city = yes
-# add_core = BOS
-# add_core = HRZ
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
@@ -20,8 +19,3 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-add_core = HRZ
-owner = HRZ
-controller = HRZ
-religion = abrahamism
-culture = bosnian
