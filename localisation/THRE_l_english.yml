@@ -18,7 +18,7 @@
 
   # RELIGION:
     # Abrahamism:
-      abrahamistic_group: "Abrahamistic Group"
+      abrahamistic_group: "Abrahamic Group"
       abrahamism: "Abrahamism"
       abrahamism_christian_blessing1: "Christian PlaceHolder Blessing 1"
       abrahamism_christian_blessing2: "Christian PlaceHolder Blessing 2"
@@ -36,10 +36,10 @@
   # COUNTRIES:
     # England:
       KNT: "Kent"
-      KEN_ADJ: "Kent"
+      KEN_ADJ: "Kentian"
     # France:
       PRS: "Paris"
-      PRS_ADJ: "Paris"
+      PRS_ADJ: "Parisian"
       MNE: "Maine"
       MNE_ADJ: "Mainean"
       ANJ: "Anjou"
@@ -49,34 +49,34 @@
       AGO: "Angouleme"
       AGO_ADJ: "Angoulemean"
       CLY: "Cluny"
-      CLY_ADJ: "Cluny"
+      CLY_ADJ: "Clunian"
     # Italy:
       RAV: "Ravenna"
-      RAV_ADJ: "Ravenna"
+      RAV_ADJ: "Ravennese"
     # Iberia:
       SMC: "Salamanca"
-      SMC_ADJ: "Salamanca"
+      SMC_ADJ: "Salamancan"
       UMY: "Umayyad"
-      UMY_ADJ: "Umayyan"
+      UMY_ADJ: "Umayyadan"
       CRD: "Cordoba"
       CRD_ADJ: "Cordoban"
     # Maghreb:
       DJB: "Djerba"
-      DJB_ADJ: "Djerba"
+      DJB_ADJ: "Djerban"
     # Egypt:
       ALX: "Alexandria"
-      ALX_ADJ: "Alexandria"
+      ALX_ADJ: "Alexandrian"
       CYR: "Cyrenaica"
-      CYR_ADJ: "Cyrenaica"
+      CYR_ADJ: "Cyrenaican"
 
 
   # PROVINCES:
     # France:
       PROV4944:0 "Cluny"
-      PROV_ADJ4944:0 "Cluny"
+      PROV_ADJ4944:0 "Clunian"
     # Iberia:
       PROV4943:0 "Ciudad Rodrigo"
-      PROV_ADJ4943:0 "Ciudad Rodrigo"
+      PROV_ADJ4943:0 "Ciudad Rodrigan"
     # Egypt:
       PROV4942:0 "Plinthine"
-      PROV_ADJ4942:0 "Plinthine"
+      PROV_ADJ4942:0 "Plinthinean"
