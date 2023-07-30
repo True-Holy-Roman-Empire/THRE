@@ -35,20 +35,29 @@ country_event = {
 					which = PREV
 				}
 			}			
-			trigger_switch = {
-				on_trigger = has_country_flag
-				catholic_religion_flag = {
-					Count_Religious_Members = { Religion = Catholic }
+			if = {
+				limit = {
+					has_country_flag = catholic_religion_flag
 				}
-				sunni_religion_flag = {
-					Count_Religious_Members = { Religion = Sunni }
+				Count_Religious_Members = { Religion = Catholic }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = sunni_religion_flag
 				}
-				orthodox_religion_flag = {
-					Count_Religious_Members = { Religion = Orthodox }
+				Count_Religious_Members = { Religion = Sunni }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = orthodox_religion_flag
 				}
-				coptic_religion_flag = {
-					Count_Religious_Members = { Religion = Coptic }
+				Count_Religious_Members = { Religion = Orthodox }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = coptic_religion_flag
 				}
+				Count_Religious_Members = { Religion = Coptic }
 			}
 			set_variable = {		#Reset Variable to save space in savefiles
 				which = HRE_Development
