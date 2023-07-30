@@ -99,10 +99,6 @@ Reset_HRE_Religion_Counting_Variables = {
 		value = 0
 	}
 	set_variable = {
-		which = HRE_Provinces
-		value = 0
-	}
-	set_variable = {
 		which = HRE_Catholic_Memberstates
 		value = 0
 	}
@@ -196,7 +192,6 @@ Calc_Religious_Percentages = {
 			value = 0
 		}
 	}
-	
 }
 #Scripted Effect to add Reform Desire based on Muslim Countries growing bigger in the HRE
 Add_Reform_Desire_From_Muslim_Exansion_Effect = {
