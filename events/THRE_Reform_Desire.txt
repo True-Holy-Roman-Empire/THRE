@@ -34,11 +34,7 @@ country_event = {
 					which = HRE_Development
 					which = PREV
 				}
-			}
-			set_variable = {		#Reset Variable to save space in savefiles
-				which = HRE_Development
-				value = 0
-			}		
+			}			
 			trigger_switch = {
 				on_trigger = has_country_flag
 				catholic_religion_flag = {
@@ -53,6 +49,10 @@ country_event = {
 				coptic_religion_flag = {
 					Count_Religious_Members = { Religion = Coptic }
 				}
+			}
+			set_variable = {		#Reset Variable to save space in savefiles
+				which = HRE_Development
+				value = 0
 			}
 		}
 		#Global checks

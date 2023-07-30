@@ -149,14 +149,18 @@ Reset_HRE_Religion_Counting_Variables = {
 }
 
 Count_Religious_Members = {
-	PREV = {
+	set_variable = {
+		which = HRE_$Religion%_Members_Dev
+		which = HRE_Development
+	}
+	ROOT = {
 		change_variable = {
 			which = HRE_$Religion%_Memberstates
 			value = 1
 		}
 		change_variable = {
 			which = HRE_$Religion%_Members_Dev
-			which = TAG_Development
+			which = PREV
 		}
 	}
 }
