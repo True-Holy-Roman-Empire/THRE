@@ -17,21 +17,21 @@ country_event = {
 			}
 			ROOT = {
 				change_variable = {
-					which = HRE_Members
+					which = HRE_Members_var
 					value = 1
 				}
 			}
 			set_variable = {
-				which = HRE_Development
+				which = HRE_Development_var
 				value = 0
 			}
 			export_to_variable = {
-				variable_name = HRE_Development
+				variable_name = HRE_Development_var
 				value = total_development
 			}
 			ROOT = {
 				change_variable = {
-					which = HRE_Development
+					which = HRE_Development_var
 					which = PREV
 				}
 			}			
@@ -39,41 +39,41 @@ country_event = {
 				limit = {
 					has_country_flag = catholic_religion_flag
 				}
-				Count_Religious_Members = { Religion = Catholic }
+				Count_Religious_Members = { Religion_inp = Catholic }
 			}
 			else_if = {
 				limit = {
 					has_country_flag = sunni_religion_flag
 				}
-				Count_Religious_Members = { Religion = Sunni }
+				Count_Religious_Members = { Religion_inp = Sunni }
 			}
 			else_if = {
 				limit = {
 					has_country_flag = orthodox_religion_flag
 				}
-				Count_Religious_Members = { Religion = Orthodox }
+				Count_Religious_Members = { Religion_inp = Orthodox }
 			}
 			else_if = {
 				limit = {
 					has_country_flag = coptic_religion_flag
 				}
-				Count_Religious_Members = { Religion = Coptic }
+				Count_Religious_Members = { Religion_inp = Coptic }
 			}
 			set_variable = {		#Reset Variable to save space in savefiles
-				which = HRE_Development
+				which = HRE_Development_var
 				value = 0
 			}
 		}
 		#Global checks
-		Calc_Religious_Percentages = { Religion = Catholic }
-		Calc_Religious_Percentages = { Religion = Sunni }
-		Calc_Religious_Percentages = { Religion = Orthodox }
-		Calc_Religious_Percentages = { Religion = Coptic }
+		Calc_Religious_Percentages = { Religion_inp = Catholic }
+		Calc_Religious_Percentages = { Religion_inp = Sunni }
+		Calc_Religious_Percentages = { Religion_inp = Orthodox }
+		Calc_Religious_Percentages = { Religion_inp = Coptic }
 	}
 	option = {
 		name = THRE_Reform_Desire.1.opta
-		log = "Amount of HRE Members: [Root.HRE_Members.GetValue]"
-		log = "Total HRE Development: [Root.HRE_Development.GetValue]"
+		log = "Amount of HRE Members: [Root.HRE_Members_var.GetValue]"
+		log = "Total HRE Development: [Root.HRE_Development_var.GetValue]"
 		log = "Catholic Membersstates of HRE: [Root.HRE_Catholic_Memberstates.GetValue]"
 		log = "Catholic Memberstates Development: [Root.HRE_Catholic_Members_Dev.GetValue]"
 		log = "Catholic States Share of HRE Dev: [Root.HRE_Catholic_Dev_Percentage.GetValue]"

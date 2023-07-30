@@ -91,11 +91,11 @@ break_out_coptics_effect = {
 
 Reset_HRE_Religion_Counting_Variables = {
 	set_variable = {
-		which = HRE_Members
+		which = HRE_Members_var
 		value = 0
 	}
 	set_variable = {
-		which = HRE_Development
+		which = HRE_Development_var
 		value = 0
 	}
 	set_variable = {
@@ -150,16 +150,16 @@ Reset_HRE_Religion_Counting_Variables = {
 
 Count_Religious_Members = {
 	set_variable = {
-		which = HRE_$Religion%_Members_Dev
-		which = HRE_Development
+		which = HRE_$Religion_inp$_Members_Dev
+		which = HRE_Development_var
 	}
 	ROOT = {
 		change_variable = {
-			which = HRE_$Religion%_Memberstates
+			which = HRE_$Religion_inp$_Memberstates
 			value = 1
 		}
 		change_variable = {
-			which = HRE_$Religion%_Members_Dev
+			which = HRE_$Religion_inp$_Members_Dev
 			which = PREV
 		}
 	}
@@ -169,7 +169,7 @@ Calc_Religious_Percentages = {
 	if = {
 		limit = {			#DBZ Prevention
 			check_variable = {
-				which = HRE_$Religion%_Members_Dev
+				which = HRE_$Religion_inp$_Members_Dev
 				value = 1
 			}
 		}
@@ -179,20 +179,20 @@ Calc_Religious_Percentages = {
 		}
 		change_variable = {
 			which = Tmp_1
-			which = HRE_Development
+			which = HRE_Development_var
 		}
 		divide_variable = {
 			which = Tmp_1
-			which = HRE_$Religion%_Members_Dev
+			which = HRE_$Religion_inp$_Members_Dev
 		}
 		set_variable = {
-			which = HRE_$Religion%_Dev_Percentage
+			which = HRE_$Religion_inp$_Dev_Percentage
 			which = Tmp_1
 		}
 	}
 	else = {
 		set_variable = {
-			which = HRE_$Religion%_Dev_Percentage
+			which = HRE_$Religion_inp$_Dev_Percentage
 			value = 0
 		}
 	}
