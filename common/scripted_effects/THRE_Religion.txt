@@ -89,6 +89,20 @@ break_out_coptics_effect = {
 	}
 }
 
+Count_Religious_Makeup_of_Empire = {
+	set_variable = {
+		which = HRE_Members
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Development
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Provinces
+		value = 0
+	}
+}
 #Scripted Effect to add Reform Desire based on Muslim Countries growing bigger in the HRE
 Add_Reform_Desire_From_Muslim_Exansion_Effect = {
 	

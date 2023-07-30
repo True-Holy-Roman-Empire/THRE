@@ -1,13 +1,177 @@
 namespace = THRE_Reform_Desire
 
+#Maintenance_event; mainly calculating Religious Membersstates and Their Dev in the HRE
 country_event = {
 	id = THRE_Reform_Desire.1
+	title = THRE_Reform_Desire.1.t
+	desc = THRE_Reform_Desire.1.d
+	picture = ai_only
 	hidden = yes
-	trigger = {
-		is_emperor = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {
+			which = HRE_Members
+			value = 0
+		}
+		set_variable = {
+			which = HRE_Development
+			value = 0
+		}
+		set_variable = {
+			which = HRE_Provinces
+			value = 0
+		}
+		set_variable = {
+			which = HRE_Catholic_Memberstates
+			value = 0
+		}
+		set_variable = {
+			which = HRE_Catholic_Members_Dev
+			value = 0
+		}
+		set_variable = {
+			which = HRE_Sunni_Memberstates
+			value = 0
+		}
+		set_variable = {
+			which = HRE_Sunni_Members_Dev
+			value = 0
+		}
+		set_variable = {
+			which = HRE_Orthodox_Memberstates
+			value = 0
+		}
+		set_variable = {
+			which = HRE_Orthodox_Members_Dev
+			value = 0
+		}
+		set_variable = {
+			which = HRE_Coptic_Memberstates
+			value = 0
+		}
+		set_variable = {
+			which = HRE_Coptic_Members_Dev
+			value = 0
+		}
+		set_variable = {
+			which = HRE_Catholic_Dev_Percentage
+			value = 0
+		}
+		set_variable = {
+			which = HRE_Sunni_Dev_Percentage
+			value = 0
+		}
+		set_variable = {
+			which = HRE_Orthodox_Dev_Percentage
+			value = 0
+		}
+		set_variable = {
+			which = HRE_Coptic_Dev_Percentage
+			value = 0
+		}
+
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			PREV = {
+				change_variable = {
+					which = HRE_Members
+					value = 1
+				}
+				export_to_variable = {
+					variable_name = TAG_Development
+					value = total_development
+				}
+				change_variable = {
+					which = HRE_Development
+					value = TAG_Development
+				}			
+			}
+			trigger_switch = {
+				on_trigger = has_country_flag
+				catholic_religion_flag = {
+					PREV = {
+						change_variable = {
+							which = HRE_Catholic_Memberstates
+							value = 1
+						}
+						change_variable = {
+							which = HRE_Catholic_Members_Dev
+							which = TAG_Development
+						}
+					}
+				}
+				sunni_religion_flag = {
+					PREV = {
+						change_variable = {
+							which = HRE_Sunni_Memberstates
+							value = 1
+						}
+						change_variable = {
+							which = HRE_Sunni_Members_Dev
+							which = TAG_Development
+						}
+					}
+				}
+				orthodox_religion_flag = {
+					PREV = {
+						change_variable = {
+							which = HRE_Orthodox_Memberstates
+							value = 1
+						}
+						change_variable = {
+							which = HRE_Orthodox_Members_Dev
+							which = TAG_Development
+						}
+					}
+				}
+				coptic_religion_flag = {
+					PREV = {
+						change_variable = {
+							which = HRE_Coptic_Memberstates
+							value = 1
+						}
+						change_variable = {
+							which = HRE_Coptic_Members_Dev
+							which = TAG_Development
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					check_variable = {
+						which = HRE_Catholic_Members_Dev
+						value = 0
+					}
+				}
+			}
+			set_variable = {
+				which = Tmp_1
+				value = 0
+			}
+			change_variable = {
+				which = Tmp_1
+				which = HRE_Development
+			}
+			divide_variable = {
+				which = Tmp_1
+				which = HRE_Catholic_Members_Dev
+			}
+			set_variable = {
+				which = HRE_Catholic_Dev_Percentage
+				which = Tmp_1
+			}
+			
+
+		}
+		#Global checks
+		
 	}
 
 	option = {
-		Add_Reform_Desire_From_Muslim_Exansion_Effect = yes
 	}
 }
