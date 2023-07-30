@@ -3,8 +3,8 @@
 owner = TRE
 controller = TRE
 culture = goths
-religion = orthodox
-hre = no
+religion = abrahamism
+hre = yes
 base_tax = 3 
 base_production = 3
 trade_goods = wine
@@ -12,7 +12,6 @@ base_manpower = 3
 capital = "Mangul"
 is_city = yes
 add_core = TRE
-
 
 
 discovered_by = western
