@@ -1,0 +1,13 @@
+namespace = THRE_Reform_Desire
+
+country_event = {
+	id = THRE_Reform_Desire.1
+	hidden = yes
+	trigger = {
+		is_emperor = yes
+	}
+
+	option = {
+		Add_Reform_Desire_From_Muslim_Exansion_Effect = yes
+	}
+}
