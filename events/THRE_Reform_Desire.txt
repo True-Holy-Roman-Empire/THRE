@@ -5,7 +5,7 @@ country_event = {
 	id = THRE_Reform_Desire.1
 	title = THRE_Reform_Desire.1.t
 	desc = THRE_Reform_Desire.1.d
-	picture = "ai_only"
+	picture = "INVENTION_eventPicture"
 	hidden = yes
 	is_triggered_only = yes
 
