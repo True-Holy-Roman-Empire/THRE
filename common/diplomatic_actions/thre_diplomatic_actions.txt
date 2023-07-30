@@ -1,0 +1,44 @@
+callaction = {
+    condition = {
+        tooltip = CANNOT_CALL_appanage_INTO_OFFENSIVE_WAR
+        potential = {
+            FROM = {
+                is_subject_of = ROOT
+                is_subject_of_type = appanage_prs
+            }
+            NOT = {
+                is_in_war = {
+                    defender_leader = ROOT
+                }
+            }
+        }
+        allow = {
+            NOT = {
+                is_in_war = {
+                    attacker_leader = ROOT
+                }
+            }
+        }
+    }
+	 condition = {
+        tooltip = CANNOT_CALL_appanage_INTO_OFFENSIVE_WAR
+        potential = {
+            FROM = {
+                is_subject_of = ROOT
+                is_subject_of_type = appanage_bur
+            }
+            NOT = {
+                is_in_war = {
+                    defender_leader = ROOT
+                }
+            }
+        }
+        allow = {
+            NOT = {
+                is_in_war = {
+                    attacker_leader = ROOT
+                }
+            }
+        }
+    }
+}
