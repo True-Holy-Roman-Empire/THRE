@@ -10,67 +10,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_variable = {
-			which = HRE_Members
-			value = 0
-		}
-		set_variable = {
-			which = HRE_Development
-			value = 0
-		}
-		set_variable = {
-			which = HRE_Provinces
-			value = 0
-		}
-		set_variable = {
-			which = HRE_Catholic_Memberstates
-			value = 0
-		}
-		set_variable = {
-			which = HRE_Catholic_Members_Dev
-			value = 0
-		}
-		set_variable = {
-			which = HRE_Sunni_Memberstates
-			value = 0
-		}
-		set_variable = {
-			which = HRE_Sunni_Members_Dev
-			value = 0
-		}
-		set_variable = {
-			which = HRE_Orthodox_Memberstates
-			value = 0
-		}
-		set_variable = {
-			which = HRE_Orthodox_Members_Dev
-			value = 0
-		}
-		set_variable = {
-			which = HRE_Coptic_Memberstates
-			value = 0
-		}
-		set_variable = {
-			which = HRE_Coptic_Members_Dev
-			value = 0
-		}
-		set_variable = {
-			which = HRE_Catholic_Dev_Percentage
-			value = 0
-		}
-		set_variable = {
-			which = HRE_Sunni_Dev_Percentage
-			value = 0
-		}
-		set_variable = {
-			which = HRE_Orthodox_Dev_Percentage
-			value = 0
-		}
-		set_variable = {
-			which = HRE_Coptic_Dev_Percentage
-			value = 0
-		}
-
+		Reset_HRE_Religion_Counting_Variables = yes
 		every_country = {
 			limit = {
 				is_part_of_hre = yes
@@ -92,86 +32,25 @@ country_event = {
 			trigger_switch = {
 				on_trigger = has_country_flag
 				catholic_religion_flag = {
-					PREV = {
-						change_variable = {
-							which = HRE_Catholic_Memberstates
-							value = 1
-						}
-						change_variable = {
-							which = HRE_Catholic_Members_Dev
-							which = TAG_Development
-						}
-					}
+					Count_Religious_Members = { Religion = Catholic }
 				}
 				sunni_religion_flag = {
-					PREV = {
-						change_variable = {
-							which = HRE_Sunni_Memberstates
-							value = 1
-						}
-						change_variable = {
-							which = HRE_Sunni_Members_Dev
-							which = TAG_Development
-						}
-					}
+					Count_Religious_Members = { Religion = Sunni }
 				}
 				orthodox_religion_flag = {
-					PREV = {
-						change_variable = {
-							which = HRE_Orthodox_Memberstates
-							value = 1
-						}
-						change_variable = {
-							which = HRE_Orthodox_Members_Dev
-							which = TAG_Development
-						}
-					}
+					Count_Religious_Members = { Religion = Orthodox }
 				}
 				coptic_religion_flag = {
-					PREV = {
-						change_variable = {
-							which = HRE_Coptic_Memberstates
-							value = 1
-						}
-						change_variable = {
-							which = HRE_Coptic_Members_Dev
-							which = TAG_Development
-						}
-					}
+					Count_Religious_Members = { Religion = Coptic }
 				}
 			}
-
-			if = {
-				limit = {
-					check_variable = {
-						which = HRE_Catholic_Members_Dev
-						value = 0
-					}
-				}
-			}
-			set_variable = {
-				which = Tmp_1
-				value = 0
-			}
-			change_variable = {
-				which = Tmp_1
-				which = HRE_Development
-			}
-			divide_variable = {
-				which = Tmp_1
-				which = HRE_Catholic_Members_Dev
-			}
-			set_variable = {
-				which = HRE_Catholic_Dev_Percentage
-				which = Tmp_1
-			}
-			
-
 		}
 		#Global checks
-		
+		Calc_Religious_Percentages = { Religion = Catholic }
+		Calc_Religious_Percentages = { Religion = Sunni }
+		Calc_Religious_Percentages = { Religion = Orthodox }
+		Calc_Religious_Percentages = { Religion = Coptic }
 	}
-
 	option = {
 	}
 }

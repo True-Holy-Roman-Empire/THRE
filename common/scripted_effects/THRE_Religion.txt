@@ -89,7 +89,7 @@ break_out_coptics_effect = {
 	}
 }
 
-Count_Religious_Makeup_of_Empire = {
+Reset_HRE_Religion_Counting_Variables = {
 	set_variable = {
 		which = HRE_Members
 		value = 0
@@ -102,6 +102,101 @@ Count_Religious_Makeup_of_Empire = {
 		which = HRE_Provinces
 		value = 0
 	}
+	set_variable = {
+		which = HRE_Catholic_Memberstates
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Catholic_Members_Dev
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Sunni_Memberstates
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Sunni_Members_Dev
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Orthodox_Memberstates
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Orthodox_Members_Dev
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Coptic_Memberstates
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Coptic_Members_Dev
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Catholic_Dev_Percentage
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Sunni_Dev_Percentage
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Orthodox_Dev_Percentage
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Coptic_Dev_Percentage
+		value = 0
+	}
+}
+
+Count_Religious_Members = {
+	PREV = {
+		change_variable = {
+			which = HRE_$Religion%_Memberstates
+			value = 1
+		}
+		change_variable = {
+			which = HRE_$Religion%_Members_Dev
+			which = TAG_Development
+		}
+	}
+}
+
+Calc_Religious_Percentages = {
+	if = {
+		limit = {			#DBZ Prevention
+			check_variable = {
+				which = HRE_$Religion%_Members_Dev
+				value = 1
+			}
+		}
+		set_variable = {
+			which = Tmp_1
+			value = 0
+		}
+		change_variable = {
+			which = Tmp_1
+			which = HRE_Development
+		}
+		divide_variable = {
+			which = Tmp_1
+			which = HRE_$Religion%_Members_Dev
+		}
+		set_variable = {
+			which = HRE_$Religion%_Dev_Percentage
+			which = Tmp_1
+		}
+	}
+	else = {
+		set_variable = {
+			which = HRE_$Religion%_Dev_Percentage
+			value = 0
+		}
+	}
+	
 }
 #Scripted Effect to add Reform Desire based on Muslim Countries growing bigger in the HRE
 Add_Reform_Desire_From_Muslim_Exansion_Effect = {
