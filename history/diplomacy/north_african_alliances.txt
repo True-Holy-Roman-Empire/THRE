@@ -1,1 +1,13 @@
-# Empty
+# Fez Pirate League
+guarantee = {
+	first = FEZ
+	second = TET
+	start_date = 1444.1.1
+	end_date = 1472.1.1
+}
+guarantee = {
+	first = FEZ
+	second = SLE
+	start_date = 1444.1.1
+	end_date = 1472.1.1
+}

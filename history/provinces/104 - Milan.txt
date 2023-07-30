@@ -1,15 +1,15 @@
-#104 - Milano
-# owner = MLO
-# controller = MLO
-# culture = lombard
-# religion = abrahamism
+owner = MLO
+controller = MLO
+add_core = MLO
+culture = lombard
+religion = abrahamism
 hre = yes
 base_tax = 8
 base_production = 7
 trade_goods = cloth
 base_manpower = 6
 capital = "Milano"
-is_city = yes# add_core = MLO
+is_city = yes
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -17,9 +17,4 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 1495.1.1 = { hre = no }
-add_core = MLO
-owner = MLO
-controller = MLO
-religion = abrahamism
 fort_15th = yes
-culture = lombard

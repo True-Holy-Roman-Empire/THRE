@@ -1,4 +1,3 @@
-# 1868 - Augsburg
 owner = AUG
 controller = AUG
 add_core = AUG
@@ -6,7 +5,7 @@ culture = swabian
 religion = abrahamism
 base_tax = 7
 base_production = 6
-trade_goods = cloth#fustians
+trade_goods = cloth
 base_manpower = 4
 capital = "Augsburg"
 is_city = yes
@@ -15,8 +14,3 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1803.1.1 = { 
-	add_core = BAV
-	controller = BAV
-}
-1806.7.12 = { hre = no }

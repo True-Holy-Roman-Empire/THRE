@@ -1,25 +1,16 @@
-# - Albenga
-# owner = GEN
-# controller = GEN
-# add_core = GEN
-# culture = ligurian
-# religion = abrahamism
+add_core = GEN
+owner = GEN
+controller = GEN
+religion = abrahamism
+culture = ligurian
 hre = yes
 base_tax = 6
 base_production = 6
 trade_goods = naval_supplies
 base_manpower = 1
 capital = "Albenga"
-is_city = yes# Estimated
+is_city = yes
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-1477.3.20 = { 
-	revolt = { type = revolutionary_rebels size = 2 }
-}
-add_core = GEN
-owner = GEN
-controller = GEN
-religion = abrahamism
-culture = ligurian

@@ -3,7 +3,7 @@ add_government_reform = margraviate_reform
 government_rank = 1
 technology_group = western
 primary_culture = saxon
-religion = abrahamism
+religion = catholic
 capital = 50	# Berlin
 
 change_estate_land_share = {
@@ -34,6 +34,7 @@ change_estate_land_share = {
 		mil = 2
 	}
 }
+
 1411.1.18 = {
 	monarch = {
 		name = "Siegmund I"

@@ -1,8 +1,8 @@
-#127 - Sardinia
-# owner = SAR
-# controller = SAR
-# culture = sardinian 
-# religion = abrahamism 
+add_core = SAR
+owner = SAR
+controller = SAR
+culture = sardinian 
+religion = abrahamism 
 hre = yes
 base_tax = 3
 base_production = 3
@@ -10,13 +10,7 @@ trade_goods = fish
 base_manpower = 2
 capital = "Sassari"
 is_city = yes
-# add_core = SAR
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-add_core = SAR
-owner = SAR
-controller = SAR
-religion = abrahamism
-culture = sardinian

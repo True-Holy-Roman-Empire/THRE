@@ -1,0 +1,22 @@
+name = "Polish-Austria War"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 1770
+}
+1442.1.1 = {
+	add_attacker = POL
+	add_attacker = BOH
+	add_attacker = HUN
+	add_defender = HAB
+}
+1444.1.1 = {
+	add_defender = BYZ
+}
+1444.2.1 = {
+	rem_attacker = POL
+	rem_attacker = BOH
+	rem_attacker = HUN
+	rem_defender = HAB
+	rem_defender = BYZ
+}

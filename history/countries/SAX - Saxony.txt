@@ -2,9 +2,9 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = saxon
-religion = abrahamism
+religion = catholic
 technology_group = western
-capital = 61 # Leipzig
+capital = 61
 
 1388.1.1 = {
 	monarch = {

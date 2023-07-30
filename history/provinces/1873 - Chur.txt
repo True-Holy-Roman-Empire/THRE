@@ -1,6 +1,6 @@
-#1873 - Chur
 owner = TTL
 controller = TTL
+add_core = TTL
 culture = swiss
 religion = abrahamism
 capital = "Chur"
@@ -10,15 +10,8 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = TTL
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-1524.1.1 = { religion = reformed }
-1799.4.21 = { 
-	controller = SWI
-	add_core = SWI
-}
-1806.7.12 = { hre = no }
 fort_15th = yes

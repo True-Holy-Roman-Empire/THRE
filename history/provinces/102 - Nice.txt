@@ -1,9 +1,8 @@
-#102 - Nice
-# owner = SAV
-# controller = SAV
-# add_core = SAV
-# culture = ligurian
-# religion = abrahamism
+owner = SAV
+controller = SAV
+add_core = SAV
+culture = ligurian
+religion = abrahamism
 hre = yes
 base_tax = 4 
 base_production = 4
@@ -15,9 +14,3 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1495.1.1 = { hre = no }
-add_core = SAV
-owner = SAV
-controller = SAV
-religion = abrahamism
-culture = ligurian

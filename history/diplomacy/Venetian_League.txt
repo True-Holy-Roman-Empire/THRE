@@ -1,5 +1,5 @@
 # Venetian League Members
-vassal = {
+guarantee = {
 	first = VEN
 	second = NAX
 	start_date = 1444.1.1
@@ -7,7 +7,26 @@ vassal = {
 }
 guarantee = {
 	first = VEN
+	second = CEP
+	start_date = 1444.1.1
+	end_date = 1579.1.1
+}
+guarantee = {
+	first = VEN
 	second = KNI
+	start_date = 1444.1.1
+	end_date = 1522.12.21
+}
+# Genoai League Members:
+guarantee = {
+	first = GEN
+	second = CRT
+	start_date = 1444.1.1
+	end_date = 1579.1.1
+}
+guarantee = {
+	first = GEN
+	second = CYP
 	start_date = 1444.1.1
 	end_date = 1522.12.21
 }

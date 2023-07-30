@@ -1,8 +1,8 @@
-# 86 - Munster
-# owner = MUN
-# controller = MUN
-# culture = hannoverian
-# religion = abrahamism
+owner = MUN
+controller = MUN
+add_core = MUN
+culture = hannoverian
+religion = catholic
 trade_goods = cloth
 capital = "Münster"
 base_tax = 4
@@ -13,9 +13,4 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-religion = abrahamism
-add_core = MUN
-owner = MUN
-controller = MUN
-culture = hannoverian
 fort_15th = yes

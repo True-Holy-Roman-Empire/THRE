@@ -1,0 +1,22 @@
+name = "Fez Pirates Revolt"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = FEZ
+}
+1442.1.1 = {
+	add_attacker = FEZ
+	add_attacker = TET
+	add_attacker = SLE
+	add_defender = MRK
+	add_defender = SOS
+	add_defender = TFL
+}
+1444.11.10 = {
+	rem_attacker = FEZ
+	rem_attacker = TET
+	rem_attacker = SLE
+	rem_defender = MRK
+	rem_defender = SOS
+	rem_defender = TFL
+}

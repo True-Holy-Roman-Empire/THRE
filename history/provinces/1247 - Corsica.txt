@@ -1,8 +1,8 @@
-#1247 - Corsica
-# owner = GEN
-# controller = GEN
-# culture = sardinian
-# religion = abrahamism
+add_core = COR
+owner = COR
+controller = COR
+culture = sardinian
+religion = abrahamism
 capital = "Bastia"
 hre = yes
 base_tax = 3 
@@ -10,17 +10,7 @@ base_production = 3
 trade_goods = naval_supplies
 base_manpower = 2
 is_city = yes
-# add_core = GEN
-# add_core = COR
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-1481.1.1 = { 
-	revolt = { type = revolutionary_rebels size = 2 }
-}
-add_core = COR
-owner = COR
-controller = COR
-religion = abrahamism
-culture = sardinian

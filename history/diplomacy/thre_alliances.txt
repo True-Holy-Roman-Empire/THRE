@@ -98,3 +98,49 @@ dependency = {
 	start_date = 1444.1.1
 	end_date = 1465.1.1
 }
+
+# England guarantees:
+guarantee = {
+	first = ENG
+	second = WLS
+	start_date = 1444.1.1
+	end_date = 1555.1.1
+}
+guarantee = {
+	first = ENG
+	second = CRN
+	start_date = 1444.1.1
+	end_date = 1555.1.1
+}
+guarantee = {
+	first = ENG
+	second = NOL
+	start_date = 1444.1.1
+	end_date = 1555.1.1
+}
+
+# Byzantine guarantees:
+guarantee = {
+	first = BYZ
+	second = ATH
+	start_date = 1444.1.1
+	end_date = 1555.1.1
+}
+guarantee = {
+	first = BYZ
+	second = ACH
+	start_date = 1444.1.1
+	end_date = 1555.1.1
+}
+guarantee = {
+	first = BYZ
+	second = MOE
+	start_date = 1444.1.1
+	end_date = 1555.1.1
+}
+guarantee = {
+	first = BYZ
+	second = EPI
+	start_date = 1444.1.1
+	end_date = 1555.1.1
+}

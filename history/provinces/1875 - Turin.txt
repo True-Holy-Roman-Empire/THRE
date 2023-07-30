@@ -1,23 +1,17 @@
-#1875 - Cuneo (can't change filename)
-# owner = SAV
-# controller = SAV
-# culture = piedmontese
-# religion = abrahamism
+add_core = SAV
+owner = SAV
+controller = SAV
+culture = piedmontese
+religion = abrahamism
 hre = yes
 base_tax = 4
 base_production = 4
 trade_goods = grain
 base_manpower = 4
 capital = "Cuneo"
-is_city = yes# add_core = SAV
+is_city = yes
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-1495.1.1 = { hre = no }
-add_core = SAV
-owner = SAV
-controller = SAV
-religion = abrahamism
 fort_15th = yes
-culture = piedmontese

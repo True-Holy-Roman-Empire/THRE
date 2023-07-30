@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+primary_culture = kurdish
+religion = abrahamism
+technology_group = muslim
+capital = 4296 # Bitlis
+religious_school = shafii_school
+
+1440.1.1 = {
+	monarch = {
+		name = "Bidlo"
+		dynasty = "Rojaki"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

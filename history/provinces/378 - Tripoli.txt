@@ -1,17 +1,16 @@
-#378 - Tripoli
-# owner = MAM
-# controller = MAM
-# culture = al_suryah_arabic
-# religion = abrahamism
-capital = "Trablos"trade_goods = grain
+add_core = SYR
+owner = SYR
+controller = SYR
+culture = al_suryah_arabic
+religion = abrahamism
+capital = "Trablos"
+trade_goods = grain
 hre = yes
 base_tax = 6 
 base_production = 6
 base_manpower = 4
 is_city = yes
-# add_core = LEB
-# add_core = SYR
-# add_core = MAM
+add_core = LEB
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
@@ -21,8 +20,3 @@ discovered_by = indian
 discovered_by = east_african
 extra_cost = 8
 center_of_trade = 1
-add_core = SYR
-owner = SYR
-controller = SYR
-religion = abrahamism
-culture = al_suryah_arabic

@@ -4,7 +4,7 @@ government_rank = 1
 mercantilism = 25
 technology_group = western
 primary_culture = bavarian
-religion = abrahamism
+religion = catholic
 capital = 2957 # Regensburg
 fixed_capital = 2957 # Cannot move capital away from this province & no power cost to move to it
 

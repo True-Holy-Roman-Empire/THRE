@@ -1,9 +1,8 @@
-# 84 - Berg
-# owner = BRG
-# controller = BRG
-# add_core = BRG
-# culture = hessian
-# religion = abrahamism
+owner = BRG
+controller = BRG
+add_core = BRG
+culture = hessian
+religion = catholic
 trade_goods = cloth
 capital = "Düsseldorf"
 base_tax = 4
@@ -14,8 +13,3 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-religion = abrahamism
-add_core = BRG
-owner = BRG
-controller = BRG
-culture = hessian

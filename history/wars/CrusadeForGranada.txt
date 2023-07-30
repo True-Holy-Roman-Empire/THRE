@@ -1,0 +1,33 @@
+name = "Crusade for Granada"
+war_goal = {
+	type = superiority_crusade
+	casus_belli = cb_crusade
+}
+
+1440.1.1 = {
+	add_attacker = CAS
+	add_attacker = ARA
+	add_attacker = LON
+	add_attacker = VAL
+	add_attacker = CAT
+	add_attacker = POR
+	add_defender = GRA
+	add_defender = UMY
+	add_defender = CRD
+}
+
+1443.1.1 = {
+	rem_attacker = CAS
+	add_attacker = LON
+}
+
+#Peace and end of war
+1444.1.1 = {
+	rem_attacker = ARA
+	add_attacker = VAL
+	add_attacker = CAT
+	rem_attacker = POR
+	rem_defender = GRA
+	rem_defender = UMY
+	rem_defender = CRD
+}
