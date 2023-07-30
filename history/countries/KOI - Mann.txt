@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = pirate_republic_reform
 primary_culture = highland_scottish
-religion = abrahamism
+religion = norse_pagan_reformed
 technology_group = western
-capital = 4365 # Mann
+capital = 4365# Mann
 government_rank = 1
