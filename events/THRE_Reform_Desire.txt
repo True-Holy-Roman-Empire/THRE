@@ -20,10 +20,6 @@ country_event = {
 					which = HRE_Members
 					value = 1
 				}
-				set_variable = {
-					which = TAG_Development
-					value = 0
-				}
 			}
 			set_variable = {
 				which = HRE_Development
