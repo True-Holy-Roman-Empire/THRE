@@ -3,8 +3,8 @@
 owner = GEN
 controller = GEN
 culture = crimean
-religion = sunni
-hre = no
+religion = abrahamism
+hre = yes
 base_tax = 3
 base_production = 3
 trade_goods = slaves

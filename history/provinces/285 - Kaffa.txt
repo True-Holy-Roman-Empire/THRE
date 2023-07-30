@@ -3,8 +3,8 @@
 owner = GEN
 controller = GEN 
 culture = pontic_greek
-religion = orthodox
-hre = no
+religion = abrahamism
+hre = yes
 base_tax = 4
 base_production = 4
 trade_goods = wine
