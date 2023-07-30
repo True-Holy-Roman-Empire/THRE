@@ -5,4 +5,3 @@ technology_group = western
 primary_culture = hannoverian
 religion = abrahamism
 capital = 1758 # Hannover
-

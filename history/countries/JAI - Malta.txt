@@ -5,4 +5,3 @@ primary_culture = maltese
 religion = abrahamism
 technology_group = western
 capital = 126 #Malta
-

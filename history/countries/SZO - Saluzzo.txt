@@ -16,7 +16,6 @@ capital = 4727 # Saluzzo
 		mil = 2
 	}
 }
-
 1438.3.23 = {
 	heir = {
 		name = "Ludovico"
@@ -25,17 +24,6 @@ capital = 4727 # Saluzzo
 		birth_date = 1438.3.23
 		death_date = 1504.1.27
 		claim = 95
-		adm = 3
-		dip = 2
-		mil = 1
-	}
-}
-
-1475.4.15 = {
-	monarch = {
-		name = "Ludovico II"
-		dynasty = "del Vasto"
-		birth_date = 1438.3.23
 		adm = 3
 		dip = 2
 		mil = 1

@@ -2,12 +2,10 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
-primary_culture = lombard
+primary_culture = greek
 religion = abrahamism
 capital = 1773	# Mystras
 
-
-# Principality of Achaea #
 1396.1.1 = {
 	monarch = {
 		name = "Pietro I"
@@ -17,7 +15,6 @@ capital = 1773	# Mystras
 		mil = 2
 	}
 }
-
 1396.1.1 = {
 	heir = {
 		name = "Maria"
@@ -32,7 +29,6 @@ capital = 1773	# Mystras
 		female = yes
 	}
 }
-
 1402.1.1 = {
 	monarch = {
 		name = "Maria II"
@@ -43,7 +39,6 @@ capital = 1773	# Mystras
 		female = yes
 	}
 }
-
 1402.1.1 = {
 	heir = {
 		name = "Centurione"
@@ -57,7 +52,6 @@ capital = 1773	# Mystras
 		mil = 0
 	}
 }
-
 1404.1.1 = {
 	monarch = {
 		name = "Centurione II"
@@ -65,19 +59,5 @@ capital = 1773	# Mystras
 		dip = 1
 		adm = 0
 		mil = 0
-	}
-}
-
-1432.1.1 = { primary_culture = greek religion = abrahamism }
-
-# 1432, Despotate of Morea
-
-1453.5.29 = {
-	monarch = {
-		name = "Thomas"
-		dynasty = "Palaiologos"
-		dip = 2
-		adm = 1
-		mil = 1
 	}
 }

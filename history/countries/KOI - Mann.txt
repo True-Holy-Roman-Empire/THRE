@@ -3,5 +3,5 @@ add_government_reform = feudalism_reform
 primary_culture = highland_scottish
 religion = abrahamism
 technology_group = western
-capital = 4365# Mann
+capital = 4365 # Mann
 government_rank = 1

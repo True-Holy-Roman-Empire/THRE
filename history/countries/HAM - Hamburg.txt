@@ -20,7 +20,3 @@ historical_friend = RIG #Riga
 		regent = yes
 	}
 }
-
-1529.1.1 = { religion = protestant }
-
-1529.1.1 = { set_legacy_government = administrative_republic }

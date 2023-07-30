@@ -7,7 +7,6 @@ religion = abrahamism
 capital = 145	# Nafplio
 fixed_capital = 145 # Cannot move capital away from this province & no power cost to move to it
 
-# Despots of Morea #
 1383.1.1 = {
 	monarch = {
 		name = "Theodoros I"
@@ -17,7 +16,6 @@ fixed_capital = 145 # Cannot move capital away from this province & no power cos
 		mil = 1
 	}
 }
-
 1396.1.1 = {
 	heir = {
 		name = "Theodoros"
@@ -31,7 +29,6 @@ fixed_capital = 145 # Cannot move capital away from this province & no power cos
 		mil = 3
 	}
 }
-
 1407.1.1 = {
 	monarch = {
 		name = "Theodoros II"
@@ -41,7 +38,6 @@ fixed_capital = 145 # Cannot move capital away from this province & no power cos
 		mil = 3
 	}
 }
-
 1443.1.1 = {
 	monarch = {
 		name = "Demetrios II"
@@ -51,5 +47,3 @@ fixed_capital = 145 # Cannot move capital away from this province & no power cos
 		mil = 1
 	}
 }
-
-# Conquered by the Ottomans 1460

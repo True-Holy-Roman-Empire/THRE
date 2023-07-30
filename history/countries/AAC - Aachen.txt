@@ -17,4 +17,3 @@ fixed_capital = 1878 # Cannot move capital away from this province & no power co
 		regent = yes
 	}
 }
-

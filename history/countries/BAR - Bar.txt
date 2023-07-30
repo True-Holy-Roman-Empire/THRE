@@ -6,7 +6,6 @@ religion = abrahamism
 technology_group = western
 capital = 187	# Verdun
 
-
 1352.1.1 = {
 	monarch = {
 		name = "Robert I"
@@ -16,7 +15,6 @@ capital = 187	# Verdun
 		mil = 3
 	}
 }
-
 1377.6.25 = {
 	heir = {
 		name = "Edward"
@@ -30,7 +28,6 @@ capital = 187	# Verdun
 		mil = 2
 	}
 }
-
 1411.4.12 = {
 	monarch = {
 		name = "Edward III"
@@ -40,7 +37,6 @@ capital = 187	# Verdun
 		mil = 2
 	}
 }
-
 1411.4.12 = {
 	heir = {
 		name = "Louis"
@@ -54,7 +50,6 @@ capital = 187	# Verdun
 		mil = 2
 	}
 }
-
 1415.10.25 = {
 	monarch = {
 		name = "Louis I"
@@ -64,18 +59,3 @@ capital = 187	# Verdun
 		mil = 2
 	}
 }
-
-# 1430.6.26: Inherited by René of Anjou
-
-1480.7.10 = {
-	monarch = {
-		name = "Yolande"
-		dynasty = "de Vaudémont"
-		adm = 2
-		dip = 2
-		mil = 1
-		female = yes
-	}
-}
-
-# 1483.3.23: Inherited by René II of Lorraine

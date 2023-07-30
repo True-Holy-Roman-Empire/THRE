@@ -8,7 +8,6 @@ religion = abrahamism
 capital = 4742 # Nordhausen
 fixed_capital = 4742 # Cannot move capital away from this province & no power cost to move to it
 
-
 1440.1.1 = {
 	monarch = {
 		name = "Handwerkerkollegium"

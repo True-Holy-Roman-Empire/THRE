@@ -1,4 +1,6 @@
-#2954 - Djerba
+owner = DJB
+controller = DJB
+add_core = DJB
 culture = tunisian
 religion = abrahamism
 capital = "Djerba"
@@ -14,29 +16,5 @@ discovered_by = ottoman
 discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
-1440.1.1 = {
-	owner = DJB
-	controller = DJB
-	add_core = DJB
-	add_cardinal = yes
-	fort_15th = yes
-}
-1503.1.1 = { 
-	controller = TRP
-}
-1521.1.1 = { 
-	controller = SPA
-	add_core = SPA
-}
-1524.1.1 = { 
-	controller = TRP
-}
-1551.1.1 = { 
-	controller = SPA
-}
-1560.5.14 = { 
-	controller = TRP
-}
-1593.1.1 = { 
-	controller = TUN
-}
+add_cardinal = yes
+fort_15th = yes

@@ -17,7 +17,6 @@ fixed_capital = 4699 # Cannot move capital away from this province & no power co
 		mil = 2
 	}
 }
-
 1411.2.6 = {
 	monarch = {
 		name = "Giorgio I"
@@ -27,7 +26,6 @@ fixed_capital = 4699 # Cannot move capital away from this province & no power co
 		mil = 0
 	}
 }
-
 1411.2.26 = {
 	monarch = {
 		name = "Carlo I"
@@ -37,23 +35,12 @@ fixed_capital = 4699 # Cannot move capital away from this province & no power co
 		mil = 3
 	}
 }
-
 1429.6.4 = {
 	monarch = {
 		name = "Carlo II"
 		dynasty = "Tocco"
 		dip = 0
 		adm = 1
-		mil = 3
-	}
-}
-
-1448.9.30 = {
-	monarch = {
-		name = "Leonardo"
-		dynasty = "Tocco"
-		dip = 1
-		adm = 2
 		mil = 3
 	}
 }

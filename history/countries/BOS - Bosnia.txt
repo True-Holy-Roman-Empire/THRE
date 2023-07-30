@@ -6,10 +6,7 @@ religion = abrahamism
 technology_group = eastern
 capital = 3002	# Sarajevo
 historical_friend = SER
-
-1389.1.1 = {
-	government_rank = 1
-}
+government_rank = 2
 
 1398.1.1 = {
 	monarch = {
@@ -21,11 +18,6 @@ historical_friend = SER
 		mil = 2
 	}
 }
-
-1402.7.1 = {
-	government_rank = 2
-}
-
 1404.1.1 = {
 	monarch = {
 		name = "Sjepan Tvrtko II"
@@ -36,7 +28,6 @@ historical_friend = SER
 		mil = 3
 	}
 }
-
 1409.1.1 = {
 	monarch = {
 		name = "Stjepan Ostoja"
@@ -46,7 +37,6 @@ historical_friend = SER
 		mil = 2
 	}
 }
-
 1418.1.1 = {
 	monarch = {
 		name = "Stjepan Ostojic"
@@ -57,7 +47,6 @@ historical_friend = SER
 		mil = 1
 	}
 }
-
 1421.1.1 = {
 	monarch = {
 		name = "Stjepan Tvrtko II"
@@ -68,7 +57,6 @@ historical_friend = SER
 		mil = 2
 	}
 }
-
 1433.1.1 = {
 	monarch = {
 		name = "Radivoj Ostojic"
@@ -79,7 +67,6 @@ historical_friend = SER
 		mil = 1
 	}
 }
-
 1435.1.1 = {
 	monarch = {
 		name = "Stjepan Tvrtko II"
@@ -90,7 +77,6 @@ historical_friend = SER
 		mil = 2
 	}
 }
-
 1443.6.23 = {
 	monarch = {
 		name = "Stjepan Tomaš Ostojic"
@@ -103,7 +89,6 @@ historical_friend = SER
 	clear_scripted_personalities = yes
 	add_ruler_personality = careful_personality
 }
-
 1443.6.23 = {
 	heir = {
 		name = "Stjepan Tomaševic"
@@ -112,17 +97,6 @@ historical_friend = SER
 		birth_date = 1438.1.1
 		death_date = 1463.6.5
 		claim = 95
-		adm = 3
-		dip = 3
-		mil = 3
-	}
-}
-
-1461.7.11 = {
-	monarch = {
-		name = "Stjepan Tomaševic"
-		dynasty = "Kotromanic"
-		birth_date = 1438.1.1
 		adm = 3
 		dip = 3
 		mil = 3

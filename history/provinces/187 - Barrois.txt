@@ -1,22 +1,16 @@
-# 187 Barrois - Principal cities: Verdun
-# owner = BAR
-# controller = BAR
+add_core = BAR
+owner = BAR
+controller = BAR
+culture = burgundian
+religion = abrahamism
 capital = "Bar-le-Duc"
 is_city = yes
-# culture = burgundian
-# religion = abrahamism
 hre = yes
 base_tax = 3
 base_production = 4
 trade_goods = cloth
 base_manpower = 3
-# add_core = BAR
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-add_core = BAR
-owner = BAR
-controller = BAR
-religion = abrahamism
-culture = burgundian

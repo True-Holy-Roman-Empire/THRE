@@ -1,7 +1,5 @@
 government = monarchy
-
 add_government_reform = feudalism_reform
-
 religion = abrahamism
 primary_culture = catalan
 technology_group = western

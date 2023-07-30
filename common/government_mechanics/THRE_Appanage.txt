@@ -1,0 +1,56 @@
+# Not certain if it even ends up looking like that but is just a placeholder so to say.
+# Would like to not copy fully from Shogun but something different, even how the mechanic looks like. Maybe add some bar, that if it's full, it keeps subjects loyal or some other bonuses? Or it's like Otto Decadence, where you want to keep bar low, so if it reaches 100%, then all the Appanages declare on you?
+
+appanages_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 17
+	available = {
+		has_dlc = "Domination"
+	}
+	
+	interactions = {
+		appa_mech_manpower = { # You get manpower (maybe even FL?), in return vassals lose that amount manpower and FL. Liberty Desire increases, no idea how much.
+			icon = GFX_expel_ronin # placeholder
+			trigger = {
+				any_subject_country = {
+					is_subject_of_type = appanage
+				}
+			}
+			effect = {
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 0
+			}
+		}
+		appa_mech_income = { # You get money, vassals lose half of what overlord gains, so as not to go bankrupt. Liberty Desire increases, no idea how much.
+			icon = GFX_sankin_kotai # placeholder
+			trigger = { 
+				any_subject_country = {
+					is_subject_of_type = appanage
+				}
+			}
+			effect = {
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 0
+			}
+		}
+		appa_mech_not_certain = { # No idea what could fit here. Maybe favour or something to help in offensive wars?
+			icon = GFX_sword_hunt # placeholder
+			trigger = {
+				legitimacy = 20
+				any_subject_country = {
+					is_subject_of_type = appanage
+				}
+			}
+			effect = {
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 0
+			}
+		}
+	}
+}

@@ -4,9 +4,7 @@ government_rank = 1
 technology_group = western
 religion = abrahamism
 primary_culture = flemish
-
 capital = 92
-
 
 1355.1.1 = {
 	monarch = {
@@ -18,7 +16,6 @@ capital = 92
 		female = yes
 	}
 }
-
 1384.8.1 = {
 	heir = {
 		name = "Antoine"
@@ -32,7 +29,6 @@ capital = 92
 		mil = 2
 	}
 }
-
 1406.11.1 = {
 	monarch = {
 		name = "Antoine"
@@ -42,7 +38,6 @@ capital = 92
 		mil = 2
 	}
 }
-
 1406.11.1 = {
 	heir = {
 		name = "John"
@@ -56,7 +51,6 @@ capital = 92
 		mil = 1
 	}
 }
-
 1415.1.1 = {
 	monarch = {
 		name = "John IV"
@@ -66,7 +60,6 @@ capital = 92
 		mil = 1
 	}
 }
-
 1415.1.1 = {
 	heir = {
 		name = "Philip"
@@ -80,7 +73,6 @@ capital = 92
 		mil = 2
 	}
 }
-
 1427.1.1 = {
 	monarch = {
 		name = "Philip I"

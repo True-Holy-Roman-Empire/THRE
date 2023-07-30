@@ -17,7 +17,6 @@ fixed_capital = 146 # Cannot move capital away from this province & no power cos
 		mil = 2
 	}
 }
-
 1416.1.1 = {
 	heir = {
 		name = "Nerio"
@@ -31,7 +30,6 @@ fixed_capital = 146 # Cannot move capital away from this province & no power cos
 		mil = 0
 	}
 }
-
 1435.1.1 = {
 	monarch = {
 		name = "Nerio II"
@@ -42,7 +40,6 @@ fixed_capital = 146 # Cannot move capital away from this province & no power cos
 		mil = 0
 	}
 }
-
 1439.1.1 = {
 	monarch = {
 		name = "Antonio II"
@@ -52,7 +49,6 @@ fixed_capital = 146 # Cannot move capital away from this province & no power cos
 		mil = 2
 	}
 }
-
 1441.1.1 = {
 	monarch = {
 		name = "Nerio II"
@@ -64,40 +60,4 @@ fixed_capital = 146 # Cannot move capital away from this province & no power cos
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = scholar_personality
-}
-
-1441.1.1 = {
-	# heir = {
-	# 	name = "Francesco"
-	# 	monarch_name = "Francesco I"
-	# 	dynasty = "Acciaioli"
-	# 	birth_date = 1440.1.1
-	# 	death_date = 1455.1.1
-	# 	claim = 95
-	# 	adm = 2
-	# 	dip = 3
-	# 	mil = 1
-	# }
-}
-	
-
-1451.1.1 = {
-	monarch = {
-		name = "Francesco I"
-		dynasty = Acciaioli
-		birth_date = 1440.1.1		
-		adm = 2
-		dip = 3
-		mil = 1
-	}
-}
-
-1455.1.1 = {
-	monarch = {
-		name = "Francesco II"
-		dynasty = Acciaioli
-		adm = 4
-		dip = 3
-		mil = 3
-	}
 }

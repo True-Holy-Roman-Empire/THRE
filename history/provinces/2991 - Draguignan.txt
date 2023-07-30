@@ -1,22 +1,16 @@
-# Forcalquier
-# owner = PRO
-# controller = PRO 
+add_core = PRO
+owner = PRO
+controller = PRO
+culture = occitain
+religion = abrahamism
 capital = "Forcalquier"
 is_city = yes
-# culture = occitain
-# religion = abrahamism
 hre = yes
 base_tax = 3 
 base_production = 3
 trade_goods = wool
 base_manpower = 2
-# add_core = PRO
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-add_core = PRO
-owner = PRO
-controller = PRO
-religion = abrahamism
-culture = occitain

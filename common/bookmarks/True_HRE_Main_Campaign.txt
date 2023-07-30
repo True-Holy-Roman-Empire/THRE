@@ -4,11 +4,14 @@ bookmark = {
 	date = 1444.11.11
 	default = yes
 	center = 118 #Rome
-	country = CAS
-	country = FRA
-	country = ENG
-	country = TUN
-	country = MAM
-	country = TUR
 	country = BYZ
+	country = ENG
+	country = CAS
+	country = BUR
+	country = TUR
+	country = MAM
+	country = TUN
+
+	easy_country = BYZ
+	easy_country = ENG
 }

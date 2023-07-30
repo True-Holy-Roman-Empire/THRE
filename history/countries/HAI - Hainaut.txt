@@ -6,7 +6,6 @@ religion = abrahamism
 primary_culture = wallonian
 capital = 91	# Mons
 
-
 1389.1.1 = {
 	monarch = {
 		name = "Albert"
@@ -16,7 +15,6 @@ capital = 91	# Mons
 		mil = 1
 	}
 }
-
 1389.1.1 = {
 	heir = {
 		name = "William"
@@ -30,7 +28,6 @@ capital = 91	# Mons
 		mil = 2
 	}
 }
-
 1404.1.1 = {
 	monarch = {
 		name = "William VI"
@@ -40,7 +37,6 @@ capital = 91	# Mons
 		mil = 2
 	}
 }
-
 1404.1.1 = {
 	heir = {
 		name = "Jacquette"
@@ -55,7 +51,6 @@ capital = 91	# Mons
 		female = yes
 	}
 }
-
 1417.1.1 = {
 	monarch = {
 		name = "Jacquette"

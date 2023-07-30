@@ -1,17 +1,82 @@
 ﻿l_english:
- #
- UMY: "Umayyad"
- UMY_ADJ: "Umayyan"
- CRD: "Cordoba"
- CRD_ADJ: "Cordoban"
- TRUE_HRE_CAMPAIGN_NAME: "The True Holy Roman Empire"
- TRUE_HRE_CAMPAIGN_DESC: "*"
- 
- MNE: "Maine"
- MNE_ADJ: "Mainean"
- ANJ: "Anjou"
- ANJ_ADJ: "Anjouian"
- POU: "Poitou"
- POU_ADJ: "Poitouan"
- AGO: "Angouleme"
- AGO_ADJ: "Angoulemean"
+
+  # THRE:
+    # Main Menu:
+      TRUE_HRE_CAMPAIGN_NAME: "The True Holy Roman Empire"
+      TRUE_HRE_CAMPAIGN_DESC: "*"
+  
+  
+  # GOVERNMENT:
+    # Theocracy:
+      papacy_reform_free_city: "Papacy"
+      papacy_reform_free_city_desc: "A political structure where the nation is governed by a spiritual leader, the Pope, the highest ranking office of the Roman Catholic Church."
+      papacy_reform_non_free_city: "Papacy"
+      papacy_reform_non_free_city_desc: "A political structure where the nation is governed by a spiritual leader, the Pope, the highest ranking office of the Roman Catholic Church."
+      theocratic_free_city_reform: "Free Bishopric"
+      theocratic_free_city_reform_desc: "This is a free Imperial bishopric that has been granted special rights and privileges by the Emperor himself."
+    
+
+  # RELIGION:
+    # Abrahamism:
+      abrahamistic_group: "Abrahamistic Group"
+      abrahamism: "Abrahamism"
+      abrahamism_christian_blessing1: "Christian PlaceHolder Blessing 1"
+      abrahamism_christian_blessing2: "Christian PlaceHolder Blessing 2"
+      abrahamism_christian_blessing3: "Christian PlaceHolder Blessing 3"
+      abrahamism_christian_blessing4: "Christian PlaceHolder Blessing 4"
+      abrahamism_muslim_blessing1: "Muslim PlaceHolder Blessing 1"
+      abrahamism_muslim_blessing2: "Muslim PlaceHolder Blessing 2"
+      abrahamism_muslim_blessing3: "Muslim PlaceHolder Blessing 3"
+      abrahamism_muslim_blessing4: "Muslim PlaceHolder Blessing 4"
+      abrahamism_rebels_name: "Abrahamist Fanatics"
+      abrahamism_rebels_demand: "Convert $COUNTRYNAME$"
+      abrahamism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+
+
+  # COUNTRIES:
+    # England:
+      KNT: "Kent"
+      KEN_ADJ: "Kent"
+    # France:
+      PRS: "Paris"
+      PRS_ADJ: "Paris"
+      MNE: "Maine"
+      MNE_ADJ: "Mainean"
+      ANJ: "Anjou"
+      ANJ_ADJ: "Anjouian"
+      POU: "Poitou"
+      POU_ADJ: "Poitouan"
+      AGO: "Angouleme"
+      AGO_ADJ: "Angoulemean"
+      CLY: "Cluny"
+      CLY_ADJ: "Cluny"
+    # Italy:
+      RAV: "Ravenna"
+      RAV_ADJ: "Ravenna"
+    # Iberia:
+      SMC: "Salamanca"
+      SMC_ADJ: "Salamanca"
+      UMY: "Umayyad"
+      UMY_ADJ: "Umayyan"
+      CRD: "Cordoba"
+      CRD_ADJ: "Cordoban"
+    # Maghreb:
+      DJB: "Djerba"
+      DJB_ADJ: "Djerba"
+    # Egypt:
+      ALX: "Alexandria"
+      ALX_ADJ: "Alexandria"
+      CYR: "Cyrenaica"
+      CYR_ADJ: "Cyrenaica"
+
+
+  # PROVINCES:
+    # France:
+      PROV4944:0 "Cluny"
+      PROV_ADJ4944:0 "Cluny"
+    # Iberia:
+      PROV4943:0 "Ciudad Rodrigo"
+      PROV_ADJ4943:0 "Ciudad Rodrigo"
+    # Egypt:
+      PROV4942:0 "Plinthine"
+      PROV_ADJ4942:0 "Plinthine"

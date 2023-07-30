@@ -1,8 +1,8 @@
-# - Bizerte
-# owner = TUN
-# controller = TUN
-# culture = tunisian
-# religion = abrahamism
+add_core = TUN
+owner = TUN
+controller = TUN
+culture = tunisian
+religion = abrahamism
 capital = "Bizerte"
 trade_goods = grain
 hre = yes
@@ -10,13 +10,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 1
 is_city = yes
-# add_core = TUN
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western
 discovered_by = eastern
-add_core = TUN
-owner = TUN
-controller = TUN
-religion = abrahamism
-culture = tunisian

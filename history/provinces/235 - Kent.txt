@@ -1,8 +1,8 @@
-#235 - Kent
-# owner = ENG
-# controller = ENG
-# culture = english
-# religion = abrahamism
+owner = KNT
+controller = KNT
+add_core = KNT
+culture = english
+religion = abrahamism
 hre = yes
 base_tax = 5
 base_production = 5
@@ -10,20 +10,8 @@ trade_goods = cloth
 base_manpower = 2
 capital = "Canterbury"
 is_city = yes
-# add_core = ENG
-seat_in_parliament = yes
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
-religion = abrahamism
-culture = english
-1440.1.1 = {
-	owner = KNT
-	controller = KNT
-	add_core = KNT
-	add_cardinal = yes
-}
-1450.5.1 = { 
-	revolt = { type = anti_tax_rebels size = 2 }
-}
+add_cardinal = yes

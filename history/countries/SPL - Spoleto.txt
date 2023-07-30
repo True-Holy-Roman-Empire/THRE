@@ -6,4 +6,3 @@ primary_culture = umbrian
 religion = abrahamism
 capital = 4731
 fixed_capital = 4731  # Cannot move capital away from this province & no power cost to move to it
-

@@ -15,7 +15,6 @@ capital = 4383 #Haag
 		mil = 1
 	}
 }
-
 1389.1.1 = {
 	heir = {
 		name = "Willem"
@@ -29,7 +28,6 @@ capital = 4383 #Haag
 		mil = 2
 	}
 }
-
 1404.1.1 = {
 	monarch = {
 		name = "Willem VI"
@@ -51,7 +49,6 @@ capital = 4383 #Haag
 		female = yes
 	}
 }
-
 1417.5.31 = {
 	monarch = {
 		name = "Jacoba"
@@ -62,5 +59,3 @@ capital = 4383 #Haag
 		female = yes
 	}
 }
-
-1580.1.1 = { set_legacy_government = administrative_republic } # Constitutionalism and the General Estates

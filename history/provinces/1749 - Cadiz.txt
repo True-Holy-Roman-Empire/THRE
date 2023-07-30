@@ -1,9 +1,8 @@
-#1749 - Cadiz
-# owner = CAS		#Enrique III of Castille
-# controller = CAS
-# add_core = CAS
-# culture = andalucian
-# religion = abrahamism
+add_core = UMY
+owner = UMY
+controller = UMY
+culture = andalucian
+religion = abrahamism
 hre = yes
 base_tax = 5 
 base_production = 4
@@ -17,8 +16,3 @@ discovered_by = ottoman
 discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
-add_core = UMY
-owner = UMY
-controller = UMY
-religion = abrahamism
-culture = andalucian

@@ -17,7 +17,6 @@ fixed_capital = 330 # Cannot move capital away from this province & no power cos
 		mil = 2
 	}
 }
-
 1390.1.1 = {
 	heir = {
 		name = "Alexios"
@@ -30,9 +29,7 @@ fixed_capital = 330 # Cannot move capital away from this province & no power cos
 		dip = 2
 		mil = 1
 	}
-}
-		
-
+}	
 1417.10.29 = {
 	monarch = {
 		name = "Alexios IV"
@@ -42,8 +39,6 @@ fixed_capital = 330 # Cannot move capital away from this province & no power cos
 		mil = 1
 	}
 }
-
-
 1417.10.29 = {
 	heir = {
 		name = "Ioannes"
@@ -57,7 +52,6 @@ fixed_capital = 330 # Cannot move capital away from this province & no power cos
 		mil =5
 	}
 }
-
 1429.10.29 = {
 	monarch = {
 		name = "Ioannes IV"
@@ -67,7 +61,6 @@ fixed_capital = 330 # Cannot move capital away from this province & no power cos
 		mil = 2
 	}
 }
-
 1429.10.29 = {
 	heir = {
 		name = "Dauid"
@@ -77,17 +70,6 @@ fixed_capital = 330 # Cannot move capital away from this province & no power cos
 		death_date = 1463.11.1
 		claim = 95
 		adm =  6
-		dip = 0
-		mil = 1
-	}
-}
-		
-
-1459.1.1 = {
-	monarch = {
-		name = "Dauid"
-		dynasty = "Komnenos"
-		adm = 3
 		dip = 0
 		mil = 1
 	}

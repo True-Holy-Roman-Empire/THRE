@@ -16,7 +16,6 @@ fixed_capital = 142 # Cannot move capital away from this province & no power cos
 		mil = 1
 	}
 }
-
 1400.1.1 = {
 	heir = {
 		name = "Leonardo"
@@ -30,7 +29,6 @@ fixed_capital = 142 # Cannot move capital away from this province & no power cos
 		mil = 0
 	}
 }
-
 1418.1.1 = {
 	monarch = {
 		name = "Leonardo II"
@@ -40,7 +38,6 @@ fixed_capital = 142 # Cannot move capital away from this province & no power cos
 		mil = 0
 	}
 }
-
 1429.1.1 = {
 	monarch = {
 		name = "Carlos II"
@@ -48,24 +45,5 @@ fixed_capital = 142 # Cannot move capital away from this province & no power cos
 		adm = 1
 		dip = 0
 		mil = 1
-	}
-}
-
-1448.1.1 = {
-	monarch = {
-		name = "Leonardo II"
-		dynasty ="Dagout"
-		adm = 1
-		dip = 0
-		mil = 0
-	}
-}
-
-1799.3.1 = {
-	monarch = {
-		name = "National Assembly"
-		adm = 2
-		dip = 2
-		mil = 2
 	}
 }

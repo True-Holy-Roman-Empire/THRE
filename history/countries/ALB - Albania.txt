@@ -6,7 +6,6 @@ religion = abrahamism
 technology_group = eastern
 capital = 4175 # Lezhe
 
-# The League of Lezhe
 1443.3.4 = {
 	monarch = {
 		name = "Gjergj Skanderbeg"
@@ -21,7 +20,6 @@ capital = 4175 # Lezhe
 	add_ruler_personality = inspiring_leader_personality
 	add_ruler_personality = silver_tongue_personality
 }
-
 1443.3.4 = {
 	heir = {
 		name = "Gjon"
@@ -33,40 +31,5 @@ capital = 4175 # Lezhe
 		adm = 3
 		dip = 4
 		mil = 2
-	}
-}
-
-1468.1.18 = {
-	monarch = {
-		name = "Gjon II"
-		dynasty = "Kastrioti"
-		birth_date = 1420.1.1		
-		adm = 3
-		dip = 4
-		mil = 2
-	}
-}
-
-1468.1.18 = {
-	heir = {
-		name = "Constantino"
-		monarch_name = "Constantino"
-		birth_date = 1440.1.1
-		death_date = 1478.6.16
-		claim = 95
-		adm = 3
-		dip = 2
-		mil = 1
-	}
-}
-
-1478.1.1 = {
-	monarch = {
-		name = "Constantino"
-		dynasty = "Kastrioti"
-		birth_date = 1440.1.1		
-		adm = 3
-		dip = 2
-		mil = 1
 	}
 }

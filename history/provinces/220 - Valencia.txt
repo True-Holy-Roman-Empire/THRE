@@ -1,10 +1,8 @@
-#220 - València
-# owner = ARA	#Alfons V of Aragon
-# controller = ARA
-# add_core = ARA
-# add_core = VAL
-# culture = catalan
-# religion = abrahamism
+add_core = VAL
+owner = VAL
+controller = VAL
+culture = catalan
+religion = abrahamism
 hre = yes
 base_tax = 6 
 base_production = 5
@@ -18,9 +16,4 @@ discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
-add_core = VAL
-owner = VAL
-controller = VAL
-religion = abrahamism
 fort_15th = yes
-culture = catalan

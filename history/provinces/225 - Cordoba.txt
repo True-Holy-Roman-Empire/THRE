@@ -1,9 +1,8 @@
-#225 - Córdoba
-# owner = CAS		#Juan II of Castille
-# controller = CAS
-# add_core = CAS
-# culture = andalucian
-# religion = abrahamism
+add_core = CRD
+owner = CRD
+controller = CRD
+culture = andalucian
+religion = abrahamism
 hre = yes
 base_tax = 4 
 base_production = 4
@@ -15,8 +14,3 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
-add_core = CRD
-owner = CRD
-controller = CRD
-religion = abrahamism
-culture = andalucian

@@ -17,4 +17,4 @@ fixed_capital = 137 # Cannot move capital away from this province & no power cos
            mil = 2
            regent = yes
       }
-} # Noble councils. 
+}

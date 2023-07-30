@@ -3,5 +3,5 @@ add_government_reform = theocratic_free_city_reform
 government_rank = 1
 technology_group = western
 religion = abrahamism
-capital = 1877
+capital = 4944
 primary_culture = burgundian

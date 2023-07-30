@@ -313,7 +313,7 @@ feudal_france_reform = {
 	potential = {
 		has_dlc = "Domination" 
 		OR = {
-			tag = FRA
+			tag = PRS
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = feudal_france_reform
@@ -334,6 +334,12 @@ feudal_france_reform = {
 		has_appanages = yes
 		#need_crownland_to_annex = yes
 		nobility_loyalty_hit_on_integration = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			appanages_mechanic
+		}
 	}
 }
 
@@ -1574,10 +1580,13 @@ burgundian_state_reform = {
 	icon = "burgundian_state"
 	allow_normal_conversion = yes
 	potential = {
-		primary_culture = burgundian
-	}
-	nation_designer_trigger = {
-		primary_culture = burgundian
+		OR = {
+			tag = BUR
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = burgundian_state_reform
+			}
+		}
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
@@ -1585,7 +1594,13 @@ burgundian_state_reform = {
 		rival_change_cost = -1
 		rival_border_fort_maintenance = -1
 		diplomatic_upkeep = 2
-		years_to_integrate_personal_union = -5
+		vassal_forcelimit_bonus = 0.25
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			appanages_mechanic
+		}
 	}
 	ai = {
 		factor = 1

@@ -1,8 +1,8 @@
-#1751 - Ceuta
-# owner = MOR
-# controller = MOR 
-# culture = moroccan
-# religion = abrahamism
+add_core = TET
+owner = TET
+controller = TET
+culture = moroccan
+religion = abrahamism
 capital = "Cebta"
 trade_goods = fish
 hre = yes
@@ -14,10 +14,4 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
-#1415.8.21 = { # controller = POR # add_core = POR }
-add_core = TET
-owner = TET
-controller = TET
-religion = abrahamism
 fort_15th = yes
-culture = moroccan

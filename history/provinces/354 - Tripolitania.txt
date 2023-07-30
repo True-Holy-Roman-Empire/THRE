@@ -1,24 +1,18 @@
-#354 - Tripoli
-# owner = TUN
-# controller = TUN
-# culture = tunisian
-# religion = abrahamism
-capital = "Tripoli"trade_goods = cloth
+add_core = TRP
+owner = TRP
+controller = TRP
+culture = tunisian
+religion = abrahamism
+capital = "Tripoli"
+trade_goods = cloth
 hre = yes
 base_tax = 2 
 base_production = 2
 base_manpower = 1
 is_city = yes
-# add_core = TUN
-# add_core = TRP
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 extra_cost = 16
 center_of_trade = 2
-add_core = TRP
-owner = TRP
-controller = TRP
-religion = abrahamism
-culture = tunisian

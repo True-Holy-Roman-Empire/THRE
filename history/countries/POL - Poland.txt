@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = polish_great_sejm
+primary_culture = polish
+religion = catholic
+technology_group = eastern
+historical_friend = LIT
+historical_rival = TEU
+capital = 262 # Krakow
+add_accepted_culture = ruthenian
+
+1434.6.1 = {
+	monarch = {
+		name = "Wladyslaw III"
+		dynasty = Jagiellon
+		birth_date = 1424.10.31
+		adm = 3
+		dip = 4
+		mil = 5
+		leader = { name = "Wladyslaw III"		type = general		fire = 2	shock = 3	manuever = 3	siege = 0 }
+	}
+}

@@ -17,7 +17,6 @@ religious_school = hanafi_school
 	}
 	add_piety = 0.3
 }
-
 1402.1.1 = {
 	heir = {
 		name = "Junayd"
@@ -31,7 +30,6 @@ religious_school = hanafi_school
 		mil = 2
 	}
 }
-
 1405.1.1 = {
 	monarch = {
 		name = "Junayd"

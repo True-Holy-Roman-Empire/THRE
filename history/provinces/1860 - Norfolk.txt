@@ -1,9 +1,8 @@
-#1860 - Norfolk
-#Includes Suffolk
-# owner = ENG
-# controller = ENG
-# culture = english
-# religion = abrahamism
+add_core = ENG
+owner = ENG
+controller = ENG
+culture = english
+religion = abrahamism
 hre = yes
 base_tax = 4
 base_production = 4
@@ -11,13 +10,7 @@ trade_goods = iron
 base_manpower = 2
 capital = "Norwich"
 is_city = yes
-# add_core = ENG
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
-add_core = ENG
-owner = ENG
-controller = ENG
-religion = abrahamism
-culture = english

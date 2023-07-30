@@ -17,13 +17,3 @@ fixed_capital = 1872 # Cannot move capital away from this province & no power co
 		regent = yes
 	}
 }
-
-1530.1.1 = {
-	religion = protestant
-}
-
-1608.5.14 = {
-	join_league = protestant
-}
-
-1798.1.1 = { set_legacy_government = constitutional_republic }

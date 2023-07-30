@@ -16,7 +16,6 @@ fixed_capital = 94 # Cannot move capital away from this province & no power cost
 		mil = 4
 	}
 }
-
 1390.11.1 = {
 	heir = {
 		name = "Elisabeth"
@@ -31,7 +30,6 @@ fixed_capital = 94 # Cannot move capital away from this province & no power cost
 		female = yes
 	}
 }
-
 1415.1.1 = {
 	monarch = {
 		name = "Elisabeth I"

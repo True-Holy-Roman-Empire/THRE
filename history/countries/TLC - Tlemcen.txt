@@ -19,7 +19,6 @@ change_estate_land_share = {
 	estate = estate_church
 	share = -10
 }
-
 1395.1.1 = {
 	monarch = {
 		name = "Muhammad III"
@@ -30,7 +29,6 @@ change_estate_land_share = {
 	}
 	add_piety = 0.35
 }
-
 1400.1.1 = {
 	monarch = {
 		name = "Abdallah I"
@@ -40,7 +38,6 @@ change_estate_land_share = {
 		mil = 2
 	}
 }
-
 1402.1.1 = {
 	monarch = {
 		name = "Muhammad IV"
@@ -50,7 +47,6 @@ change_estate_land_share = {
 		mil = 2
 	}
 }
-
 1411.1.1 = {
 	monarch = {
 		name = "Abd al-Wahid"
@@ -60,7 +56,6 @@ change_estate_land_share = {
 		mil = 2
 	}
 }
-
 1424.1.1 = {
 	monarch = {
 		name = "Muhammad V"
@@ -70,7 +65,6 @@ change_estate_land_share = {
 		mil = 0
 	}
 }
-
 1430.7.27 = {
 	monarch = {
 		name = "Ahmad II"
@@ -79,79 +73,5 @@ change_estate_land_share = {
 		dip = 1
 		mil = 2
 		leader = {	name = "Ahmad II"	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
-	}
-}
-
-1462.2.2 = {
-	monarch = {
-		name = "Muhammad V"
-		dynasty = "Zayyanid"
-		adm = 0
-		dip = 3
-		mil = 0
-	}
-}
-
-1468.1.1 = {
-	monarch = {
-		name = "Muhammad VI"
-		dynasty = "Zayyanid"
-		adm = 3
-		dip = 3
-		mil = 2
-	}
-	government_rank = 1
-}
-
-1505.1.1 = {
-	monarch = {
-		name = "Muhammad VII"
-		dynasty = "Zayyanid"
-		adm = 2
-		dip = 0
-		mil = 1
-	}
-}
-
-1516.1.1 = {
-	monarch = {
-		name = "Mûsa III"
-		dynasty = "Zayyanid"
-		adm = 2
-		dip = 1
-		mil = 0
-	}
-}
-
-1527.1.1 = {
-	monarch = {
-		name = "'Abd Allâh III"
-		dynasty = "Zayyanid"
-		adm = 2
-		dip = 0
-		mil = 0
-	}
-}
-
-1540.1.1 = {
-	monarch = {
-		name = "Ahmad III"
-		dynasty = "Zayyanid"
-		adm = 0
-		dip = 2
-		mil = 1
-	}
-}
-1549.1.1 = {
-	government_rank = 1
-}
-
-1550.1.1 = {
-	monarch = {
-		name = "al-Hasan"
-		dynasty = "Zayyanid"
-		adm = 0
-		dip = 3
-		mil = 1
 	}
 }

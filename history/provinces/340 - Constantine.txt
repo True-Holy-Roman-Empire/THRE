@@ -1,8 +1,8 @@
-#340 - Constantine
-# owner = TUN
-# controller = TUN 
-# culture = berber
-# religion = abrahamism
+add_core = KBA
+owner = KBA
+controller = KBA
+culture = berber
+religion = abrahamism
 capital = "Constantine"
 trade_goods = grain
 hre = yes
@@ -10,13 +10,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-# add_core = TUN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-add_core = KBA
-owner = KBA
-controller = KBA
-religion = abrahamism
-culture = berber

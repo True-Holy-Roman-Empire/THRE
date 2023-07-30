@@ -1,9 +1,6 @@
 government = theocracy
 add_government_reform = theocratic_free_city_reform
-
 primary_culture = cosmopolitan_french
 religion = abrahamism
 technology_group = eastern
 capital = 379	# Jerusalem
-
-

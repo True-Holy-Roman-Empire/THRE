@@ -15,7 +15,6 @@ fixed_capital = 127 # Cannot move capital away from this province & no power cos
 		adm = 3
 	}
 }
-
 1387.1.1 = {
 	heir = {
 		name = "Guglielmo"
@@ -29,7 +28,6 @@ fixed_capital = 127 # Cannot move capital away from this province & no power cos
 		adm = 1
 	}
 }
-
 1407.1.1 = {
 	monarch = { 
 		name = "Guglielmo I"
