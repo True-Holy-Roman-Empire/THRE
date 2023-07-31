@@ -12,4 +12,4 @@ capital = "Gävle"
 is_city = yes
 discovered_by = eastern
 discovered_by = western
-1527.6.1 = { religion = Protestant }
+1527.6.1 = { religion = protestant }

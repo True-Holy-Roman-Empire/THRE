@@ -17,9 +17,9 @@ discovered_by = western
 	controller = SWE
 	add_core = SWE
 	city = yes
-	trade_goods = Fur
+	trade_goods = fur
 }
 1607.1.1 = { capital = "Lycksele" }
-1640.1.2 = { culture = swedish religion = Protestant }
+1640.1.2 = { culture = swedish religion = protestant }
 1640.1.2 = { religion = protestant }
 is_city = no

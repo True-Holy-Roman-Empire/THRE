@@ -19,9 +19,9 @@ discovered_by = ottoman
 1536.1.1 = { 
 	controller = DAN
 	add_core = DAN
-	religion = Protestant
+	religion = protestant
 }
-1630.1.1 = { trade_goods = Copper }
+1630.1.1 = { trade_goods = copper }
 1814.1.14 = { 
 	controller = REB
 	revolt = { type = nationalist_rebels size = 3 }

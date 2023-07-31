@@ -13,7 +13,7 @@ add_local_autonomy = 25
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-1536.1.1 = { religion = Protestant controller = DAN add_core = DAN }
+1536.1.1 = { religion = protestant controller = DAN add_core = DAN }
 1536.1.1 = { owner = DAN controller = DAN add_core = DAN } # 'Handfästningen'(Unknown date)
 1814.1.14 = { 
 	controller = REB

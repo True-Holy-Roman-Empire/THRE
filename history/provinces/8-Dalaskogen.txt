@@ -21,5 +21,5 @@ add_province_triggered_modifier = stora_kopparberget_modifier
 1438.10.1 = { controller = REB revolt = { type = anti_tax_rebels size = 1 } }
 1440.9.1 = { controller = SWE revolt = { size = 1 } }
 1448.6.20 = { controller = SWE revolt = { size = 1 } }
-1527.6.1 = { religion = Protestant }
+1527.6.1 = { religion = protestant }
 1617.1.1 = { base_tax = 3 base_production = 3 }

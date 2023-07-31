@@ -13,7 +13,7 @@ is_city = yes
 add_core = NOR
 discovered_by = eastern
 discovered_by = western
-1527.6.1 = { religion = Protestant }
+1527.6.1 = { religion = protestant }
 1536.1.1 = { controller = DAN add_core = DAN }
 1564.2.10 = { controller = SWE }
 1570.11.18 = { controller = DAN }

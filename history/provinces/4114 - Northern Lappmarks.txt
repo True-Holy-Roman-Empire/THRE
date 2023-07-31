@@ -17,10 +17,10 @@ discovered_by = western
 	controller = SWE
 	add_core = SWE
 	city = yes
-	trade_goods = Fur
+	trade_goods = fur
 }
-1640.1.2 = { culture = swedish religion = Protestant }
+1640.1.2 = { culture = swedish religion = protestant }
 1640.1.2 = { religion = protestant }
-1650.1.1 = { trade_goods = Iron }
+1650.1.1 = { trade_goods = iron }
 1652.1.1 = { capital = "Kiruna" }
 is_city = no
