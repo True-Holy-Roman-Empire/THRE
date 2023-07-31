@@ -1,0 +1,342 @@
+namespace = thre_england_events
+
+# Cantebury Connections
+country_event = {
+	id = thre_england_events.1
+	title = thre_england_events.1.t
+	desc = thre_england_events.1.d
+	picture = FETISHIST_FIRE_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = thre_england_events.1.a # Reach Out To [235.Ruler.GetName]
+		custom_tooltip = reach_out_to_kent_for_kent_and_gaineng
+		tooltip = {
+			235 = {
+				add_province_modifier = {
+					name = "cantebury_autonomy_protctions_thre"
+					duration = 18250
+				}
+			}
+		}
+		KNT = {
+			country_event = {
+				id = thre_england_events.2
+				days = 5
+			}
+		}
+		ai_chance = { 
+			factor = 50 
+			modifier = {
+				factor = 0
+				is_emperor = yes
+			}
+			modifier = {
+				factor = 2
+				KNT = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = thre_england_events.1.b # The Emperor will definently give us guidance
+		custom_tooltip = we_will_reach_out_to_the_emp_to_secure_our_annexation_of_kent_eng
+		emperor = {
+			country_event = {
+				id = thre_england_events.3
+				days = 5
+			}
+		}
+		ai_chance = { 
+			factor = 50 
+			modifier = {
+				factor = 0
+				is_emperor = yes
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = { dip_power = 100 }
+			}
+		}
+	}
+	option = {
+		name = thre_england_events.1.c # Yoink
+		trigger = {
+			is_emperor = yes
+		}
+		235 = {
+			cede_province = ROOT 
+			add_core = ROOT
+		}
+		ai_chance = { 
+			factor = 100
+		}
+	}
+	option = {
+		name = thre_england_events.1.e # I have no time for diplomacy!
+		add_mil_power = 25
+		235 = {
+			if = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+		}
+		ai_chance = { 
+			factor = 0 
+		}
+	}
+}
+
+# English Proposition
+country_event = {
+	id = thre_england_events.2
+	title = thre_england_events.2.t
+	desc = thre_england_events.2.d
+	picture = FETISHIST_FIRE_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = thre_england_events.2.a #Honorable Terms
+		tooltip = {
+			235 = {
+				cede_province = FROM
+				add_core = FROM
+				add_province_modifier = {
+					name = "cantebury_autonomy_protctions_thre"
+					duration = 18250
+				}
+			}
+		}
+		ENG = {
+			country_event = {
+				id = thre_england_events.4
+				days = 5
+			}
+			set_country_flag = give_kent_da_autonomy_mod_eng
+		}
+		ai_chance = { 
+			factor = 75 
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = FROM
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 0.25
+				num_of_cities = 2
+			}
+			modifier = {
+				factor = 2
+				ai_attitude = {
+					who = FROM
+					attitude = attitude_threatened
+				}
+			}
+		}
+	}
+	option = {
+		name = thre_england_events.2.b # We will never surrender!
+		ENG = {
+			country_event = {
+				id = thre_england_events.5
+				days = 5
+			}
+		}
+		ai_chance = { 
+			factor = 25
+			modifier = {
+				factor = 2
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+# English Dispute
+country_event = {
+	id = thre_england_events.3
+	title = thre_england_events.3.t
+	desc = thre_england_events.3.d
+	picture = FETISHIST_FIRE_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = thre_england_events.3.a #We'll let it slide.
+		tooltip = {
+			235 = {
+				cede_province = FROM
+				add_core = FROM
+			}
+		}
+		ENG = {
+			add_opinion = {
+				who = ROOT
+				modifier = eng_sided_during_kent_opinion_modifier
+			}
+			country_event = {
+				id = thre_england_events.4
+				days = 5
+			}
+		}
+		ai_chance = { 
+			factor = 50 
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = FROM
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 0.25
+				is_rival = ENG
+			}
+			modifier = {
+				factor = 2
+				alliance_with = ENG
+			}
+		}
+	}
+	option = {
+		name = thre_england_events.3.b #They are a FREE city!
+		ENG = {
+			add_opinion = {
+				who = ROOT
+				modifier = eng_sided_against_during_kent_opinion_modifier
+			}
+			country_event = {
+				id = thre_england_events.5
+				days = 5
+			}
+		}
+		ai_chance = { 
+			factor = 50
+			modifier = {
+				factor = 2
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+# A Peaceful Solution
+country_event = {
+	id = thre_england_events.4
+	title = thre_england_events.4.t
+	desc = thre_england_events.4.d
+	picture = FETISHIST_FIRE_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = thre_england_events.4.a #Glory To The Crown!
+		235 = {
+			cede_province = FROM
+			add_core = FROM
+			if = {
+				limit = {
+					has_country_flag = give_kent_da_autonomy_mod_eng
+				}
+				add_province_modifier = {
+					name = "cantebury_autonomy_protctions_thre"
+					duration = 18250
+				}
+			}
+		}
+		add_ruler_personality = charismatic_negotiator_personality
+		ai_chance = { 
+			factor = 100
+		}
+	}
+}
+
+#Talks Fall Through
+country_event = {
+	id = thre_england_events.5
+	title = thre_england_events.5.t
+	desc = thre_england_events.5.d
+	picture = FETISHIST_FIRE_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = thre_england_events.5.a #If we must...
+		235 = {
+			add_core = FROM
+		}
+		ai_chance = { 
+			factor = 100
+		}
+	}
+}

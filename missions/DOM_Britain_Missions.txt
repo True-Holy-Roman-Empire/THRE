@@ -15,6 +15,7 @@ eng_row_slot_1 = {
 			tag = AVE
 			tag = GBR
 		}
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -633,6 +634,7 @@ eng_row_slot_2 = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -720,6 +722,7 @@ gbr_row_slot_2 = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -940,6 +943,7 @@ ave_row_slot_2 = {
 			tag = AVE
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -1118,6 +1122,7 @@ eng_row_slot_2_continuation = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -1171,6 +1176,7 @@ gbr_row_slot_2_continuation = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -1231,6 +1237,7 @@ ave_row_slot_2_continuation = {
 			tag = AVE
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -1365,6 +1372,7 @@ gbr_ave_hundred_years_mission = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -1441,6 +1449,7 @@ gbr_row_3 = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -1856,6 +1865,7 @@ ave_row_3 = {
 			tag = AVE
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -2416,6 +2426,7 @@ gbr_row_4 = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -2920,6 +2931,7 @@ ave_row_4 = {
 			tag = AVE
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -3292,6 +3304,7 @@ gbr_ave_the_royal_court_slot = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -3345,6 +3358,7 @@ gbr_row_5 = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -3812,6 +3826,7 @@ ave_row_5 = {
 			tag = AVE
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -4168,6 +4183,7 @@ gbr_ave_row_1 = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -4276,6 +4292,7 @@ gbr_ave_row_2 = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -4452,6 +4469,7 @@ gbr_ave_row_3 = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -4604,6 +4622,7 @@ gbr_ave_row_4 = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
@@ -4680,6 +4699,7 @@ gbr_ave_row_5 = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = gotten_international_focus_result_war_of_roses_england
 	}
 	has_country_shield = yes
 
