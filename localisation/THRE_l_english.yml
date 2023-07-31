@@ -81,3 +81,12 @@
     # Egypt:
       PROV4942:0 "Plinthine"
       PROV_ADJ4942:0 "Plinthinean"
+      
+      
+  # MISC:
+  
+    # AAA:
+      PROV4945:0 "Plank"
+      PROV_ADJ4945:0 "Plank"
+      AAA: "Plank"
+      AAA_ADJ: "Plank"

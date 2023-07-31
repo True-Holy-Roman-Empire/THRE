@@ -534,7 +534,7 @@ abrahamistic_group = { # Need proper name
 
 	abrahamism = { # Need proper name
 		color = { 93 138 13 }
-		icon = 20
+		icon = 30
 		allowed_conversion = { # At least one thing from each is taken.
 			catholic # 204 204 0	#CCCC00
 			orthodox # 178 127 0	#B27F00
