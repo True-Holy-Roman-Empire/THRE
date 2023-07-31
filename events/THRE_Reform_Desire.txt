@@ -9,6 +9,10 @@ country_event = {
 	hidden = yes
 	is_triggered_only = yes
 
+	trigger = {
+		tag = AAA
+	}
+
 	immediate = {
 		Reset_HRE_Religion_Counting_Variables = yes
 		every_country = {
