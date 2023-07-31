@@ -5,7 +5,7 @@ country_event = {
 	id = thre_england_events.1
 	title = thre_england_events.1.t
 	desc = thre_england_events.1.d
-	picture = FETISHIST_FIRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -15,6 +15,15 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+	
+	#This is for the loc
+	immediate = {
+		hidden_effect = {
+			emperor = {
+				save_event_target_as = current_emperor_for_loc_eng
+			}
+		}
 	}
 	
 	option = {
@@ -117,7 +126,7 @@ country_event = {
 	id = thre_england_events.2
 	title = thre_england_events.2.t
 	desc = thre_england_events.2.d
-	picture = FETISHIST_FIRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -198,7 +207,7 @@ country_event = {
 	id = thre_england_events.3
 	title = thre_england_events.3.t
 	desc = thre_england_events.3.d
-	picture = FETISHIST_FIRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -279,7 +288,7 @@ country_event = {
 	id = thre_england_events.4
 	title = thre_england_events.4.t
 	desc = thre_england_events.4.d
-	picture = FETISHIST_FIRE_eventPicture
+	picture = GOOD_WITH_MONARCH_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -294,8 +303,8 @@ country_event = {
 	option = {
 		name = thre_england_events.4.a #Glory To The Crown!
 		235 = {
-			cede_province = FROM
-			add_core = FROM
+			cede_province = ROOT
+			add_core = ROOT
 			if = {
 				limit = {
 					has_country_flag = give_kent_da_autonomy_mod_eng
@@ -318,7 +327,7 @@ country_event = {
 	id = thre_england_events.5
 	title = thre_england_events.5.t
 	desc = thre_england_events.5.d
-	picture = FETISHIST_FIRE_eventPicture
+	picture = BAD_WITH_MONARCH_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -331,7 +340,8 @@ country_event = {
 	}
 	
 	option = {
-		name = thre_england_events.5.a #If we must...
+		name = thre_england_events.5.a #This means war!
+		add_prestige = -15
 		235 = {
 			add_core = FROM
 		}

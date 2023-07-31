@@ -44,4 +44,5 @@ change_estate_land_share = { #compensates for lack of nobles, distributes 20 bet
 		death_date = 1453.7.17
 	}
 	set_estate_privilege = estate_nobles_english_villeinage
+	add_truce_with = NOL
 }

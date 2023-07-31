@@ -25,7 +25,7 @@ eng_init_row_two = {
 		trigger = {
 			wales_area = {
 				type = all
-				NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}	
 		effect = {
@@ -54,7 +54,7 @@ eng_init_row_two = {
 	}
 	
 	eng_march_to_hadrians_wall = {
-		icon = mission_rb_unite_the_clans
+		icon = mch_bypass_great_wall
 		required_missions = { eng_wallop_wales_cornwall eng_corral_cornwall  }
 		position = 2
 		provinces_to_highlight = {	
@@ -63,7 +63,7 @@ eng_init_row_two = {
 		}		
 		trigger = {
 			246 = {
-				NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}	
 		effect = {
@@ -90,11 +90,36 @@ eng_init_row_two = {
 					}
 				}
 			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						is_core = NOL
+					}
+					remove_core = NOL
+				}
+				if = {
+					limit = {
+						exists = KNT
+					}
+					country_event = { id = thre_england_events.1 }
+				}
+				else = {
+					235 = {
+						if = {
+							limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+							}
+							add_permanent_claim = ROOT
+						}
+					}
+				}
+			}
 		}
 	}
 	
 	eng_crushing_kent = {
-		icon = mission_rb_unite_the_clans
+		icon = defenestrate_the_heretics
 		required_missions = { eng_march_to_hadrians_wall  }
 		position = 3
 		provinces_to_highlight = {	
@@ -103,7 +128,7 @@ eng_init_row_two = {
 		}		
 		trigger = {
 			235 = {
-				NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}	
 		effect = {
@@ -142,7 +167,7 @@ eng_init_row_three = {
 	has_country_shield = yes
 
 	eng_recruit_the_mercenaries_two = {
-		icon = mission_rb_unite_the_clans
+		icon = mission_build_up_to_force_limit
 		required_missions = {  }
 		position = 1
 		provinces_to_highlight = {
@@ -186,7 +211,7 @@ eng_init_row_three = {
 	}
 	
 	eng_corral_cornwall = {
-		icon = mission_rb_unite_the_clans
+		icon = mission_cannons_firing
 		required_missions = { eng_recruit_the_mercenaries_two }
 		position = 2
 		provinces_to_highlight = {	
@@ -196,7 +221,7 @@ eng_init_row_three = {
 		trigger = {
 			wessex_area = {
 				type = all
-				NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}	
 		effect = {
@@ -220,7 +245,7 @@ eng_init_row_three = {
 	
 	
 	eng_fate_of_the_britons = {
-		icon = mission_rb_unite_the_clans
+		icon = english_alliance
 		required_missions = { eng_crushing_kent eng_challenge_constantinople }
 		position = 5
 		provinces_to_highlight = {
@@ -259,7 +284,7 @@ eng_init_row_four = {
 	has_country_shield = yes
 	
 	eng_a_coming_storm = {
-		icon = mission_rb_unite_the_clans
+		icon = fra_great_britain
 		required_missions = { eng_recruit_the_mercenaries_two }
 		position = 2
 		provinces_to_highlight = {
@@ -268,15 +293,15 @@ eng_init_row_four = {
 			stability = 2
 			estate_loyalty = {
 				estate = estate_burghers
-				loyalty = 50
+				loyalty = 45
 			}
 			estate_loyalty = {
 				estate = estate_nobles
-				loyalty = 50
+				loyalty = 45
 			}
 			estate_loyalty = {
 				estate = estate_church
-				loyalty = 50
+				loyalty = 45
 			}
 		}	
 		effect = {
@@ -292,7 +317,7 @@ eng_init_row_four = {
 	}
 	
 	eng_continental_connections = {
-		icon = mission_rb_unite_the_clans
+		icon = mission_alliances
 		required_missions = { eng_a_coming_storm }
 		position = 3
 		provinces_to_highlight = {
@@ -337,12 +362,6 @@ eng_init_row_four = {
 		effect = {
 			custom_tooltip = every_ally_gains_some_favors_eng_thre
 			tooltip = {
-				add_favors = {
-				   who = ROOT
-				   amount = 10
-				}
-			}
-			tooltip = {
 				add_country_modifier = {
 					name = "continental_connections_mod_thre"
 					duration = 5475
@@ -365,9 +384,11 @@ eng_init_row_four = {
 							continent = europe
 						}	
 					}
-					add_favors = {
-					   who = ROOT
-					   amount = 10
+					ROOT = {
+						add_favors = {
+						   who = PREV
+						   amount = 10
+						}
 					}
 				}
 				if = {
@@ -400,12 +421,12 @@ eng_init_row_four = {
 	}
 	
 	eng_challenge_constantinople = {
-		icon = mission_rb_unite_the_clans
+		icon = mission_rb_control_electors
 		required_missions = { eng_found_royal_navy eng_continental_connections }
 		position = 4
 		provinces_to_highlight = {
 			owner = {
-				is_emperor = yes
+				is_elector = yes
 			}
 		}
 		trigger = {
@@ -454,7 +475,7 @@ eng_init_row_five = {
 	has_country_shield = yes
 	
 	eng_found_royal_navy = {
-		icon = mission_rb_unite_the_clans
+		icon = mission_rb_a_mighty_fleet
 		required_missions = { eng_a_coming_storm }
 		position = 3
 		trigger = {
@@ -467,7 +488,7 @@ eng_init_row_five = {
 			define_advisor = {
 				type = naval_reformer
 				skill = 2
-				cost_multiplier = 0.25
+				cost_multiplier = 0.75
 			}
 		}
 	}
