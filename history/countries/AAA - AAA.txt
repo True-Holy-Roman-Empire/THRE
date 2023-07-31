@@ -1,6 +1,37 @@
 government = monarchy
 add_government_reform = feudalism_reform
 technology_group = western
-religion = animism
-primary_culture = estonian
+religion = abrahamism
+primary_culture = al_iraqiya_arabic
 capital = 4945
+200.1.1 = {
+	monarch = {
+		name = "Abraham"
+		dynasty = "Avinu"
+		ADM = 6
+		DIP = 6
+		MIL = 6
+		birth_date = 1.10.9
+	}
+	queen = {
+		name = "Sarah"
+		dynasty = "Avinu"
+		birth_date = 10.9.1
+		female = yes
+		ADM = 6
+		DIP = 6
+		MIL = 6
+	}
+	heir = {
+		name = "Isaac"
+		dynasty = "Avinu"
+		birth_date = 110.12.17
+		claim = 100
+		ADM = 6
+		DIP = 6
+		MIL = 6
+	}
+	add_ruler_personality = immortal_personality
+	add_queen_personality = immortal_personality
+	add_heir_personality = immortal_personality
+}
