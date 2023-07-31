@@ -3,6 +3,14 @@
  NDefines.NDiplomacy.MAX_FREE_CITIES = 13
  NDefines.NDiplomacy.HRE_PRINCE_AUTHORITY_THRESHOLD = 75
  NDefines.NDiplomacy.IMPERIAL_AUTHORITY_FROM_PRINCES = 0.1
+-- NDefines.NDiplomacy.HRE_FOREIGN_CONTROL_PENALTY =
+-- NDefines.NDiplomacy.HRE_HERETIC_PENALTY =
+-- NDefines.NDiplomacy.IMPERIAL_REFORM_COST =
+-- NDefines.NDiplomacy.IMPERIAL_REFORM_AUTHORITY_ACCEPTANCE =
+-- NDefines.NDiplomacy.DESIRED_NUM_OF_ELECTORS =
+-- NDefines.NDiplomacy.MIN_NUM_ELECTORS_FOR_REMOVE_ELECTORATE =
+-- NDefines.Ndiplomacy.LACK_OF_ELECTORS_HIT =
+-- NDefines.Ndiplomacy.EMPEROR_VOTE_DAYS =
 -- NDefines.NDiplomacy.HRE_VOTE_ENEMY =
 -- NDefines.NDiplomacy.HRE_VOTE_LEAGUE_ENEMY =
 -- NDefines.NDiplomacy.HRE_VOTE_LEAGUE_LEADER_FRIEND =
