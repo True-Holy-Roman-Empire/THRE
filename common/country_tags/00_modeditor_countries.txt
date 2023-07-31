@@ -1,3 +1,4 @@
+AAA = "countries/AAA.txt"
 UMY = "countries/Umayyad.txt"
 CRD = "countries/Cordoba.txt"
 MNE = "countries/Maine.txt"

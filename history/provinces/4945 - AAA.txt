@@ -1,0 +1,11 @@
+owner = AAA
+controller = AAA
+add_core = AAA
+culture = estonian
+religion = animism
+capital = "AAA"
+is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = fish
