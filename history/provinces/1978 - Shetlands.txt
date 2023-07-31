@@ -8,7 +8,7 @@ base_production = 1
 trade_goods = fish
 base_manpower = 1
 capital = "Lerwick"
-is_city = yes# Estimated
+is_city = yes #Estimated
 add_core = NOR
 discovered_by = western
 discovered_by = muslim
@@ -19,7 +19,7 @@ discovered_by = eastern
 	controller = SCO
 	add_core = SCO
 }
-1609.1.1 = { religion = Reformed }
+1609.1.1 = { religion = reformed }
 1707.5.12 = { 
 	controller = GBR
 	add_core = GBR
