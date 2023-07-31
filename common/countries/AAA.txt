@@ -1,2 +1,54 @@
 graphical_culture = westerngfx
 color = { 1 1 1 }
+
+historical_idea_groups = {
+	religious_ideas
+	aristocracy_ideas
+	diplomatic_ideas
+	influence_ideas
+	offensive_ideas
+	quality_ideas
+	administrative_ideas
+	court_ideas
+}
+#Sons of Abraham
+monarch_names = {
+	"Ishmael #1" = 1
+	"Isaac #1" = 1
+	"Zimran #1" = 1
+	"Jokshan #1" = 1
+	"Medan #1" = 1
+	"Midian #1" = 1
+	"Ishbak #1" = 1
+	"Shuah #1" = 1
+}
+#Twelve Tribes of Israel
+leader_names = {
+	"Reuben"
+	"Simeon"
+	"Levi"
+	"Juda"
+	"Issachar"
+	"Zebulun"
+	"Dan"
+	"Naptali"
+	"Gad"
+	"Asher"
+	"Benjamin"
+	"Joseph"
+}
+
+fleet_names = {
+	"Reuben's Fleet"
+	"Simeon's Fleet"
+	"Levi's Fleet"
+	"Juda's Fleet"
+	"Issachar's Fleet"
+	"Zebulun's Fleet"
+	"Dan's Fleet"
+	"Naptali's Fleet"
+	"Gad's Fleet"
+	"Asher's Fleet"
+	"Benjamin's Fleet"
+	"Joseph's Fleet"
+}
