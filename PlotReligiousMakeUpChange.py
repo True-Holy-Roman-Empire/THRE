@@ -25,7 +25,7 @@ if __name__ == '__main__':
         hredev = get_data(t, 'Total HRE Development')
         catholicshare = get_data(t, 'Catholic States Share of HRE Dev')
         sunnishare = get_data(t, 'Sunni States Share of HRE Dev')
-        orthodoxshare = get_data(t, 'Sunni States Share of HRE Dev')
+        orthodoxshare = get_data(t, 'Orthodox States Share of HRE Dev')
         itr = range(1, len(hremembers) + 1)
 
         #plt.plot(itr, wage, label="Total")
@@ -33,7 +33,7 @@ if __name__ == '__main__':
         plt.plot(itr, hredev, label="Total HRE Development")
         plt.plot(itr, catholicshare, label="Catholic States Share of HRE Dev")
         plt.plot(itr, sunnishare, label="Sunni States Share of HRE Dev")
-        plt.plot(itr, orthodoxshare, label="Infra Leak Test")
+        plt.plot(itr, orthodoxshare, label="Orthodox States Share of HRE Dev")
 
         plt.legend(loc=2, ncol=2)
 
