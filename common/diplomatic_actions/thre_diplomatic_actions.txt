@@ -42,3 +42,108 @@ callaction = {
         }
     }
 }
+
+declarewar = {
+	#condition = {
+	#	tooltip = GRAND_CRUSADE_NO_OTHER_WAR
+	#	potential = { }
+	#	allow = {
+	#		NOT = {
+	#			is_in_war = {
+	#				attacker_leader = ROOT
+	#				casus_belli = cb_grand_crusade
+	#			}
+	#		}
+	#	}
+	#}
+	#effect = {
+	#	if = {
+	#		limit = {
+	#			has_global_flag = grand_crusades_enabled
+	#			has_country_flag = grand_crusader_war_monger_flag
+	#			is_in_war = {
+	#				attacker_leader = ROOT
+	#				casus_belli = cb_grand_crusade
+	#			}
+	#		}
+	#		FROM = {
+	#			save_global_event_target_as = grand_crusade_target
+	#		}
+	#	}
+	#}
+	condition = {
+		tooltip = AI_CANNOT_DECLARE_WHEN_STABILITY_LOSS
+		potential = {
+			ai = yes
+		}
+		allow = {
+			ai = yes
+			NOT = {
+				has_global_modifier_value = {
+					which = stability_cost_to_declare_war
+					value = 1
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WARS_OTHER_THAN_INDEPENDENCE_WARS
+		potential = {
+			has_country_modifier = revoked_war_rights
+			FROM = { NOT = { overlord_of = ROOT } }
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_modifier = revoked_war_rights }
+				FROM = { overlord_of = ROOT }
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WARS_TEUTONS_HRE
+		potential = {
+			ai = yes 
+			has_country_flag = teu_joined_the_hre
+			FROM = { is_part_of_hre = yes }
+		}
+		allow = { 
+			FROM = { is_part_of_hre = no }
+		}
+	}
+	effect = {
+		on_war_declaration_effect = yes
+		if = {
+			limit = { 
+				has_country_flag = nor_norwegian_independence_modifier
+				FROM = { tag = DAN }
+			}
+			add_country_modifier = {
+				name = nor_norwegian_independence_war_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = teu_joined_the_hre
+				tag = TEU
+				is_part_of_hre = yes
+				FROM = { is_part_of_hre = yes }
+			}
+			clr_country_flag = teu_joined_the_hre
+			country_event = {
+				id = flavor_teu.33
+				days = 10
+			}
+		}
+	}
+    condition = {
+		tooltip = DONTTOUCHTHAT
+		potential = {
+			exists = yes
+		}
+		allow = {
+			NOT = { tag = AAA }
+			NOT = { FROM = { tag = AAA } }
+		}
+	}
+}
