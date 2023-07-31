@@ -21,6 +21,10 @@ monarch_names = {
 	"Midian #1" = 1
 	"Ishbak #1" = 1
 	"Shuah #1" = 1
+	"Joshua #1" = 1		#I needed more names
+	"Micha #1" = 1
+	"Noah #1" = 1
+	"Terah #1" = 1
 }
 #Twelve Tribes of Israel
 leader_names = {
@@ -51,4 +55,15 @@ fleet_names = {
 	"Asher's Fleet"
 	"Benjamin's Fleet"
 	"Joseph's Fleet"
+}
+
+ship_names = {
+	Abraham Adam 
+	Cherubim
+	Eva
+	Hierosalyma
+	Iob Isaac
+	Moyses
+	Noe
+	Seraphim
 }
