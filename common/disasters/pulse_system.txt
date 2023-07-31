@@ -34,7 +34,7 @@ pulse_system = {
 	on_monthly = {
 		events = {
 			#Fire every month
-			THRE_Reform_Desire.1
+			#THRE_Reform_Desire.1
 		}
 		if = {
 			limit = {
@@ -94,6 +94,10 @@ pulse_system = {
 		else_if = {
 			limit = {
 				is_month = 0		#January
+			}
+			country_event = {
+				id = THRE_Reform_Desire.1
+				days = 1
 			}
 		}
 	}
