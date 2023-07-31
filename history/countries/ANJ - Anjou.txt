@@ -1,13 +1,12 @@
 government = monarchy
-add_government_reform = appanage_reform
+add_government_reform = paris_appanage_reform
 government_rank = 1
 technology_group = western
 religion = abrahamism
 capital = 178
 primary_culture = cosmopolitan_french
-
-1390.1.1 = {
-	monarch = {
+1390.1.1 = { 
+	monarch = { 
 		name = "Claude"
 		dynasty = "Clausse"
 		adm = 4

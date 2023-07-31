@@ -1,13 +1,12 @@
 government = monarchy
-add_government_reform = appanage_reform
+add_government_reform = paris_appanage_reform
 government_rank = 1
 technology_group = western
 religion = abrahamism
 capital = 177
 primary_culture = cosmopolitan_french
-
-1444.1.1 = {
-	monarch = {
+1444.1.1 = { 
+	monarch = { 
 		name = "Étienne"
 		dynasty = "Pérignon"
 		adm = 4
