@@ -93,3 +93,5 @@
       atlantis_area: "Atlantis"
       atlantis_area_adj: "Atlantian"
       DONTTOUCHTHAT: "Don't touch that!"
+      pulse_system: "Pulse System"
+      desc_pulse_system: "You're not supposed to ever be able to see this. If you do, please report it as a bug"

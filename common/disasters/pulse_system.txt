@@ -1,0 +1,106 @@
+#Pulse system for Dummy tag, originally coded for M&T by Phlopsi
+#Ported for new purposes to THRE by Mepper
+
+#Use this disaster to fire events for the Dummy tag. 
+#If other or more countries/provs need to be affected: do that from the event you are firing in AAA
+#This is like Vanilla's pulse on_actions, but way more precise. 
+#Can specificy exact months and dates that events should fire. 
+
+pulse_system = {
+	potential = {
+		tag = AAA
+	}
+	
+	can_start = {
+		always = yes
+	}
+	
+	can_stop = {
+		always = no
+	}
+	
+	progress = {
+		modifier = {
+			factor = 100
+			
+			always = yes
+		}
+	}
+	
+	can_end = {
+		always = no
+	}
+
+	on_monthly = {
+		events = {
+			#Fire every month
+		}
+		if = {
+			limit = {
+				is_month = 11		#December
+			}
+		}
+		else_if = {
+			limit = {
+				is_month = 10		#November
+			}
+		}
+		else_if = {
+			limit = {
+				is_month = 9		#October
+			}
+		}
+		else_if = {
+			limit = {
+				is_month = 8		#September
+			}
+		}
+		else_if = {
+			limit = {
+				is_month = 7		#August
+			}
+		}
+		else_if = {
+			limit = {
+				is_month = 6		#July
+			}
+		}
+		else_if = {
+			limit = {
+				is_month = 5		#June
+			}
+		}
+		else_if = {
+			limit = {
+				is_month = 4		#May
+			}
+		}
+		else_if = {
+			limit = {
+				is_month = 3		#April
+			}
+		}
+		else_if = {
+			limit = {
+				is_month = 2		#March
+			}
+		}
+		else_if = {
+			limit = {
+				is_month = 1		#February
+			}
+		}
+		else_if = {
+			limit = {
+				is_month = 0		#January
+			}
+			#country_event = { id = THRE_Reform_Desire.1 }
+		}
+	}
+
+	modifier = {
+        global_unrest = -100
+        land_forcelimit_modifier = -1
+		naval_forcelimit_modifier = -1
+	}
+}
