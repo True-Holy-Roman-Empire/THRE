@@ -241,15 +241,18 @@ remove_non_electors_emperors_from_empire_effect = {
 			is_elector = no
 			is_emperor = no
 		}
-		custom_tooltip = remove_non_electors_emperors_from_empire_effect_tooltip
 		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					is_part_of_hre = yes
-				}
-				set_in_empire = no
-			}
+			log = "[This.GetName] would have left the Empire in Vanilla"
 		}
+		#custom_tooltip = remove_non_electors_emperors_from_empire_effect_tooltip
+		# hidden_effect = {
+		# 	every_owned_province = {
+		# 		limit = {
+		# 			is_part_of_hre = yes
+		# 		}
+		# 		set_in_empire = no
+		# 	}
+		# }
 	}
 }
 
