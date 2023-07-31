@@ -144,3 +144,88 @@ guarantee = {
 	start_date = 1444.1.1
 	end_date = 1555.1.1
 }
+
+# Poland-Hungary
+union = {
+	first = POL
+	second = HUN
+	start_date = 1439.10.27
+	end_date = 1474.11.11
+}
+# Poland-Bohemia
+union = {
+	first = POL
+	second = BOH
+	start_date = 1439.10.27
+	end_date = 1474.11.11
+}
+
+# Polish vassal
+vassal = {
+	first = POL
+	second = MAZ
+	start_date = 1444.1.1
+	end_date = 1526.3.9
+}
+# Polish guarantee/tribute
+guarantee = {
+	first = POL
+	second = MOL
+	start_date = 1444.1.1
+	end_date = 1447.12.12
+}
+# Polish-Lithuania
+union = {
+	first = POL
+	second = LIT
+	start_date = 1386.7.1
+	end_date = 1474.11.11
+}
+
+#Denmark vassal (Mann)
+Vassal = {
+	first = DAN 
+	second = KOI 
+	start_date = 1444.1.1
+	end_date = 1526.1.1 
+}
+
+#swedish vassal (Gotland)
+Vassal = {
+	first = SWE 
+	second = GOT 
+	start_date = 1444.1.1
+	end_date = 1526.1.1 
+}
+
+#swedish vassal (Jamtland)
+Vassal = {
+	first = SWE 
+	second = JMD 
+	start_date = 1444.1.1
+	end_date = 1526.1.1 
+}
+
+#swedish vassal (Gotland)
+Vassal = {
+	first = SWE 
+	second = DLR 
+	start_date = 1444.1.1
+	end_date = 1526.1.1 
+}
+
+# Gaeldom-Isles
+vassal = {
+	first = HSC
+	second = LOI
+	start_date = 1444.1.1
+	end_date = 1493.1.1
+}
+
+#guarantee of galedom
+guarantee = {
+	first = DAN
+	second = HSC
+	start_date = 1444.1.1
+	end_date = 1447.12.12
+}

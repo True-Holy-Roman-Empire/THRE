@@ -1,6 +1,6 @@
 #Jämtland+Härjedalen
-owner = NOR
-controller = NOR
+owner = JMD
+controller = JMD
 culture = norwegian# They were actually Jämts - the unique blend of Swedish, Norwegian and local tendencies
 religion = norse_pagan_reformed
 base_tax = 1
@@ -10,10 +10,9 @@ base_manpower = 1
 capital = "Frösön"
 add_local_autonomy = 25
 is_city = yes
-add_core = NOR
 discovered_by = eastern
 discovered_by = western
-1527.6.1 = { religion = protestant }
+1527.6.1 = { religion = Protestant }
 1536.1.1 = { controller = DAN add_core = DAN }
 1564.2.10 = { controller = SWE }
 1570.11.18 = { controller = DAN }
@@ -26,3 +25,4 @@ discovered_by = western
 1658.2.26 = { controller = SWE }
 1690.1.1 = { culture = swedish }
 1786.10.23 = { capital = "Östersund" }
+add_core = JMD

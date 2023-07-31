@@ -1,7 +1,6 @@
 #Österbotten, down to Vasa.
-owner = SWE
-controller = SWE
-add_core = SWE
+owner = FIN
+controller = FIN
 add_core = FIN
 culture = finnish
 religion = norse_pagan_reformed
@@ -14,13 +13,13 @@ is_city = yes
 #fort_15th = yes
 discovered_by = eastern
 discovered_by = western
-1527.6.1 = { religion = protestant }
+1527.6.1 = { religion = Protestant }
 1596.11.1 = { controller = REB revolt = { type = anti_tax_rebels size = 1 } }
 1597.2.24 = { controller = SWE revolt = { size = 1 } }
 1598.8.1 = { controller = PLC }
 1599.7.15 = { controller = SWE }
 1606.1.1 = { capital = "Vasa" }
-1650.1.1 = { trade_goods = naval_supplies }
+1650.1.1 = { trade_goods = Naval supplies }
 1742.11.5 = { controller = RUS }
 1743.8.7 = { controller = SWE }
 1808.9.14 = { controller = RUS }

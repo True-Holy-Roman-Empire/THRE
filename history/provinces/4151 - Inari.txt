@@ -1,10 +1,9 @@
 #4151 - Most of Kemi Lappmark: Enare/Inari, Sodankylä, Kemikyla, Utsjoki, Kittila, Sombio
-owner = SWE
-controller = SWE
-add_core = SWE
+owner = SMI
+controller = SMI
 add_core = SMI
 culture = sapmi
-religion = norse_pagan_reformed
+religion = shamanism
 base_tax = 1
 base_production = 1
 trade_goods = fur
@@ -14,7 +13,7 @@ capital = "Sodankylä"#Uncertain if this existed at that point.
 is_city = yes
 discovered_by = eastern
 discovered_by = western
-1527.6.1 = { religion = protestant }
+1527.6.1 = { religion = Protestant }
 1598.8.1 = { controller = PLC }
 1599.7.15 = { controller = SWE }
 1742.11.5 = { controller = RUS }

@@ -1,0 +1,25 @@
+#250 - Perth
+owner = HSC
+controller = HSC
+culture = highland_scottish
+religion = norse_pagan_reformed
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 4
+capital = "Perth"
+is_city = yes
+add_core = HSC
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+1560.8.1 = { religion = Reformed }
+1644.9.1 = { controller = REB revolt = { type = revolutionary_rebels size = 2 } }
+1645.9.13 = { controller = SCO revolt = { size = 1 } }
+1651.8.2 = { controller = ENG }
+1652.4.21 = { controller = SCO }
+1707.5.12 = { 
+	controller = GBR
+	add_core = GBR
+}

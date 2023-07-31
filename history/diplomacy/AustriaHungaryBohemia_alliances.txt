@@ -18,17 +18,3 @@ union = {
 	start_date = 1415.1.1
 	end_date = 1440.9.21
 }
-# Poland-Hungary
-union = {
-	first = POL
-	second = HUN
-	start_date = 1439.10.27
-	end_date = 1474.11.11
-}
-# Poland-Bohemia
-union = {
-	first = POL
-	second = BOH
-	start_date = 1439.10.27
-	end_date = 1474.11.11
-}

@@ -1,7 +1,6 @@
 #Nyland, incl. Raseborg, Borgå, Helsingfors.
-owner = SWE
-controller = SWE
-add_core = SWE
+owner = FIN
+controller = FIN
 add_core = FIN
 culture = finnish
 religion = norse_pagan_reformed
@@ -15,8 +14,8 @@ discovered_by = western
 discovered_by = eastern
 1487.1.1 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }
 1487.5.24 = { controller = SWE revolt = { size = 1 } }
-1527.6.1 = { religion = protestant }
-1550.1.1 = { trade_goods = grain }
+1527.6.1 = { religion = Protestant }
+1550.1.1 = { trade_goods = Grain }
 1598.8.1 = { controller = PLC }
 1599.8.4 = { controller = SWE }
 1713.5.30 = { controller = RUS }
