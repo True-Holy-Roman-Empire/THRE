@@ -242,7 +242,7 @@ remove_non_electors_emperors_from_empire_effect = {
 			is_emperor = no
 		}
 		hidden_effect = {
-			log = "[This.GetName] would have left the Empire in Vanilla"
+			set_country_flag = Would_Have_Left_HRE_In_Vanilla
 		}
 		#custom_tooltip = remove_non_electors_emperors_from_empire_effect_tooltip
 		# hidden_effect = {
