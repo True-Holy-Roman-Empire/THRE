@@ -136,4 +136,14 @@ declarewar = {
 			}
 		}
 	}
+    condition = {
+		tooltip = DONTTOUCHTHAT
+		potential = {
+			exists = yes
+		}
+		allow = {
+			NOT = { tag = AAA }
+			NOT = { FROM = { tag = AAA } }
+		}
+	}
 }
