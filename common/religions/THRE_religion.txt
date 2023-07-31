@@ -549,7 +549,7 @@ abrahamistic_group = { # Need proper name
 			tolerance_heretic = 2
 			improve_relation_modifier = 0.1
 			advisor_pool = 1
-			global_missionary_strength = 1.5
+			global_missionary_strength = 0.015
 		}
 		country_as_secondary = { }
 		province = { } # Should this even have? Because Concentrate Metropolis.
