@@ -839,7 +839,6 @@ abrahamistic_group = { # Need proper name
 		color = { 204 204 0 }
 		icon = 1
 		allowed_conversion = {
-			abrahamism
 			reformed
 			protestant
 		}
@@ -1205,7 +1204,6 @@ abrahamistic_group = { # Need proper name
 		icon = 2
 
 		allowed_conversion = {
-			abrahamism
 			reformed
 			catholic
 		}
@@ -1347,7 +1345,6 @@ abrahamistic_group = { # Need proper name
 		color = { 76 76 229 }
 		icon = 3
 		allowed_conversion = {
-			abrahamism
 			protestant
 			catholic
 		}
@@ -1479,7 +1476,6 @@ abrahamistic_group = { # Need proper name
 		}
 		
 		allowed_conversion = {
-			abrahamism
 		}
 		heretic = { OLD_BELIEVER MOLOKAN DUKHOBOR KHLYST SKOPTSY ICONOCLAST }
 		
@@ -1674,7 +1670,6 @@ abrahamistic_group = { # Need proper name
 		}
 
 		allowed_conversion = {
-			abrahamism
 		}
 		hre_heretic_religion = yes
 		on_convert = {
@@ -1702,7 +1697,6 @@ abrahamistic_group = { # Need proper name
 		}
 
 		allowed_conversion = {
-			abrahamism
 		}
 
 		on_convert = {
@@ -1730,7 +1724,6 @@ abrahamistic_group = { # Need proper name
 		}
 
 		allowed_conversion = {
-			abrahamism
 		}
 
 		on_convert = {
@@ -1757,9 +1750,7 @@ abrahamistic_group = { # Need proper name
 			local_missionary_strength = -0.02
 		}
 
-		allowed_conversion = {
-			abrahamism
-		}
+		allowed_conversion = {		}
 
 		on_convert = {
 			change_religion = jewish
