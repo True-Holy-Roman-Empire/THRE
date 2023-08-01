@@ -44,5 +44,8 @@ country_decicions = {
 				set_country_flag = already_demanded_abr_conversion_this_year
 			}
 		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 }
