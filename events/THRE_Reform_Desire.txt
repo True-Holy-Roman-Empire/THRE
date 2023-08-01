@@ -84,7 +84,7 @@ country_event = {
 		Calc_Religious_Percentages = { Religion_inp = Coptic }
 		export_to_variable = {
 			variable_name = Reform_Desire_Abrahamic
-			value = reform_desire
+			value = trigger_value:reform_desire
 			who = emperor
 		}
 		multiply_variable = {		#Multiply by 100 to get on Percentage scale for the Graphing
