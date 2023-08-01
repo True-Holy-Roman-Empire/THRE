@@ -26,6 +26,7 @@ if __name__ == '__main__':
         catholicshare = get_data(t, 'Catholic (ABR) States Share of HRE Dev')
         sunnishare = get_data(t, 'Sunni (ABR) States Share of HRE Dev')
         orthodoxshare = get_data(t, 'Orthodox (ABR) States Share of HRE Dev')
+        abreformdesire = get_data{t, 'Abrahamic Reform Desire'}
         itr = range(1, len(hremembers) + 1)
 
         plt.plot(itr, hremembers, label="Amount of HRE Members")
@@ -33,6 +34,7 @@ if __name__ == '__main__':
         plt.plot(itr, catholicshare, label="Catholic States Share of HRE Dev in %")
         plt.plot(itr, sunnishare, label="Sunni States Share of HRE Dev in %")
         plt.plot(itr, orthodoxshare, label="Orthodox States Share of HRE Dev in %")
+        plt.plot(itr, abreformdesire, label="Abrahamic Reform Desire")
 
         plt.legend(loc=2, ncol=2)
 
