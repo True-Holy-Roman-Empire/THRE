@@ -1,4 +1,4 @@
-country_decicions = {
+country_decisions = {
 	demand_conversion_to_abrahamism = {
 		major = yes
 		potential = {

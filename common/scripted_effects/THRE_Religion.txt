@@ -224,3 +224,17 @@ Calc_Religious_Percentages = {
 		}
 	}
 }
+
+Add_Scaled_Abrahamic_Reform_Desire = {
+	every_country = {
+		limit = {
+			is_part_of_hre = yes
+			NOT = {
+				religion = abrahamism
+			}
+		}
+		emperor = {
+			add_reform_desire = 0.25
+		}
+	}
+}

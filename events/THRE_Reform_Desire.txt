@@ -160,3 +160,26 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = THRE_Reform_Desire.3
+	title = THRE_Reform_Desire.3.t
+	desc = THRE_Reform_Desire.3.d
+	picture = "COURT_eventPicture"
+	is_triggered_only = yes
+	major = yes
+
+	trigger = {
+		is_emperor = yes	#failsafe
+		NOT = { has_global_flag = THRE_Great_Schism }
+	}
+
+	immediate = {
+		Add_Scaled_Abrahamic_Reform_Desire = yes
+	}
+
+	option = {
+		name = THRE_Reform_Desire.3.opta
+		Add_Scaled_Abrahamic_Reform_Desire = yes
+	}
+}

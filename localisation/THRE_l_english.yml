@@ -45,6 +45,9 @@
       THRE_Reform_Desire.2.d: "A message from the Emperor has arrived, demand our immediate conversion to Abrahamism. If we do not abide by his demand he ensures us this might mean war..."
       THRE_Reform_Desire.2.opta: "We shall oblige"
       THRE_Reform_Desire.2.optb: "We are not be commanded around"
+      THRE_Reform_Desire.3.t: "Abrahamic Unity Waning"
+      THRE_Reform_Desire.3.d: "There are still nations in the HRE not abiding by the Council of Constantinople. If we don't act soon peace in the Empire might be in serious danger..."
+      THRE_Reform_Desire.3.opta: "It'll all be fine"
 
   # COUNTRIES:
     # England:

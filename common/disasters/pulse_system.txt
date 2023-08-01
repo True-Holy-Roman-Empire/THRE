@@ -40,6 +40,12 @@ pulse_system = {
 			limit = {
 				is_month = 11		#December
 			}
+			emperor = {
+				country_event = {
+					id = THRE_Reform_Desire.3
+					days = 3
+				}
+			}
 		}
 		else_if = {
 			limit = {
