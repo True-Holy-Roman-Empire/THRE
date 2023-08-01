@@ -103,4 +103,49 @@ country_event = {
 		log = "Coptic (ABR) Memberstates Development: [Root.HRE_Coptic_Members_Dev.GetValue]"
 		log = "Coptic (ABR) States Share of HRE Dev: [Root.HRE_Coptic_Dev_Percentage.GetValue]"
 	}
+	after = {
+		if = {
+			limit = {
+				emperor = {
+					has_country_flag = already_demanded_abr_conversion_this_year
+				}
+			}
+			emperor = {
+				clr_country_flag = already_demanded_abr_conversion_this_year
+			}
+		}
+	}
+}
+
+country_event = {
+	id = THRE_Reform_Desire.2
+	title = THRE_Reform_Desire.2.t
+	desc = THRE_Reform_Desire.2.d
+	picture = "COURT_eventPicture"
+	is_triggered_only = yes
+	major = yes
+	trigger = {		#Failsafe
+		is_part_of_hre = yes
+		NOT = {
+			has_global_flag = THRE_Great_Schism
+		}
+		NOT = {
+			religion = abrahamism
+		}
+	}
+	option = {
+		name = THRE_Reform_Desire.2.test_events.1.opta 		#Alright then
+		change_religion = abrahamism
+		add_prestige = -10
+
+	}
+	option = {
+		name = THRE_Reform_Desire.2.test_events.1.opta		#Nope
+		add_reform_desire = 0.5
+		add_imperial_influence = -2
+		reverse_add_casus_belli = {
+			type = cb_
+			target = THIS
+		}
+	}
 }

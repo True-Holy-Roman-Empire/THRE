@@ -1,0 +1,41 @@
+country_decicions = {
+	demand_conversion_to_abrahamism = {
+		major = yes
+		potential = {
+			NOT = { has_global_flag = THRE_Great_Schism }
+			is_emperor = yes
+			any_country = {
+				limit = {
+					is_part_of_hre = yes
+					NOT = { religion = abrahamism }
+				}
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = already_demanded_abr_conv_tt
+				NOT = {
+					has_country_flag = already_demanded_abr_conversion_this_year
+				}
+			}
+		}
+		effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+					NOT = {
+						religion = abrahamism
+					}
+				}
+				country_event = {
+					id = THRE_Reform_Desire.2
+					days = 10
+					random = 4
+				}
+			}
+			hidden_effect = {
+				set_country_flag = already_demanded_abr_conversion_this_year
+			}
+		}
+	}
+}
