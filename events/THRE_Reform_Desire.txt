@@ -86,9 +86,9 @@ country_event = {
 			variable_name = Reform_Desire_Abrahamic
 			value = trigger_value:reform_desire
 		}
-		multiply_variable = {		#Multiply by 10000 to get on Percentage scale for the Graphing
+		multiply_variable = {		#Multiply by 100 to get on Percentage scale for the Graphing
 			which = Reform_Desire_Abrahamic
-			value = 10000
+			value = 100
 		}
 	}
 	option = {
