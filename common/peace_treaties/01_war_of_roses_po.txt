@@ -57,7 +57,7 @@ po_win_war_of_roses = {
 		remove_country_modifier = rebelious_spirit_eng_thre
 		if = {
 			limit = {
-				elector = no
+				is_elector = no
 			}
 			elector = yes
 		}
