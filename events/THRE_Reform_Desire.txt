@@ -38,8 +38,16 @@ country_event = {
 					which = HRE_Development_var
 					which = PREV
 				}
-			}			
+			}
 			if = {
+				limit = {
+					NOT = {
+						religion = abrahamism
+					}
+				}
+				Count_Religious_Members = { Religion_inp = Non_Abrahamic } 
+			}	
+			else_if = {
 				limit = {
 					has_country_flag = catholic_religion_flag
 				}
@@ -69,6 +77,7 @@ country_event = {
 			}
 		}
 		#Global checks
+		Calc_Religious_Percentages = { Religion_inp = Non_Abrahamic }
 		Calc_Religious_Percentages = { Religion_inp = Catholic }
 		Calc_Religious_Percentages = { Religion_inp = Sunni }
 		Calc_Religious_Percentages = { Religion_inp = Orthodox }
@@ -78,17 +87,20 @@ country_event = {
 		name = THRE_Reform_Desire.1.opta
 		log = "Amount of HRE Members: [Root.HRE_Members_var.GetValue]"
 		log = "Total HRE Development: [Root.HRE_Development_var.GetValue]"
-		log = "Catholic Membersstates of HRE: [Root.HRE_Catholic_Memberstates.GetValue]"
-		log = "Catholic Memberstates Development: [Root.HRE_Catholic_Members_Dev.GetValue]"
-		log = "Catholic States Share of HRE Dev: [Root.HRE_Catholic_Dev_Percentage.GetValue]"
-		log = "Sunni Membersstates of HRE: [Root.HRE_Sunni_Memberstates.GetValue]"
-		log = "Sunni Memberstates Development: [Root.HRE_Sunni_Members_Dev.GetValue]"
-		log = "Sunni States Share of HRE Dev: [Root.HRE_Sunni_Dev_Percentage.GetValue]"
-		log = "Orthodox Membersstates of HRE: [Root.HRE_Orthodox_Memberstates.GetValue]"
-		log = "Orthodox Memberstates Development: [Root.HRE_Orthodox_Members_Dev.GetValue]"
-		log = "Orthodox States Share of HRE Dev: [Root.HRE_Orthodox_Dev_Percentage.GetValue]"
-		log = "Coptic Membersstates of HRE: [Root.HRE_Coptic_Memberstates.GetValue]"
-		log = "Coptic Memberstates Development: [Root.HRE_Coptic_Members_Dev.GetValue]"
-		log = "Coptic States Share of HRE Dev: [Root.HRE_Coptic_Dev_Percentage.GetValue]"
+		log = "Nations in HRE that are not Abrahamic: [Root.HRE_Non_Abrahamic_Memberstates.GetValue]"
+		log = "Nations in HRE that are not Abrahamic Development: [Root.HRE_Non_Abrahamic_Members_Dev.GetValue]"
+		log = "Nations in HRE that are not Abrahamic share of HRE Dev: [Root.HRE_Non_Abrahamic_Dev_Percentage.GetValue]"
+		log = "Catholic (ABR) Membersstates of HRE: [Root.HRE_Catholic_Memberstates.GetValue]"
+		log = "Catholic (ABR) Memberstates Development: [Root.HRE_Catholic_Members_Dev.GetValue]"
+		log = "Catholic (ABR) States Share of HRE Dev: [Root.HRE_Catholic_Dev_Percentage.GetValue]"
+		log = "Sunni (ABR) Membersstates of HRE: [Root.HRE_Sunni_Memberstates.GetValue]"
+		log = "Sunni (ABR) Memberstates Development: [Root.HRE_Sunni_Members_Dev.GetValue]"
+		log = "Sunni (ABR) States Share of HRE Dev: [Root.HRE_Sunni_Dev_Percentage.GetValue]"
+		log = "Orthodox (ABR) Membersstates of HRE: [Root.HRE_Orthodox_Memberstates.GetValue]"
+		log = "Orthodox (ABR) Memberstates Development: [Root.HRE_Orthodox_Members_Dev.GetValue]"
+		log = "Orthodox (ABR) States Share of HRE Dev: [Root.HRE_Orthodox_Dev_Percentage.GetValue]"
+		log = "Coptic (ABR) Membersstates of HRE: [Root.HRE_Coptic_Memberstates.GetValue]"
+		log = "Coptic (ABR) Memberstates Development: [Root.HRE_Coptic_Members_Dev.GetValue]"
+		log = "Coptic (ABR) States Share of HRE Dev: [Root.HRE_Coptic_Dev_Percentage.GetValue]"
 	}
 }

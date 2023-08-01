@@ -101,6 +101,18 @@ Reset_HRE_Religion_Counting_Variables = {
 		value = 0
 	}
 	set_variable = {
+		which = HRE_Non_Abrahamic_Memberstates
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Non_Abrahamic_Members_Dev
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Non_Abrahamic_Dev_Percentage
+		value = 0
+	}
+	set_variable = {
 		which = HRE_Catholic_Memberstates
 		value = 0
 	}
@@ -166,6 +178,7 @@ Count_Religious_Members = {
 		}
 	}
 }
+
 
 Calc_Religious_Percentages = {
 	if = {
