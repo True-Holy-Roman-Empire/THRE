@@ -234,7 +234,7 @@ Add_Scaled_Abrahamic_Reform_Desire = {
 			}
 		}
 		emperor = {
-			add_reform_desire = 0.25
+			add_reform_desire = 0.0025
 		}
 	}
 }

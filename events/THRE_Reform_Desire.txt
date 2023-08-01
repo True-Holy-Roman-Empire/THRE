@@ -153,7 +153,7 @@ country_event = {
 	}
 	option = {
 		name = THRE_Reform_Desire.2.test_events.1.opta		#Nope
-		add_reform_desire = 0.5
+		add_reform_desire = 0.005
 		add_imperial_influence = -2
 		emperor = {
 			add_casus_belli = {
