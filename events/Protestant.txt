@@ -20,6 +20,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { is_religion_enabled = protestant }
+		has_global_flag = THRE_Great_Schism
 		religion = catholic
 		is_defender_of_faith = no	
 		NOT = { has_reform = papacy_reform }

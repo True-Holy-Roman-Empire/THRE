@@ -11,6 +11,7 @@
 #Great Schism Effect 
 #Should completely dissolve the Abrahamism faith
 great_schism_effect = {
+	set_global_flag = THRE_Great_Schism
 	emperor = {			#Killing off the official HRE faith will dissolve the HRE, so for testing purposes now include a treaty of religious peace
 		set_hre_religion_treaty = yes
 	}
