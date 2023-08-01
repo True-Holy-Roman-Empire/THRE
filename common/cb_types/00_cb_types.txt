@@ -1980,3 +1980,10 @@ war_of_roses_special_cb = {
 	
 	war_goal = war_of_the_roses_wgt
 }
+
+cb_force_abrahamism_empire = {
+	valid_for_subject = no
+	is_triggered_only = yes
+	months = 9
+	war_goal = superiority_force_abrahamism
+}

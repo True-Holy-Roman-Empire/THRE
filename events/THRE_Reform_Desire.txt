@@ -137,15 +137,16 @@ country_event = {
 		name = THRE_Reform_Desire.2.test_events.1.opta 		#Alright then
 		change_religion = abrahamism
 		add_prestige = -10
-
 	}
 	option = {
 		name = THRE_Reform_Desire.2.test_events.1.opta		#Nope
 		add_reform_desire = 0.5
 		add_imperial_influence = -2
-		reverse_add_casus_belli = {
-			type = cb_
-			target = THIS
+		emperor = {
+			add_casus_belli = {
+				type = cb_force_abrahamism_empire
+				target = ROOT
+			}
 		}
 	}
 }
