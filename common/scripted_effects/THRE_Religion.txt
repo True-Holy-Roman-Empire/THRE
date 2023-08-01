@@ -160,6 +160,10 @@ Reset_HRE_Religion_Counting_Variables = {
 		which = HRE_Coptic_Dev_Percentage
 		value = 0
 	}
+	set_variable = {
+		which = Reform_Desire_Abrahamic
+		value = 0
+	}
 }
 
 Count_Religious_Members = {
