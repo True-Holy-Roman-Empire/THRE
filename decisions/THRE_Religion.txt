@@ -5,9 +5,16 @@ country_decicions = {
 			NOT = { has_global_flag = THRE_Great_Schism }
 			is_emperor = yes
 			any_country = {
-				limit = {
-					is_part_of_hre = yes
-					NOT = { religion = abrahamism }
+				is_part_of_hre = yes
+				NOT = { religion = abrahamism }
+				OR = { 
+					NOT = {
+						has_country_flag = Refused_Convert_Abrahamism_Demanded_By_Emperor 
+					}
+					had_country_flag = {
+						flag = Refused_Convert_Abrahamism_Demanded_By_Emperor
+						days = 3650 	#10 years
+					}
 				}
 			}
 		}

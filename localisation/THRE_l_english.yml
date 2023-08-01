@@ -37,8 +37,10 @@
     # Abrahamic Reform Desire and the Great Schism
       already_demanded_abr_conv_tt: "You can only demand conversion of HRE members to Abrahamism once per year"
       demand_conversion_to_abrahamism: "Demand all non-Abrahamic HRE members convert"
-      demand_conversion_to_abrahamism_desc: "To maintain the Peace and Prosperity of the Empire it is essantial that all nations abide by the mandates of the Council of Constantinople"
+      demand_conversion_to_abrahamism_desc: "To maintain the Peace and Prosperity of the Empire it is essantial that all nations abide by the mandates of the Council of Constantinople.\nNota Bene: We can only demand conversion every 10 years for individual countries!"
       THRE_FORCE_ABRAHAMISM_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Abrahamic Enforcement War"
+      cb_force_abrahamism_empire: "Enforce Abrahamism"
+      cb_force_abrahamism_empire_desc: "Every member of the Holy Roman Empire should adhere by the Council of Constantinople"
 
   # COUNTRIES:
     # England:

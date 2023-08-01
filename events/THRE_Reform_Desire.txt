@@ -137,6 +137,10 @@ country_event = {
 		name = THRE_Reform_Desire.2.test_events.1.opta 		#Alright then
 		change_religion = abrahamism
 		add_prestige = -10
+		add_imperial_influence = 1
+		ai_chance = {
+			factor = 10
+		}
 	}
 	option = {
 		name = THRE_Reform_Desire.2.test_events.1.opta		#Nope
@@ -147,6 +151,12 @@ country_event = {
 				type = cb_force_abrahamism_empire
 				target = ROOT
 			}
+		}
+		hidden_effect = {
+			set_country_flag = Refused_Convert_Abrahamism_Demanded_By_Emperor
+		}
+		ai_chance = {
+			factor = 10
 		}
 	}
 }
