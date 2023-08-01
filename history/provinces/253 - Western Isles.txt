@@ -18,7 +18,7 @@ discovered_by = eastern
 1493.1.1 = { 
 	controller = SCO
 }
-1560.8.1 = { religion = Reformed }
+1560.8.1 = { religion = reformed }
 1707.5.12 = { 
 	controller = GBR
 	add_core = GBR

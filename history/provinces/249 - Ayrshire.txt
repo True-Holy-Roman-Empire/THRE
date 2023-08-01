@@ -19,7 +19,7 @@ discovered_by = ottoman
 discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
-1560.8.1 = { religion = Reformed }
+1560.8.1 = { religion = reformed }
 1600.1.1 = { capital = "Glasgow" }
 1645.8.1 = { controller = REB revolt = { type = revolutionary_rebels size = 2 } }
 1645.9.13 = { controller = SCO revolt = { size = 1 } }

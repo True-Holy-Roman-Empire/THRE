@@ -14,7 +14,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
-1560.8.1 = { religion = Reformed }
+1560.8.1 = { religion = reformed }
 1644.9.13 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }
 1645.9.13 = { controller = SCO revolt = { size = 1 } }
 1707.5.12 = { 

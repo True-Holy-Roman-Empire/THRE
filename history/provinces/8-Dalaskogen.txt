@@ -14,6 +14,6 @@ discovered_by = western
 extra_cost = 10
 add_province_triggered_modifier = stora_kopparberget_modifier
 1448.6.20 = { controller = SWE revolt = { size = 1 } }
-1527.6.1 = { religion = Protestant }
+1527.6.1 = { religion = protestant }
 1617.1.1 = { base_tax = 3 base_production = 3 }
 add_core = DLR
