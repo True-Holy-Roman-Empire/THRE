@@ -82,6 +82,10 @@ country_event = {
 		Calc_Religious_Percentages = { Religion_inp = Sunni }
 		Calc_Religious_Percentages = { Religion_inp = Orthodox }
 		Calc_Religious_Percentages = { Religion_inp = Coptic }
+		export_to_variable = {
+			variable_name = Reform_Desire_Abrahamic
+			value = trigger_value:reform_desire
+		}
 	}
 	option = {
 		name = THRE_Reform_Desire.1.opta
@@ -102,6 +106,7 @@ country_event = {
 		log = "Coptic (ABR) Membersstates of HRE: [Root.HRE_Coptic_Memberstates.GetValue]"
 		log = "Coptic (ABR) Memberstates Development: [Root.HRE_Coptic_Members_Dev.GetValue]"
 		log = "Coptic (ABR) States Share of HRE Dev: [Root.HRE_Coptic_Dev_Percentage.GetValue]"
+		log = "Abrahamic Reform Desire: [Root.Reform_Desire_Abrahamic.GetValue]"
 	}
 	after = {
 		if = {
