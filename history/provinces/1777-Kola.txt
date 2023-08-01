@@ -1,11 +1,10 @@
 #Kola
-owner = NOV
-controller = NOV
+owner = SMI
+controller = SMI
 add_core = SMI
 capital = "Kola"
 culture = sapmi
-religion = norse_pagan_reformed
-add_core = NOV
+religion = shamanism
 base_tax = 1
 base_production = 1
 is_city = yes

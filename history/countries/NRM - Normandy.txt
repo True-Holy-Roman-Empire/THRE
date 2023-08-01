@@ -1,8 +1,8 @@
 government = monarchy
-add_government_reform = appanage_reform
+add_government_reform = paris_appanage_reform
 government_rank = 1
 technology_group = western
 primary_culture = normand
 add_accepted_culture = cosmopolitan_french
 religion = abrahamism
-capital = 168	# Caen
+capital = 168

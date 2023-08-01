@@ -23,3 +23,9 @@ discovered_by = western
 1640.1.2 = { religion = protestant }
 1650.1.1 = { trade_goods = iron }
 1652.1.1 = { capital = "Kiruna" }
+add_core = SWE
+1444.11.11 = { 
+	remove_core = SWE
+}
+owner = SMI
+controller = SWE

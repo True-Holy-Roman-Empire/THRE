@@ -1,7 +1,6 @@
 #4123 - Birkaland
-owner = SWE
-controller = SWE
-add_core = SWE
+owner = FIN
+controller = FIN
 add_core = FIN
 culture = finnish
 religion = norse_pagan_reformed

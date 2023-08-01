@@ -101,3 +101,63 @@ papacy_reform_non_free_city = {				#Papacy if it either owns more provinces than
 		locked_government_type = yes
 	}
 }
+# France Mechanics
+paris_appanage_republic = {
+	icon = "feudal_france_reform"
+	allow_normal_conversion = no
+	potential = {
+		has_dlc = "Domination" 
+		OR = {
+			tag = PRS
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = paris_appanage_republic
+			}
+		}
+	}
+	fixed_rank = 2
+	lock_level_when_selected = yes
+
+	modifiers = {
+		global_tax_modifier = 0.1
+		global_institution_spread = 0.15
+		diplomatic_reputation = 1
+		ae_impact = 0.1
+		core_creation = 0.1
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		has_appanages = yes
+		#need_crownland_to_annex = yes
+		nobility_loyalty_hit_on_integration = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			appanages_mechanic
+		}
+	}
+}
+
+paris_appanage_reform = {
+	icon = "nobleman"
+	allow_normal_conversion = no
+	potential = {
+		is_subject_of_type = appanage_prs
+	}
+	replacement_on_independence_war = feudalism_reform
+	fixed_rank = 1
+	maintain_dynasty = yes
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	modifiers = {
+		trade_goods_size_modifier = 0.05
+		global_trade_power = 0.1
+		global_unrest = 1
+		min_autonomy = 25
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}

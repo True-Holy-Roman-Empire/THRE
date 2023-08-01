@@ -20,7 +20,7 @@ callaction = {
             }
         }
     }
-	 condition = {
+	condition = {
         tooltip = CANNOT_CALL_appanage_INTO_OFFENSIVE_WAR
         potential = {
             FROM = {
@@ -71,6 +71,19 @@ declarewar = {
 	#		}
 	#	}
 	#}
+	
+	condition = {
+		tooltip = NO_WAR_OF_ROSES_INTERVENTION
+		potential = { 
+			always = yes
+		}
+		allow = {
+			NOT = { FROM = { tag = YER } }
+			NOT = { FROM = { tag = LCR } }
+		}
+	}
+	
+	
 	condition = {
 		tooltip = AI_CANNOT_DECLARE_WHEN_STABILITY_LOSS
 		potential = {

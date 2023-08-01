@@ -1,0 +1,47 @@
+##########################ENGLAND###########################
+cornish_copper_thre = {
+	land_maintenance_modifier = -0.1
+} 
+
+welsh_integration_thre = {
+	num_accepted_cultures = 1
+} 
+
+northern_productivity_thre = {
+	local_unrest = -2
+	local_prosperity_growth = 0.1
+	local_autonomy = -0.05
+	local_production_efficiency = 0.15
+} 
+
+cantebury_autonomy_protctions_thre = {
+	min_local_autonomy = 50
+} 
+
+unyielding_royal_support_thre = {
+	all_estate_loyalty_equilibrium = 0.1
+} 
+
+continental_connections_mod_thre = {
+	diplomatic_reputation = 1
+} 
+
+continental_connections_mod_betta_thre = {
+	diplomatic_reputation = 1
+	reduced_liberty_desire = 10
+ 	diplomatic_annexation_cost = -0.15
+}
+
+imperial_alternative_eng_thre = {
+	reasons_to_elect = 5
+}
+
+
+
+
+rebelious_spirit_eng_thre = {
+	land_morale = 0.1
+	tax_income = 24
+	global_manpower = 0.15
+	land_forcelimit = 5
+}

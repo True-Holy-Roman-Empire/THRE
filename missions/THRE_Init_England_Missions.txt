@@ -1,0 +1,495 @@
+#Expands once fate of the britons is finished or civil war has resolved 
+eng_init_row_two = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		tag = ENG
+		NOT = { has_country_flag = gotten_international_focus_result_war_of_roses_england }
+		NOT = { has_country_flag = gotten_hre_focus_result_war_of_roses_england }
+	}
+	has_country_shield = yes
+	
+	eng_wallop_wales_cornwall = {
+		icon = mission_rb_unite_the_clans
+		required_missions = { eng_recruit_the_mercenaries_two }
+		position = 2
+		provinces_to_highlight = {	
+			area = wales_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}		
+		trigger = {
+			wales_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		effect = {
+			custom_tooltip = promote_wales_at_no_cost_eng_thre
+			custom_tooltip = if_wales_is_our_subj_gain_eng_thre
+			tooltip = {
+				add_dip_power = 50
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						WLS = {
+							is_subject_of = ROOT
+						}
+					}
+					add_dip_power = 50
+				}
+				add_country_modifier = {
+					name = "welsh_integration_thre"
+					hidden = yes
+					duration = 3650
+				}
+				add_accepted_culture = welsh
+			}
+		}
+	}
+	
+	eng_march_to_hadrians_wall = {
+		icon = mch_bypass_great_wall
+		required_missions = { eng_wallop_wales_cornwall eng_corral_cornwall  }
+		position = 2
+		provinces_to_highlight = {	
+			province_id = 246
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}		
+		trigger = {
+			246 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		effect = {
+			custom_tooltip = remove_all_northumbrian_cores_from_provs_we_own_eng
+			246 = {
+				add_province_modifier = {
+					name = "northern_productivity_thre"
+					duration = 5475
+				}
+			}
+			custom_tooltip = if_kent_exists_get_dis_chain_eng
+			tooltip = {
+				country_event = { id = thre_england_events.1 }
+			}
+			custom_tooltip = otherwise_we_gainn_eng
+			tooltip = {
+				235 = {
+					if = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						is_core = NOL
+					}
+					remove_core = NOL
+				}
+				if = {
+					limit = {
+						exists = KNT
+					}
+					country_event = { id = thre_england_events.1 }
+				}
+				else = {
+					235 = {
+						if = {
+							limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+							}
+							add_permanent_claim = ROOT
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	eng_crushing_kent = {
+		icon = defenestrate_the_heretics
+		required_missions = { eng_march_to_hadrians_wall  }
+		position = 3
+		provinces_to_highlight = {	
+			province_id = 235
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}		
+		trigger = {
+			235 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		effect = {
+			add_prestige = 15
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 10
+			}
+			if = {
+				limit = {
+					adm = 6
+				}
+				add_adm_power = 100
+			}
+			else = {
+				change_adm = 1
+			}
+		}
+	}
+}
+
+
+eng_init_row_three = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		tag = ENG
+		NOT = { has_country_flag = gotten_international_focus_result_war_of_roses_england }
+		NOT = { has_country_flag = gotten_hre_focus_result_war_of_roses_england }
+	}
+	has_country_shield = yes
+
+	eng_recruit_the_mercenaries_two = {
+		icon = mission_build_up_to_force_limit
+		required_missions = {  }
+		position = 1
+		provinces_to_highlight = {
+		}		
+		trigger = {
+			army_size_percentage = 0.8
+			OR = {
+				num_of_estate_privileges = {
+					estate = estate_nobles
+					value = 2
+				}
+				num_of_mercenaries = 6
+			}
+		}	
+		effect = {
+			if = {
+				limit = {
+					exists = WLS
+				}
+				add_casus_belli = {
+					target = WLS
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
+			wales_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			wessex_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	eng_corral_cornwall = {
+		icon = mission_cannons_firing
+		required_missions = { eng_recruit_the_mercenaries_two }
+		position = 2
+		provinces_to_highlight = {	
+			area = wessex_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}		
+		trigger = {
+			wessex_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		effect = {
+			233 = {
+				change_culture = ROOT
+			}
+			add_mil_power = 50
+			scottish_marches_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "cornish_copper_thre"
+				duration = 3650
+			}
+		}
+	}
+	
+	
+	eng_fate_of_the_britons = {
+		icon = english_alliance
+		required_missions = { eng_crushing_kent eng_challenge_constantinople }
+		position = 5
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				NOT = { is_core = ROOT }
+				controlled_by = REB
+			}
+		}
+		trigger = {
+			grown_by_development = 50
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			NOT = { overextension_percentage = 0.01 }
+		}	
+		effect = {
+			custom_tooltip = war_of_the_roses_will_not_happen_eng_thre
+			set_country_flag = no_more_war_of_roses_thre
+			custom_tooltip = "TODO: FILL IN EVENT HERE ONCE WAR OF ROSES IS FINISHED"
+		}
+	}
+}
+
+eng_init_row_four = {
+	slot = 4
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		tag = ENG
+		NOT = { has_country_flag = gotten_international_focus_result_war_of_roses_england }
+		NOT = { has_country_flag = gotten_hre_focus_result_war_of_roses_england }
+	}
+	has_country_shield = yes
+	
+	eng_a_coming_storm = {
+		icon = fra_great_britain
+		required_missions = { eng_recruit_the_mercenaries_two }
+		position = 2
+		provinces_to_highlight = {
+		}		
+		trigger = {
+			stability = 2
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 45
+			}
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 45
+			}
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 45
+			}
+		}	
+		effect = {
+			add_disaster_progress = {
+				disaster = war_of_the_roses
+				value = -15
+			}
+			add_country_modifier = {
+				name = "unyielding_royal_support_thre"
+				duration = 3650
+			}
+		}
+	}
+	
+	eng_continental_connections = {
+		icon = mission_alliances
+		required_missions = { eng_a_coming_storm }
+		position = 3
+		provinces_to_highlight = {
+			owner = {	
+				capital_scope = {
+					NOT = {
+						region = british_isles_region
+					}
+					continent = europe
+				}
+				total_development = 50
+			}
+		}		
+		trigger = {
+			calc_true_if = {
+				custom_trigger_tooltip = {
+					tooltip = three_allies_on_the_continent_eng_thre
+					all_ally = {
+						capital_scope = {
+							NOT = {
+								region = british_isles_region
+							}
+							continent = europe
+						}	
+					}
+				}
+				amount = 3
+			}	
+			custom_trigger_tooltip = {
+				tooltip = any_ally_has_dev_more_dan_thirty_eng_thre
+				any_ally = {
+					total_development = 50
+					capital_scope = {
+						NOT = {
+							region = british_isles_region
+						}
+						continent = europe
+					}	
+				}
+			}
+		}	
+		effect = {
+			custom_tooltip = every_ally_gains_some_favors_eng_thre
+			tooltip = {
+				add_country_modifier = {
+					name = "continental_connections_mod_thre"
+					duration = 5475
+				}
+			}
+			custom_tooltip = if_cornwall_northumberland_or_wales_is_our_subject_modify_to_now_give_thre_eng
+			tooltip = {
+				add_country_modifier = {
+					name = "continental_connections_mod_betta_thre"
+					duration = 5475
+				}
+			}
+			hidden_effect = {
+				every_ally = {
+					limit = {
+						capital_scope = {
+							NOT = {
+								region = british_isles_region
+							}
+							continent = europe
+						}	
+					}
+					ROOT = {
+						add_favors = {
+						   who = PREV
+						   amount = 10
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							CRN = {
+								is_subject_of = ROOT
+							}
+							WLS = {
+								is_subject_of = ROOT
+							}
+							NOL = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_country_modifier = {
+						name = "continental_connections_mod_betta_thre"
+						duration = 5475
+					}
+				}
+				else = {
+					add_country_modifier = {
+						name = "continental_connections_mod_thre"
+						duration = 5475
+					}
+				}
+			}
+		}
+	}
+	
+	eng_challenge_constantinople = {
+		icon = mission_rb_control_electors
+		required_missions = { eng_found_royal_navy eng_continental_connections }
+		position = 4
+		provinces_to_highlight = {
+			owner = {
+				is_elector = yes
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					is_emperor = yes #I don't like the way that the OR looks sometimes
+				}
+				is_emperor = yes
+			}
+			else = {
+				diplomatic_reputation = 2
+				calc_true_if = {
+					custom_trigger_tooltip = {
+						tooltip = num_of_electors_supportin_us_eng_thre
+						all_elector = {
+							preferred_emperor = ROOT
+						}
+					}
+					amount = 2
+				}
+			}
+		}	
+		effect = {
+			add_dip_power = 75
+			add_ruler_modifier = {
+				name = "imperial_alternative_eng_thre"
+				duration = -1
+			}
+		}
+	}
+}
+
+eng_init_row_five = {
+	slot = 5
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		tag = ENG
+		NOT = { has_country_flag = gotten_international_focus_result_war_of_roses_england }
+		NOT = { has_country_flag = gotten_hre_focus_result_war_of_roses_england }
+	}
+	has_country_shield = yes
+	
+	eng_found_royal_navy = {
+		icon = mission_rb_a_mighty_fleet
+		required_missions = { eng_a_coming_storm }
+		position = 3
+		trigger = {
+			navy_size = 25
+			num_of_heavy_ship = 5
+		}	
+		effect = {
+			add_navy_tradition = 10
+			add_mercantilism = 2
+			define_advisor = {
+				type = naval_reformer
+				skill = 2
+				cost_multiplier = 0.75
+			}
+		}
+	}
+}

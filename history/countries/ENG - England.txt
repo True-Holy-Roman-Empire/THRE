@@ -3,8 +3,6 @@ add_government_reform = english_monarchy
 mercantilism = 25
 technology_group = western
 primary_culture = english
-add_accepted_culture = gascon
-add_accepted_culture = normand
 religion = abrahamism
 capital = 236 # London
 national_focus = DIP
@@ -46,4 +44,5 @@ change_estate_land_share = { #compensates for lack of nobles, distributes 20 bet
 		death_date = 1453.7.17
 	}
 	set_estate_privilege = estate_nobles_english_villeinage
+	add_truce_with = NOL
 }
