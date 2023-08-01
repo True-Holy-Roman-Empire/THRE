@@ -35,3 +35,13 @@ continental_connections_mod_betta_thre = {
 imperial_alternative_eng_thre = {
 	reasons_to_elect = 5
 }
+
+
+
+
+rebelious_spirit_eng_thre = {
+	land_morale = 0.1
+	tax_income = 24
+	global_manpower = 0.15
+	land_forcelimit = 5
+}

@@ -39,6 +39,10 @@
     # England:
       KNT: "Kent"
       KEN_ADJ: "Kentian"
+      LCR: "Lancaster"
+      LCR_ADJ: "Lancastrian"
+      YER: "York"
+      YER_ADJ: "Yorker"
     # France:
       PRS: "Paris"
       PRS_ADJ: "Parisian"
@@ -150,6 +154,10 @@
         thre_england_events.5.t: "Talks Fall Through"
         thre_england_events.5.d: ""
         thre_england_events.5.a: "This means war!"
+    #Misc
+        po_win_war_of_roses_desc: "test1"
+        CB_ALLOWED_po_win_war_of_roses: "test2"
+        PEACE_po_win_war_of_roses: "test3"
       
   # MISC:
   

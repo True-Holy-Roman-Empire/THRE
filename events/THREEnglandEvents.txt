@@ -350,3 +350,149 @@ country_event = {
 		}
 	}
 }
+
+
+
+
+#War Of The Roses
+country_event = {
+	id = thre_england_events.6
+	title = thre_england_events.6.t
+	desc = thre_england_events.6.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					dynasty = "Lancaster"
+				}
+				YER = {
+					save_event_target_as = revolter_roses_tag_thre
+				}
+				LCR = {
+					save_event_target_as = main_tag_roses_thre
+				}
+			}
+			else = {
+				LCR = {
+					save_event_target_as = revolter_roses_tag_thre
+				}
+				YER = {
+					save_event_target_as = main_tag_roses_thre
+				}
+			}
+			every_owned_province = {
+				limit = {
+					region = british_isles_region
+					NOT = { area = home_counties_area }
+					NOT = { area = east_anglia_area }
+					NOT = { area = west_midlands_area }
+					NOT = { area = east_midlands_area }
+				}
+				cede_province = event_target:revolter_roses_tag_thre
+				add_core = event_target:revolter_roses_tag_thre
+			}
+			event_target:revolter_roses_tag_thre = { 
+				if = {
+					limit = {
+						any_owned_province = {
+							OR = {
+								development = 8
+								has_fort_building_trigger = yes
+							}
+						}
+					}
+					random_owned_province = {
+						limit = {
+							OR = {
+								development = 8
+								has_fort_building_trigger = yes
+							}
+						}
+						event_target:revolter_roses_tag_thre = {
+							set_capital = PREV
+						}
+					}
+				}
+				else = {
+					random_owned_province = {
+						event_target:revolter_roses_tag_thre = {
+							set_capital = PREV
+						}
+					}
+				}
+				add_treasury = 250
+				create_general = { tradition = 75 } 
+				add_country_modifier = {
+					name = "rebelious_spirit_eng_thre"
+					duration = -1
+				}
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+				every_province = {
+					limit = {
+						has_discovered = ROOT
+					}
+					discover_country = event_target:revolter_roses_tag_thre
+				}
+				north_atlantic_region = {
+					discover_country = event_target:revolter_roses_tag_thre 
+				}
+				if = {
+					limit = {
+						tag = LCR
+					}
+					define_ruler = {
+						dynasty = "Lancaster"
+					}
+				}
+				else = {
+					define_ruler = {
+						dynasty = "York"
+					}
+				}
+			}
+			change_tag = event_target:main_tag_roses_thre
+			declare_war_with_cb = {
+				who = event_target:revolter_roses_tag_thre
+				casus_belli = war_of_roses_special_cb
+			}	
+		}
+	}
+	
+	option = {
+		name = thre_england_events.6.a #Victory For York!
+		custom_tooltip = if_we_achieve_victory_as_york_we_will_become_international_thre_eng
+		if = {
+			limit = {
+				tag = LCR
+			}
+			switch_tag = YER 
+		}
+	}
+	option = {
+		name = thre_england_events.6.b #Victory For Lancaster!
+		custom_tooltip = if_we_achieve_victory_as_lancaster_we_will_become_domestic_thre_eng
+		if = {
+			limit = {
+				tag = YER
+			}
+			switch_tag = LCR 
+		}
+	}
+}
