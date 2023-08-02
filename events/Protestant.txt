@@ -23,7 +23,7 @@ country_event = {
 		has_global_flag = THRE_Great_Schism
 		religion = catholic
 		is_defender_of_faith = no	
-		NOT = { has_reform = papacy_reform }
+		NOT = { is_papacy_trigger = yes }
 		reform_desire = 1
 		capital_scope = {
 			continent = europe
