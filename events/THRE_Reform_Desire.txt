@@ -225,6 +225,9 @@ country_event = {			#The Great Schism
 	}
 
 	option = {
-		
+		name = THRE_Reform_Desire.4.optb 		#Try to preserve the peace
+		hidden_effect = {
+			great_schism_effect = yes
+		}
 	}
 }

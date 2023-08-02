@@ -48,6 +48,10 @@
       THRE_Reform_Desire.3.t: "Abrahamic Unity Waning"
       THRE_Reform_Desire.3.d: "There are still nations in the HRE not abiding by the Council of Constantinople. If we don't act soon peace in the Empire might be in serious danger..."
       THRE_Reform_Desire.3.opta: "It'll all be fine"
+      THRE_Reform_Desire.4.t: "The Great Schism"
+      THRE_Reform_Desire.4.d: "It is undeniable, the religious peace as prescribed in the Treaty of Constantinople no longer works. Abrahamic Unity can be considered something of the past.\nWe might use this as an opportunity to enforce our own faith upon the HRE, but that will surely mean war.\nThe other options we have is to at least try preserve peace in the Empire."
+      HRE_Reform_Desire.4.opta: "There is only one true faith, ours!"
+      HRE_Reform_Desire.4.optb: "Peace above all else"
 
   # COUNTRIES:
     # England:
