@@ -1,0 +1,205 @@
+country_decisions = {
+	
+	thre_restore_england = {
+		major = yes
+		potential = {
+			NOT = { has_global_flag = war_of_roses_is_happening_thre }
+			OR = {
+				tag = LCR
+				tag = YER
+			}
+		}
+		provinces_to_highlight = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = LCR
+					}
+				}
+				owner = {
+					tag = YER
+				}				
+			}
+			else = {
+				owner = {
+					tag = LCR
+				}
+			}
+		}
+		allow = {
+			if = {
+				limit = {
+					tag = LCR
+				}
+				NOT = { exists = YER } 
+			}
+			else = {
+				NOT = { exists = LCR } 
+			}
+			owns_core_province = 236
+		}
+		effect = {
+			change_tag = ENG
+			if = {
+				limit = {
+					stability = 3
+				}
+				add_adm_power = 150
+			}
+			else = {
+				add_stability = 1
+			}
+		}
+	}
+	
+	thre_andalusia_diplomatically = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_andalusia_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
+				tag = UMY
+				tag = CRD 
+				tag = GRA 
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				#other claimants are gone
+				AND = {
+					ROOT = { NOT = { tag = GRA } }
+					GRA = {
+						OR = {
+							NOT = { total_development = ROOT }
+							NOT = { is_subject_of = ROOT }
+						}
+					}
+					owned_by = GRA
+				}
+				AND = {
+					ROOT = { NOT = { tag = CRD } }
+					CRD = {
+						OR = {
+							NOT = { total_development = ROOT }
+							NOT = { is_subject_of = ROOT }
+						}
+					}
+					owned_by = CRD
+				}
+				AND = {
+					ROOT = { NOT = { tag = UMY } }
+					UMY = {
+						OR = {
+							NOT = { total_development = ROOT }
+							NOT = { is_subject_of = ROOT }
+						}
+					}
+					owned_by = UMY
+				}
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+
+			if = {
+				limit = { NOT = { tag = GRA } }
+				OR = {
+					NOT = { exists = GRA }
+					GRA = {
+						NOT = { total_development = ROOT }
+						is_subject_of = ROOT
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { tag = UMY } }
+				OR = {
+					NOT = { exists = UMY }
+					UMY = {
+						NOT = { total_development = ROOT }
+						is_subject_of = ROOT
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { tag = CRD } }
+				OR = {
+					NOT = { exists = CRD }
+					CRD = {
+						NOT = { total_development = ROOT }
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			change_tag = ADU
+			on_change_tag_effect = yes
+			restore_country_name_effect = yes
+			if = {
+				limit = {
+					GRA = { is_subject_of = ROOT }
+				}
+				inherit = GRA
+			}
+			if = {
+				limit = {
+					UMY = { is_subject_of = ROOT }
+				}
+				inherit = UMY
+			}
+			if = {
+				limit = {
+					CRD = { is_subject_of = ROOT }
+				}
+				inherit = CRD	
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_capital = 225 # Cordoba
+			if = {
+				limit = {
+					NOT = { primary_culture = andalucian }
+				}
+				change_primary_culture = andalucian
+			}
+			if = {
+				limit = { 
+					NOT = { government = monarchy }
+					is_revolutionary = no
+				}
+				change_government = monarchy
+			}
+			if = {
+				limit = { is_revolutionary = no }
+				add_government_reform = al_andalusia_government
+			}
+			lower_andalucia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ADU
+			}
+			upper_andalucia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ADU
+			}
+			set_country_flag = formed_andalusia_flag
+		}
+	}
+}
