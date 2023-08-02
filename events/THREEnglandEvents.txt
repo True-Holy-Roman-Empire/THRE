@@ -351,9 +351,6 @@ country_event = {
 	}
 }
 
-
-
-
 #War Of The Roses
 country_event = {
 	id = thre_england_events.6
@@ -362,6 +359,7 @@ country_event = {
 	picture = BAD_WITH_MONARCH_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
+	major = yes
 	
 	trigger = {
 		always = yes
@@ -444,13 +442,16 @@ country_event = {
 						cavalry = 0.2
 					}
 				}
-				every_province = {
+				every_province = { # >:( Me no likely wide scope
 					limit = {
 						has_discovered = ROOT
 					}
 					discover_country = event_target:revolter_roses_tag_thre
 				}
-				north_atlantic_region = {
+				north_atlantic_region = { #IDK why, but the ocean doesn't like to work with the discover
+					limit = {
+						has_discovered = ROOT
+					}
 					discover_country = event_target:revolter_roses_tag_thre 
 				}
 				if = {
@@ -478,6 +479,7 @@ country_event = {
 	option = {
 		name = thre_england_events.6.a #Victory For York!
 		custom_tooltip = if_we_achieve_victory_as_york_we_will_become_international_thre_eng
+		swap_non_generic_missions = yes
 		if = {
 			limit = {
 				tag = LCR
@@ -488,11 +490,93 @@ country_event = {
 	option = {
 		name = thre_england_events.6.b #Victory For Lancaster!
 		custom_tooltip = if_we_achieve_victory_as_lancaster_we_will_become_domestic_thre_eng
+		swap_non_generic_missions = yes
 		if = {
 			limit = {
 				tag = YER
 			}
 			switch_tag = LCR 
+		}
+	}
+}
+
+
+#Cashing In Favors
+country_event = {
+	id = thre_england_events.7
+	title = thre_england_events.7.t
+	desc = thre_england_events.7.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_ally = {
+				limit = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+					owes_favors = { 
+						who = ROOT 
+						value = 15 
+					}
+				}
+				save_event_target_as = ally_we_cash_in_favors_wit_eng_thre
+			}
+		}
+	}
+	
+	option = {
+		name = thre_england_events.7.a #We need them now more than ever!
+		add_favors = {
+			who = event_target:ally_we_cash_in_favors_wit_eng_thre
+			amount = -15
+		}
+		add_treasury = 150
+		add_manpower = 3.5
+		create_general = { tradition = 100 }
+	}
+	option = {
+		name = thre_england_events.7.b #This is our battle to fight.
+		add_country_modifier = {
+			name = "fighting_alone_eng_thre"
+			duration = 912
+		}
+	}
+}
+
+#Cashing In Favors
+country_event = {
+	id = thre_england_events.8
+	title = thre_england_events.8.t
+	desc = thre_england_events.8.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = thre_england_events.8.a #We will endure!
+		add_country_modifier = {
+			name = "soldiery_shattered_eng_thre"
+			duration = 1825
 		}
 	}
 }

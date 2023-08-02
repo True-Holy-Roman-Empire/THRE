@@ -36,12 +36,24 @@ imperial_alternative_eng_thre = {
 	reasons_to_elect = 5
 }
 
-
-
-
 rebelious_spirit_eng_thre = {
 	land_morale = 0.1
 	tax_income = 24
 	global_manpower = 0.15
 	land_forcelimit = 5
+}
+
+fighting_alone_eng_thre = {
+	land_morale = 0.1
+}
+
+citizen_defense_eng_thre = {
+	fort_maintenance_modifier = -0.5
+}
+
+
+
+soldiery_shattered_eng_thre = {
+	land_morale = -0.15
+	discipline = -0.05
 }

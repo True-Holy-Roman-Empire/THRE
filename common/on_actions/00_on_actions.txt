@@ -700,6 +700,27 @@ on_battle_won_country = {
 		}
 		ROOT = { set_country_flag = albanian_victory }
 	}
+	if = {
+		limit = {
+			OR = {
+				ROOT = { tag = LCR }
+				ROOT = { tag = YER }
+			}
+			NOT = { has_country_flag = already_gotten_won_battle_kewl_eng_thre }
+		}
+		if = {
+			limit = {
+				FROM = { tag = LCR } 
+			}
+			set_country_flag = already_gotten_won_battle_kewl_eng_thre
+		}
+		if = {
+			limit = {
+				FROM = { tag = YER } 
+			}
+			set_country_flag = already_gotten_won_battle_kewl_eng_thre
+		}
+	}
 	count_won_battles_and_reward_at_end = {
 		counting_flag = teu_crusader_battle_counter
 		max_value = 20
