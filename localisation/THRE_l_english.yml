@@ -33,6 +33,7 @@
       abrahamism_rebels_demand: "Convert $COUNTRYNAME$"
       abrahamism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
       pick_abrahamism_blessing: "Pick Blessing"
+      THRE_NOT_JOIN_LEAGUE_OUTSIDERS: "Before the first League War, only members of the Holy Roman Empire may join a League. \nAfter the first League War, any independent Abrahamic Group country in Europe can join the League."
 
     # Abrahamic Reform Desire and the Great Schism
       already_demanded_abr_conv_tt: "You can only demand conversion of HRE members to Abrahamism once per year"
