@@ -497,6 +497,22 @@ on_war_won = {
 	
 	if = {
 		limit = {
+			has_global_flag = war_of_roses_is_happening_thre
+			OR = {
+				tag = YER
+				tag = LCR
+			}
+		}
+		YER = {
+			country_event = { id = thre_england_events.10 }
+		}
+		LCR = {
+			country_event = { id = thre_england_events.10 }
+		}
+	}
+	
+	if = {
+		limit = {
 			is_part_of_hre = yes
 			FROM  = { is_part_of_hre = yes }
 		}

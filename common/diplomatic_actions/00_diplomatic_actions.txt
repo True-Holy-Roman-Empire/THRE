@@ -76,13 +76,13 @@ declarewar = {
 		tooltip = NO_WAR_OF_ROSES_INTERVENTION
 		potential = { 
 			always = yes
+			has_global_flag = war_of_roses_is_happening_thre
 		}
 		allow = {
 			NOT = { FROM = { tag = YER } }
 			NOT = { FROM = { tag = LCR } }
 		}
 	}
-	
 	
 	condition = {
 		tooltip = AI_CANNOT_DECLARE_WHEN_STABILITY_LOSS
