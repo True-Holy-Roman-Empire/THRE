@@ -144,7 +144,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = THRE_Reform_Desire.2.test_events.1.opta 		#Alright then
+		name = THRE_Reform_Desire.2.opta 		#Alright then
 		change_religion = abrahamism
 		add_prestige = -10
 		add_imperial_influence = 1
@@ -153,7 +153,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = THRE_Reform_Desire.2.test_events.1.opta		#Nope
+		name = THRE_Reform_Desire.2.opta		#Nope
 		add_reform_desire = 0.005
 		add_imperial_influence = -2
 		emperor = {
