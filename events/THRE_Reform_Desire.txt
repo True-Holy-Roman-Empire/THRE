@@ -193,3 +193,38 @@ country_event = {
 		Add_Scaled_Abrahamic_Reform_Desire = yes
 	}
 }
+
+country_event = {			#The Great Schism
+	id = THRE_Reform_Desire.4
+	title = THRE_Reform_Desire.4.t
+	desc = THRE_Reform_Desire.4.d
+	picture = "COURT_eventPicture"
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		is_emperor = yes
+		NOT = { has_global_flag = THRE_Great_Schism }
+		reform_desire = 1
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	immediate = {
+		hidden_effect = {	
+			log = "The Great Schism Happened"
+		}	
+	}
+
+	option = {
+		name = THRE_Reform_Desire.4.opta		#Declare the Council of Constaninople void
+		hidden_effect = {
+			great_schism_effect = yes
+		}
+		Make_Root_Religion_Official_HRE = yes
+	}
+
+	option = {
+		
+	}
+}

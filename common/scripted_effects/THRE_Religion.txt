@@ -12,6 +12,7 @@
 #Should completely dissolve the Abrahamism faith
 great_schism_effect = {
 	add_reform_desire = -100
+	add_reform_desire = 0.5		#To have the Protestants somewhat sooner
 	set_global_flag = THRE_Great_Schism
 	emperor = {			#Killing off the official HRE faith will dissolve the HRE, so for testing purposes now include a treaty of religious peace
 		set_hre_religion_treaty = yes
@@ -240,5 +241,74 @@ Add_Scaled_Abrahamic_Reform_Desire = {
 		emperor = {
 			add_reform_desire = 0.0025
 		}
+	}
+}
+
+Make_Root_Religion_Official_HRE = {		#Include all Abrahamic Religion for versatility
+	if = {
+		limit = {
+			religion = catholic
+		}
+		set_hre_religion = catholic
+	}
+	else_if = {
+		limit = {
+			religion = orthodox
+		}
+		set_hre_religion = orthodox
+	}
+	else_if = {
+		limit = { 
+			religion = sunni
+		}
+		set_hre_religion = sunni
+	}
+	else_if = {
+		limit = {
+			religion = anglican
+		}
+		set_hre_religion = anglican
+	}
+	else_if = {
+		limit = { 
+			religion = hussite
+		} 
+		set_hre_religion = hussite
+	}
+	else_if = {
+		limit = { 
+			religion = protestant
+		}
+		set_hre_religion = protestant
+	}
+	else_if = {
+		limit = {
+			religion = reformed
+		}
+		set_hre_religion = reformed
+	}
+	else_if = {
+		limit = { 
+			religion = coptic
+		}
+		set_hre_religion = coptic
+	}
+	else_if = {
+		limit = {
+			religion = shiite
+		}
+		set_hre_religion = shiite
+	}
+	else_if = {
+		limit = { 
+			religion = ibadi
+		}
+		set_hre_religion = ibadi
+	}
+	else_if = {
+		limit = { 
+			religion = jewish
+		}
+		set_hre_religion = jewish
 	}
 }
