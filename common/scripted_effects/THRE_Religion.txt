@@ -244,7 +244,7 @@ Add_Scaled_Abrahamic_Reform_Desire = {
 	}
 }
 
-Make_Root_Religion_Official_HRE = {		#Include all Abrahamic Religion for versatility
+THRE_Make_Root_Religion_Official_HRE = {		#Include all Abrahamic Religion for versatility
 	if = {
 		limit = {
 			religion = catholic
@@ -310,5 +310,74 @@ Make_Root_Religion_Official_HRE = {		#Include all Abrahamic Religion for versati
 			religion = jewish
 		}
 		set_hre_religion = jewish
+	}
+}
+
+THRE_Make_Root_Religion_Form_League = {
+	if = {
+		limit = {
+			religion = catholic
+		}
+		join_league = catholic
+	}
+	else_if = {
+		limit = {
+			religion = orthodox
+		}
+		join_league = orthodox
+	}
+	else_if = {
+		limit = { 
+			religion = sunni
+		}
+		join_league = sunni
+	}
+	else_if = {
+		limit = {
+			religion = anglican
+		}
+		join_league = anglican
+	}
+	else_if = {
+		limit = { 
+			religion = hussite
+		} 
+		join_league = hussite
+	}
+	else_if = {
+		limit = { 
+			religion = protestant
+		}
+		join_league = protestant
+	}
+	else_if = {
+		limit = {
+			religion = reformed
+		}
+		join_league = reformed
+	}
+	else_if = {
+		limit = { 
+			religion = coptic
+		}
+		join_league = coptic
+	}
+	else_if = {
+		limit = {
+			religion = shiite
+		}
+		join_league = shiite
+	}
+	else_if = {
+		limit = { 
+			religion = ibadi
+		}
+		join_league = ibadi
+	}
+	else_if = {
+		limit = { 
+			religion = jewish
+		}
+		join_league = jewish
 	}
 }

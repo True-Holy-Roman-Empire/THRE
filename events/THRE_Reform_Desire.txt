@@ -220,14 +220,113 @@ country_event = {			#The Great Schism
 		name = THRE_Reform_Desire.4.opta		#Declare the Council of Constaninople void
 		hidden_effect = {
 			great_schism_effect = yes
+			set_global_flag = THRE_Emperor_Enforced_Faith
 		}
-		Make_Root_Religion_Official_HRE = yes
+		THRE_Make_Root_Religion_Official_HRE = yes
+		ai_chance = {
+			factor = 90
+		}
 	}
 
 	option = {
 		name = THRE_Reform_Desire.4.optb 		#Try to preserve the peace
 		hidden_effect = {
 			great_schism_effect = yes
+			set_global_flag = THRE_Emperor_Tried_Preserve_Peace
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	after = {
+		random_country = {
+			limit = {
+				NOT = {
+					religion = emperor
+				}
+				is_part_of_hre = yes
+				OR = {
+					religion = catholic
+					religion = sunni
+					religion = orthodox
+				}
+			}
+			country_event = {
+				id = THRE_Reform_Desire.5
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = {			#Protestation 
+	id = THRE_Reform_Desire.5
+	title = THRE_Reform_Desire.5.t
+	desc = {
+		trigger = {
+			has_global_flag = THRE_Emperor_Enforced_Faith
+		}
+		desc = THRE_Reform_Desire.5.desca 
+	}
+	desc = {
+		trigger = {
+			has_global_flag = THRE_Emperor_Tried_Preserve_Peace
+		}
+		desc = THRE_Reform_Desire.5.descb
+	}
+	
+	picture = "COURT_eventPicture"
+	is_triggered_only = yes
+	major = yes
+
+	trigger = {
+		has_global_flag = THRE_Great_Schism
+		OR = {
+			has_global_flag = THRE_Emperor_Enforced_Faith
+			has_global_flag = THRE_Emperor_Tried_Preserve_Peace
+		}
+	}
+
+	option = {
+		name = THRE_Reform_Desire.5.opta		#Lets gooooo!
+		emperor = {
+			THRE_Make_Root_Religion_Official_HRE = yes
+		}
+		enable_hre_leagues = yes
+		THRE_Make_Root_Religion_Form_League = yes
+		add_prestige = 25
+		hidden_effect = {
+			set_global_flag = THRE_First_League_War
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	option = {
+		name = THRE_Reform_Desire.optb	#Nah we skip this
+		add_prestige = -25
+		hidden_effect = {
+			random_country = {
+				limit = {
+					NOT = {
+						religion = emperor
+					}
+					is_part_of_hre = yes
+					OR = {
+						religion = catholic
+						religion = sunni
+						religion = orthodox
+					}
+				}
+				country_event = {
+					id = THRE_Reform_Desire.5
+					days = 5
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
 		}
 	}
 }

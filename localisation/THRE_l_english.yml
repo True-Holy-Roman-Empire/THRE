@@ -53,8 +53,13 @@
       THRE_Reform_Desire.3.opta: "It'll all be fine"
       THRE_Reform_Desire.4.t: "The Great Schism"
       THRE_Reform_Desire.4.d: "It is undeniable, the religious peace as prescribed in the Treaty of Constantinople no longer works. Abrahamic Unity can be considered something of the past.\nWe might use this as an opportunity to enforce our own faith upon the HRE, but that will surely mean war.\nThe other options we have is to at least try preserve peace in the Empire."
-      THRE_Reform_Desire.4.opta: "There is only one true faith, ours!"
+      THRE_Reform_Desire.4.opta: "There is only one true faith, [Root.Religion.GetName]!"
       THRE_Reform_Desire.4.optb: "Peace above all else"
+      THRE_Reform_Desire.5.t: "Protestation at [Root.Capital.GetName]"
+      THRE_Reform_Desire.5.desca: "The Emperor has officially enforced his faith on the Empire. No nation has yet had the courage to speak up formally, denounce the Emperor and demand that the true faith, [Root.Religion.GetName], will become the official faith.\nThis is an opportunity to write history."
+      THRE_Reform_Desire.5.descb: "The Emperor made a laughable attempt to preserve Religious Peace in the Empire. Everyone knows this is futile, let us be the ones to declare it so! For our glory, and the glory of [Root.Religion.Getname]!"
+      THRE_Reform_Desire.5.opta: "Challenge the Emperor"
+      THRE_Reform_Desire.5.optb: "On second though, this doesn't seem like such a good idea"
 
   # COUNTRIES:
     # England:
