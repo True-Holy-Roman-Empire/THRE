@@ -304,7 +304,7 @@ country_event = {			#Protestation
 	}
 
 	option = {
-		name = THRE_Reform_Desire.optb	#Nah we skip this
+		name = THRE_Reform_Desire.5.optb	#Nah we skip this
 		add_prestige = -25
 		hidden_effect = {
 			random_country = {
