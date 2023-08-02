@@ -493,3 +493,269 @@ eng_init_row_five = {
 		}
 	}
 }
+
+
+########################################################
+###################WAR OF ROSES TREE####################
+########################################################
+
+eng_war_roses_row_two = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = LCR
+			tag = YER
+		}
+	}
+	has_country_shield = yes
+	
+	eng_protect_core_territories = {
+		icon = mission_rb_unite_the_clans
+		required_missions = { eng_achieve_victory }
+		position = 2
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { controlled_by = ROOT } 
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = we_controll_all_of_our_owned_provinces
+				all_owned_province = {
+					controlled_by = ROOT
+				}
+			}
+		}	
+		effect = {
+			add_army_professionalism = 0.05
+			add_country_modifier = {
+				name = "citizen_defense_eng_thre"
+				duration = 730
+			}
+		}
+	}
+}
+
+eng_war_roses_row_three = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = LCR
+			tag = YER
+		}
+	}
+	has_country_shield = yes
+	
+	eng_achieve_victory = {
+		icon = mission_rb_unite_the_clans
+		required_missions = { }
+		position = 1	
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = won_a_battle_against_other_civil_eng_thre
+				has_country_flag = already_gotten_won_battle_kewl_eng_thre
+			}
+		}	
+		effect = {
+			add_army_tradition = 10
+			create_general = { tradition = 50 }
+		}
+	}
+	
+	eng_request_foreign_support = {
+		icon = mission_rb_unite_the_clans
+		required_missions = { eng_achieve_victory }
+		position = 2
+		provinces_to_highlight = {
+			owner = {
+				alliance_with = ROOT
+			}	
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = have_fifteen_favors_and_onefif_opinion_eng_thre
+				any_ally = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+					owes_favors = { 
+						who = ROOT 
+						value = 15 
+					}
+				}
+			}
+		}	
+		effect = {
+			country_event = { id = thre_england_events.7 }
+		}
+	}
+	
+	press_towards_victory_support = {
+		icon = mission_rb_unite_the_clans
+		required_missions = { eng_request_foreign_support eng_shatter_enemy_defenses eng_protect_core_territories }
+		position = 3
+		trigger = {
+			if = {
+				limit = {
+					tag = LCR
+				}
+				war_score_against = {
+					who = YER
+					value = 50
+				}
+			}
+			else = {
+				war_score_against = {
+					who = LCR
+					value = 50
+				}
+			}
+		}	
+		effect = {
+			custom_tooltip = enemy_will_gain_this_modifier_eng_thre
+			tooltip = {
+				if = {
+					limit = {
+						tag = LCR
+					}
+					YER = {
+						add_country_modifier = {
+							name = "soldiery_shattered_eng_thre"
+							duration = 1825
+						}
+					}
+				}
+				else = {
+					LCR = {
+						add_country_modifier = {
+							name = "soldiery_shattered_eng_thre"
+							duration = 1825
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						tag = LCR
+					}
+					YER = {
+						country_event = { id = thre_england_events.8 } 
+					}
+				}
+				else = {
+					LCR = {
+						country_event = { id = thre_england_events.8 } 
+					}
+				}
+			}
+		}
+	}
+}
+
+
+eng_war_roses_row_four = {
+	slot = 4
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = LCR
+			tag = YER
+		}
+	}
+	has_country_shield = yes
+	
+	eng_shatter_enemy_defenses = {
+		icon = mission_rb_unite_the_clans
+		required_missions = { eng_achieve_victory }
+		position = 2
+		provinces_to_highlight = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = LCR
+					}
+				}
+				YER = {
+					all_owned_province = {
+						has_fort_building_trigger = yes
+					}
+				}
+			}
+			else = {
+				LCR = {
+					all_owned_province = {
+						has_fort_building_trigger = yes
+					}
+				}
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = have_sieged_one_fort_of_the_opposing_side_eng
+				if = {
+					limit = {
+						tag = LCR
+					}
+					YER = {
+						any_owned_province = {
+							has_fort_building_trigger = yes
+							controlled_by = ROOT
+						}
+					}
+				}
+				else = {
+					LCR = {
+						any_owned_province = {
+							has_fort_building_trigger = yes
+							controlled_by = ROOT
+						}
+					}
+				}
+			}
+		}	
+		effect = {
+			add_mil_power = 50
+			define_advisor = {
+				type = fortification_expert
+				skill = 2
+				cost_multiplier = 0.5
+			}
+		}
+	}
+}
+
+eng_war_roses_row_five = { #so it doesn't appear as the new stuff
+	slot = 5
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = LCR
+			tag = YER
+		}
+	}
+	has_country_shield = yes
+	
+}
