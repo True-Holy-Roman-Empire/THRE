@@ -2246,6 +2246,7 @@ on_bi_yearly_pulse = {
 	events = {
 		center_of_revolution.2950
 		center_of_revolution.3000
+		#THRE_Reform_Desire.1			#Not yet
 	}
 	random_events = {
 
@@ -5404,6 +5405,19 @@ on_conquest = {
 			add_imperial_influence = 0.5
 		}
 	}
+	# if = {
+	# 	limit = {
+	# 		owner = {
+	# 			has_country_flag = sunni_religion_flag
+	# 		}
+	# 		FROM = {
+	# 			NOT = {
+	# 				has_country_flag = sunni_religion_flag
+	# 			}
+	# 		}
+	# 	}
+	# 	add_reform_desire = 0.5
+	# }
 }
 
 on_country_creation = {

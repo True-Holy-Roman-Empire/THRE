@@ -1,0 +1,124 @@
+#HRE
+defined_text = {
+	name = VoteCount1_LW_THRE
+	
+	text = {
+		localisation_key = VoteCount1_LWW_HRE
+		trigger = {
+			event_target:THRE_League_Peace_Diet = {
+				is_variable_equal = { which = VoteWin value = 1 }
+			}	
+		}
+	}
+	text = {
+		localisation_key = VoteCount1_LWN_HRE
+		trigger = {
+			event_target:THRE_League_Peace_Diet = {
+				NOT = { is_variable_equal = { which = VoteWin value = 1 } }
+				is_variable_equal = { which = VoteCount1 value = 0 }
+			}
+		}
+	}
+	text = {
+		localisation_key = VoteCount1_LWL_HRE
+		trigger = {
+			event_target:THRE_League_Peace_Diet = {
+				NOT = { is_variable_equal = { which = VoteWin value = 1 } }
+				NOT = { is_variable_equal = { which = VoteCount1 value = 0 } }
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = VoteCount2_LW_THRE
+	
+	text = {
+		localisation_key = VoteCount2_LWW_HRE
+		trigger = {
+			event_target:THRE_League_Peace_Diet = {
+				is_variable_equal = { which = VoteWin value = 2 }
+			}	
+		}
+	}
+	text = {
+		localisation_key = VoteCount2_LWN_HRE
+		trigger = {
+			event_target:THRE_League_Peace_Diet = {
+				NOT = { is_variable_equal = { which = VoteWin value = 2 } }
+				is_variable_equal = { which = VoteCount2 value = 0 }
+			}
+		}
+	}
+	text = {
+		localisation_key = VoteCount2_LWL_HRE
+		trigger = {
+			event_target:THRE_League_Peace_Diet = {
+				NOT = { is_variable_equal = { which = VoteWin value = 2 } }
+				NOT = { is_variable_equal = { which = VoteCount2 value = 0 } }
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = VoteCount3_LW_THRE
+	
+	text = {
+		localisation_key = VoteCount3_LWW_HRE
+		trigger = {
+			event_target:THRE_League_Peace_Diet = {
+				is_variable_equal = { which = VoteWin value = 3 }
+			}	
+		}
+	}
+	text = {
+		localisation_key = VoteCount3_LWN_HRE
+		trigger = {
+			event_target:THRE_League_Peace_Diet = {
+				NOT = { is_variable_equal = { which = VoteWin value = 3 } }
+				is_variable_equal = { which = VoteCount3 value = 0 }
+			}
+		}
+	}
+	text = {
+		localisation_key = VoteCount3_LWL_HRE
+		trigger = {
+			event_target:THRE_League_Peace_Diet = {
+				NOT = { is_variable_equal = { which = VoteWin value = 3 } }
+				NOT = { is_variable_equal = { which = VoteCount3 value = 0 } }
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = VoteCount4_LW_THRE
+	
+	text = {
+		localisation_key = VoteCount4_LWW_HRE
+		trigger = {
+			event_target:THRE_League_Peace_Diet = {
+				is_variable_equal = { which = VoteWin value = 4 }
+			}	
+		}
+	}
+	text = {
+		localisation_key = VoteCount4_LWN_HRE
+		trigger = {
+			event_target:THRE_League_Peace_Diet = {
+				NOT = { is_variable_equal = { which = VoteWin value = 4 } }
+				is_variable_equal = { which = VoteCount4 value = 0 }
+			}
+		}
+	}
+	text = {
+		localisation_key = VoteCount4_LWL_HRE
+		trigger = {
+			event_target:THRE_League_Peace_Diet = {
+				NOT = { is_variable_equal = { which = VoteWin value = 4 } }
+				NOT = { is_variable_equal = { which = VoteCount4 value = 0 } }
+			}
+		}
+	}
+}

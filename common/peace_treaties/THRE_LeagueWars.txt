@@ -1,0 +1,25 @@
+po_thre_league_war = {
+	category = 6
+	power_cost_base = 1.0
+	prestige_base = 0.25
+	ae_base = 1.0
+	power_projection = vassalized_rival 
+	warscore_cost = {
+		no_provinces = 50.0
+	}
+	warscore_cap = 50
+	requires_is_allowed = yes
+	is_visible = {
+	}
+	is_allowed = {
+	}
+	effect = {
+		THRE_Make_Root_Religion_Official_HRE = yes
+	}
+	ai_weight = { # Defaults to always evaluate to 0
+		export_to_variable = {
+			variable_name = ai_value # Mandatory to have entry called "ai_value". Its value at the end of the ai_weight scope is what will be used
+			value = 1000
+		}
+	}
+}

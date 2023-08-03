@@ -216,6 +216,25 @@ Tally_Vote_Helper3 = {
             which = VoteWin
             value = $Option$
         }
-        clr_$scope$_flag = Inconclusive_Vote
+        clr_$Scope$_flag = Inconclusive_Vote
+    }
+}
+
+Reset_Voting_Variables_LeagueWar = {
+    set_variable = {
+        which = VoteCount1
+        value = 0 
+    }
+    set_variable = {
+        which = VoteCount2
+        value = 0 
+    }
+    set_variable = {
+        which = VoteCount3
+        value = 0 
+    }
+    set_variable = {
+        which = VoteCount4
+        value = 0 
     }
 }

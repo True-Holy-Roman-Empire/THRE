@@ -11,6 +11,7 @@
 #Great Schism Effect 
 #Should completely dissolve the Abrahamism faith
 great_schism_effect = {
+	set_global_flag = THRE_Great_Schism
 	emperor = {			#Killing off the official HRE faith will dissolve the HRE, so for testing purposes now include a treaty of religious peace
 		set_hre_religion_treaty = yes
 	}
@@ -85,6 +86,453 @@ break_out_coptics_effect = {
 				religion = abrahamism
 			}
 			change_religion = coptic
+		}
+	}
+}
+
+Reset_HRE_Religion_Counting_Variables = {
+	set_variable = {
+		which = HRE_Members_var
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Development_var
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Non_Abrahamic_Memberstates
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Non_Abrahamic_Members_Dev
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Non_Abrahamic_Dev_Percentage
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Catholic_Memberstates
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Catholic_Members_Dev
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Sunni_Memberstates
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Sunni_Members_Dev
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Orthodox_Memberstates
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Orthodox_Members_Dev
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Coptic_Memberstates
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Coptic_Members_Dev
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Catholic_Dev_Percentage
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Sunni_Dev_Percentage
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Orthodox_Dev_Percentage
+		value = 0
+	}
+	set_variable = {
+		which = HRE_Coptic_Dev_Percentage
+		value = 0
+	}
+	set_variable = {
+		which = Reform_Desire_Abrahamic
+		value = 0
+	}
+}
+
+Count_Religious_Members = {
+	set_variable = {
+		which = HRE_$Religion_inp$_Members_Dev
+		which = HRE_Development_var
+	}
+	ROOT = {
+		change_variable = {
+			which = HRE_$Religion_inp$_Memberstates
+			value = 1
+		}
+		change_variable = {
+			which = HRE_$Religion_inp$_Members_Dev
+			which = PREV
+		}
+	}
+}
+
+
+Calc_Religious_Percentages = {
+	if = {
+		limit = {			#DBZ Prevention
+			check_variable = {
+				which = HRE_$Religion_inp$_Members_Dev
+				value = 1
+			}
+		}
+		set_variable = {
+			which = Tmp_1
+			value = 0
+		}
+		set_variable = {
+			which = Tmp_2
+			value = 0
+		}
+		change_variable = {
+			which = Tmp_1
+			which = HRE_Development_var
+		}
+		set_variable = {
+			which = Tmp_2
+			which = HRE_$Religion_inp$_Members_Dev
+		}
+		divide_variable = {
+			which = Tmp_2
+			which = Tmp_1
+		}
+		set_variable = {
+			which = HRE_$Religion_inp$_Dev_Percentage
+			which = Tmp_2
+		}
+		multiply_variable = {
+			which = HRE_$Religion_inp$_Dev_Percentage
+			value = 100
+		}
+	}
+	else = {
+		set_variable = {
+			which = HRE_$Religion_inp$_Dev_Percentage
+			value = 0
+		}
+	}
+}
+
+Add_Scaled_Abrahamic_Reform_Desire = {
+	every_country = {
+		limit = {
+			is_part_of_hre = yes
+			NOT = {
+				religion = abrahamism
+			}
+		}
+		emperor = {
+			add_reform_desire = 0.0025
+		}
+	}
+}
+
+THRE_Make_Root_Religion_Official_HRE = {		#Include all Abrahamic Religion for versatility
+	if = {
+		limit = {
+			religion = catholic
+		}
+		set_hre_religion = catholic
+	}
+	else_if = {
+		limit = {
+			religion = orthodox
+		}
+		set_hre_religion = orthodox
+	}
+	else_if = {
+		limit = { 
+			religion = sunni
+		}
+		set_hre_religion = sunni
+	}
+	else_if = {
+		limit = {
+			religion = anglican
+		}
+		set_hre_religion = anglican
+	}
+	else_if = {
+		limit = { 
+			religion = hussite
+		} 
+		set_hre_religion = hussite
+	}
+	else_if = {
+		limit = { 
+			religion = protestant
+		}
+		set_hre_religion = protestant
+	}
+	else_if = {
+		limit = {
+			religion = reformed
+		}
+		set_hre_religion = reformed
+	}
+	else_if = {
+		limit = { 
+			religion = coptic
+		}
+		set_hre_religion = coptic
+	}
+	else_if = {
+		limit = {
+			religion = shiite
+		}
+		set_hre_religion = shiite
+	}
+	else_if = {
+		limit = { 
+			religion = ibadi
+		}
+		set_hre_religion = ibadi
+	}
+	else_if = {
+		limit = { 
+			religion = jewish
+		}
+		set_hre_religion = jewish
+	}
+}
+
+THRE_Make_Root_Religion_Form_League = {
+	if = {
+		limit = {
+			religion = catholic
+		}
+		set_hre_heretic_religion = catholic
+		join_league = catholic
+	}
+	else_if = {
+		limit = {
+			religion = orthodox
+		}
+		set_hre_heretic_religion = orthodox
+		join_league = orthodox
+	}
+	else_if = {
+		limit = { 
+			religion = sunni
+		}
+		set_hre_heretic_religion = sunni
+		join_league = sunni
+	}
+	else_if = {
+		limit = {
+			religion = anglican
+		}
+		set_hre_heretic_religion = anglican
+		join_league = anglican
+	}
+	else_if = {
+		limit = { 
+			religion = hussite
+		}
+		set_hre_heretic_religion = hussite
+		join_league = hussite
+	}
+	else_if = {
+		limit = { 
+			religion = protestant
+		}
+		set_hre_heretic_religion = protestant
+		join_league = protestant
+	}
+	else_if = {
+		limit = {
+			religion = reformed
+		}
+		set_hre_heretic_religion = reformed
+		join_league = reformed
+	}
+	else_if = {
+		limit = { 
+			religion = coptic
+		}
+		set_hre_heretic_religion = coptic
+		join_league = coptic
+	}
+	else_if = {
+		limit = {
+			religion = shiite
+		}
+		set_hre_heretic_religion = shiite
+		join_league = shiite
+	}
+	else_if = {
+		limit = { 
+			religion = ibadi
+		}
+		set_hre_heretic_religion = ibadi
+		join_league = ibadi
+	}
+	else_if = {
+		limit = { 
+			religion = jewish
+		}
+		set_hre_heretic_religion = jewish
+		join_league = jewish
+	}
+}
+
+Join_All_Root_League_Wars = {
+	if = {
+		limit = {
+			ROOT = {
+				religion = catholic
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = catholic 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = protestant
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = protestant 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = reformed
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = reformed 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = hussite
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = hussite 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = sunni
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = sunni 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = shiite
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = shiite 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = ibadi
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = ibadi 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = coptic
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = coptic 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = orthodox
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = orthodox 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = anglican
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = anglican 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = jewish
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = jewish 
+			}
+			join_all_offensive_wars_of = ROOT
 		}
 	}
 }
