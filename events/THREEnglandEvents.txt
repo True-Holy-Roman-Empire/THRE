@@ -559,7 +559,7 @@ country_event = {
 	}
 }
 
-#Cashing In Favors
+#Soldiery Shattered
 country_event = {
 	id = thre_england_events.8
 	title = thre_england_events.8.t

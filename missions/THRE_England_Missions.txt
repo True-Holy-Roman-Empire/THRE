@@ -562,9 +562,20 @@ eng_war_roses_row_three = {
 		required_missions = { }
 		position = 1	
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = won_a_battle_against_other_civil_eng_thre
-				has_country_flag = already_gotten_won_battle_kewl_eng_thre
+			if = {
+				limit = {
+					tag =  YER
+				}
+				custom_trigger_tooltip = {
+					tooltip = won_a_battle_against_other_civil_eng_thre
+					has_country_flag = already_gotten_won_battle_kewl_eng_thre
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = won_a_battle_against_main_civil_eng_thre
+					has_country_flag = already_gotten_won_battle_kewl_eng_thre
+				}
 			}
 		}	
 		effect = {
@@ -624,12 +635,12 @@ eng_war_roses_row_three = {
 			}
 		}	
 		effect = {
-			custom_tooltip = enemy_will_gain_this_modifier_eng_thre
 			tooltip = {
 				if = {
 					limit = {
 						tag = LCR
 					}
+					custom_tooltip = enemy_will_gain_this_modifier_yer_eng_thre
 					YER = {
 						add_country_modifier = {
 							name = "soldiery_shattered_eng_thre"
@@ -638,6 +649,7 @@ eng_war_roses_row_three = {
 					}
 				}
 				else = {
+					custom_tooltip = enemy_will_gain_this_modifier_lcr_eng_thre
 					LCR = {
 						add_country_modifier = {
 							name = "soldiery_shattered_eng_thre"
@@ -695,14 +707,20 @@ eng_war_roses_row_four = {
 				}
 				YER = {
 					all_owned_province = {
-						has_fort_building_trigger = yes
+						OR = {
+							has_fort_building_trigger = yes
+							is_capital_of = YER
+						}
 					}
 				}
 			}
 			else = {
 				LCR = {
 					all_owned_province = {
-						has_fort_building_trigger = yes
+						OR = {
+							has_fort_building_trigger = yes
+							is_capital_of = LCR
+						}
 					}
 				}
 			}
@@ -716,7 +734,10 @@ eng_war_roses_row_four = {
 					}
 					YER = {
 						any_owned_province = {
-							has_fort_building_trigger = yes
+							OR = {
+								has_fort_building_trigger = yes
+								is_capital_of = YER
+							}
 							controlled_by = ROOT
 						}
 					}
@@ -724,7 +745,10 @@ eng_war_roses_row_four = {
 				else = {
 					LCR = {
 						any_owned_province = {
-							has_fort_building_trigger = yes
+							OR = {
+								has_fort_building_trigger = yes
+								is_capital_of = LCR
+							}
 							controlled_by = ROOT
 						}
 					}
