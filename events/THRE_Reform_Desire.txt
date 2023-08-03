@@ -467,12 +467,12 @@ country_event = {			#Peace event
 		name = "THRE_Reform_Desire.7.opta" #Let us decide the fate of the empire
 
 		event_target:THRE_League_Peace_Diet = {		#Just vote if no 3 wars yet
-			province_event = { id = THRE_Reform_Desire.10 days = 4 }
+			province_event = { id = THRE_Reform_Desire.101 days = 4 }
 		}
 	}
 }
 
-country_event = {
+country_event = {		#The Divided EMpire
 	id = THRE_Reform_Desire.8
 	title = "THRE_Reform_Desire.8.t"
 	desc = "THRE_Reform_Desire.8.d"
@@ -515,7 +515,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "THRE_Reform_Desire.8.optc" #Delay
+		name = "THRE_Reform_Desire.8.optb" #Delay
 	   	ai_chance = { factor = 0 }
 	   	trigger = {
 			ai = no
@@ -562,9 +562,9 @@ country_event = {
 }
 
 province_event = {
-	id = THRE_Reform_Desire.10
-	title = "THRE_Reform_Desire.10.title"
-	desc = "THRE_Reform_Desire.10.desc"
+	id = THRE_Reform_Desire.101
+	title = "THRE_Reform_Desire.101.t"
+	desc = "THRE_Reform_Desire.101.d"
 	picture = protestant_league_surrender
 	
 	major = yes
@@ -578,7 +578,7 @@ province_event = {
 	}
 
 	option = {
-		name = "THRE_Protestant.031.opta"		#Ask each prince to vote
+		name = "THRE_Reform_Desire.101.opta"		#Ask each prince to vote
 		hidden_effect = {
 			owner = {
 				every_known_country = {
@@ -604,7 +604,7 @@ province_event = {
 	}	
 }
 
-country_event = { #22 - Vote in the Diet
+country_event = { #Vote in the Diet
 	id = THRE_Reform_Desire.10
 	title = "THRE_Reform_Desire.10.t"
 	desc = "THRE_Reform_Desire.10.d"
@@ -793,6 +793,15 @@ province_event = { #26 - Treaty of [Westphalia]
 					enable_hre_leagues = no	#Dissolves the Leagues and allows for new ones to form
 				}	
 			}
+			random_country = {
+				limit = {
+					is_league_leader = yes
+					NOT = {
+						is_emperor = yes
+					}
+					save_global_event_target_as = THRE_OpposingLeageLeader
+				}
+			}
 			clr_global_flag = THRE_League_War #Removed upon peace
 			clr_global_flag = THRE_Leagues_Active		#Track with this whether the Leagues are active, use to space out the time until war declaration
 		}
@@ -917,6 +926,7 @@ province_event = { #26 - Treaty of [Westphalia]
 							is_free_or_tributary_trigger = yes
 							NOT = {
 								religion = emperor
+								religion = event_target:THRE_OpposingLeageLeader
 							}
 							hre_religion_treaty = no
 							is_emperor = no
@@ -1025,6 +1035,7 @@ province_event = {
 	option = {
 		name = "AI_Event"
 		clear_global_event_target = THRE_League_Peace_Diet
+		clear_global_event_target = THRE_OpposingLeageLeader
 		clr_global_flag = THRE_Leage_Peace_Talks_Ongoing
 	}
 }
