@@ -24,7 +24,7 @@ can_join_hre_league = {
 			}
 			religion_group = abrahamistic_group
 			capital_scope = {
-				or = {
+				OR = {
 					continent = europe
 					region = anatolia_region
 					region = egypt_region
