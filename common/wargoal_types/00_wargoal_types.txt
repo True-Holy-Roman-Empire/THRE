@@ -2311,6 +2311,7 @@ superiority_religious_league = {
 			po_change_religion
 			po_gold
 			po_annul_treaties
+			po_thre_league_war
 		}
 	}
 	
@@ -2332,6 +2333,7 @@ superiority_religious_league = {
 			po_change_religion
 			po_gold
 			po_annul_treaties
+			po_thre_league_war
 		}
 	}
 	
