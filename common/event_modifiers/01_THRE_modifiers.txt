@@ -51,8 +51,6 @@ citizen_defense_eng_thre = {
 	fort_maintenance_modifier = -0.5
 }
 
-
-
 soldiery_shattered_eng_thre = {
 	land_morale = -0.15
 	discipline = -0.05
