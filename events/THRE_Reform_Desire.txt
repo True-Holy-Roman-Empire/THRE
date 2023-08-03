@@ -11,6 +11,9 @@ country_event = {
 
 	trigger = {
 		tag = AAA
+		NOT = {
+			has_global_flag = THRE_Great_Schism
+		}
 	}
 
 	immediate = {
