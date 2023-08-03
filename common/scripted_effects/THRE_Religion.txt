@@ -381,3 +381,149 @@ THRE_Make_Root_Religion_Form_League = {
 		join_league = jewish
 	}
 }
+
+Join_All_Root_League_Wars = {
+	if = {
+		limit = {
+			ROOT = {
+				religion = catholic
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = catholic 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = protestant
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = protestant 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = reformed
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = reformed 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = hussite
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = hussite 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = sunni
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = sunni 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = shiite
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = shiite 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = ibadi
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = ibadi 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = coptic
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = coptic 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = orthodox
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = orthodox 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = anglican
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = anglican 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				religion = jewish
+			}
+		}
+		every_known_country = {
+			limit = {
+				in_league = jewish 
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+	}
+}

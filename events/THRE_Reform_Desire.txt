@@ -42,6 +42,9 @@ country_event = {
 			if = {
 				limit = {
 					NOT = {
+						has_global_flag = THRE_Great_Schism
+					}
+					NOT = {
 						religion = abrahamism
 					}
 				}
@@ -49,25 +52,49 @@ country_event = {
 			}	
 			else_if = {
 				limit = {
-					has_country_flag = catholic_religion_flag
+					OR = {
+						has_country_flag = catholic_religion_flag
+						AND = {
+							has_global_flag = THRE_Great_Schism
+							religion = catholic
+						}
+					}
 				}
 				Count_Religious_Members = { Religion_inp = Catholic }
 			}
 			else_if = {
 				limit = {
-					has_country_flag = sunni_religion_flag
+					OR = {
+						has_country_flag = sunni_religion_flag
+						AND = {
+							has_global_flag = THRE_Great_Schism
+							religion = sunni
+						}
+					}
 				}
 				Count_Religious_Members = { Religion_inp = Sunni }
 			}
 			else_if = {
 				limit = {
-					has_country_flag = orthodox_religion_flag
+					OR = {
+						has_country_flag = orthodox_religion_flag
+						AND = {
+							has_global_flag = THRE_Great_Schism
+							religion = orthodox
+						}
+					}
 				}
 				Count_Religious_Members = { Religion_inp = Orthodox }
 			}
 			else_if = {
 				limit = {
-					has_country_flag = coptic_religion_flag
+					OR = {
+						has_country_flag = coptic_religion_flag
+						AND = {
+							has_global_flag = THRE_Great_Schism
+							religion = coptic
+						}
+					}
 				}
 				Count_Religious_Members = { Religion_inp = Coptic }
 			}
@@ -296,7 +323,7 @@ country_event = {			#Protestation
 		THRE_Make_Root_Religion_Form_League = yes
 		add_prestige = 25
 		hidden_effect = {
-			set_global_flag = THRE_First_League_War
+			set_global_flag = THRE_Leagues_Active
 		}
 		ai_chance = {
 			factor = 90
@@ -328,5 +355,676 @@ country_event = {			#Protestation
 		ai_chance = {
 			factor = 10
 		}
+	}
+}
+
+country_event = {				#War event
+	id = THRE_Reform_Desire.6
+	title = "THRE_Reform_Desire.6.t"
+	desc = "THRE_Reform_Desire.6.d"
+	picture = protestant_league_war
+	
+	trigger = {
+		is_emperor = yes
+		is_in_league_war = yes
+		NOT = { has_global_flag = THRE_League_War }
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	immediate = {
+		set_global_flag = THRE_League_War
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = THRE_First_League_War
+				}
+			}		
+			set_global_flag = THRE_First_League_War
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_global_flag = THRE_Second_League_War
+				}
+			}
+			set_global_flag = THRE_Second_League_War
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_global_flag = THRE_Third_Leage_War
+				}
+			}
+			set_global_flag = THRE_Third_League_War
+		}
+	}
+	
+	option = {
+		name = "THRE_Reform_Desire.6.opta" #Let us decide the fate of the empire
+	}
+}
+
+country_event = {			#Peace event
+	
+	id = THRE_Reform_Desire.7
+	title = "THRE_Reform_Desire.7.t"
+	desc = "THRE_Reform_Desire.7.d"
+	picture = protestant_league_war
+	
+	major = yes
+
+	trigger = {
+		emperor = { is_in_league_war = no }
+		is_emperor = yes
+		has_global_flag = THRE_League_War
+		NOT = { has_global_flag = THRE_Leage_Peace_Talks_Ongoing }
+	}
+
+	mean_time_to_happen = { days = 10 }
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = THRE_Leage_Peace_Talks_Ongoing
+			if = {
+				limit = {
+					any_known_country = {
+						capital_scope = { is_part_of_hre = yes }
+						NOT = { num_of_cities = 2 }
+						is_emperor = no
+						is_elector = no
+					}
+				}
+				random_country = {
+					limit = {
+						capital_scope = { is_part_of_hre = yes }
+						NOT = { num_of_cities = 2 }
+						is_emperor = no
+						is_elector = no
+					}
+					capital_scope = { save_global_event_target_as = THRE_League_Peace_Diet }
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						any_known_country = {
+							capital_scope = { is_part_of_hre = yes }
+							NOT = { num_of_cities = 2 }
+							is_emperor = no
+							is_elector = no
+						}
+					}
+				}
+				emperor = { capital_scope = { save_global_event_target_as = THRE_League_Peace_Diet } }
+			}
+		}
+	}
+	
+	option = {
+		name = "THRE_Reform_Desire.7.opta" #Let us decide the fate of the empire
+
+		event_target:THRE_League_Peace_Diet = {		#Just vote if no 3 wars yet
+			province_event = { id = THRE_Reform_Desire.10 days = 4 }
+		}
+	}
+}
+
+country_event = {
+	id = THRE_Reform_Desire.8
+	title = "THRE_Reform_Desire.8.t"
+	desc = "THRE_Reform_Desire.8.d"
+	picture = protestant_league_war
+	
+	major = yes
+
+	trigger = {
+		is_emperor = yes
+		had_global_flag = {
+			flag = THRE_Leagues_Active
+			days = 90								#Only allow for war Declaration after 3 months, use to give nations time to join the Leagues if they want to
+		}
+		hre_leagues_enabled = yes
+		is_in_league_war = no
+		is_at_war = no	#don't declare a League War when you're at war
+		NOT = { has_global_flag = THRE_Third_League_War }
+		NOT = { has_global_flag = THRE_Peace_of_Westphalia }
+		NOT = { has_global_flag = THRE_League_War }
+		NOT = { has_global_flag = THRE_Leage_Peace_Talks_Ongoing }
+	}
+	
+	mean_time_to_happen = { months = 60 } 	#Force League war after 5 years of Leagues
+	
+	option = {
+		name = "THRE_Reform_Desire.8.opta" #Start a league war
+		ai_chance = {
+			factor = 10
+		}
+		random_country = {
+			limit = { is_league_leader = yes is_emperor = no }
+			save_event_target_as = League_Leader_GetAttack
+		}
+		declare_war_with_cb = {
+			who = event_target:League_Leader_GetAttack
+			casus_belli = cb_religious_league
+		}
+		hidden_effect = {
+			Join_All_Root_League_Wars = yes
+		}
+	}
+	option = {
+		name = "THRE_Reform_Desire.8.optc" #Delay
+	   	ai_chance = { factor = 0 }
+	   	trigger = {
+			ai = no
+	  	}
+	   	add_stability = -2
+	    add_prestige = -25
+	    hidden_effect = {
+		    event_target:League_Leader_GetAttack = {
+			    country_event = {
+				    id = THRE_Protestant.030
+				    days = 50 
+				    random = 20
+			    }
+		    }
+	    }
+    }
+}
+
+country_event = {
+	id = THRE_Reform_Desire.9
+	title = "THRE_Reform_Desire.9.t"
+	desc = "THRE_Reform_Desire.9.d"
+	picture = protestant_league_war
+	
+	is_triggered_only = yes
+
+	immediate = {
+		every_known_country = {
+			limit = {
+				war_with = ROOT
+			}
+			white_peace = ROOT
+		}
+	}
+	
+	option = {
+		name = "THRE_Reform_Desire.9.opta"
+		declare_war_with_cb = {
+			who = FROM		#The Emperor
+			casus_belli = cb_religious_league
+		}
+		Join_All_Root_League_Wars = yes
+	}
+}
+
+province_event = {
+	id = THRE_Reform_Desire.10
+	title = "THRE_Reform_Desire.10.title"
+	desc = "THRE_Reform_Desire.10.desc"
+	picture = protestant_league_surrender
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			Reset_Voting_Variables_LeagueWar = yes
+		}
+	}
+
+	option = {
+		name = "THRE_Protestant.031.opta"		#Ask each prince to vote
+		hidden_effect = {
+			owner = {
+				every_known_country = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					country_event = {
+						id = THRE_Reform_Desire.10
+						days = 5
+					}
+				}
+				country_event = {
+					id = THRE_Reform_Desire.10
+					days = 5
+				}
+			}
+			province_event = {
+				id = THRE_Reform_Desire.11	#Counting the Votes
+				days = 40
+				random = 5
+			}
+		}
+	}	
+}
+
+country_event = { #22 - Vote in the Diet
+	id = THRE_Reform_Desire.10
+	title = "THRE_Reform_Desire.10.t"
+	desc = "THRE_Reform_Desire.10.d"
+	picture = protestant_league_surrender
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "THRE_Reform_Desire.10.opta" #Emperor religion
+		ai_chance = {
+			factor = 30
+			modifier = {
+				emperor = {
+					truce_with = ROOT
+					NOT = { religion = ROOT }
+					NOT = { overlord_of = ROOT }
+				}
+				factor = 0.1
+			}
+			modifier = {
+				in_league = emperor
+				factor = 4
+			}
+			modifier = {
+				NOT = { religion = emperor }
+				factor = 0.25
+			}
+			modifier = {
+				overlord = {
+					NOT = { 
+						religion = emperor
+					}
+				}
+				factor = 0.1
+			}
+			modifier = {
+				factor = 0.75
+				has_global_flag = THRE_Second_League_War
+			}
+			modifier = {
+				factor = 0.5
+				has_global_flag = THRE_Third_League_War
+			}
+		}
+		Cast_Vote_HRE = { Target = THRE_League_Peace_Diet Ballot = 1 }
+	}
+	option = {
+		name = "THRE_Reform_Desire.10.optb" #Opposing religion
+		ai_chance = {
+			factor = 30
+			modifier = {
+				emperor = {
+					truce_with = ROOT
+					NOT = { religion = ROOT }
+					NOT = { overlord_of = ROOT }
+				}
+				factor = 10
+			}
+			modifier = {
+				in_league = emperor
+				factor = 0.25
+			}
+			modifier = {
+				NOT = { religion = emperor }
+				factor = 2
+			}
+			modifier = {
+				overlord = {
+					NOT = { 
+						religion = emperor
+					}
+				}
+				factor = 10
+			}
+			modifier = {
+				factor = 0.75
+				has_global_flag = THRE_Second_League_War
+			}
+			modifier = {
+				factor = 0.5
+				has_global_flag = THRE_Third_League_War
+			}
+		}
+		Cast_Vote_HRE = { Target = THRE_League_Peace_Diet Ballot = 2 }
+	}
+	option = {
+		name = "THRE_Reform_Desire.10.optc" #Any other religion
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 2
+				NOT = {
+					religion = emperor
+				}
+			}
+			modifier = {
+				factor = 3
+				NOT = {
+					in_league = yes
+				}
+			}
+			modifier = {
+				factor = 5
+				NOT = {
+					any_known_country = {
+						is_league_leader = yes
+						religion = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				has_global_flag = THRE_Second_League_War
+			}
+			modifier = {
+				factor = 0.5
+				has_global_flag = THRE_Third_League_War
+			}
+		}
+		Cast_Vote_HRE = { Target = THRE_League_Peace_Diet Ballot = 3 }
+	}
+	option = {
+		name = "THRE_Reform_Desire.10.opte" #Toleration (Religious Peace)
+		ai_chance = {
+			factor = 10
+			modifier = {
+				has_global_flag = THRE_Third_League_War
+				factor = 2
+			}
+			modifier = {
+				NOT = { has_global_flag = THRE_Second_League_War }
+				OR = {
+					hre_religion = ROOT
+					hre_heretic_religion = ROOT
+				}
+				factor = 0
+			}
+			modifier = {
+				factor = 1.5
+				has_global_flag = THRE_Second_League_War
+			}
+			modifier = {
+				factor = 3
+				has_global_flag = THRE_Third_League_War
+			}
+		}
+		Cast_Vote_HRE = { Target = THRE_League_Peace_Diet Ballot = 4 }
+	}
+}
+
+province_event = {
+	id = THRE_Reform_Desire.11	#Tallying the votes
+	title = THRE_Reform_Desire.11.t
+	desc = THRE_Reform_Desire.11.d
+	picture = protestant_league_surrender
+	
+	is_triggered_only = yes
+
+	hidden = yes
+
+	immediate = {
+		Tally_Vote_HRE = { Target = THRE_League_Peace_Diet Options = 4 Scope = province }
+	}
+
+	option = {
+		province_event = { id = THRE_Reform_Desire.12 days = 5 }		#Results in location
+	}
+}
+
+province_event = { #26 - Treaty of [Westphalia]
+	id = THRE_Reform_Desire.12
+	title = "THRE_Reform_Desire.12.t"
+	desc = "THRE_Reform_Desire.12.d"
+	picture = protestant_league_peace
+	
+	is_triggered_only = yes
+	major = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_province_flag = Inconclusive_Vote }
+				}
+				emperor = {
+					enable_hre_leagues = no	#Dissolves the Leagues and allows for new ones to form
+				}	
+			}
+			clr_global_flag = THRE_League_War #Removed upon peace
+			clr_global_flag = THRE_Leagues_Active		#Track with this whether the Leagues are active, use to space out the time until war declaration
+		}
+	}
+
+	option = {
+		name = "THRE_Reform_Desire.12.opta"
+		trigger = {
+			event_target:THRE_League_Peace_Diet = {
+				is_variable_equal = {
+					which = VoteWin
+					value = 1
+				}
+			}
+			NOT = { has_province_flag = Inconclusive_Vote }
+		}
+		owner = {
+			emperor = { set_hre_religion = emperor }
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = THRE_Third_League_War
+					}
+				}
+				hidden_effect = {
+					random_country = {
+						limit = {
+							capital_scope = { is_part_of_hre = yes }
+							is_free_or_tributary_trigger = yes
+							NOT = {
+								religion = emperor
+							}
+							hre_religion_treaty = no
+							is_emperor = no
+							NOT = { is_in_league_war = yes }	#failsafe
+						}
+						country_event = { id = THRE_Protestant.010 days = 30 random = 15 }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = THRE_Third_League_War
+			}
+			emperor = { set_hre_religion_locked = yes }
+			set_global_flag = THRE_Peace_of_Westphalia
+		}
+	}
+	option = {
+		name = "THRE_Reform_Desire.12.optb"
+		trigger = {
+			event_target:THRE_League_Peace_Diet = {
+				is_variable_equal = {
+					which = VoteWin
+					value = 2
+				}
+			}
+			NOT = { has_province_flag = Inconclusive_Vote }
+		}
+		owner = {
+			random_country = {
+				limit = {
+					is_league_leader = yes
+					NOT = { is_emperor = yes }
+				}
+				emperor = {
+					set_hre_religion = PREV
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = THRE_Third_League_War
+					}
+				}
+				hidden_effect = {
+					random_country = {
+						limit = {
+							capital_scope = { is_part_of_hre = yes }
+							is_free_or_tributary_trigger = yes
+							NOT = {
+								religion = emperor
+							}
+							hre_religion_treaty = no
+							is_emperor = no
+							NOT = { is_in_league_war = yes }	#failsafe
+						}
+						country_event = { id = THRE_Protestant.010 days = 30 random = 15 }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = THRE_Third_League_War
+			}
+			emperor = { set_hre_religion_locked = yes }
+			set_global_flag = THRE_Peace_of_Westphalia
+		}
+	}
+	option = {
+		name = "THRE_Reform_Desire.12.optb"
+		trigger = {
+			is_variable_equal = {
+				which = VoteWin
+				value = 3
+			}
+			NOT = { has_province_flag = Inconclusive_Vote }
+		}
+		owner = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = THRE_Third_League_War
+					}
+				}
+				hidden_effect = {
+					random_country = {
+						limit = {
+							capital_scope = { is_part_of_hre = yes }
+							is_free_or_tributary_trigger = yes
+							NOT = {
+								religion = emperor
+							}
+							hre_religion_treaty = no
+							is_emperor = no
+							NOT = { is_in_league_war = yes }	#failsafe
+						}
+						country_event = { id = THRE_Protestant.010 days = 30 random = 15 }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = THRE_Third_League_War
+			}
+			emperor = { set_hre_religion_locked = yes }
+			set_global_flag = THRE_Peace_of_Westphalia
+		}
+	}
+	option = {
+		name = "THRE_Reform_Desire.12.optd"
+		trigger = {
+			OR = {
+				event_target:THRE_League_Peace_Diet = {
+					is_variable_equal = {
+						which = VoteWin
+						value = 4
+					}
+				}
+				AND = {
+					has_province_flag = Inconclusive_Vote
+					has_global_flag = THRE_Third_League_War
+				}
+			}
+		}
+		emperor = { 
+			set_hre_religion_treaty = yes 
+		}
+		set_global_flag = THRE_Peace_of_Westphalia
+	}
+	option = {
+		name = "THRE_Reform_Desire.12.opte"
+		trigger = {
+			has_province_flag = Inconclusive_Vote
+			NOT = { has_global_flag = THRE_Third_League_War }
+		}
+		#No effect but League Wars will still be active. Just fight again
+	}
+
+	after = {
+		owner = {
+			every_known_country = {
+				limit = {
+					ai = no
+				}
+				country_event = {
+					id = THRE_Reform_Desire.13
+					days = 2
+				}
+			}
+		}
+		province_event = { id = THRE_Reform_Desire.14 days = 10 }	#Cleanup
+	}	
+}
+
+country_event = {
+	id = THRE_Reform_Desire.13		#Notification event for the player. For now all non-AI nations to help with debugging process
+	title = "THRE_Reform_Desire.13.t"
+	desc = "THRE_Reform_Desire.13.d"
+	picture = protestant_league_peace
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "THRE_Reform_Desire.13.opta"
+	}
+}
+
+province_event = {
+	id = THRE_Reform_Desire.14	#Cleanup
+	title = "AI_EVENT"
+	desc = "AI_EVENT"
+	picture = protestant_league_surrender
+	
+	is_triggered_only = yes
+
+	hidden = yes
+
+	immediate = {
+		Reset_Voting_Variables_LeagueWar = yes
+		set_variable = {
+			which = VoteCountT
+			value = 0
+		}
+		set_variable = {
+			which = VoteWin
+			value = 0
+		}
+		if = {
+			limit = {
+				has_province_flag = Inconclusive_Vote
+			}
+			clr_province_flag = Inconclusive_Vote
+		}
+	}
+
+	option = {
+		name = "AI_Event"
+		clear_global_event_target = THRE_League_Peace_Diet
+		clr_global_flag = THRE_Leage_Peace_Talks_Ongoing
 	}
 }
