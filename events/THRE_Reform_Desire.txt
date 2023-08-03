@@ -1041,9 +1041,10 @@ province_event = {
 	}
 
 	option = {
-		name = "AI_Event"
+		name = "AI_EVENT"
 		clear_global_event_target = THRE_League_Peace_Diet
 		clear_global_event_target = THRE_OpposingLeagueLeader
+		clear_global_event_target = THRE_EmperorLeagueLeader
 		clr_global_flag = THRE_Leage_Peace_Talks_Ongoing
 	}
 }
