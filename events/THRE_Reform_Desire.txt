@@ -400,6 +400,18 @@ country_event = {				#War event
 			}
 			set_global_flag = THRE_Third_League_War
 		}
+		ROOT = {
+			save_global_event_target_as = THRE_EmperorLeagueLeader
+		}
+		random_country = {
+			limit = {
+				is_league_leader = yes
+				NOT = {
+					is_emperor = yes
+				}
+				save_global_event_target_as = THRE_OpposingLeageLeader
+			}
+		}
 	}
 	
 	option = {
@@ -727,7 +739,7 @@ country_event = { #Vote in the Diet
 		Cast_Vote_HRE = { Target = THRE_League_Peace_Diet Ballot = 3 }
 	}
 	option = {
-		name = "THRE_Reform_Desire.10.opte" #Toleration (Religious Peace)
+		name = "THRE_Reform_Desire.10.optd" #Toleration (Religious Peace)
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -757,8 +769,8 @@ country_event = { #Vote in the Diet
 
 province_event = {
 	id = THRE_Reform_Desire.11	#Tallying the votes
-	title = THRE_Reform_Desire.11.t
-	desc = THRE_Reform_Desire.11.d
+	title = "AI_EVENT"
+	desc = "AI_EVENT"
 	picture = protestant_league_surrender
 	
 	is_triggered_only = yes
@@ -792,15 +804,6 @@ province_event = { #26 - Treaty of [Westphalia]
 				emperor = {
 					enable_hre_leagues = no	#Dissolves the Leagues and allows for new ones to form
 				}	
-			}
-			random_country = {
-				limit = {
-					is_league_leader = yes
-					NOT = {
-						is_emperor = yes
-					}
-					save_global_event_target_as = THRE_OpposingLeageLeader
-				}
 			}
 			clr_global_flag = THRE_League_War #Removed upon peace
 			clr_global_flag = THRE_Leagues_Active		#Track with this whether the Leagues are active, use to space out the time until war declaration
@@ -904,7 +907,7 @@ province_event = { #26 - Treaty of [Westphalia]
 		}
 	}
 	option = {
-		name = "THRE_Reform_Desire.12.optb"
+		name = "THRE_Reform_Desire.12.optc"
 		trigger = {
 			is_variable_equal = {
 				which = VoteWin
