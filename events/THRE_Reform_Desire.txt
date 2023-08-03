@@ -413,7 +413,7 @@ country_event = {				#War event
 					is_emperor = yes
 				}
 			}
-			save_global_event_target_as = THRE_OpposingLeageLeader
+			save_global_event_target_as = THRE_OpposingLeagueLeader
 		}
 	}
 	
