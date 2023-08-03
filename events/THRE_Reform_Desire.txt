@@ -409,8 +409,8 @@ country_event = {				#War event
 				NOT = {
 					is_emperor = yes
 				}
-				save_global_event_target_as = THRE_OpposingLeageLeader
 			}
+			save_global_event_target_as = THRE_OpposingLeageLeader
 		}
 	}
 	
@@ -537,7 +537,7 @@ country_event = {		#The Divided EMpire
 	    hidden_effect = {
 		    event_target:League_Leader_GetAttack = {
 			    country_event = {
-				    id = THRE_Protestant.030
+				    id = THRE_Reform_Desire.9
 				    days = 50 
 				    random = 20
 			    }
@@ -841,7 +841,7 @@ province_event = { #26 - Treaty of [Westphalia]
 							is_emperor = no
 							NOT = { is_in_league_war = yes }	#failsafe
 						}
-						country_event = { id = THRE_Protestant.010 days = 30 random = 15 }
+						country_event = { id = THRE_Reform_Desire.10 days = 30 random = 15 }
 					}
 				}
 			}
@@ -893,7 +893,7 @@ province_event = { #26 - Treaty of [Westphalia]
 							is_emperor = no
 							NOT = { is_in_league_war = yes }	#failsafe
 						}
-						country_event = { id = THRE_Protestant.010 days = 30 random = 15 }
+						country_event = { id = THRE_Reform_Desire.5 days = 30 random = 15 }
 					}
 				}
 			}
@@ -935,7 +935,7 @@ province_event = { #26 - Treaty of [Westphalia]
 							is_emperor = no
 							NOT = { is_in_league_war = yes }	#failsafe
 						}
-						country_event = { id = THRE_Protestant.010 days = 30 random = 15 }
+						country_event = { id = THRE_Reform_Desire.5 days = 30 random = 15 }
 					}
 				}
 			}
