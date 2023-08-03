@@ -2298,6 +2298,10 @@ superiority_religious_league = {
 		prestige_factor = 1.5
 		peace_cost_factor = 0.5	
 	
+		required_treaty_to_take_provinces = {
+			po_change_religion
+		}
+
 		peace_options = {
 			po_become_vassal
 			po_demand_provinces
@@ -2307,7 +2311,6 @@ superiority_religious_league = {
 			po_change_religion
 			po_gold
 			po_annul_treaties
-			po_change_hre_religion
 		}
 	}
 	
@@ -2316,6 +2319,10 @@ superiority_religious_league = {
 		prestige_factor = 1.5
 		peace_cost_factor = 0.5		
 	
+		required_treaty_to_take_provinces = {
+			po_change_religion
+		}
+
 		peace_options = {
 			po_become_vassal
 			po_demand_provinces
@@ -2325,7 +2332,6 @@ superiority_religious_league = {
 			po_change_religion
 			po_gold
 			po_annul_treaties
-			po_change_hre_religion
 		}
 	}
 	

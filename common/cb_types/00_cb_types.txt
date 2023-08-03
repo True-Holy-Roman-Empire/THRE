@@ -1294,6 +1294,7 @@ cb_religious_league = {
 				FROM = {
 					hre_heretic_religion = THIS
 					is_league_enemy = ROOT
+					is_league_leader = yes
 				}
 			}
 		}
