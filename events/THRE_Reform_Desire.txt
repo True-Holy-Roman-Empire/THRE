@@ -241,7 +241,8 @@ country_event = {			#The Great Schism
 		months = 6
 	}
 	immediate = {
-		hidden_effect = {	
+		hidden_effect = {
+			great_schism_effect = yes
 			log = "The Great Schism Happened"
 		}	
 	}
@@ -249,7 +250,6 @@ country_event = {			#The Great Schism
 	option = {
 		name = THRE_Reform_Desire.4.opta		#Declare the Council of Constaninople void
 		hidden_effect = {
-			great_schism_effect = yes
 			set_global_flag = THRE_Emperor_Enforced_Faith
 		}
 		THRE_Make_Root_Religion_Official_HRE = yes
@@ -261,7 +261,6 @@ country_event = {			#The Great Schism
 	option = {
 		name = THRE_Reform_Desire.4.optb 		#Try to preserve the peace
 		hidden_effect = {
-			great_schism_effect = yes
 			set_global_flag = THRE_Emperor_Tried_Preserve_Peace
 		}
 		ai_chance = {
@@ -398,7 +397,7 @@ country_event = {				#War event
 		else_if = {
 			limit = {
 				NOT = {
-					has_global_flag = THRE_Third_Leage_War
+					has_global_flag = THRE_Third_League_War
 				}
 			}
 			set_global_flag = THRE_Third_League_War
