@@ -23,8 +23,16 @@ can_join_hre_league = {
 				is_emperor = yes
 			}
 			religion_group = abrahamistic_group
-			capital_scope = { 
-				continent = europe
+			capital_scope = {
+				or = {
+					continent = europe
+					region = anatolia_region
+					region = egypt_region
+					region = maghreb_region
+					region = mashriq_region
+					region = crimea_region
+					region = persia_region
+				}
 			}
 			OR = {
 				is_subject = no
