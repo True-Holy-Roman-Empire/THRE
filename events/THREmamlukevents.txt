@@ -34,33 +34,33 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = thre_mam.2
-	title = thre_mam.2.t
-	desc = thre_mam.2.d
-	picture = MALI_RULER_eventPicture
+# country_event = {
+# 	id = thre_mam.2
+# 	title = thre_mam.2.t
+# 	desc = thre_mam.2.d
+# 	picture = MALI_RULER_eventPicture
 
-	is_triggered_only = yes
-	major = yes
+# 	is_triggered_only = yes
+# 	major = yes
 
-	immediate = {
-		hidden_effect = {
-			set_country_flag = had_decline_of_mali
-			clr_country_flag = started_decline_of_mali
-			}
-		}
+# 	immediate = {
+# 		hidden_effect = {
+# 			set_country_flag = had_decline_of_mali
+# 			clr_country_flag = started_decline_of_mali
+# 			}
+# 		}
 	
-	option = {
-		name = thre_mam.2.a
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
+# 	option = {
+# 		name = thre_mam.2.a
+# 		add_adm_power = 100
+# 		add_dip_power = 100
+# 		add_mil_power = 100
 
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
+# 		ai_chance = {
+# 			factor = 1
+# 		}
+# 	}
+# }
 
 # country_event = {
 # 	id = thre_mam.3
