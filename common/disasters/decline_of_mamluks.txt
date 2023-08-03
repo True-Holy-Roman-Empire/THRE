@@ -45,13 +45,13 @@ decline_of_mamluks = {
 		}
 		random_events = { 
 			1000 = 0
-			100 = thre_mam.3		
-			100 = thre_mam.4		
-			100 = thre_mam.5
-			100 = thre_mam.6	
-			100 = thre_mam.7
-			100 = thre_mam.8	
-			100 = thre_mam.9
+			# 100 = thre_mam.3		
+			# 100 = thre_mam.4		
+			# 100 = thre_mam.5
+			# 100 = thre_mam.6	
+			# 100 = thre_mam.7
+			# 100 = thre_mam.8	
+			# 100 = thre_mam.9
 			#12 % 13 triggers for other nations, and fires 14.
 			#101 & 102 are endings for rebel victory.
 		}
