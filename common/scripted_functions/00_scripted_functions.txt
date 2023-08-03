@@ -223,7 +223,15 @@ is_possible_hre_province = {
 		potential = {
 		}
 		allow = {
-			continent = europe
+			OR = {
+				continent = europe
+				region = anatolia_region
+				region = egypt_region
+				region = maghreb_region
+				region = mashriq_region
+				region = crimea_region
+				region = persia_region
+			}
 		}
 	}
 }
