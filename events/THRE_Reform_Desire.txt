@@ -859,7 +859,7 @@ province_event = { #26 - Treaty of [Westphalia]
 	option = {
 		name = "THRE_Reform_Desire.12.optb"
 		emperor = {
-			set_hre_religion = event_target:THRE_OpposingLeageLeader
+			set_hre_religion = event_target:THRE_OpposingLeagueLeader
 		}
 		trigger = {
 			event_target:THRE_League_Peace_Diet = {
@@ -934,7 +934,7 @@ province_event = { #26 - Treaty of [Westphalia]
 							is_free_or_tributary_trigger = yes
 							NOT = {
 								religion = emperor
-								religion = event_target:THRE_OpposingLeageLeader
+								religion = event_target:THRE_OpposingLeagueLeader
 							}
 							hre_religion_treaty = no
 							is_emperor = no
@@ -1043,7 +1043,7 @@ province_event = {
 	option = {
 		name = "AI_Event"
 		clear_global_event_target = THRE_League_Peace_Diet
-		clear_global_event_target = THRE_OpposingLeageLeader
+		clear_global_event_target = THRE_OpposingLeagueLeader
 		clr_global_flag = THRE_Leage_Peace_Talks_Ongoing
 	}
 }
