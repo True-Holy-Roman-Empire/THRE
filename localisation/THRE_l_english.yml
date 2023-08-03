@@ -80,18 +80,18 @@
       THRE_Reform_Desire.10.t: "Our vote"
       THRE_Reform_Desire.10.d: "Even as the blood of both sides mingles in the fields and streams of Europe, peace returns to the Empire. Delegates from each member state are already travelling to [THRE_League_Peace_Diet.GetCapitalName], there to decide the fate of the Empire.\n\nEach Price may cast their vote to decide whether one faith shall rule the Empire, or if each prince may decide their own path. This doesn't have to be the end of all bloodshed though...\n\n§RNote to the player: For now the event chain is coded to allow up to 3 League Wars at a maximum§!"
       THRE_Reform_Desire.10.opta: "The Empire should be entirely [THRE_EmperorLeagueLeader.Religion.GetName]"
-      THRE_Reform_Desire.10.optb: "The Empire should be entirely [THRE_OpposingLeagueLeader.Religion.Getname]"
+      THRE_Reform_Desire.10.optb: "The Empire should be entirely [THRE_OpposingLeagueLeader.Religion.GetName]"
       THRE_Reform_Desire.10.optc: "We didn't get to form our own League, but the Empire should be [Root.Religion.GetName]"
       THRE_Reform_Desire.10.optd: "Each prince should be able to choose their own faith"
       THRE_Reform_Desire.12.t: "The Treaty of [THRE_League_Peace_Diet.GetCapitalName]"
       THRE_Reform_Desire.12.d: "The Diet has finished voting, and the results are now in."
       THRE_Reform_Desire.12.opta: "A [THRE_EmperorLeagueLeader.Religion.GetName] Majority"
-      THRE_Reform_Desire.12.optb: "A [THRE_OpposingLeagueLeader.Religion.Getname] Majority"
+      THRE_Reform_Desire.12.optb: "A [THRE_OpposingLeagueLeader.Religion.GetName] Majority"
       THRE_Reform_Desire.12.optc: "A Majority for a third Candidate Religion"
       THRE_Reform_Desire.12.optd: "Cuius Regio, Eius Religio"
       THRE_Reform_Desire.12.opte: "A Stalemate"
       THRE_Reform_Desire.13.t: "The Treaty of [THRE_League_Peace_Diet.GetCapitalName]"
-      THRE_Reform_Desire.13.d: "The votecount leading to the Treaty of [THRE_League_Peace_Diet.GetCapitalName] is as follows:\n\n - [VoteCount1_LW_THRE] out of §Y[THRE_League_Peace_Diet.VoteCountT.GetValue]§! Princes voted for a [THRE_EmperorLeagueLeader.Religion.GetName] Empire.\n - [VoteCount2_WS_THRE] out of §Y[THRE_League_Peace_Diet.VoteCountT.GetValue]§! Princes voted for a [THRE_OpposingLeagueLeader.Religion.Getname] Empire.\n - [VoteCount3_LW_THRE] out of §Y[DG_Augsburg_Diet.VoteCountT.GetValue]§! Princes voted for a third Candidate Religion.\n - [VoteCount4_LW_THRE] out of §Y[THRE_League_Peace_Diet.VoteCountT.GetValue]§! Princes voted for a Religous Peace in the Empire."
+      THRE_Reform_Desire.13.d: "The votecount leading to the Treaty of [THRE_League_Peace_Diet.GetCapitalName] is as follows:\n\n - [VoteCount1_LW_THRE] out of §Y[THRE_League_Peace_Diet.VoteCountT.GetValue]§! Princes voted for a [THRE_EmperorLeagueLeader.Religion.GetName] Empire.\n - [VoteCount2_LW_THRE] out of §Y[THRE_League_Peace_Diet.VoteCountT.GetValue]§! Princes voted for a [THRE_OpposingLeagueLeader.Religion.GetName] Empire.\n - [VoteCount3_LW_THRE] out of §Y[DG_Augsburg_Diet.VoteCountT.GetValue]§! Princes voted for a third Candidate Religion.\n - [VoteCount4_LW_THRE] out of §Y[THRE_League_Peace_Diet.VoteCountT.GetValue]§! Princes voted for a Religous Peace in the Empire."
 
 
       
