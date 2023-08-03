@@ -14,7 +14,6 @@ po_thre_league_war = {
 	is_allowed = {
 	}
 	effect = {
-		set_hre_religion_treaty = yes
 		THRE_Make_Root_Religion_Official_HRE = yes
 	}
 	ai_weight = { # Defaults to always evaluate to 0
