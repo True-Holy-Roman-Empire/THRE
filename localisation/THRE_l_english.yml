@@ -92,6 +92,7 @@
       THRE_Reform_Desire.12.opte: "A Stalemate"
       THRE_Reform_Desire.13.t: "The Treaty of [THRE_League_Peace_Diet.GetCapitalName]"
       THRE_Reform_Desire.13.d: "The votecount leading to the Treaty of [THRE_League_Peace_Diet.GetCapitalName] is as follows:\n\n - [VoteCount1_LW_THRE] out of §Y[THRE_League_Peace_Diet.VoteCountT.GetValue]§! Princes voted for a [THRE_EmperorLeagueLeader.Religion.GetName] Empire.\n - [VoteCount2_LW_THRE] out of §Y[THRE_League_Peace_Diet.VoteCountT.GetValue]§! Princes voted for a [THRE_OpposingLeagueLeader.Religion.GetName] Empire.\n - [VoteCount3_LW_THRE] out of §Y[DG_Augsburg_Diet.VoteCountT.GetValue]§! Princes voted for a third Candidate Religion.\n - [VoteCount4_LW_THRE] out of §Y[THRE_League_Peace_Diet.VoteCountT.GetValue]§! Princes voted for a Religous Peace in the Empire."
+      THRE_Reform_Desire.13.opta: "Duly noted"
 
 
       
