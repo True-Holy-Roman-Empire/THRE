@@ -841,7 +841,7 @@ province_event = { #26 - Treaty of [Westphalia]
 							is_emperor = no
 							NOT = { is_in_league_war = yes }	#failsafe
 						}
-						country_event = { id = THRE_Reform_Desire.10 days = 30 random = 15 }
+						country_event = { id = THRE_Reform_Desire.5 days = 30 random = 15 }
 					}
 				}
 			}
