@@ -316,66 +316,77 @@ THRE_Make_Root_Religion_Form_League = {
 		limit = {
 			religion = catholic
 		}
+		set_hre_heretic_religion = catholic
 		join_league = catholic
 	}
 	else_if = {
 		limit = {
 			religion = orthodox
 		}
+		set_hre_heretic_religion = orthodox
 		join_league = orthodox
 	}
 	else_if = {
 		limit = { 
 			religion = sunni
 		}
+		set_hre_heretic_religion = sunni
 		join_league = sunni
 	}
 	else_if = {
 		limit = {
 			religion = anglican
 		}
+		set_hre_heretic_religion = anglican
 		join_league = anglican
 	}
 	else_if = {
 		limit = { 
 			religion = hussite
-		} 
+		}
+		set_hre_heretic_religion = hussite
 		join_league = hussite
 	}
 	else_if = {
 		limit = { 
 			religion = protestant
 		}
+		set_hre_heretic_religion = protestant
 		join_league = protestant
 	}
 	else_if = {
 		limit = {
 			religion = reformed
 		}
+		set_hre_heretic_religion = reformed
 		join_league = reformed
 	}
 	else_if = {
 		limit = { 
 			religion = coptic
 		}
+		set_hre_heretic_religion = coptic
 		join_league = coptic
 	}
 	else_if = {
 		limit = {
 			religion = shiite
 		}
+		set_hre_heretic_religion = shiite
 		join_league = shiite
 	}
 	else_if = {
 		limit = { 
 			religion = ibadi
 		}
+		set_hre_heretic_religion = ibadi
 		join_league = ibadi
 	}
 	else_if = {
 		limit = { 
 			religion = jewish
 		}
+		set_hre_heretic_religion = jewish
 		join_league = jewish
 	}
 }
