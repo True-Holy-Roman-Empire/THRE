@@ -858,6 +858,9 @@ province_event = { #26 - Treaty of [Westphalia]
 	}
 	option = {
 		name = "THRE_Reform_Desire.12.optb"
+		emperor = {
+			set_hre_religion = event_target:THRE_OpposingLeageLeader
+		}
 		trigger = {
 			event_target:THRE_League_Peace_Diet = {
 				is_variable_equal = {
