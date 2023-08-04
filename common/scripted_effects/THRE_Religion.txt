@@ -33,9 +33,13 @@ break_out_catholics_effect = {
 		every_owned_province = {
 			limit = {
 				religion = abrahamism
+				NOT = { province_id = 379 }		#Jerusalem
 			}
 			change_religion = catholic
 		}
+	}
+	379 = {
+		change_religion = jewish
 	}
 }
 
