@@ -62,6 +62,7 @@ po_win_war_of_roses = {
 			elector = yes
 		}
 		clr_global_flag = war_of_roses_is_happening_thre
+		set_country_flag = had_war_of_the_roses
 	}
 	ai_weight = { # Defaults to always evaluate to 0
 		export_to_variable = {
