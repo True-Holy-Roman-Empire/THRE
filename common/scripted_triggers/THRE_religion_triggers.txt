@@ -15,3 +15,13 @@ can_have_muslim_schools_trigger = {
 		}
 	}
 }
+
+would_be_catholic_trigger = {
+	OR = {
+		religion = catholic
+		AND = {
+			religion = abrahamism
+			has_country_flag = catholic_religion_flag
+		}
+	}
+}
