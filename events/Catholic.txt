@@ -193,7 +193,10 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					would_be_catholic_trigger = yes
+					OR = {
+						religion = catholic 
+						religion = abrahamism
+					}
 				}
 				save_event_target_as = unrest_province
 			}
@@ -289,7 +292,10 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					would_be_catholic_trigger = yes
+					OR = {
+						religion = abrahamism
+						religion = catholic
+					}
 				}
 				save_event_target_as = unrest_province
 			}
