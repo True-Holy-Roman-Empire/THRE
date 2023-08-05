@@ -45,9 +45,11 @@ po_win_war_of_roses = {
 				tag = YER
 			}
 			inherit = LCR
+			set_country_flag = gotten_international_focus_result_war_of_roses_england
 		}
 		else = {
 			inherit = YER
+			set_country_flag = gotten_hre_focus_result_war_of_roses_england
 		}
 		change_tag = ENG
 		every_owned_province = {
@@ -63,6 +65,7 @@ po_win_war_of_roses = {
 		}
 		clr_global_flag = war_of_roses_is_happening_thre
 		set_country_flag = had_war_of_the_roses
+		swap_non_generic_missions = yes
 	}
 	ai_weight = { # Defaults to always evaluate to 0
 		export_to_variable = {

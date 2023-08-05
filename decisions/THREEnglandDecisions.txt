@@ -39,7 +39,17 @@ country_decisions = {
 			owns_core_province = 236
 		}
 		effect = {
+			if = {
+				limit = {
+					tag = YER
+				}
+				set_country_flag = gotten_international_focus_result_war_of_roses_england
+			}
+			else = {
+				set_country_flag = gotten_hre_focus_result_war_of_roses_england
+			}
 			change_tag = ENG
+			swap_non_generic_missions = yes
 			if = {
 				limit = {
 					stability = 3

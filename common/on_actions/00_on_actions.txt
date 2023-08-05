@@ -506,9 +506,11 @@ on_war_won = {
 			}
 		}
 		YER = {
+			set_country_flag = had_war_of_the_roses
 			country_event = { id = thre_england_events.10 }
 		}
 		LCR = {
+			set_country_flag = had_war_of_the_roses
 			country_event = { id = thre_england_events.10 }
 		}
 	}

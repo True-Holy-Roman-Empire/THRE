@@ -36,7 +36,7 @@
       THRE_NOT_JOIN_LEAGUE_OUTSIDERS: "Before the first League War, only members of the Holy Roman Empire may join a League. \nAfter the first League War, any independent Abrahamic Group country in Europe can join the League."
       po_thre_league_war: "Force HRE Religion"
       po_thre_league_war_desc: "The HRE Religion will become [Root.Religion.GetName]"
-      PEACE_po_win_war_of_roses: "The HRE's offical faith will be our faith"
+      PEACE_po_thre_league_war: "The HRE's offical faith will be our faith"
 
 
     # Abrahamic Reform Desire and the Great Schism
