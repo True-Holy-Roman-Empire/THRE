@@ -1,0 +1,31 @@
+#mamluk starting privilege 
+estate_noble_appeasement = {
+	icon = privilege_devotion_red
+	max_absolutism = -5
+	influence = 0.15
+	land_share = 0
+	loyalty = 0.05
+	is_valid = {
+		has_estate_privilege = estate_noble_appeasement
+	}
+	can_revoke = {
+		prestige = 50
+		}
+	on_revoked = {
+	}
+	penalties = {
+	}
+	benefits = {
+		land_maintenance_modifier = -0.1
+		manpower_recovery_speed = 0.2
+		}
+	modifier_by_land_ownership = {
+	}
+	mechanics = {
+	}
+	on_granted = {
+	}
+	ai_will_do = {
+		factor = -1000
+	}
+}

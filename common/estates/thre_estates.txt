@@ -1,0 +1,6 @@
+estate_nobles = {
+	privileges = {
+	#THRE 
+		estate_noble_appeasement
+		}
+	}
