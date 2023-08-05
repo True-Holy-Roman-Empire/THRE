@@ -1996,6 +1996,24 @@ war_of_roses_special_cb = {
 	war_goal = war_of_the_roses_wgt
 }
 
+#Special CB for War of the Roses
+subjugate_the_franks_special_cb = {
+
+	prerequisites_self = {
+		mission_completed = emperor_of_all_romans_thre_brit
+	}
+
+	prerequisites = {
+		FROM = { 
+			OR = {
+				has_subject_of_type = appanage_prs
+				has_subject_of_type = appanage_bur
+			}
+		}
+	}
+	war_goal = subjugate_the_franks_wgt
+}
+
 cb_force_abrahamism_empire = {
 	valid_for_subject = no
 	is_triggered_only = yes

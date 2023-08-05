@@ -16,6 +16,7 @@ country_event = {
 		NOT = { exists = PAP }
 		NOT = { has_country_flag = no_support }
 		NOT = { has_country_flag = general_flag_for_FU_Rome_flag }	
+		NOT = { mission_completed = follow_the_roads_thre_brit }
 	}
 	
 	mean_time_to_happen = {

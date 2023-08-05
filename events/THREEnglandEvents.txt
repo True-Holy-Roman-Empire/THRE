@@ -608,3 +608,180 @@ country_event = {
 		clr_global_flag = war_of_roses_is_happening_thre
 	}
 }
+
+#Fate Of The Norse
+country_event = {
+	id = thre_england_events.11
+	title = thre_england_events.11.t
+	desc = thre_england_events.11.d
+	picture = WAR_OF_THE_ROSES_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = thre_england_events.11.a #Independence For Scandinavia
+		trigger = {
+			OR = {
+				1 = {
+					owned_by = ROOT
+				}
+				17 = {
+					owned_by = ROOT
+				}
+				12 = {
+					owned_by = ROOT
+				}
+				3 = {
+					owned_by = ROOT
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_emperor = yes
+			}
+			add_imperial_influence = 10
+			add_ruler_modifier = {
+				name = "scandinavian_neighbors_eng_thre"
+				duration = -1
+			}
+		}
+		custom_tooltip = every_prov_in_scandinavia_except_atlantic_isles_release_thre_brit
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					region = scandinavia_region
+					NOT = { area = subarctic_islands_area }
+				}
+				if = {
+					limit = {
+						OR = {
+							area = northern_norway
+							area = eastern_norway
+							area = western_norway
+						}
+						NOT = { exists = NOR }
+					}
+					cede_province = NOR 
+					add_core = NOR
+				}
+				else_if = {
+					limit = {
+						OR = {
+							area = finland_area
+							area = bothnia_area
+						}
+						NOT = { exists = FIN }
+					}
+					cede_province = FIN 
+					add_core = FIN
+				}
+				else_if = {
+					limit = {
+						OR = {
+							area = jutland_area
+							area = skaneland_area
+							area = denmark_area
+						}
+						NOT = { exists = DAN }
+					}
+					cede_province = DAN
+					add_core = DAN
+				}
+				else_if = {
+					limit = {
+						NOT = { exists = SWE }
+					}
+					cede_province = SWE
+					add_core = SWE
+				}
+				else_if = {
+					limit = {
+						NOT = { exists = JMD }
+					}
+					cede_province = JMD
+					add_core = JMD
+				}
+				else_if = {
+					limit = {
+						NOT = { exists = DLR }
+					}
+					cede_province = DLR
+					add_core = DLR
+				}
+				else_if = { #This is a last resort
+					limit = {
+						NOT = { exists = SCA }
+					}
+					cede_province = SCA
+					add_core = SCA
+				}
+			}
+		}
+	}
+	option = {
+		name = thre_england_events.11.a #Enforce Our Control
+		if = {
+			limit = {
+				full_idea_group = humanist_ideas
+			}
+			add_country_modifier = {
+				name = "empire_of_the_north_human_eng_thre"
+				duration = -1
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "empire_of_the_north_eng_thre"
+				duration = -1
+			}
+		}	
+	}
+}
+
+#The Brittanic Invitation
+country_event = {
+	id = thre_england_events.12
+	title = thre_england_events.12.t
+	desc = thre_england_events.12.d
+	picture = WAR_OF_THE_ROSES_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = thre_england_events.12.a #Let us become Romans!
+		set_in_empire = yes
+		FROM = {
+			add_imperial_influence = 10
+		}
+		ai_chance = { 
+			factor = 75 
+		}
+	}
+	option = {
+		name = thre_england_events.12.b #We will never join their ranks		
+		add_prestige = -5
+		ai_chance = { 
+			factor = 25 
+			modifier = {
+				factor = 0
+				NOT = { total_development = 50 }
+			}
+		}
+	}
+}

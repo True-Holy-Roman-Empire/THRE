@@ -801,8 +801,8 @@ english_monarchy = {
 		OR = {
 			have_had_reform = english_monarchy
 			tag = ENG
-			tag = YOR
-			tag = LAN
+			tag = YER
+			tag = LCR
 			was_tag = ENG
 		}
 	}

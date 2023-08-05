@@ -3013,6 +3013,34 @@ war_of_the_roses_wgt = {
 	war_name = WAR_OF_THE_ROSES_THRE
 }
 
+subjugate_the_franks_wgt = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.75
+		prestige_factor = 2
+		peace_cost_factor = 0.75
+
+		peace_options = {
+			po_subjugate_the_franks
+			po_demand_provinces
+		}
+	}
+	
+	defender = {
+		badboy_factor = 0.25
+		prestige_factor = 2
+		peace_cost_factor = 0.25
+
+		peace_options = {
+			po_subjugate_the_franks
+			po_demand_provinces
+		}
+	}
+
+	war_name = SUBJUGATE_THE_FRANKS_WAR
+}
+
 superiority_force_abrahamism = {
 	type = superiority
 	attacker = {

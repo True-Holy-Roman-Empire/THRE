@@ -1,9 +1,18 @@
+#England Initial
+
 eng_sided_during_kent_opinion_modifier = {
 	opinion = 100
 	yearly_decay = 1 
 }
 
 eng_sided_against_during_kent_opinion_modifier = {
+	opinion = -100
+	yearly_decay = 1 
+}
+
+#Brittania
+
+eng_diplomatic_domineering_opinion_modifier = {
 	opinion = -100
 	yearly_decay = 1 
 }

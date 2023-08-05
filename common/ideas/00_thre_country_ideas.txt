@@ -1,0 +1,39 @@
+britannia_ideas = {
+	start = {
+		discipline = 0.05
+		diplomatic_reputation = 2
+	}
+	
+	bonus = {
+		technology_cost = -0.05
+	}
+	
+	trigger = {
+		tag = BQR
+	}
+	free = yes
+	
+	brittania_rule_the_waves = {
+		naval_morale = 0.2
+	}
+	brittania_rights_of_the_citizen = {
+		global_unrest = -1
+		stability_cost_modifier = -0.1
+	}
+	brittania_industrial_capacity = {
+		global_trade_goods_size_modifier = 0.2
+	}
+	brittania_continential_interventions = {
+		ae_impact = -0.1
+	}
+	brittania_sea_dogs = {
+		heavy_ship_power = 0.15
+	}
+	brittania_lessons_of_unification = {
+		army_tradition_decay = -0.01
+	}
+	brittania_sucessor_of_the_romans = {
+		imperial_authority = 0.1
+		diplomatic_upkeep = 1
+	}
+}

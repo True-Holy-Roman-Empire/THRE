@@ -46,7 +46,7 @@ eng_init_row_two = {
 				add_country_modifier = {
 					name = "welsh_integration_thre"
 					hidden = yes
-					duration = 3650
+					duration = -1
 				}
 				add_accepted_culture = welsh
 			}
@@ -3413,6 +3413,1341 @@ gbr_ave_row_5 = {
 			add_country_modifier = {
 				name = eng_the_redcoat
 				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+########################################################
+###################DOMESTIC TREE########################
+########################################################
+brit_miss_thre_one = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		has_country_flag = gotten_hre_focus_result_war_of_roses_england
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	secure_an_irish_foothold_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { subjugate_the_scots_thre_brit }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = ulster_area
+				area = leinster_area
+				area = connacht_area
+				area = munster_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}		
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = own_one_of_all_of_these_areas_ireland_thre_eng
+				OR = {
+					ulster_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					leinster_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					connacht_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					munster_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+		}	
+		effect = {
+			add_prestige = 15
+			add_dip_power = 50
+			custom_tooltip = any_irish_subject_we_own_gains_cores_on_the_region
+			hidden_effect = {
+				every_subject_country = {
+					limit = {
+						primary_culture = irish
+					}
+					ulster_area = {
+						limit = {
+							NOT = { is_core = PREV }
+						}
+						add_core = PREV
+					}
+					leinster_area = {
+						limit = {
+							NOT = { is_core = PREV }
+						}
+						add_core = PREV
+					}
+					connacht_area = {
+						limit = {
+							NOT = { is_core = PREV }
+						}
+						add_core = PREV
+					}
+					munster_area = {
+						limit = {
+							NOT = { is_core = PREV }
+						}
+						add_core = PREV
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	unify_hibernia_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { secure_an_irish_foothold_thre_brit }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = ulster_area
+				area = leinster_area
+				area = connacht_area
+				area = munster_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}		
+		trigger = { 
+			ulster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			leinster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			connacht_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			munster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		effect = {
+			custom_tooltip = all_provs_in_those_areas_gain_the_following_thre_eng
+			tooltip = {
+				add_province_modifier = {
+					name = "irish_imperial_integration_eng_thre"
+					duration = 3650
+				}
+			}
+			unlock_issue = {
+				issue = crown_of_ireland_act
+			}
+			hidden_effect = {
+				ulster_area = {
+					add_province_modifier = {
+						name = "irish_imperial_integration_eng_thre"
+						duration = 3650
+					}
+				}
+				leinster_area = {
+					add_province_modifier = {
+						name = "irish_imperial_integration_eng_thre"
+						duration = 3650
+					}
+				}
+				connacht_area = {
+					add_province_modifier = {
+						name = "irish_imperial_integration_eng_thre"
+						duration = 3650
+					}
+				}
+				munster_area = {
+					add_province_modifier = {
+						name = "irish_imperial_integration_eng_thre"
+						duration = 3650
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+brit_miss_thre_two = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		has_country_flag = gotten_hre_focus_result_war_of_roses_england
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	subjugate_the_scots_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { consolidate_england_thre_brit }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = lowlands_area
+				area = highlands_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}		
+		trigger = { 
+			calc_true_if = {
+				custom_trigger_tooltip = {
+					tooltip = provs_owned_across_lowlands_and_highlands_thre_eng
+					lowlands_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					highlands_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				amount = 8
+			}
+		}	
+		effect = {
+			add_splendor = 50
+			british_isles_region = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			custom_tooltip = any_not_our_religion_gains_the_following_thre_bri
+			tooltip = {
+				add_country_modifier = {
+					name = "people_of_the_books_eng_thre"
+					duration = 3650
+				}
+			}
+			hidden_effect = {
+				every_subject_country = {
+					limit = {
+						NOT = { religion = ROOT }
+					}
+					change_religion = ROOT
+					capital_scope = { change_religion = ROOT }
+					add_prestige = 100 #since they get a prestige hit
+					add_country_modifier = {
+						name = "people_of_the_books_eng_thre"
+						duration = 3650
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	crush_the_pirates_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { subjugate_the_scots_thre_brit }
+		position = 3
+		provinces_to_highlight = {
+			area = kingdom_of_the_isles_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}		
+		trigger = { 
+			kingdom_of_the_isles_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		effect = {
+			4365 = {
+				add_unit_construction = {
+					type = heavy_ship
+					amount = 3
+					speed = 0.1
+					cost = 0
+				}
+				add_province_modifier = {
+					name = "veteran_swashbucklers_eng_thre"
+					duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	britannia_united_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { crush_the_pirates_thre_brit unify_hibernia_thre_brit }
+		position = 5
+		provinces_to_highlight = {
+			region = british_isles_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}		
+		trigger = { 
+			british_isles_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		effect = {
+			change_tag = BQR
+			on_change_tag_effect = yes
+			restore_country_name_effect = yes
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	belief_of_the_britons_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { britannia_united_thre_brit }
+		position = 6
+		provinces_to_highlight = {
+			region = british_isles_region
+			NOT = { religion = ROOT } 
+		}		
+		trigger = { 
+			OR = {
+				british_isles_region = {
+					type = all
+					religion = ROOT
+				}
+				full_idea_group = humanist_ideas
+			}
+		}	
+		effect = {
+			subarctic_islands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "pious_citizenry_eng_thre"
+				duration = 5475
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	northern_crusade_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { belief_of_the_britons_thre_brit emperor_of_all_romans_thre_brit }
+		position = 7
+		provinces_to_highlight = {
+			area = subarctic_islands_area
+			NOT = { is_part_of_hre = yes } 
+		}		
+		trigger = { 
+			calc_true_if = {
+				custom_trigger_tooltip = {
+					tooltip = provs_that_are_in_scan_reg_part_of_hre_thre_brit
+					scandinavia_region = {
+						type = all
+						is_part_of_hre = yes
+					}
+				}
+				amount = 3
+			}
+		}	
+		effect = {
+			scandinavia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tooltip = {
+				add_country_modifier = {
+					name = "norse_crusade_eng_thre"
+					duration = 7300
+				}
+			}
+			custom_tooltip = if_we_have_humanist_thre_brit
+			tooltip = {
+				add_country_modifier = {
+					name = "liberator_of_the_north_eng_thre"
+					duration = 7300
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						full_idea_group = humanist_ideas
+					}
+					add_country_modifier = {
+						name = "liberator_of_the_north_eng_thre"
+						duration = 7300
+					}
+				}
+				else = {
+					add_country_modifier = {
+						name = "norse_crusade_eng_thre"
+						duration = 7300
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	destroy_norse_nuisance_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { northern_crusade_thre_brit }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1
+				province_id = 17
+				province_id = 12
+				province_id = 3
+			}
+			NOT = { is_part_of_hre = yes } 
+		}		
+		trigger = { 
+			1 = {
+				is_part_of_hre = yes
+			}
+			17 = {
+				is_part_of_hre = yes
+			}
+			12 = {
+				is_part_of_hre = yes
+			}
+			3 = {
+				is_part_of_hre = yes
+			}
+		}	
+		effect = {
+			country_event = { id = thre_england_events.11 }
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+
+brit_miss_thre_three = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		has_country_flag = gotten_hre_focus_result_war_of_roses_england
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	consolidate_england_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			region = british_isles_region
+			culture = english
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}		
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = own_all_english_culture_porovs_on_isles_thre_brit
+				british_isles_region = {
+					type = all
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						NOT = { culture = english }
+					}
+				}
+			}
+		}	
+		effect = {
+			add_adm_power = 50
+			lowlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			highlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+			if = {
+				limit = {
+					exists = SCO
+				}
+				add_casus_belli = {
+					target = SCO
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
+			if = {
+				limit = {
+					exists = HSC
+				}
+				add_casus_belli = {
+					target = HSC
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	challenge_the_emperor_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { consolidate_england_thre_brit }
+		position = 2
+		provinces_to_highlight = {
+			owner = {
+				is_emperor = yes
+			}
+		}		
+		trigger = { 
+			OR = {
+				is_emperor = yes
+				NOT = {
+					emperor = {
+						total_development = ROOT
+					}
+				}
+			}
+		}	
+		effect = {
+			add_country_modifier = {
+				name = "diplomatic_domineering_eng_thre"
+				duration = 5475
+			}
+			custom_tooltip = all_electors_gain_tweny_fif_opinion_wit_us_eng_thre
+			tooltip = {
+				random_elector = {
+					add_opinion = {
+						who = ROOT
+						modifier = eng_diplomatic_domineering_opinion_modifier
+					}
+				}
+			}
+			hidden_effect = {
+				every_elector = {
+					add_opinion = {
+						who = ROOT
+						modifier = eng_diplomatic_domineering_opinion_modifier
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	emperor_of_all_romans_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { challenge_the_emperor_thre_brit britannia_united_thre_brit }
+		position = 6
+		provinces_to_highlight = {
+			owner = {
+				is_emperor = yes
+			}
+		}		
+		trigger = { 
+			is_emperor = yes
+			is_great_power = yes
+		}	
+		effect = {
+			france_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = unlock_the_subjugate_franks_cb_which_allows_you_to_steal_appanges
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	strengthen_the_monarchy_thre_brit = {
+		icon = mission_english_absolutism
+		required_missions = { emperor_of_all_romans_thre_brit  }
+		position = 7
+		provinces_to_highlight = {
+		}		
+		trigger = { 
+			if = {
+				limit = {
+					is_absolutism_active = no
+				}
+				legitimacy_equivalent = 90
+				NOT = {
+					estate_influence = {
+						estate = all
+						influence = 50
+					}
+				}
+				estate_loyalty = {
+					estate = all
+					loyalty = 60
+				}
+				num_of_subjects = 5
+				NOT = {
+					any_subject_country = {
+						liberty_desire = 20
+					}
+				}
+				NOT = { num_of_rebel_armies = 1 }
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+				custom_trigger_tooltip = {
+					tooltip = absolutism_dynamic_reward_tt
+					is_absolutism_active = no
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						is_revolutionary = yes
+						has_dlc = "Emperor"
+					}
+					revolutionary_zeal = 50
+				}
+				else = {
+					absolutism = 50
+				}
+				NOT = { average_home_autonomy = 20 }
+				NOT = { num_of_rebel_armies = 1 }
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+			}
+		}	
+		effect = {
+			change_government_reform_progress = 50
+			unlock_government_reform = {
+				government_reform = direct_royal_administration_reform
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+brit_miss_thre_four = {
+	slot = 4
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		has_country_flag = gotten_hre_focus_result_war_of_roses_england
+		NOT = { map_setup = map_setup_random }
+	}
+		
+	dominate_the_channel_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { consolidate_england_thre_brit }
+		position = 2
+		provinces_to_highlight = {
+			province_id = 1269
+		}		
+		trigger = { 
+			mercantilism = 30
+			1269 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}	
+		effect = {
+			add_dip_power = 100
+			add_mercantilism = 3
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_autonomous_trade_companies
+			}
+			unlock_government_reform = {
+				government_reform = royal_charters_reform
+			}
+			custom_tooltip = for_each_other_trade_route_in_european_region_blah_blah_thre_engl
+			tooltip = {
+				add_dip_power = 100
+				add_mercantilism = 3
+			}
+			hidden_effect = {
+				#Possible ways to do this that aren't disgusting
+				#1) I can't think of any
+				#I am trying to come up with something involving whiles but that makes my head hurt
+				#No "every trade node capital"
+				#mfw there is no specific code for my exact problem
+				# : (
+				if = {
+					limit = {
+						186 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				if = {
+					limit = {
+						1276 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				if = {
+					limit = {
+						1293 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				if = {
+					limit = {
+						1295 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				if = {
+					limit = {
+						1298 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				if = {
+					limit = {
+						1308 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				if = {
+					limit = {
+						137 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				if = {
+					limit = {
+						45 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				if = {
+					limit = {
+						1975 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				if = {
+					limit = {
+						1926 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				if = {
+					limit = {
+						1876 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				if = {
+					limit = {
+						134 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				if = {
+					limit = {
+						61 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				if = {
+					limit = {
+						153 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				if = {
+					limit = {
+						262 = {
+							OR = {
+								is_strongest_trade_power = ROOT
+							}
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					add_dip_power = 100
+					add_mercantilism = 3
+				}
+				#No we are not adding nodes west of Poland
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	colonize_canada_thre_brit = {
+		icon = mission_rb_colonise_canada
+		required_missions = { explore_new_world_thre_brit }
+		position = 4
+		provinces_to_highlight = {
+			if = {
+				limit = { is_random_new_world = no }
+				colonial_region = colonial_canada
+			}
+			else = {
+				continent = new_world
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			if = {
+				limit = { is_random_new_world = no }
+				custom_trigger_tooltip = {
+					tooltip = miss_discover_canada
+					colonial_canada = {
+						has_discovered = ROOT
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = gbr_colonize_canada_ct
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 10
+						colonial_region = colonial_canada
+						is_city = yes
+					}
+				}
+			}
+			else = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 10
+					continent = new_world
+					is_city = yes
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "eng_rb_established_shipping"
+				duration = 9125
+			}
+			country_event_with_insight = {
+				id = flavor_gbr.7
+				insight_tooltip = INSIGHT_JUST_TOOLTIP
+				effect_tooltip = "
+				add_treasury = 500
+				change_price = {
+					trade_goods = fur
+					key = ENGLISH_FUR_TRADE
+					value = 0.25
+					duration = 3650
+				}"
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	centralize_the_franks_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { emperor_of_all_romans_thre_brit }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				province_id = 183
+				area = normandy_area
+				area = brittany_area
+				area = picardy_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}		
+		trigger = { 
+			183 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				normandy_area = {
+					type = all
+					country_or_non_sovereign_subject_holds  = ROOT
+				}
+				brittany_area = {
+					type = all
+					country_or_non_sovereign_subject_holds  = ROOT
+				}
+				picardy_area = {
+					type = all
+					country_or_non_sovereign_subject_holds  = ROOT
+				}
+			}
+		}	
+		effect = {
+			low_countries_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lazio_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = if_any_of_our_subjects_is_an_appange_gain_thre_brit
+			tooltip = {
+				add_ruler_modifier = {
+					name = "lord_of_the_franks_eng_thre"
+					duration = -1
+				}
+			}
+			custom_tooltip = otherwise_we_gainn_thre_brit
+			tooltip = {
+				183 = {
+					add_base_tax = 2
+					change_culture = ROOT
+					add_province_modifier = {
+						name = "parisan_britonization_eng_thre"
+						duration = 9125
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	begin_barbarian_integration_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { centralize_the_franks_thre_brit }
+		position = 8
+		provinces_to_highlight = {
+			region = low_countries_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}		
+		trigger = { 
+			calc_true_if = {
+				custom_trigger_tooltip = {
+					tooltip = provs_owned_in_low_count_reg_brit_thre
+					low_countries_region = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				amount = 20
+			}
+		}	
+		effect = {
+			custom_tooltip = every_country_of_our_relig_in_germanic_group_gets_opp_to_join_hre_we_get
+			tooltip = {
+				add_imperial_influence = 10
+			}
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						culture_group = germanic
+						religion = ROOT
+					}
+					country_event = { id = thre_england_events.12 }
+				}
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+brit_miss_thre_five = {
+	slot = 5
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		has_country_flag = gotten_hre_focus_result_war_of_roses_england
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	expand_royal_navy_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { consolidate_england_thre_brit }
+		position = 2	
+		trigger = { 
+			navy_size = 50
+			has_flagship = yes
+			navy_tradition = 33
+		}	
+		effect = {
+			define_advisor = {
+				type = naval_reformer
+				skill = 3
+				cost_multiplier = 0.5
+			}
+			unlock_issue = {
+				issue = acts_of_impressment
+			}
+			unlock_issue = {
+				issue = act_of_exploration
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	explore_new_world_thre_brit = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { expand_royal_navy_thre_brit dominate_the_channel_thre_brit }
+		position = 3
+		provinces_to_highlight = {
+			if = {
+				limit = { is_random_new_world = no }
+				OR = {
+					colonial_region = colonial_eastern_america
+					colonial_region = colonial_the_carribean
+				}
+			}
+			else = {
+				continent = new_world
+			}
+			NOT = { has_discovered = ROOT }
+		}
+		trigger = {
+			if = {
+				limit = { is_random_new_world = no }
+				custom_trigger_tooltip = {
+					tooltip = miss_discover_eastern_america
+					colonial_eastern_america = { has_discovered = ROOT }
+				}
+				custom_trigger_tooltip = {
+					tooltip = miss_discover_caribbean
+					colonial_the_carribean = { has_discovered = ROOT }
+				}
+			}
+			else = {
+				new_world = {
+					is_sea = no
+					has_discovered = ROOT
+				}
+			}
+		}		
+		effect = {
+			add_country_modifier = {
+				name = "the_unknown_frontier"
+				duration = 5475
+			}
+			add_dip_power = 50
+			unlock_issue = {
+				issue = colonial_venture_act
+			}
+			unlock_issue = {
+				issue = the_sugar_act
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	colonize_north_america_thre_brit = {
+		icon = mission_settlers_north_america
+		required_missions = { explore_new_world_thre_brit }
+		position = 4
+		provinces_to_highlight = {
+			if = {
+				limit = { is_random_new_world = no }
+				colonial_region = colonial_eastern_america
+			}
+			else = {
+				continent = new_world
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}		
+		trigger = { 
+			if = {
+				limit = { is_random_new_world = no }
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 10
+					colonial_region = colonial_eastern_america
+					is_city = yes
+				}
+			}
+			else = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 20
+					continent = new_world
+					is_city = yes
+				}
+			}
+		}	
+		effect = {
+			unlock_issue = { issue = acts_of_taxation }
+			unlock_issue = { issue = act_of_representation }
+			create_conquistador = {
+				tradition = 80
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+
+	dominiate_new_world_thre_brit = {
+		icon = mission_ruler_of_north_america
+		required_missions = { colonize_canada_thre_brit colonize_north_america_thre_brit }
+		position = 5
+		provinces_to_highlight = {
+			if = {
+				limit = { is_random_new_world = no }
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+			else = {
+				continent = new_world
+			}
+			has_discovered = ROOT
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}		
+		trigger = {
+			if = {
+				limit = { is_random_new_world = no }
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+					value = 200
+				}
+			}
+			else = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					continent = new_world
+					value = 100
+				}
+			}
+			NOT = {
+				any_subject_country = {
+					liberty_desire = 25
+				}
+			}
+		}	
+		effect = {
+			add_country_modifier = {
+				name = gbr_new_world_dominance
+				duration = -1
+			}
+			custom_tooltip = gbr_dominiate_new_world_at
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	follow_the_roads_thre_brit = {
+		icon = mission_redcoats
+		required_missions = { centralize_the_franks_thre_brit }
+		position = 8
+		provinces_to_highlight = {
+			province_id = 118
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}		
+		trigger = { 
+			118 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		effect = {
+			add_country_modifier = {
+				name = "custodian_of_rome_eng_thre"
+				duration = 5475
 			}
 		}
 		ai_weight = {
