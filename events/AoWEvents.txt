@@ -1841,7 +1841,10 @@ country_event = {
 		any_owned_province = {
 			development = 10
 			has_cardinal = no
-			would_be_catholic_trigger = yes
+			OR = {
+				religion = abrahamism
+				religion = catholic
+			}
 			any_neighbor_province = {
 				has_cardinal = yes
 				NOT = { owned_by = ROOT }
@@ -1867,7 +1870,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					has_cardinal = no
-					would_be_catholic_trigger = yes
+					religion = catholic
 					development = 10
 					any_neighbor_province = {
 						has_cardinal = yes
@@ -1974,7 +1977,7 @@ province_event = {
 	trigger = {
 		has_cardinal = yes
 		any_neighbor_province = {
-			NOT = { would_be_catholic_trigger = yes }
+			NOT = { religion = catholic }
 			religion_group = abrahamistic_group
 		}
 	}
@@ -2086,11 +2089,19 @@ country_event = {
 		OR = {
 			employed_advisor = {
 				type = theologian
-				would_be_catholic_trigger = yes
+				religion = catholic
 			}
 			employed_advisor = {
 				type = inquisitor
-				would_be_catholic_trigger = yes
+				religion = catholic
+			}
+			employed_advisor = {
+				type = theologian
+				religion = abrahamism
+			}
+			employed_advisor = {
+				type = inquisitor
+				religion = abrahamism
 			}
 		}
 		NOT = { num_of_cardinals = 7 }
@@ -2114,7 +2125,10 @@ country_event = {
 			limit = {
 				development = 10
 				continent = europe
-				would_be_catholic_trigger = yes
+				OR =  {
+					religion = abrahamism
+					religion = catholic
+				}
 				has_cardinal = no
 			}
 			add_cardinal = yes
