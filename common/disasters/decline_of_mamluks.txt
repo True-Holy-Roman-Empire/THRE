@@ -3,7 +3,7 @@ decline_of_mamluks = {
 	potential = {
 		NOT = { has_country_flag = had_decline_of_mamluks }
 		NOT = { has_country_flag = formed_mamluks_flag }	#A formed Mali should not go through a decline
-		#NOT = { mission_completed =  }
+		NOT = { mission_completed = mam_dummy_mission }
 		uses_doom = no
 		is_free_or_tributary_trigger = yes
 		normal_or_historical_nations = yes
@@ -12,7 +12,7 @@ decline_of_mamluks = {
 	
 	can_start = {
 		has_any_disaster = no
-		#NOT = { mission_completed =  }
+		NOT = { mission_completed = mam_dummy_mission }
 	}
 	
 	can_stop = { 
@@ -27,7 +27,7 @@ decline_of_mamluks = {
 	}
 	
 	can_end = {
-		#mission_completed = 
+		mission_completed = mam_dummy_mission
 	}
 	
 	modifier = {
@@ -45,15 +45,13 @@ decline_of_mamluks = {
 		}
 		random_events = { 
 			1000 = 0
-			# 100 = thre_mam.3		
-			# 100 = thre_mam.4		
-			# 100 = thre_mam.5
-			# 100 = thre_mam.6	
-			# 100 = thre_mam.7
-			# 100 = thre_mam.8	
-			# 100 = thre_mam.9
-			#12 % 13 triggers for other nations, and fires 14.
-			#101 & 102 are endings for rebel victory.
+			100 = thre_mam.5		
+			100 = thre_mam.6		
+			100 = thre_mam.7
+			100 = thre_mam.8	
+			100 = thre_mam.9
+			100 = thre_mam.10	
+			100 = thre_mam.11
 		}
 	}
 }
