@@ -7,7 +7,7 @@ country_decisions = {
 				tag = POR
 				tag = SPA
 			}
-			religion = catholic
+			would_be_catholic_trigger = yes
 			NOT = { has_country_modifier = the_societas_jesu }
 			NOT = { has_country_modifier = jesuits_expelled }
 		}
@@ -29,7 +29,7 @@ country_decisions = {
 	de_heretico_comburendo_act = {
 		potential = {
 			NOT = { has_country_modifier = de_heretico_comburendo }
-			religion = catholic
+			would_be_catholic_trigger = yes
 			reform_desire = 0.10
 		}
 		allow = {
@@ -177,7 +177,7 @@ country_decisions = {
 #		allow = {
 #			# Raises the king to be the legal authority in all religious matters
 #			OR = {
-#				NOT = { religion = catholic }
+#				NOT = { would_be_catholic_trigger = yes }
 #				has_country_modifier = the_statue_in_restraint_of_appeals
 #			}
 #			advisor = theologian
@@ -298,7 +298,7 @@ country_decisions = {
 				religion = protestant
 				religion = reformed
 				AND = {
-					religion = catholic
+					would_be_catholic_trigger = yes
 					has_country_modifier = the_statue_in_restraint_of_appeals
 				}
 			}

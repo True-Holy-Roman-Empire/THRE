@@ -1549,7 +1549,7 @@ defined_text = {
 	text = {
         localisation_key = string_start_religion_catholic
         trigger = {
-			religion = catholic
+			would_be_catholic_trigger = yes
         }
     }
 	#Hussite (The Reformation)
@@ -1785,14 +1785,14 @@ defined_text = {
 	text = {
         localisation_key = string_catholic_tordesillas #Has to end with \n
         trigger = {
-			religion = catholic
+			would_be_catholic_trigger = yes
 			has_dlc = "El Dorado"
         }
     }
 	text = {
         localisation_key = string_catholic_tordesillas_no #\n
         trigger = {
-			religion = catholic
+			would_be_catholic_trigger = yes
 			NOT = { has_dlc = "El Dorado" }
         }
     }

@@ -11,7 +11,7 @@ country_event = {
 		has_regency = no
 		is_female = no
 		is_lesser_in_union = no
-		religion = catholic
+		would_be_catholic_trigger = yes
 		government = monarchy
 		dip = 2
 		NOT = { has_government_attribute = has_harem_events }
@@ -1920,7 +1920,7 @@ country_event = {
 		add_legitimacy = -10
 		if = {
 			limit = {
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			add_papal_influence = -10
 		}
@@ -2004,7 +2004,7 @@ country_event = {
 		add_legitimacy = -10
 		if = {
 			limit = {
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			add_papal_influence = -10
 		}
@@ -2116,7 +2116,7 @@ country_event = {
 		name = dynastic_events.4.a
 		if = {
 			limit = {
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			add_papal_influence = -10
 		}

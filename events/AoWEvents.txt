@@ -1559,7 +1559,7 @@ country_event = {
 
 	trigger = {
 		has_country_modifier = counter_reformation
-		religion = catholic
+		would_be_catholic_trigger = yes
 		any_neighbor_country = {
 			OR = {
 				religion = protestant
@@ -1624,7 +1624,7 @@ country_event = {
 
 	trigger = {
 		has_spawned_rebels = protestant_rebels
-		religion = catholic
+		would_be_catholic_trigger = yes
 		any_neighbor_country = {
 			religion = protestant
 			any_owned_province = {
@@ -1667,7 +1667,7 @@ country_event = {
 
 	trigger = {
 		has_spawned_rebels = reformed_rebels
-		religion = catholic
+		would_be_catholic_trigger = yes
 		any_neighbor_country = {
 			religion = reformed
 			any_owned_province = {
@@ -1835,13 +1835,13 @@ country_event = {
 
 	trigger = {
 		papacy_active = yes
-		religion = catholic
+		would_be_catholic_trigger = yes
 		NOT = { tag = PAP }
 		NOT = { num_of_cardinals = 7 }
 		any_owned_province = {
 			development = 10
 			has_cardinal = no
-			religion = catholic
+			would_be_catholic_trigger = yes
 			any_neighbor_province = {
 				has_cardinal = yes
 				NOT = { owned_by = ROOT }
@@ -1867,7 +1867,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					has_cardinal = no
-					religion = catholic
+					would_be_catholic_trigger = yes
 					development = 10
 					any_neighbor_province = {
 						has_cardinal = yes
@@ -1974,7 +1974,7 @@ province_event = {
 	trigger = {
 		has_cardinal = yes
 		any_neighbor_province = {
-			NOT = { religion = catholic }
+			NOT = { would_be_catholic_trigger = yes }
 			religion_group = abrahamistic_group
 		}
 	}
@@ -2081,16 +2081,16 @@ country_event = {
 
 	trigger = {
 		papacy_active = yes
-		religion = catholic
+		would_be_catholic_trigger = yes
 		NOT = { tag = PAP }
 		OR = {
 			employed_advisor = {
 				type = theologian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			employed_advisor = {
 				type = inquisitor
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 		}
 		NOT = { num_of_cardinals = 7 }
@@ -2114,7 +2114,7 @@ country_event = {
 			limit = {
 				development = 10
 				continent = europe
-				religion = catholic
+				would_be_catholic_trigger = yes
 				has_cardinal = no
 			}
 			add_cardinal = yes
@@ -2251,7 +2251,7 @@ country_event = {
 
 	trigger = {
 		has_idea_group = spy_ideas
-		religion = catholic
+		would_be_catholic_trigger = yes
 		any_neighbor_country = {
 			num_of_cardinals = 1
 		}

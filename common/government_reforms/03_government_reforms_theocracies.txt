@@ -85,7 +85,7 @@ crusading_kingdom_reform = {
 	}
 	trigger = {
 		OR = {
-			religion = catholic
+			would_be_catholic_trigger = yes
 			is_playing_custom_nation = yes
 		}
 	}
@@ -228,7 +228,7 @@ militarized_crusader_order_reform = {
 	}
 	trigger = {
 		OR = {
-			religion = catholic
+			would_be_catholic_trigger = yes
 			is_playing_custom_nation = yes
 		}
 	}
@@ -271,7 +271,7 @@ holy_horde_reform = {
 	}
 	trigger = {
 		OR = {
-			religion = catholic
+			would_be_catholic_trigger = yes
 			is_playing_custom_nation = yes
 		}
 	}
@@ -323,7 +323,7 @@ merchant_theocracy_reform = {
 	}
 	trigger = {
 		OR = {
-			religion = catholic
+			would_be_catholic_trigger = yes
 			is_playing_custom_nation = yes
 		}
 	}
@@ -331,7 +331,7 @@ merchant_theocracy_reform = {
 		if = {
 			limit = {
 				is_playing_custom_nation = no
-				NOT = { religion = catholic }
+				NOT = { would_be_catholic_trigger = yes }
 				NOT = {
 					has_unlocked_government_reform = {
 						government_reform = reformer_state_reform
@@ -1091,14 +1091,14 @@ loyal_nobility_reform = {
 monastic_breweries_reform = {
 	potential = {
 		OR = {
-			religion = catholic
+			would_be_catholic_trigger = yes
 			culture_group = gaelic
 			primary_culture = scottish
 		}
 	}
 	trigger = {
 		OR = {
-			religion = catholic
+			would_be_catholic_trigger = yes
 			culture_group = gaelic
 			primary_culture = scottish
 		}

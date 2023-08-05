@@ -3986,7 +3986,7 @@ millenarian_theocracy_reform = {
 	allow_normal_conversion = yes
 	has_term_election = no
 	potential = {
-		religion = catholic
+		would_be_catholic_trigger = yes
 		has_ruler = "Girolamo Savonarola"
 		OR = {
 			tag = LAN
@@ -3994,7 +3994,7 @@ millenarian_theocracy_reform = {
 		}
 	}
 	trigger = {
-		religion = catholic
+		would_be_catholic_trigger = yes
 		has_ruler = "Girolamo Savonarola"
 		OR = {
 			tag = LAN

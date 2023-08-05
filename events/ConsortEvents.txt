@@ -3128,7 +3128,7 @@ country_event = {
 		desc = consort_events.201.db
 	}
 
-	trigger = { religion = catholic }
+	trigger = { would_be_catholic_trigger = yes }
 
 	#25
 	option = {
@@ -5173,7 +5173,7 @@ country_event = {
 		name = consort_events.314.d
 		if = {
 			limit = {
-				religion = catholic 
+				would_be_catholic_trigger = yes 
 				exists = PAP
 			}
 			set_country_flag = desires_of_flesh_divorce
@@ -5187,7 +5187,7 @@ country_event = {
 		name = consort_events.314.e
 		if = {
 			limit = {
-				religion = catholic 
+				would_be_catholic_trigger = yes 
 				exists = PAP
 			}
 			set_country_flag = desires_of_flesh_divorce

@@ -96,7 +96,7 @@ static_actions = { # static_actions is a reserved token.
 #				which = their_age
 #			}
 #		}
-#		religion = catholic
+#		would_be_catholic_trigger = yes
 #	}
 #	on_accept = {
 #		add_trust = {
@@ -121,7 +121,7 @@ static_actions = { # static_actions is a reserved token.
 #	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
 #		add_entry = {
 #			name = TRUST
-#			limit = { religion = catholic }
+#			limit = { would_be_catholic_trigger = yes }
 #			export_to_variable = {
 #				variable_name = ai_value # Each "add_entry" must create one variable called "ai_value", the value of which will be extracted after executing all effects
 #				value = trust
@@ -133,7 +133,7 @@ static_actions = { # static_actions is a reserved token.
 #		}
 #		add_entry = {
 #			name = TRUST
-#			limit = { NOT = { religion = catholic } }
+#			limit = { NOT = { would_be_catholic_trigger = yes } }
 #			export_to_variable = {
 #				variable_name = ai_value
 #				value = trust
@@ -215,14 +215,14 @@ sell_indulgence = {
 
 	is_visible = {
 		has_government_attribute = can_sell_indulgences
-		religion = catholic
+		would_be_catholic_trigger = yes
 	}
 	is_allowed = {
 		if = {
-			limit = { FROM = { NOT = { religion = catholic } } }
+			limit = { FROM = { NOT = { would_be_catholic_trigger = yes } } }
 			custom_trigger_tooltip = {
 				tooltip = sell_indulgence_catholic
-				FROM = { religion = catholic }
+				FROM = { would_be_catholic_trigger = yes }
 			}
 		}
 		if = {

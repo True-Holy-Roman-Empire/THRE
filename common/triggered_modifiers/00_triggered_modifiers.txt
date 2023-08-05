@@ -297,7 +297,7 @@ papal_subjugation = {
 	potential = {
 		normal_or_historical_nations = yes
 		has_discovered = 118	# Roma
-		religion = catholic
+		would_be_catholic_trigger = yes
 		NOT = { tag = PAP }
 	}
 
@@ -476,7 +476,7 @@ reaction = {
 ######################################
 crusader = {
 	potential = {
-		religion = catholic
+		would_be_catholic_trigger = yes
 		crusade_target = {
 			exists = yes
 		}
@@ -508,7 +508,7 @@ crusader = {
 ######################################
 excommunication = {
 	potential = {
-		religion = catholic	
+		would_be_catholic_trigger = yes	
 	}
 
 	trigger = {
@@ -703,14 +703,14 @@ hre_dominant_catholic = {
 			continent = europe
 		}
 		OR = {
-			religion = catholic
+			would_be_catholic_trigger = yes
 			religion = protestant
 			religion = reformed
 		}
 	}
 
 	trigger = {
-		religion = catholic
+		would_be_catholic_trigger = yes
 		hre_religion = catholic
 		hre_religion_locked = yes
 	}
@@ -727,7 +727,7 @@ hre_dominant_protestant = {
 			continent = europe
 		}
 		OR = {
-			religion = catholic
+			would_be_catholic_trigger = yes
 			religion = protestant
 			religion = reformed
 		}
@@ -751,7 +751,7 @@ hre_dominant_reformed = {
 			continent = europe
 		}
 		OR = {
-			religion = catholic
+			would_be_catholic_trigger = yes
 			religion = protestant
 			religion = reformed
 		}
@@ -845,11 +845,11 @@ great_peasants_war_concessions_triggered_modifier = {
 pope_in_hre_triggered_modifier = {
 	potential = {
 		PAP = { is_part_of_hre = yes }
-		religion = catholic
+		would_be_catholic_trigger = yes
 	}
 	trigger = {
 		PAP = { is_part_of_hre = yes }
-		religion = catholic
+		would_be_catholic_trigger = yes
 		NOT = { is_part_of_hre = yes }
 	}
 	prestige = -0.5

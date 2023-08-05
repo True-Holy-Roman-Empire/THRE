@@ -1026,7 +1026,7 @@ brewing_order = {
 
 	trigger = {
 		has_reform = monastic_breweries_reform
-		religion = catholic
+		would_be_catholic_trigger = yes
 	}
 }
 

@@ -760,7 +760,7 @@ cb_crusade = {
 		OR = {
 			AND = {
 				crusade_target = { tag = FROM }
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			AND = {
 				FROM = {
@@ -887,7 +887,7 @@ cb_excommunication = {
 	valid_for_subject = no
 
 	prerequisites_self = {
-		religion = catholic
+		would_be_catholic_trigger = yes
 		is_excommunicated = no
 		is_revolutionary = no
 	}
@@ -895,7 +895,7 @@ cb_excommunication = {
 	prerequisites = {
 		FROM = {
 			is_excommunicated = yes
-			religion = catholic
+			would_be_catholic_trigger = yes
 		}
 		FROM = {
 			is_neighbor_of = ROOT
@@ -1854,7 +1854,7 @@ cb_enforce_electorate_right = {
 #	holy_war = yes
 #
 #	prerequisites = {
-#		religion = catholic
+#		would_be_catholic_trigger = yes
 #		has_country_flag = can_declare_grand_crusade_wars
 #		FROM = { 
 #			total_development = 300

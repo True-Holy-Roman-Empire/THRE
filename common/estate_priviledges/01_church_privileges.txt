@@ -372,7 +372,7 @@ estate_church_papal_emissary = {
 	loyalty = 0.05
 	influence = 0.05
 	is_valid = {
-		religion = catholic
+		would_be_catholic_trigger = yes
 		NOT = { tag = PAP }
 	}
 	can_select = {
@@ -1599,10 +1599,10 @@ estate_church_influence_temples = {
 	loyalty = 0.05
 	influence = 0.05
 	is_valid = {
-		religion = catholic
+		would_be_catholic_trigger = yes
 	}
 	can_select = {
-		religion = catholic
+		would_be_catholic_trigger = yes
 	}
 	on_granted = {
 		custom_tooltip = estate_church_influence_temples_tt

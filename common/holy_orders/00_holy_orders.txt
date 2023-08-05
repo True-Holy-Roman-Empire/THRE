@@ -4,7 +4,7 @@ benedictines = {
     	OR = { 
 			AND = { 
 				culture_group = iberian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			has_country_flag = enable_holy_orders_flag 
 		}
@@ -35,7 +35,7 @@ carthusians = {
     	OR = { 
 			AND = { 
 				culture_group = iberian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			has_country_flag = enable_holy_orders_flag 
 		}
@@ -66,7 +66,7 @@ hieronymites = {
     	OR = { 
 			AND = { 
 				culture_group = iberian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			has_country_flag = enable_holy_orders_flag 
 		}
@@ -97,7 +97,7 @@ jesuit_order = {
     	OR = { 
 			AND = { 
 				culture_group = iberian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			has_country_flag = enable_holy_orders_flag 
 			#has_country_flag = enable_jesuit_order_flag
@@ -132,7 +132,7 @@ augustinians = {
     	OR = { 
 			AND = { 
 				culture_group = iberian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			has_country_flag = enable_holy_orders_flag 
 		}
@@ -163,7 +163,7 @@ carmelites = {
     	OR = { 
 			AND = { 
 				culture_group = iberian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			has_country_flag = enable_holy_orders_flag 
 		}
@@ -194,7 +194,7 @@ dominican_order = {
 		OR = { 
 			AND = { 
 				culture_group = iberian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			has_country_flag = enable_holy_orders_flag 
 		}
@@ -245,7 +245,7 @@ franciscan_order = {
         OR = { 
 			AND = { 
 				culture_group = iberian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			has_country_flag = enable_holy_orders_flag 
 		}
@@ -284,7 +284,7 @@ alcantara_order = {
     	OR = { 
 			AND = { 
 				culture_group = iberian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			has_country_flag = enable_holy_orders_flag 
 		}
@@ -319,7 +319,7 @@ avis_order = {
     	OR = { 
 			AND = { 
 				culture_group = iberian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			has_country_flag = enable_holy_orders_flag 
 		}
@@ -355,7 +355,7 @@ calatrava_order = {
     	OR = { 
 			AND = { 
 				culture_group = iberian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			has_country_flag = enable_holy_orders_flag 
 		}
@@ -391,7 +391,7 @@ montesa_order = {
     	OR = { 
 			AND = { 
 				culture_group = iberian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			has_country_flag = enable_holy_orders_flag 
 		}
@@ -427,7 +427,7 @@ san_juan_order = {
     	OR = { 
 			AND = { 
 				culture_group = iberian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			has_country_flag = enable_holy_orders_flag 
 		}
@@ -470,7 +470,7 @@ santiago_order = {
     	OR = { 
 			AND = { 
 				culture_group = iberian
-				religion = catholic
+				would_be_catholic_trigger = yes
 			}
 			has_country_flag = enable_holy_orders_flag 
 		}
