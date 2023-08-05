@@ -1,0 +1,29 @@
+namespace = thre_flavor
+
+country_event = { #Battle of Sirmium
+	id = thre_flavor.1
+	title = thre_flavor.1.t
+	desc = thre_flavor.1.d
+	picture = CONQUEST_eventPicture
+	fire_only_once = yes
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+		tag = POL 
+		}
+	
+	immediate = {
+		hidden_effect = {
+			}
+		}
+		
+	option = { #
+		name = thre_flavor.1.a 
+		custom_tooltip = thre_flavor.1.a.tt
+			add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 25
+		}
+	}
+}
