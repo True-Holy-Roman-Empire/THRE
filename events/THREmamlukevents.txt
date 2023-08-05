@@ -1,5 +1,4 @@
 namespace = thre_mam
-normal_or_historical_nations = yes
 
 country_event = {
 	id = thre_mam.1
@@ -68,3 +67,621 @@ country_event = {
 # 	desc = thre_mam.3.d
 # 	picture = MALI_RULER_eventPicture	
 # 	}
+
+country_event = { #mamluk succession while in crisis
+	id = thre_mam.3
+	title = thre_mam.3.t
+	desc = thre_mam.3.d
+	picture = THREE_HEIRS_eventPicture 
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = started_decline_of_mamluks
+		}
+		
+		immediate = {
+			export_to_variable = {
+				variable_name = mamluk_ruler_culture
+				value = ruler_culture
+				}
+			export_to_variable = {
+				variable_name = mamluk_ruler_adm
+				value = ADM
+				}
+			export_to_variable = {
+				variable_name = mamluk_ruler_dip
+				value = DIP
+				}
+			export_to_variable = {
+				variable_name = mamluk_ruler_mil
+				value = MIL
+				}
+			set_variable = {
+				which = rulercheck0
+				value = 0
+				}
+			set_variable = {
+				which = rulercheck1
+				value = 1
+				}
+			set_variable = {
+				which = rulercheck2
+				value = 2
+				}
+			set_variable = {
+				which = rulercheck3
+				value = 3
+				}
+			set_variable = {
+				which = rulercheck4
+				value = 4
+				}
+			set_variable = {
+				which = rulercheck5
+				value = 5
+				}
+			set_variable = {
+				which = rulercheck6
+				value = 6
+				}
+		}
+		
+		option = { #son of ruler
+			name = thre_mam.3.a 
+			if = {
+				limit = {
+					is_variable_equal = {
+					 which = mamluk_ruler_dip
+					 which = rulercheck0
+						}
+					 }
+				custom_tooltip = thre_mam.3.a.tt
+				hidden_effect = {
+					random_list = {
+						50 = {
+							define_ruler = {
+							culture = variable:mamluk_ruler_culture
+							dynasty = ROOT
+							hide_skills = yes
+							DIP = 0
+							age = 16 
+							claim = 10 
+							male = yes
+								}
+							}
+						50 = {
+							define_ruler = {
+							culture = variable:mamluk_ruler_culture
+							dynasty = ROOT
+							hide_skills = yes
+							DIP = 1
+							age = 16 
+							claim = 10 
+							male = yes
+								}
+							}
+						}
+					save_global_event_target_as = new_mamluk_ruler_disaster
+					country_event = {
+						id = thre_mam.4
+							}
+					}
+				}
+			if = {
+				limit = {
+					is_variable_equal = {
+					 which = mamluk_ruler_dip
+					 which = rulercheck1
+						}
+					 }
+				custom_tooltip = thre_mam.3.a.tt
+				hidden_effect = {
+					random_list = {
+						50 = {
+							define_ruler = {
+							culture = variable:mamluk_ruler_culture
+							dynasty = ROOT
+							hide_skills = yes
+							DIP = 2
+							age = 16 
+							claim = 10 
+							male = yes
+								}
+							}
+						50 = {
+							define_ruler = {
+							culture = variable:mamluk_ruler_culture
+							dynasty = ROOT
+							hide_skills = yes
+							DIP = 1
+							age = 16 
+							claim = 10 
+							male = yes
+								}
+							}
+						}
+					save_global_event_target_as = new_mamluk_ruler_disaster
+					country_event = {
+						id = thre_mam.4
+							}
+					}
+				}
+			if = {
+				limit = {
+					is_variable_equal = {
+					 which = mamluk_ruler_dip
+					 which = rulercheck2
+						}
+					 }
+					custom_tooltip = thre_mam.3.a.tt
+					hidden_effect = {
+					random_list = {
+						50 = {
+							define_ruler = {
+							culture = variable:mamluk_ruler_culture
+							dynasty = ROOT
+							hide_skills = yes
+							DIP = 3
+							age = 16 
+							claim = 10 
+							male = yes
+								}
+							}
+						50 = {
+							define_ruler = {
+							culture = variable:mamluk_ruler_culture
+							dynasty = ROOT
+							hide_skills = yes
+							DIP = 2
+							age = 16 
+							claim = 10 
+							male = yes
+								}
+							}
+						}
+					save_global_event_target_as = new_mamluk_ruler_disaster
+					country_event = {
+						id = thre_mam.4
+							}
+					}
+				}
+			if = {
+				limit = {
+					is_variable_equal = {
+					 which = mamluk_ruler_dip
+					 which = rulercheck3
+						}
+					 }
+					custom_tooltip = thre_mam.3.a.tt
+					hidden_effect = {
+					random_list = {
+						50 = {
+							define_ruler = {
+							culture = variable:mamluk_ruler_culture
+							dynasty = ROOT
+							hide_skills = yes
+							DIP = 3
+							age = 16 
+							claim = 10 
+							male = yes
+								}
+							}
+						50 = {
+							define_ruler = {
+							culture = variable:mamluk_ruler_culture
+							dynasty = ROOT
+							hide_skills = yes
+							DIP = 4
+							age = 16 
+							claim = 10 
+							male = yes
+								}
+							}
+						}
+					save_global_event_target_as = new_mamluk_ruler_disaster
+					country_event = {
+						id = thre_mam.4
+							}
+					}
+				}
+			if = {
+				limit = {
+					is_variable_equal = {
+					 which = mamluk_ruler_dip
+					 which = rulercheck4
+						}
+					 }
+					custom_tooltip = thre_mam.3.a.tt
+					hidden_effect = {
+					random_list = {
+						50 = {
+							define_ruler = {
+							culture = variable:mamluk_ruler_culture
+							dynasty = ROOT
+							hide_skills = yes
+							DIP = 4
+							age = 16 
+							claim = 10 
+							male = yes
+								}
+							}
+						50 = {
+							define_ruler = {
+							culture = variable:mamluk_ruler_culture
+							dynasty = ROOT
+							hide_skills = yes
+							DIP = 5
+							age = 16 
+							claim = 10 
+							male = yes
+								}
+							}
+						}
+					save_global_event_target_as = new_mamluk_ruler_disaster
+					country_event = {
+						id = thre_mam.4
+							}
+					}
+				}
+			if = {
+				limit = {
+					is_variable_equal = {
+					 which = mamluk_ruler_dip
+					 which = rulercheck5
+						}
+					 }
+					custom_tooltip = thre_mam.3.a.tt
+					hidden_effect = {
+					random_list = {
+						50 = {
+							define_ruler = {
+							culture = variable:mamluk_ruler_culture
+							dynasty = ROOT
+							hide_skills = yes
+							DIP = 5
+							age = 16 
+							claim = 10 
+							male = yes
+								}
+							}
+						50 = {
+							define_ruler = {
+							culture = variable:mamluk_ruler_culture
+							dynasty = ROOT
+							hide_skills = yes
+							DIP = 6
+							age = 16 
+							claim = 10 
+							male = yes
+								}
+							}
+						}
+					save_global_event_target_as = new_mamluk_ruler_disaster
+					country_event = {
+						id = thre_mam.4
+							}
+						}
+					}
+				
+			if = {
+				limit = {
+					is_variable_equal = {
+					 which = mamluk_ruler_dip
+					 which = rulercheck6
+						}
+					 }
+					custom_tooltip = thre_mam.3.a.tt
+					hidden_effect = {
+					define_ruler = {
+					culture = variable:mamluk_ruler_culture
+					dynasty = ROOT
+					hide_skills = yes
+					DIP = 6
+					age = 16 
+					claim = 10 
+					male = yes
+						}
+					save_global_event_target_as = new_mamluk_ruler_disaster
+					country_event = {
+						id = thre_mam.4
+							}
+					}
+				}
+				ai_chance = {
+					factor = 25
+					}
+			}
+		
+		option = { #noble ascends the throne
+			name = thre_mam.3.b 
+			define_ruler = { 
+				culture = ROOT 
+				hide_skills = yes 
+				max_random_adm = 4
+				max_random_dip = 4
+				max_random_mil = 4
+				min_age = 25 
+				max_age = 45
+				male = yes
+				claim = 30
+				}
+			convert_ruler_to_general = 60 
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+				}
+			hidden_effect = {
+			save_global_event_target_as = new_mamluk_ruler_disaster
+			country_event = {
+				id = thre_mam.4
+				}
+			}
+			ai_chance = {
+					factor = 25
+					}
+		}
+		
+		option = {
+			name = thre_mam.3.c 
+			define_ruler = {
+				culture = circassian
+				min_age = 25 
+				max_age = 45
+				male = yes
+				hide_skills = yes
+				claim = 50 
+			}
+			hidden_effect = {
+			save_global_event_target_as = new_mamluk_ruler_disaster
+			country_event = {
+				id = thre_mam.4
+				}
+			}
+			ai_chance = {
+					factor = 25
+					}
+		}
+		
+	} 
+
+country_event = { #the country is not happy with your decision
+	id = thre_mam.4
+	title = thre_mam.4.t
+	desc = thre_mam.4.d
+	picture = THREE_HEIRS_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = mamluk_outrage_province
+			}
+			random_owned_province = {
+				NOT = { event_target:mamluk_outrage_province }
+				save_event_target_as = mamluk_outrage_province2
+				}
+			random_owned_province = {
+				NOT = { 
+					event_target:mamluk_outrage_province
+					event_target:mamluk_outrage_province2
+					}
+				save_event_target_as = mamluk_outrage_province3
+				}
+			}
+		}
+
+	option = {
+		name = thre_mam.4.a
+		if = {
+			limit = {
+				legitimacy = 10
+				NOT = {legitimacy = 11}
+				}
+		event_target:mamluk_outrage_province = {
+			spawn_rebels = {
+				type = pretender_rebels 
+				size = 2
+				}
+			}
+		event_target:mamluk_outrage_province2 = {
+			spawn_rebels = {
+				type = pretender_rebels 
+				size = 1
+				}
+			}
+		event_target:mamluk_outrage_province3 = {
+			spawn_rebels = {
+				type = pretender_rebels 
+				size = 1
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				NOT = { legitimacy = 31 }
+				legitimacy = 30 
+				}
+		event_target:mamluk_outrage_province = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels 
+				size = 2
+				}
+			}
+		event_target:mamluk_outrage_province2 = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels 
+				size = 1
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				NOT = { legitimacy = 51 }
+				legitimacy = 50
+				}
+		event_target:mamluk_outrage_province = {
+			spawn_rebels = {
+				type = noble_rebels 
+				size = 1
+				}
+			}
+		}
+	 clear_global_event_target = new_mamluk_ruler_disaster
+		ai_chance = {
+			factor = 1
+			}
+	}
+}
+
+country_event = { #unfit to rule
+	id = thre_mam.5
+	title = thre_mam.5.t
+	desc = thre_mam.5.d
+	picture = THREE_HEIRS_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = thre_mam.5.a 
+		add_legitimacy = -10
+		add_stability = -1
+		}
+}
+
+country_event = { #unruly province 
+	id = thre_mam.6
+	title = thre_mam.6.t
+	desc = thre_mam.6.d
+	picture = THREE_HEIRS_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = thre_mam.6.a 
+		random_owned_province = {
+			add_local_autonomy = 10
+			}
+		ai_chance = {
+			factor = 1
+			}
+		}
+	}
+	
+country_event = {
+	id = thre_mam.7
+	title = thre_mam.7.t
+	desc = thre_mam.7.d
+	picture = THREE_HEIRS_eventPicture
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+		not = {
+			has_country_modifier = mamluk_placeholder
+			}
+		}
+	
+	option = {
+		name = thre_mam.7.a
+		
+		add_country_modifier = {
+			name = mamluk_placeholder
+			duration = 730
+			}
+		ai_chance = {
+			factor = 1
+			}
+		}
+	}
+
+country_event = { #peasant revolt
+	id = thre_mam.8
+	title = thre_mam.8.t
+	desc = thre_mam.8.d
+	picture = THREE_HEIRS_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = thre_mam.8.a
+		
+		random_owned_province = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				size = 2
+				}
+			}
+		ai_chance = {
+			factor = 1
+			}
+		}
+	}
+
+country_event = {
+	id = thre_mam.9
+	title = thre_mam.9.t
+	desc = thre_mam.9.d
+	picture = THREE_HEIRS_eventPicture
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+		NOT = { has_ruler_modifier = mamluk_ruler_placeholder }
+		}
+	
+	option = {
+		name = thre_mam.9.a
+		
+		add_ruler_modifier = {
+			name = mamluk_ruler_placeholder
+			duration = 365
+			}
+		ai_chance = {
+			factor = 1
+			}
+		}
+	}
+	
+country_event = {
+	id = thre_mam.10
+	title = thre_mam.10.t
+	desc = thre_mam.10.d
+	picture = THREE_HEIRS_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = thre_mam.10.a 
+		
+		add_prestige = -20
+		add_years_of_income = -0.25
+		
+		ai_chance = {
+			factor = 1
+			}
+		}
+	}
+
+country_event = {
+	id = thre_mam.11
+	title = thre_mam.11.t
+	desc = thre_mam.11.d
+	picture = THREE_HEIRS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = thre_mam.11.a 
+		
+		add_treasury = 25
+		add_corruption = 0.5
+		
+		ai_chance = {
+			factor = 1
+			}
+		}
+	}
