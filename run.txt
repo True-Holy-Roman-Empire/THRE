@@ -1,1 +1,17 @@
-add_treasury = 200
+# ENG = {
+	# set_country_flag = had_war_of_the_roses
+	# set_country_flag = gotten_hre_focus_result_war_of_roses_england
+	# swap_non_generic_missions = yes
+# }
+
+# british_isles_region = {
+	# change_religion = abrahamism
+	# cede_province = ENG
+	# add_core = ENG
+# }
+
+scandinavia_region = {
+	cede_province = BQR
+	add_core = BQR
+	set_in_empire = yes
+}

@@ -10,10 +10,10 @@ po_subjugate_the_franks = {
 	power_projection = vassalized_rival # "power_projection" will only be applied if giver is your rival.
 	power_cost_base = 1.0 # Base factor for diplomatic power cost when treaty is not allowed by casus belli. Scales with war score cost.
 	prestige_base = 0.1 # Base factor for prestige gain and loss. Scales with war score cost.
-	ae_base = 2.0 # Base factor for aggressive expansion. Scales with war score cost.
+	ae_base = 1.0 # Base factor for aggressive expansion. Scales with war score cost.
 	warscore_cost = {
 		# Which of the giver's provinces' war score costs are included and by how much. All entries default to 0. Any combination of entries can be used. Try negative values at your own risk.
-		all_provinces = 1 # All the giver's provinces
+		all_provinces = 2 # All the giver's provinces
 		no_provinces = 0.0 # This is just a constant. Equivalent to a single province with with war score cost 1
 		owner_keeps = 0.0 # The provinces that are not of any of the types below
 		conquered = 0.0 # Provinces that are selected by a Demand Province treaty
@@ -24,7 +24,7 @@ po_subjugate_the_franks = {
 	}
 	warscore_cap = 100 # Warscore cost will never go above this value. Only enabled if non-negative. This value defaults to -1.
 	requires_demand_independence = yes # Whether this can be demanded by the former subject in an independence war without also demanding independence.
-	is_make_subject = yes # This will make the treaty mutually exclusive with other treaties that makes the giver a subject, or that explicitly frees the giver from their current overlord.
+	is_make_subject = no # This will make the treaty mutually exclusive with other treaties that makes the giver a subject, or that explicitly frees the giver from their current overlord.
 	requires_is_allowed = yes # If set to "yes", treaty will only be visible when explicitly allowed by casus belli. If not, it will be available but cost diplomatic power.
 	
 	is_visible = { # Defaults to equivalent of "always = yes"
@@ -49,11 +49,11 @@ po_subjugate_the_franks = {
 			every_subject_country = {
 				limit = {
 					OR = {
-						has_subject_of_type = appanage_prs
-						has_subject_of_type = appanage_bur
+						is_subject_of_type = appanage_prs
+						is_subject_of_type = appanage_bur
 					}
 				}
-				release = THIS
+				grant_independence = THIS
 				ROOT = {
 					create_subject = {
 						subject_type = appanage_prs #just make parisian ones

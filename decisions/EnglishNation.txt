@@ -5,6 +5,7 @@ country_decisions = {
 		potential = {
 			NOT = { tag = YER }
 			NOT = { tag = LCR }
+			NOT = { tag = BQR }
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_england_flag }

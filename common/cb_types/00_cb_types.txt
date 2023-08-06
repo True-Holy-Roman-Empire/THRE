@@ -1996,7 +1996,7 @@ war_of_roses_special_cb = {
 	war_goal = war_of_the_roses_wgt
 }
 
-#Special CB for War of the Roses
+#Part of HRE focus england mission tree
 subjugate_the_franks_special_cb = {
 
 	prerequisites_self = {

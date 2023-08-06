@@ -614,7 +614,7 @@ country_event = {
 	id = thre_england_events.11
 	title = thre_england_events.11.t
 	desc = thre_england_events.11.d
-	picture = WAR_OF_THE_ROSES_eventPicture
+	picture = HRE_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -660,6 +660,7 @@ country_event = {
 				limit = {
 					region = scandinavia_region
 					NOT = { area = subarctic_islands_area }
+					is_part_of_hre = yes
 				}
 				if = {
 					limit = {
@@ -668,10 +669,28 @@ country_event = {
 							area = eastern_norway
 							area = western_norway
 						}
-						NOT = { exists = NOR }
+						NOR = {
+							OR = {
+								religion = ROOT
+								NOT = { exists = yes }
+							}
+						}
 					}
-					cede_province = NOR 
-					add_core = NOR
+					if = {
+						limit = {
+							NOT = { exists = NOR }
+						}
+						cede_province = NOR 
+						add_core = NOR
+						NOR = {
+							change_religion = ROOT
+						}
+					}
+					else = {
+						cede_province = NOR 
+						add_core = NOR
+					}
+					remove_core = ROOT
 				}
 				else_if = {
 					limit = {
@@ -679,10 +698,28 @@ country_event = {
 							area = finland_area
 							area = bothnia_area
 						}
-						NOT = { exists = FIN }
+						FIN = {
+							OR = {
+								religion = ROOT
+								NOT = { exists = yes }
+							}
+						}
 					}
-					cede_province = FIN 
-					add_core = FIN
+					if = {
+						limit = {
+							NOT = { exists = FIN }
+						}
+						cede_province = FIN 
+						add_core = FIN
+						FIN = {
+							change_religion = ROOT
+						}
+					}
+					else = {
+						cede_province = FIN 
+						add_core = FIN
+					}
+					remove_core = ROOT
 				}
 				else_if = {
 					limit = {
@@ -691,44 +728,134 @@ country_event = {
 							area = skaneland_area
 							area = denmark_area
 						}
-						NOT = { exists = DAN }
+						DAN = {
+							OR = {
+								religion = ROOT
+								NOT = { exists = yes }
+							}
+						}
 					}
-					cede_province = DAN
-					add_core = DAN
+					if = {
+						limit = {
+							NOT = { exists = DAN }
+						}
+						cede_province = DAN 
+						add_core = DAN
+						DAN = {
+							change_religion = ROOT
+						}
+					}
+					else = {
+						cede_province = DAN 
+						add_core = DAN
+					}
+					remove_core = ROOT
 				}
 				else_if = {
 					limit = {
-						NOT = { exists = SWE }
+						SWE = {
+							OR = {
+								religion = ROOT
+								NOT = { exists = yes }
+							}
+						}
 					}
-					cede_province = SWE
-					add_core = SWE
+					if = {
+						limit = {
+							NOT = { exists = SWE }
+						}
+						cede_province = SWE 
+						add_core = SWE
+						SWE = {
+							change_religion = ROOT
+						}
+					}
+					else = {
+						cede_province = SWE 
+						add_core = SWE
+					}
+					remove_core = ROOT
 				}
 				else_if = {
 					limit = {
-						NOT = { exists = JMD }
+						JMD = {
+							OR = {
+								religion = ROOT
+								NOT = { exists = yes }
+							}
+						}
 					}
-					cede_province = JMD
-					add_core = JMD
+					if = {
+						limit = {
+							NOT = { exists = JMD }
+						}
+						cede_province = JMD 
+						add_core = JMD
+						JMD = {
+							change_religion = ROOT
+						}
+					}
+					else = {
+						cede_province = JMD 
+						add_core = JMD
+					}
+					remove_core = ROOT
 				}
 				else_if = {
 					limit = {
-						NOT = { exists = DLR }
+						DLR = {
+							OR = {
+								religion = ROOT
+								NOT = { exists = yes }
+							}
+						}
 					}
-					cede_province = DLR
-					add_core = DLR
+					if = {
+						limit = {
+							NOT = { exists = DLR }
+						}
+						cede_province = DLR 
+						add_core = DLR
+						DLR = {
+							change_religion = ROOT
+						}
+					}
+					else = {
+						cede_province = DLR 
+						add_core = DLR
+					}
+					remove_core = ROOT
 				}
 				else_if = { #This is a last resort
 					limit = {
-						NOT = { exists = SCA }
+						SCA = {
+							OR = {
+								religion = ROOT
+								NOT = { exists = yes }
+							}
+						}
 					}
-					cede_province = SCA
-					add_core = SCA
+					if = {
+						limit = {
+							NOT = { exists = SCA }
+						}
+						cede_province = SCA 
+						add_core = SCA
+						SCA = {
+							change_religion = ROOT
+						}
+					}
+					else = {
+						cede_province = SCA 
+						add_core = SCA
+					}
+					remove_core = ROOT
 				}
 			}
 		}
 	}
 	option = {
-		name = thre_england_events.11.a #Enforce Our Control
+		name = thre_england_events.11.b #Enforce Our Control
 		if = {
 			limit = {
 				full_idea_group = humanist_ideas
@@ -752,7 +879,7 @@ country_event = {
 	id = thre_england_events.12
 	title = thre_england_events.12.t
 	desc = thre_england_events.12.d
-	picture = WAR_OF_THE_ROSES_eventPicture
+	picture = HRE_eventPicture
 	is_triggered_only = yes
 	
 	trigger = {

@@ -3439,7 +3439,7 @@ brit_miss_thre_one = {
 	has_country_shield = yes
 	
 	secure_an_irish_foothold_thre_brit = {
-		icon = mission_redcoats
+		icon = mission_peasantry
 		required_missions = { subjugate_the_scots_thre_brit }
 		position = 3
 		provinces_to_highlight = {
@@ -3516,7 +3516,7 @@ brit_miss_thre_one = {
 	}
 	
 	unify_hibernia_thre_brit = {
-		icon = mission_redcoats
+		icon = mission_rb_rule_britannia_irish_version
 		required_missions = { secure_an_irish_foothold_thre_brit }
 		position = 4
 		provinces_to_highlight = {
@@ -3605,7 +3605,7 @@ brit_miss_thre_two = {
 	has_country_shield = yes
 	
 	subjugate_the_scots_thre_brit = {
-		icon = mission_redcoats
+		icon = mission_rb_conquer_scotland
 		required_missions = { consolidate_england_thre_brit }
 		position = 2
 		provinces_to_highlight = {
@@ -3670,7 +3670,7 @@ brit_miss_thre_two = {
 	}
 	
 	crush_the_pirates_thre_brit = {
-		icon = mission_redcoats
+		icon = crusader_fleet
 		required_missions = { subjugate_the_scots_thre_brit }
 		position = 3
 		provinces_to_highlight = {
@@ -3703,7 +3703,7 @@ brit_miss_thre_two = {
 	}
 	
 	britannia_united_thre_brit = {
-		icon = mission_redcoats
+		icon = mission_rule_britannia
 		required_missions = { crush_the_pirates_thre_brit unify_hibernia_thre_brit }
 		position = 5
 		provinces_to_highlight = {
@@ -3720,6 +3720,7 @@ brit_miss_thre_two = {
 			change_tag = BQR
 			on_change_tag_effect = yes
 			restore_country_name_effect = yes
+			complete_mission = britannia_united_thre_brit #Have to do this to ensure the mission is completed
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -3731,7 +3732,7 @@ brit_miss_thre_two = {
 	}
 	
 	belief_of_the_britons_thre_brit = {
-		icon = mission_redcoats
+		icon = influence_the_church
 		required_missions = { britannia_united_thre_brit }
 		position = 6
 		provinces_to_highlight = {
@@ -3766,7 +3767,7 @@ brit_miss_thre_two = {
 	}
 	
 	northern_crusade_thre_brit = {
-		icon = mission_redcoats
+		icon = mission_rb_control_state_religion
 		required_missions = { belief_of_the_britons_thre_brit emperor_of_all_romans_thre_brit }
 		position = 7
 		provinces_to_highlight = {
@@ -3830,7 +3831,7 @@ brit_miss_thre_two = {
 	}
 	
 	destroy_norse_nuisance_thre_brit = {
-		icon = mission_redcoats
+		icon = mission_baltic_empire
 		required_missions = { northern_crusade_thre_brit }
 		position = 8
 		provinces_to_highlight = {
@@ -3881,7 +3882,7 @@ brit_miss_thre_three = {
 	has_country_shield = yes
 	
 	consolidate_england_thre_brit = {
-		icon = mission_redcoats
+		icon = mission_rb_empire
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
@@ -3944,7 +3945,7 @@ brit_miss_thre_three = {
 	}
 	
 	challenge_the_emperor_thre_brit = {
-		icon = mission_redcoats
+		icon = catholic_volunteers
 		required_missions = { consolidate_england_thre_brit }
 		position = 2
 		provinces_to_highlight = {
@@ -3968,14 +3969,6 @@ brit_miss_thre_three = {
 				duration = 5475
 			}
 			custom_tooltip = all_electors_gain_tweny_fif_opinion_wit_us_eng_thre
-			tooltip = {
-				random_elector = {
-					add_opinion = {
-						who = ROOT
-						modifier = eng_diplomatic_domineering_opinion_modifier
-					}
-				}
-			}
 			hidden_effect = {
 				every_elector = {
 					add_opinion = {
@@ -3991,7 +3984,7 @@ brit_miss_thre_three = {
 	}
 	
 	emperor_of_all_romans_thre_brit = {
-		icon = mission_redcoats
+		icon = mission_english_reformation
 		required_missions = { challenge_the_emperor_thre_brit britannia_united_thre_brit }
 		position = 6
 		provinces_to_highlight = {
@@ -4095,7 +4088,7 @@ brit_miss_thre_four = {
 	}
 		
 	dominate_the_channel_thre_brit = {
-		icon = mission_redcoats
+		icon = mission_rb_control_the_hansa
 		required_missions = { consolidate_england_thre_brit }
 		position = 2
 		provinces_to_highlight = {
@@ -4223,21 +4216,6 @@ brit_miss_thre_four = {
 				}
 				if = {
 					limit = {
-						137 = {
-							OR = {
-								is_strongest_trade_power = ROOT
-							}
-							trade_share = {
-								country = ROOT
-								share = 30
-							}
-						}
-					}
-					add_dip_power = 100
-					add_mercantilism = 3
-				}
-				if = {
-					limit = {
 						45 = {
 							OR = {
 								is_strongest_trade_power = ROOT
@@ -4326,37 +4304,6 @@ brit_miss_thre_four = {
 					add_dip_power = 100
 					add_mercantilism = 3
 				}
-				if = {
-					limit = {
-						153 = {
-							OR = {
-								is_strongest_trade_power = ROOT
-							}
-							trade_share = {
-								country = ROOT
-								share = 30
-							}
-						}
-					}
-					add_dip_power = 100
-					add_mercantilism = 3
-				}
-				if = {
-					limit = {
-						262 = {
-							OR = {
-								is_strongest_trade_power = ROOT
-							}
-							trade_share = {
-								country = ROOT
-								share = 30
-							}
-						}
-					}
-					add_dip_power = 100
-					add_mercantilism = 3
-				}
-				#No we are not adding nodes west of Poland
 			}
 		}
 		ai_weight = {
@@ -4429,7 +4376,7 @@ brit_miss_thre_four = {
 	}
 	
 	centralize_the_franks_thre_brit = {
-		icon = mission_redcoats
+		icon = empower_the_junkers
 		required_missions = { emperor_of_all_romans_thre_brit }
 		position = 7
 		provinces_to_highlight = {
@@ -4493,6 +4440,30 @@ brit_miss_thre_four = {
 					}
 				}
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							has_subject_of_type = appanage_prs
+							has_subject_of_type = appanage_bur
+						}
+					}
+					add_ruler_modifier = {
+						name = "lord_of_the_franks_eng_thre"
+						duration = -1
+					}
+				}
+				else = {
+					183 = {
+						add_base_tax = 2
+						change_culture = ROOT
+						add_province_modifier = {
+							name = "parisan_britonization_eng_thre"
+							duration = 9125
+						}
+					}
+				}
+			}
 		}
 		ai_weight = {
 			factor = 250
@@ -4500,7 +4471,7 @@ brit_miss_thre_four = {
 	}
 	
 	begin_barbarian_integration_thre_brit = {
-		icon = mission_redcoats
+		icon = chivalry_is_not_dead
 		required_missions = { centralize_the_franks_thre_brit }
 		position = 8
 		provinces_to_highlight = {
@@ -4554,7 +4525,7 @@ brit_miss_thre_five = {
 	}
 	
 	expand_royal_navy_thre_brit = {
-		icon = mission_redcoats
+		icon = mission_rb_a_mighty_fleet
 		required_missions = { consolidate_england_thre_brit }
 		position = 2	
 		trigger = { 
@@ -4732,7 +4703,7 @@ brit_miss_thre_five = {
 	}
 	
 	follow_the_roads_thre_brit = {
-		icon = mission_redcoats
+		icon = a_real_roman_empire
 		required_missions = { centralize_the_franks_thre_brit }
 		position = 8
 		provinces_to_highlight = {
@@ -4755,3 +4726,586 @@ brit_miss_thre_five = {
 		}
 	}
 }
+
+bottom_hre_row_1 = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		has_country_flag = gotten_hre_focus_result_war_of_roses_england
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	thre_hre_bri_monopolize_the_channel = {
+		icon = mission_rb_monopolize_the_channel
+		required_missions = { thre_hre_bri_a_house_divided }
+		position = 10
+		provinces_to_highlight = {
+			if = {
+				limit = { is_random_new_world = no }
+				OR = {
+					province_id = 1500
+					province_id = 1269
+				}
+				has_discovered = ROOT
+			}
+			else = {
+				province_id = 1269
+			}
+		}		
+		trigger = {
+			if = {
+				limit = { is_random_new_world = no }
+				1500 = {
+					trade_share = {
+						country = ROOT
+						share = 40
+					}
+				}
+				1269 = {
+					highest_value_trade_node = yes
+					trade_share = {
+						country = ROOT
+						share = 60
+					}
+				}
+			}
+			else = {
+				1269 = {
+					highest_value_trade_node = yes
+					trade_share = {
+						country = ROOT
+						share = 60
+					}
+				}
+			}
+		}	
+		effect = {
+			add_country_modifier = {
+				name = "eng_channel_dominance"
+				duration = 9125
+			}
+			add_treasury = 500
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+
+	thre_hre_bri_center_of_worlds_trade = {
+		icon = mission_control_the_channel
+		required_missions = {
+			thre_hre_bri_monopolize_the_channel
+			thre_hre_bri_early_industry
+		}
+		position = 11
+		provinces_to_highlight = {
+			province_id = 1269
+		}		
+		trigger = { 
+			1269 = {
+				is_strongest_trade_power = ROOT
+			}
+			1269 = {
+				highest_value_trade_node = yes
+			}
+			1269 = {
+				trade_node_value = 500
+			}
+			reform_level = 8
+		}	
+		effect = {
+			unlock_government_reform = {
+				government_reform = commercial_trade_empire_reform
+			}
+			change_government_reform_progress = 100
+			add_treasury = 2000
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+bottom_hre_row_2 = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		has_country_flag = gotten_hre_focus_result_war_of_roses_england
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	thre_hre_bri_a_house_divided = {
+		icon = mission_alliances
+		required_missions = {  }
+		position = 9
+		provinces_to_highlight = {
+		}		
+		trigger = { 
+			if = {
+				limit = { has_estate = estate_nobles }
+				num_of_estate_agendas_completed = {
+					estate = estate_nobles
+					value = 3
+				}
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			}
+			else = {
+				NOT = { has_estate = estate_nobles }
+			}
+			num_of_issues_passed = {
+				amount = 5
+				alternative_trigger = "
+					reform_level = 6
+				"
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = eng_the_two_houses
+				duration = 9125
+			}
+			disable_rebels_from_seize_land_for_estate = {
+				estate = all
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+
+	thre_hre_bri_early_industry = {
+		icon = mission_rb_prospect_for_coal
+		required_missions = { thre_hre_bri_a_house_divided }
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						province_id = 1861
+						province_id = 241
+						province_id = 4375
+						province_id = 246
+					}
+					NOT = { owned_by = ROOT }
+				}
+				AND = {
+					owned_by = ROOT
+					NOT = { has_manufactory_no_custom_tooltip_trigger = yes }
+				}
+			}
+		}
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					has_manufactory_trigger = yes
+				}
+				amount = 20
+			}
+			owns = 1861
+			owns = 241
+			owns = 4375
+			owns = 246
+		}		
+		effect = {
+			if = {
+				limit = { has_dlc = "Rule Britannia" }
+				custom_tooltip = earlier_coal_available_tt
+			}
+			set_country_flag = earlier_coal_available
+			1861 = {
+				add_base_production = 3
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "eng_rb_coal_produced_mod"
+					duration = -1
+				}
+			}
+			241 = {
+				add_base_production = 3
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "eng_rb_coal_produced_mod"
+					duration = -1
+				}
+			}
+			4375 = {
+				add_base_production = 3
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "eng_rb_coal_produced_mod"
+					duration = -1
+				}
+			}
+			246 = {
+				add_base_production = 3
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "eng_rb_coal_produced_mod"
+					duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+
+	thre_hre_bri_the_great_empire = {
+		icon = mission_rb_empire
+		required_missions = {
+			thre_hre_bri_early_industry
+			thre_hre_bri_english_renaissance
+		}
+		position = 11
+		provinces_to_highlight = {
+		}		
+		trigger = {
+			if = {
+				limit = {
+					OR = {
+						has_dlc = "Emperor"
+						has_dlc = "Rights of Man"
+					}
+				}
+				NOT = { great_power_rank = 2 }
+			}
+			if = {
+				limit = { has_dlc = "Emperor" }
+				is_hegemon = yes
+			}
+			monthly_income = 500
+			total_own_and_non_tributary_subject_development = 3000
+		}	
+		effect = {
+			add_country_modifier = {
+				name = eng_empire_of_the_island
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+bottom_hre_row_3 = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		has_country_flag = gotten_hre_focus_result_war_of_roses_england
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	thre_hre_bri_english_renaissance = {
+		icon = mission_english_renaissance
+		required_missions = { thre_hre_bri_a_house_divided }
+		position = 10
+		provinces_to_highlight = {
+			is_capital_of = ROOT
+			is_prosperous = no
+		}		
+		trigger = {
+			has_institution = renaissance
+			artist = 3
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				capital_scope = {
+					is_prosperous = yes
+				}
+			}
+			prestige = 75
+		}
+		effect = {
+			country_event_with_insight = {
+				id = flavor_gbr.12
+				insight_tooltip = INSIGHT_JUST_TOOLTIP
+				effect_tooltip = "
+				add_prestige_or_monarch_power = {
+					amount = 25
+				}
+				capital_scope = {
+					add_province_triggered_modifier = eng_globe_theatre
+				}
+				"
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+
+	thre_hre_bri_renovate_universities = {
+		icon = mission_rb_renovate_oxbridge
+		required_missions = { thre_hre_bri_english_renaissance }
+		position = 11
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 237
+				province_id = 4370
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { development = 30 }
+			}
+		}
+		
+		trigger = {
+			owns = 237
+			owns = 4370
+			OR = {
+				AND = {
+					237 = { development = 30 }
+					4370 = { development = 30 }
+				}
+				if = {
+					limit = { has_dlc = "Rule Britannia" }
+					innovativeness = 50
+				}
+				else = {
+					full_idea_group = innovativeness_ideas
+				}
+			}
+		}
+		
+		effect = {
+			237 = {
+				add_building = university
+				add_province_modifier = {
+					name = eng_most_esteemed_university
+					duration = -1
+				}
+			}
+			4370 = {
+				add_building = university
+				add_province_modifier = {
+					name = eng_most_esteemed_university
+					duration = -1
+				}
+			}
+			change_innovativeness = 3
+			country_event = {
+				id = flavor_eng.9880
+				days = 1
+			}
+			hidden_effect = {
+				random_list = {
+					20 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 1
+						}
+					}
+					20 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 2
+						}
+					}
+					20 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 3
+						}
+					}
+					20 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 4
+						}
+					}
+					20 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 5
+						}
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+bottom_hre_row_4 = {
+	slot = 4
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		has_country_flag = gotten_hre_focus_result_war_of_roses_england
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	thre_hre_bri_the_men_of_war = {
+		icon = mission_rb_grow_the_channel
+		required_missions = { thre_hre_bri_a_house_divided }
+		position = 10
+		provinces_to_highlight = {
+			owned_by = ROOT
+			has_port = yes
+			NOT = { has_shipyard_building_trigger = yes }
+			NOT = { has_dock_building_trigger = yes }
+			NOT = { has_building = impressment_offices }
+		}		
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_shipyard_building_trigger = yes
+					has_dock_building_trigger = yes
+					has_building = impressment_offices
+				}
+				value = 10
+			}
+			navy_tradition = 30
+		}
+		effect = {
+			add_navy_tradition = 10
+			add_country_modifier = {
+				name = eng_the_man_of_war
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+
+	thre_hre_bri_the_royal_marines = {
+		icon = mission_plc_lifetime_of_war
+		required_missions = {
+			thre_hre_bri_the_men_of_war
+			thre_hre_bri_create_standing_army
+		}
+		position = 11
+		provinces_to_highlight = {
+		}		
+		trigger = {
+			num_of_marines = 30
+			has_reform = royal_marines_reform
+		}
+		effect = {
+			add_country_modifier = {
+				name = eng_strict_marines
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+bottom_hre_row_5 = {
+	slot = 5
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		has_country_flag = gotten_hre_focus_result_war_of_roses_england
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	thre_hre_bri_create_standing_army = {
+		icon = mission_assemble_an_army
+		required_missions = { thre_hre_bri_a_house_divided }
+		position = 10
+		provinces_to_highlight = {
+		}		
+		trigger = {
+			#max_manpower = 40
+			army_size = 50
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.2
+			}
+			army_tradition = 30
+		}	
+		effect = {
+			#unlock_issue = {
+			#	issue = military_reform_acts
+			#}
+			unlock_issue = {
+				issue = discipline_for_the_marines_acts
+			}
+			unlock_issue = {
+				issue = improved_man_of_war_acts
+			}
+			unlock_issue = {
+				issue = army_reform_acts
+			}
+			define_general = {
+				shock = 5
+				fire = 4
+				manuever = 5
+				siege = 2
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+
+	thre_hre_bri_the_redcoats = {
+		icon = mission_redcoats
+		required_missions = { thre_hre_bri_create_standing_army }
+		position = 11
+		provinces_to_highlight = {
+		}		
+		trigger = { 
+			reform_level = 4
+			max_manpower = 120
+			army_size = 80
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.4
+			}
+			army_tradition = 60
+			has_reform = royal_marines_reform
+		}	
+		effect = {
+			add_country_modifier = {
+				name = eng_the_redcoat
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+

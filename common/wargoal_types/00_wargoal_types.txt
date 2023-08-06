@@ -3017,13 +3017,12 @@ subjugate_the_franks_wgt = {
 	type = take_capital
 	
 	attacker = {
-		badboy_factor = 0.75
+		badboy_factor = 0.25
 		prestige_factor = 2
 		peace_cost_factor = 0.75
 
 		peace_options = {
 			po_subjugate_the_franks
-			po_demand_provinces
 		}
 	}
 	
@@ -3034,7 +3033,6 @@ subjugate_the_franks_wgt = {
 
 		peace_options = {
 			po_subjugate_the_franks
-			po_demand_provinces
 		}
 	}
 
