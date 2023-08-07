@@ -509,7 +509,7 @@ country_event = {		#The Divided EMpire
 		NOT = { has_global_flag = THRE_Leage_Peace_Talks_Ongoing }
 	}
 	
-	mean_time_to_happen = { months = 36 } 	#Force League war after 3 years of Leagues
+	mean_time_to_happen = { months = 24 } 	#Force League war after 2 years of Leagues
 	
 	option = {
 		name = "THRE_Reform_Desire.8.opta" #Start a league war
