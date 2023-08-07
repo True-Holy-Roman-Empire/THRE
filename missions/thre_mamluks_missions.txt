@@ -24,9 +24,9 @@ mam_disaster1 = {
 				set_country_flag = mam_nostabby
 				}
 		custom_tooltip = mam_nostab.tt
-		country_modifier = {
-			name = mam_stabreward
-			duration = 3650
+			add_country_modifier = {
+				name = mam_stabreward
+				duration = 3650
 			}
 		}
 	}
@@ -231,7 +231,7 @@ mam_disaster3 = {
 			}
 		}
 		effect = { 
-			country_modifier = {
+			add_country_modifier = {
 				name = mam_beatdisaster
 				duration = -1
 				}
@@ -273,12 +273,12 @@ mam_disaster4 = {
 		effect = {
 			hidden_effect = {
 				set_country_flag = mam_nomoneyloss
-				}
+			}
 			custom_tooltip = mam_nomoneyloss.tt 
-			country_modifier = {
+			add_country_modifier = {
 				name = mam_organizedarmy
 				duration = 3650
-				}
+			}
 		}
 	}
 	mam_securesouth = {
@@ -321,12 +321,12 @@ mam_disaster4 = {
 		effect = {
 			hidden_effect = {
 				set_country_flag = mam_rulerbetter
-				}
+			}
 			custom_tooltip = mam_rulerbetter.tt 
-			country_modifier = {
+			add_country_modifier = {
 				name = mam_securethesouth
 				duration = 3650
-				}
+			}
 		}
 	}
 	mam_rebels = {
@@ -377,7 +377,7 @@ mam_disaster5 = {
 		effect = { 
 			hidden_effect = {
 				set_country_flag = mam_stopprintingmoney
-					}
+			}
 			custom_tooltip = mam_stopprintingmoney.tt
 		}
 	}
