@@ -181,7 +181,10 @@ country_event = {
 		NOT = { is_religion_enabled = protestant }
 		NOT = { tag = PAP }
 		any_owned_province = {
-			would_be_catholic_trigger = yes
+			OR = {
+				religion = catholic
+				religion = abrahamism
+			}
 		}
 		is_year = 1490
 		NOT = {
@@ -281,7 +284,10 @@ country_event = {
 		NOT = { is_religion_enabled = protestant }
 		NOT = { tag = PAP }
 		any_owned_province = {
-			would_be_catholic_trigger = yes
+			OR = {
+				religion = catholic
+				religion = abrahamism
+			}
 		}
 	}
 	
