@@ -16,6 +16,7 @@ country_event = {
 			add_stability = -1
 			add_legitimacy = -50
 			set_country_flag = started_decline_of_mamluks
+			set_country_flag = mam_new_missions
 		}
 	}
 	
@@ -26,47 +27,43 @@ country_event = {
 			add_stability = -1
 			add_legitimacy = -50
 		}
-
+		hidden_effect = {
+			swap_non_generic_missions = yes 
+			}
+		
 		ai_chance = {
 			factor = 1
 		}
 	}
 }
 
-# country_event = {
-# 	id = thre_mam.2
-# 	title = thre_mam.2.t
-# 	desc = thre_mam.2.d
-# 	picture = MALI_RULER_eventPicture
+ country_event = {
+ 	id = thre_mam.2
+ 	title = thre_mam.2.t
+ 	desc = thre_mam.2.d
+ 	picture = MALI_RULER_eventPicture
 
-# 	is_triggered_only = yes
-# 	major = yes
+ 	is_triggered_only = yes
+ 	major = yes
 
-# 	immediate = {
-# 		hidden_effect = {
-# 			set_country_flag = had_decline_of_mali
-# 			clr_country_flag = started_decline_of_mali
-# 			}
-# 		}
+ 	immediate = {
+ 		hidden_effect = {
+ 			set_country_flag = had_decline_of_mali
+ 			clr_country_flag = started_decline_of_mali
+ 			}
+ 		}
 	
-# 	option = {
-# 		name = thre_mam.2.a
-# 		add_adm_power = 100
-# 		add_dip_power = 100
-# 		add_mil_power = 100
+ 	option = {
+ 		name = thre_mam.2.a
+ 		add_adm_power = 100
+ 		add_dip_power = 100
+ 		add_mil_power = 100
 
-# 		ai_chance = {
-# 			factor = 1
-# 		}
-# 	}
-# }
-
-# country_event = {
-# 	id = thre_mam.3
-# 	title = thre_mam.3.t
-# 	desc = thre_mam.3.d
-# 	picture = MALI_RULER_eventPicture	
-# 	}
+ 		ai_chance = {
+ 			factor = 1
+ 		}
+ 	}
+ }
 
 country_event = { #mamluk succession while in crisis
 	id = thre_mam.3
@@ -559,6 +556,10 @@ country_event = { #unfit to rule
 	
 	is_triggered_only = yes 
 	
+	trigger = {
+		NOT = { has_country_flag = mam_nostabby }
+		}
+	
 	option = {
 		name = thre_mam.5.a 
 		add_legitimacy = -10
@@ -573,6 +574,10 @@ country_event = { #unruly province
 	picture = THREE_HEIRS_eventPicture
 	
 	is_triggered_only = yes 
+	
+	trigger = {
+		NOT = { has_country_flag = mam_noautonomy }
+		}
 	
 	option = {
 		name = thre_mam.6.a 
@@ -597,6 +602,7 @@ country_event = {
 		not = {
 			has_country_modifier = mamluk_placeholder
 			}
+		NOT = { has_country_flag = mam_nomoredev }
 		}
 	
 	option = {
@@ -619,6 +625,10 @@ country_event = { #peasant revolt
 	picture = THREE_HEIRS_eventPicture
 	
 	is_triggered_only = yes 
+	
+	trigger = {
+		NOT = { has_country_flag = mam_norebels }
+		}
 	
 	option = {
 		name = thre_mam.8.a
@@ -645,6 +655,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_ruler_modifier = mamluk_ruler_placeholder }
+		NOT = { has_country_flag = mam_rulerbetter }
 		}
 	
 	option = {
@@ -666,7 +677,11 @@ country_event = {
 	desc = thre_mam.10.d
 	picture = THREE_HEIRS_eventPicture
 	
-	is_triggered_only = yes 
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = mam_nomoneyloss }
+		}
 	
 	option = {
 		name = thre_mam.10.a 
@@ -687,6 +702,10 @@ country_event = {
 	picture = THREE_HEIRS_eventPicture
 	
 	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_flag = mam_stopprintingmoney }
+		}
 	
 	option = {
 		name = thre_mam.11.a 

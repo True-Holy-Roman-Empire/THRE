@@ -1,0 +1,537 @@
+mam_disaster1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MAM
+		}
+		has_country_flag = mam_new_missions
+	}
+	has_country_shield = yes
+
+	mam_stability = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = {  }
+		trigger = {
+			stability = 2
+			legitimacy = 90
+		}
+		effect = {
+			hidden_effect = {
+				set_country_flag = mam_nostabby
+				}
+		custom_tooltip = mam_nostab.tt
+		country_modifier = {
+			name = mam_stabreward
+			duration = 3650
+			}
+		}
+	}
+}
+
+mam_disaster2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MAM
+		}
+		has_country_flag = mam_new_missions
+	}
+	has_country_shield = yes
+
+	mam_ruler_check = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = {
+			monthly_adm = 8
+			monthly_dip = 8
+		}
+		effect = { 
+			hidden_effect = {
+				set_country_flag = mam_rebelslessen
+				}
+		custom_tooltip = mam_rulerreward.tt
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+		}
+	}
+	mam_autonomy = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { mam_ruler_check mam_stability }
+		trigger = { 
+			ROOT = {
+				NOT = { unrest = 1 }
+			}
+		}
+		effect = { 
+			hidden_effect = {
+				set_country_flag = mam_noautonomy
+				}
+		custom_tooltip = mam_autonomyrewards.tt 
+		add_stability_or_adm_power = yes 
+		add_prestige = 30
+		}
+	}
+}
+
+mam_disaster3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MAM
+		}
+		has_country_flag = mam_new_missions
+	}
+	has_country_shield = yes
+
+	mam_dev_cairo = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = {  }
+		provinces_to_highlight = {
+			province_id = 361 
+				OR = {
+					NOT = { development = 30 }
+					NOT = { base_production = 10 }
+					}
+				}
+		trigger = {
+			361 = {
+				AND = {
+					development = 30
+					base_production = 10
+					}
+				}
+		}
+		effect = {
+			hidden_effect = {
+				set_country_flag = mam_nomoredev
+				}
+			custom_tooltip = mam_devrewards.tt
+		}
+	}
+	mam_enddisaster = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { mam_autonomy mam_dev_cairo mam_rebels }
+		provinces_to_highlight = { 
+			OR = {
+				area = cyrenaica_area 
+				area = vostani_area 
+				area = gulf_of_arabia_area
+				area = trans_jordan_area
+				area = said_area
+				area = bahari_area
+				province_id = 2324
+				province_id = 1232
+				province_id = 4268
+				province_id = 383
+				province_id = 4269
+				province_id = 382
+				province_id = 378
+				province_id = 1849
+				province_id = 377
+				province_id = 2313
+				province_id = 4297
+				province_id = 1854
+				province_id = 364
+				province_id = 363
+				province_id = 362
+				province_id = 4942
+				}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = mam_owncores.tt 
+			cyrenaica_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+				}
+			vostani_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+				}
+			gulf_of_arabia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+				}
+			trans_jordan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+				}
+			said_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+				}
+			bahari_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+				}
+			2324 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			1232 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			4268 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			383 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			4269 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			382 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			4297 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			378 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			1849 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			377 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			2313 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			1854 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			364 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			363 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			362 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			4942 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			}
+		}
+		effect = { 
+			country_modifier = {
+				name = mam_beatdisaster
+				duration = -1
+				}
+		custom_tooltip = mam_onlyappliestostartingruler.tt 
+		if = {
+			limit = {
+				dynasty = "Burji"
+				}
+			change_adm = 2
+			change_dip = 2
+			change_mil = 2
+			}
+		}
+	}
+}
+
+mam_disaster4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MAM
+		}
+		has_country_flag = mam_new_missions
+	}
+	has_country_shield = yes
+
+	mam_organize_army = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { 
+			army_size_percentage = 1
+			num_of_generals = 1
+			monthly_mil = 9
+		}
+		effect = {
+			hidden_effect = {
+				set_country_flag = mam_nomoneyloss
+				}
+			custom_tooltip = mam_nomoneyloss.tt 
+			country_modifier = {
+				name = mam_organizedarmy
+				duration = 3650
+				}
+		}
+	}
+	mam_securesouth = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { mam_organize_army }
+		provinces_to_highlight = {
+			OR = {
+				area = vostani_area
+				area = said_area
+				province_id = 2320
+				province_id = 2321
+				province_id = 2324
+				province_id = 1232
+				}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			}
+		trigger = {
+			vostani_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+				}
+			said_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+				}
+			2320 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+				}
+			2321 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+				}
+			2324 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+				}
+			1232 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+				}
+		}
+		effect = {
+			hidden_effect = {
+				set_country_flag = mam_rulerbetter
+				}
+			custom_tooltip = mam_rulerbetter.tt 
+			country_modifier = {
+				name = mam_securethesouth
+				duration = 3650
+				}
+		}
+	}
+	mam_rebels = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { mam_securesouth mam_printingmoney }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = mam_disaster 
+				had_country_flag = {
+					flag = started_decline_of_mamluks
+					days = 1825
+				}
+			}
+			num_of_rebel_armies = 0
+			num_of_rebel_controlled_provinces = 0
+		}
+		effect = { 
+			hidden_effect = {
+				set_country_flag = mam_norebels
+				}
+			custom_tooltip = mam_norebels.tt 
+		}
+	}
+}
+
+mam_disaster5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MAM
+		}
+		has_country_flag = mam_new_missions
+	}
+	has_country_shield = yes
+
+	mam_printingmoney = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = {  }
+		trigger = { 
+			advisor = master_of_mint 
+			NOT = { inflation = 2 }
+		}
+		effect = { 
+			hidden_effect = {
+				set_country_flag = mam_stopprintingmoney
+					}
+			custom_tooltip = mam_stopprintingmoney.tt
+		}
+	}
+}
+
+mam_newera1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MAM
+		}
+		has_country_flag = mam_new_missions
+	}
+	has_country_shield = yes
+
+	mam_innovation = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { mam_enddisaster }
+		trigger = { }
+		effect = { }
+	}
+	mam_politicalreformation = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { mam_innovation }
+		trigger = { }
+		effect = { }
+	}
+}
+
+mam_newera2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MAM
+		}
+		has_country_flag = mam_new_missions
+	}
+	has_country_shield = yes
+
+	mam_securenile = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { mam_enddisaster }
+		trigger = { }
+		effect = { }
+	}
+	mam_farmthenile = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { mam_securenile }
+		trigger = { }
+		effect = { }
+	}
+	mam_constructcanal = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = { mam_farmthenile }
+		trigger = { }
+		effect = { }
+	}
+}
+
+mam_newera3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MAM
+		}
+		has_country_flag = mam_new_missions
+	}
+	has_country_shield = yes
+
+	mam_ambitiouslegacy = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { mam_enddisaster }
+		trigger = { }
+		effect = { }
+	}
+	mam_securehejaz = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { mam_ambitiouslegacy }
+		trigger = { }
+		effect = { }
+	}
+	mam_claimyeman = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { mam_securehejaz }
+		trigger = { }
+		effect = { }
+	}
+}
+
+mam_newera4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MAM
+		}
+		has_country_flag = mam_new_missions
+	}
+	has_country_shield = yes
+
+	mam_securesyriakurdistan = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { mam_enddisaster }
+		trigger = { }
+		effect = { }
+	}
+	mam_pushintoiraq = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { mam_securesyriakurdistan }
+		trigger = { }
+		effect = { }
+	}
+	mam_newcaliphate = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = { mam_claimyeman mam_pushintoiraq }
+		trigger = { }
+		effect = { }
+	}
+}
+
+mam_newera5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MAM
+		}
+		has_country_flag = mam_new_missions
+	}
+	has_country_shield = yes
+
+}
+
