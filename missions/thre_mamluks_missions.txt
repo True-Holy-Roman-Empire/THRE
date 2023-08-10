@@ -660,7 +660,7 @@ mam_newera4 = {
 		position = 7
 		required_missions = { mam_securesyriakurdistan }
 		provinces_to_highlight = {
-			region = masriq_region
+			region = mashriq_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			}
 		trigger = { 
