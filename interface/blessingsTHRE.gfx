@@ -1,0 +1,55 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_holy_site_379"
+		texturefile = "gfx//interface//holy_sites//jerusalem.dds"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_holy_site_358"
+		texturefile = "gfx//interface//holy_sites//alexandria.dds"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_holy_site_118"
+		texturefile = "gfx//interface//holy_sites//roma.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_holy_site_1878"
+		texturefile = "gfx//interface//holy_sites//aachen.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_holy_site_151"
+		texturefile = "gfx//interface//holy_sites//constantinople.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_holy_site_216"
+		texturefile = "gfx//interface//holy_sites//salamanca.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_holy_site_235"
+		texturefile = "gfx//interface//holy_sites//kent.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_holy_site_202"
+		texturefile = "gfx//interface//holy_sites//avignon.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_holy_site_223"
+		texturefile = "gfx//interface//holy_sites//granada.dds"
+		loadType = "INGAME"
+	}
+}
