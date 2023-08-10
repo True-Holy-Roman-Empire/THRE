@@ -130,3 +130,50 @@ mamluk_placeholder = {
 production_efficiency = -0.2
 stability_cost_modifier = 0.15
 }
+
+# FRANCE:
+appanage_prs_liberty_desire = {
+	liberty_desire = -15
+}
+appanage_prs_orl_tax = {
+	global_tax_modifier = 0.05
+}
+appanage_prs_pic_tax = {
+	global_tax_modifier = 0.05
+}
+appanage_prs_nrm_tax = {
+	global_tax_modifier = 0.05
+}
+appanage_prs_ale_tax = {
+	global_tax_modifier = 0.05
+}
+appanage_prs_mne_tax = {
+	global_tax_modifier = 0.05
+}
+appanage_prs_anj_tax = {
+	global_tax_modifier = 0.05
+}
+appanage_prs_pou_tax = {
+	global_tax_modifier = 0.05
+}
+appanage_prs_ago_tax = {
+	global_tax_modifier = 0.05
+}
+appanage_prs_ber_tax = {
+	global_tax_modifier = 0.05
+}
+appanage_prs_chp_tax = {
+	global_tax_modifier = 0.05
+}
+appanage_prs_nev_tax = {
+	global_tax_modifier = 0.05
+}
+appanage_prs_bar_tax = {
+	global_tax_modifier = 0.05
+}
+appanage_prs_bou_tax = {
+	global_tax_modifier = 0.05
+}
+appanage_prs_dau_tax = {
+	global_tax_modifier = 0.05
+}

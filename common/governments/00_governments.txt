@@ -109,6 +109,7 @@ monarchy = {
 				league_of_lezhe_reform
 				tibetan_dual_government_reform
 				paris_appanage_reform
+				paris_appanage_republic
 			}
 		}
 		hereditary_vs_nobility = {
@@ -578,7 +579,6 @@ republic = {
 				absolute_shogunate_reform
 				japanese_divine_empire
 				land_christian_sun_reform
-				paris_appanage_republic
 			}
 		}
 		republican_virtues = {

@@ -1,0 +1,17 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_appanage_mech_manpower"
+		texturefile = "gfx/interface/thre/appanage_mech_manpower.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_appanage_mech_income"
+		texturefile = "gfx/interface/thre/appanage_mech_income.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_appanage_lower_liberty"
+		texturefile = "gfx/interface/thre/appanage_lower_liberty.dds"
+		transparencecheck = yes
+	}
+}
