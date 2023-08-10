@@ -20,9 +20,9 @@ mam_disaster1 = {
 			legitimacy = 90
 		}
 		effect = {
-			hidden_effect = {
-				set_country_flag = mam_nostabby
-				}
+		hidden_effect = {
+			set_country_flag = mam_nostabby
+		}
 		custom_tooltip = mam_nostab.tt
 			add_country_modifier = {
 				name = mam_stabreward
@@ -56,11 +56,11 @@ mam_disaster2 = {
 		effect = { 
 			hidden_effect = {
 				set_country_flag = mam_rebelslessen
-				}
-		custom_tooltip = mam_rulerreward.tt
-		add_adm_power = 50
-		add_dip_power = 50
-		add_mil_power = 50
+			}
+			custom_tooltip = mam_rulerreward.tt
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
 		}
 	}
 	mam_autonomy = {
@@ -75,10 +75,10 @@ mam_disaster2 = {
 		effect = { 
 			hidden_effect = {
 				set_country_flag = mam_noautonomy
-				}
-		custom_tooltip = mam_autonomyrewards.tt 
-		add_stability_or_adm_power = yes 
-		add_prestige = 30
+			}
+			custom_tooltip = mam_autonomyrewards.tt 
+			add_stability_or_adm_power = yes 
+			add_prestige = 30
 		}
 	}
 }
@@ -102,23 +102,17 @@ mam_disaster3 = {
 		required_missions = {  }
 		provinces_to_highlight = {
 			province_id = 361 
-				OR = {
-					NOT = { development = 30 }
-					NOT = { base_production = 10 }
-					}
-				}
+		}
 		trigger = {
 			361 = {
-				AND = {
-					development = 30
-					base_production = 10
-					}
-				}
+				development = 30
+				base_production = 10
+			}
 		}
 		effect = {
 			hidden_effect = {
 				set_country_flag = mam_nomoredev
-				}
+			}
 			custom_tooltip = mam_devrewards.tt
 		}
 	}
@@ -127,123 +121,32 @@ mam_disaster3 = {
 		position = 4
 		required_missions = { mam_autonomy mam_dev_cairo mam_rebels }
 		provinces_to_highlight = { 
-			OR = {
-				area = cyrenaica_area 
-				area = vostani_area 
-				area = gulf_of_arabia_area
-				area = trans_jordan_area
-				area = said_area
-				area = bahari_area
-				area = al_wahat_area
-				area = aleppo_area
-				province_id = 2324
-				province_id = 1232
-				province_id = 4268
-				province_id = 383
-				province_id = 4269
-				province_id = 382
-				province_id = 378
-				province_id = 1849
-				province_id = 377
-				province_id = 2313
-				province_id = 4297
-				province_id = 1854
-				province_id = 364
-				province_id = 363
-				province_id = 362
-				province_id = 4942
-				}
+			region = egypt_region
+			is_core = ROOT
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = mam_owncores.tt 
-			cyrenaica_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT 
+				egypt_region = {
+					type = all
+					is_core = ROOT
+					owned_by = 	ROOT
 				}
-			vostani_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT 
-				}
-			gulf_of_arabia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT 
-				}
-			trans_jordan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT 
-				}
-			said_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT 
-				}
-			bahari_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT 
-				}
-			al_wahat_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT 
-				}
-			aleppo_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT 
-				}
-			2324 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			1232 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			4268 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			383 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			4269 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			382 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			4297 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			378 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			1854 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			364 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			363 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			362 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			4942 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
 			}
 		}
 		effect = { 
 			add_country_modifier = {
 				name = mam_beatdisaster
 				duration = -1
+			}
+			if = {
+				limit = {
+					dynasty = "Burji"
 				}
-		custom_tooltip = mam_onlyappliestostartingruler.tt 
-		if = {
-			limit = {
-				dynasty = "Burji"
-				}
-			change_adm = 2
-			change_dip = 2
-			change_mil = 2
+				change_adm = 2
+				change_dip = 2
+				change_mil = 2
 			}
 		}
 	}
@@ -276,6 +179,7 @@ mam_disaster4 = {
 				set_country_flag = mam_nomoneyloss
 			}
 			custom_tooltip = mam_nomoneyloss.tt 
+			add_army_tradition = 5
 			add_country_modifier = {
 				name = mam_organizedarmy
 				duration = 3650
@@ -417,17 +321,20 @@ mam_newera2 = {
 		icon = mission_build_up_to_force_limit
 		position = 5
 		required_missions = { mam_enddisaster }
+		provinces_to_highlight = {
+			area = lower_nubia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
 		trigger = {
 			lower_nubia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 		effect = { 
 			country_event = {
 				id = thre_mam.14
-				}
-			
+			}
 		}
 	}
 	mam_farmthenile = {
@@ -435,52 +342,39 @@ mam_newera2 = {
 		position = 6
 		required_missions = { mam_securenile }
 		provinces_to_highlight = {
-				OR = {
-				province_id = 362
-				province_id = 363
-				province_id = 2316
-				province_id = 361
-				province_id = 359
-				province_id = 4318
-				province_id = 2317
-				province_id = 2319
-				province_id = 4320
-				province_id = 360
-				province_id = 4319
-				province_id = 1231
-				province_id = 1234
-				province_id = 2322
-				}
-				NOT = { development = 15 }
+			OR = {
+				area = said_area
+				area = vostani_area
 			}
+			NOT = { development = 15 }
+		}
 		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = mam_farmthenile.tt 
 			calc_true_if = {
-				all_province = {
-					OR = {
-				province_id = 362
-				province_id = 363
-				province_id = 2316
-				province_id = 361
-				province_id = 359
-				province_id = 4318
-				province_id = 2317
-				province_id = 2319
-				province_id = 4320
-				province_id = 360
-				province_id = 4319
-				province_id = 1231
-				province_id = 1234
-				province_id = 2322
+				vostani_area = {
+					type = all
+					development = 15
 				}
-				development = 15
+				said_area = {
+					type = all
+					development = 15
 				}
 				amount = 10
-				}
 			}			
 		}
-		effect = { }
+		effect = { 
+			said_area = {
+				add_province_modifier = {
+					name = mam_nilean_heartland
+					duration = -1
+				}
+			}
+			vostani_area = {
+				add_province_modifier = {
+					name = mam_nilean_heartland
+					duration = -1
+				}
+			}
+		}
 	}
 	mam_constructcanal = {
 		icon = mission_build_up_to_force_limit
@@ -492,23 +386,15 @@ mam_newera2 = {
 				}
 			treasury = 20000
 			dip_tech = 15
+		}
+		effect = { 
+			4316 = {
+				add_province_modifier = {
+					name = mam_canal_preparations
+					duration = -1
+				}
 			}
-			effect = { 
-				medina_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-					}
-				mecca_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-					}
-			}
+		}
 	}
 }
 
@@ -529,7 +415,9 @@ mam_newera3 = {
 		icon = mission_build_up_to_force_limit
 		position = 5
 		required_missions = { mam_enddisaster }
-		trigger = { }
+		trigger = { 
+			is_great_power = yes
+		}
 		effect = { 
 			medina_area = {
 				limit = {
@@ -537,20 +425,27 @@ mam_newera3 = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-				}
+			}
 			mecca_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-				}
+			}
 		}
 	}
 	mam_securehejaz = {
 		icon = mission_build_up_to_force_limit
 		position = 6
 		required_missions = { mam_ambitiouslegacy }
+		provinces_to_highlight = {
+			OR = {
+				area = medina_area
+				area = mecca_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		trigger = { 
 			medina_area = {
 				type = all
@@ -603,6 +498,16 @@ mam_newera3 = {
 		icon = mission_build_up_to_force_limit
 		position = 7
 		required_missions = { mam_securehejaz }
+		provinces_to_highlight = {
+			OR = {
+				area = asir_area
+				area = tihama_al_yemen_area
+				area = upper_yemen_area
+				area = yemen_area
+				area = hadramut_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		trigger = { 
 			asir_area = {
 				type = all
@@ -625,7 +530,28 @@ mam_newera3 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				}
 		}
-		effect = { }
+		effect = { 
+			if = {
+				limit = {
+					mil = 6
+				}
+				add_mil_power = 300
+			}
+			else_if = {
+				limit = {
+					mil = 5
+				}
+				add_mil_power = 150
+				change_mil = 1
+			}
+			else = {
+				change_mil = 2
+			}
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 25
+			}
+		}
 	}
 }
 
@@ -646,6 +572,13 @@ mam_newera4 = {
 		icon = mission_build_up_to_force_limit
 		position = 5
 		required_missions = { mam_enddisaster }
+		provinces_to_highlight = {
+			OR = {
+				area = syrian_desert_area
+				area = al_jazira_area
+				area = north_kurdistan_area
+			}
+		}
 		trigger = {
 			syrian_desert_area = {
 				type = all

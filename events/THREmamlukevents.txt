@@ -700,21 +700,110 @@ country_event = {
 	title = thre_mam.11.t
 	desc = thre_mam.11.d
 	picture = THREE_HEIRS_eventPicture
-	
 	is_triggered_only = yes
-	
+
 	trigger = {
 		NOT = { has_country_flag = mam_stopprintingmoney }
-		}
-	
+	}
+
 	option = {
 		name = thre_mam.11.a 
-		
 		add_treasury = 25
 		add_corruption = 0.5
-		
 		ai_chance = {
 			factor = 1
+		}
+	}
+}
+
+country_event = { #Agricultural Speciality
+	id = thre_mam.14
+	title = thre_mam.14.t
+	desc = thre_mam.14.d
+	picture = THREE_HEIRS_eventPicture
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = mam_stopprintingmoney }
+	}
+
+	option = {
+		name = thre_mam.14.a #Focus on cash crops.
+		add_years_of_income = 1
+		custom_tooltip = five_random_provs_of_livestock_or_grain_produc_will_change_to_sugar
+		hidden_effect = { #DEADLINE COMING SOON DONT HAVE TIME FOR A WHILE
+			random_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+					}
+				}
+				change_trade_goods = sugar
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+					}
+				}
+				change_trade_goods = sugar
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+					}
+				}
+				change_trade_goods = sugar
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+					}
+				}
+				change_trade_goods = sugar
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+					}
+				}
+				change_trade_goods = sugar
 			}
 		}
 	}
+	option = {
+		name = thre_mam.14.b #We need foodstuffs
+		custom_tooltip = every_grain_and_livestock_prov_we_own_in_nile_gains
+		tooltip = {
+			add_base_production = 1
+			add_province_modifier = {
+				name = mam_to_feed_an_empire
+				duration = 5475
+			}
+		}
+		hidden_effect = {
+			egypt_region = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+					}
+				}
+				add_base_production = 1
+				add_province_modifier = {
+					name = mam_to_feed_an_empire
+					duration = 5475
+				}
+			}
+		}
+	}
+}

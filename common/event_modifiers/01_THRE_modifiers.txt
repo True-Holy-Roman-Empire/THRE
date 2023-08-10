@@ -131,6 +131,46 @@ production_efficiency = -0.2
 stability_cost_modifier = 0.15
 }
 
+mam_stabreward = {
+	harsh_treatment_cost = -0.25
+}
+
+mam_beatdisaster = {
+	global_unrest = -1
+}
+
+mam_organizedarmy = {
+	army_tradition = 0.5
+	army_tradition_decay = -0.005
+}
+
+mam_securethesouth = {	
+	global_colonial_growth = 15
+}
+
+mam_nilean_heartland = {	
+	local_development_cost = -0.15
+	local_manpower_modifier = 0.25
+}
+
+mam_to_feed_an_empire = {	
+	local_development_cost = -0.1
+	local_production_efficiency = 0.1
+}
+
+mam_canal_preparations = {	
+	local_great_project_upgrade_cost = -0.5
+}
+
+mam_victoryoveriraq = {
+	core_creation = -0.1
+	prestige_decay = -0.01
+}
+
+mam_newcaliphate = {	
+	missionaries = 1
+	global_missionary_strength = 0.01
+}
 # FRANCE:
 appanage_prs_liberty_desire = {
 	liberty_desire = -15
