@@ -44,7 +44,6 @@ Orthodox_Flags_Startup_Effect = {
 					region = balkan_region
 				}
 				tag = TRE
-				tag = ARM
 			}
 			religion = abrahamism
 		}
@@ -84,6 +83,9 @@ Sunni_Flags_Startup_Effect = {
 
 Coptic_Flags_Startup_Effect = {
 	MAK = {
+		set_country_flag = coptic_religion_flag
+	}
+	ARM = {
 		set_country_flag = coptic_religion_flag
 	}
 }
