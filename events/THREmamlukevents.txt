@@ -27,10 +27,7 @@ country_event = {
 			add_stability = -1
 			add_legitimacy = -50
 		}
-		hidden_effect = {
-			swap_non_generic_missions = yes 
-			}
-		
+		swap_non_generic_missions = yes
 		ai_chance = {
 			factor = 1
 		}
@@ -729,7 +726,7 @@ country_event = { #Agricultural Speciality
 
 	option = {
 		name = thre_mam.14.a #Focus on cash crops.
-		add_years_of_income = 1
+		add_years_of_income = 5
 		custom_tooltip = five_random_provs_of_livestock_or_grain_produc_will_change_to_sugar
 		hidden_effect = { #DEADLINE COMING SOON DONT HAVE TIME FOR A WHILE
 			random_owned_province = {

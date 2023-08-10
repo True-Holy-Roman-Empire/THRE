@@ -12,7 +12,7 @@ mam_disaster1 = {
 	has_country_shield = yes
 
 	mam_stability = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_high_income
 		position = 2
 		required_missions = {  }
 		trigger = {
@@ -46,7 +46,7 @@ mam_disaster2 = {
 	has_country_shield = yes
 
 	mam_ruler_check = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_empire
 		position = 1
 		required_missions = {  }
 		trigger = {
@@ -57,14 +57,13 @@ mam_disaster2 = {
 			hidden_effect = {
 				set_country_flag = mam_rebelslessen
 			}
-			custom_tooltip = mam_rulerreward.tt
 			add_adm_power = 50
 			add_dip_power = 50
 			add_mil_power = 50
 		}
 	}
 	mam_autonomy = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_impaled_soldies
 		position = 3
 		required_missions = { mam_ruler_check mam_stability }
 		trigger = { 
@@ -97,7 +96,7 @@ mam_disaster3 = {
 	has_country_shield = yes
 
 	mam_dev_cairo = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_egyptian_mamluk_soldier
 		position = 3
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -117,7 +116,7 @@ mam_disaster3 = {
 		}
 	}
 	mam_enddisaster = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_unite_home_region
 		position = 4
 		required_missions = { mam_autonomy mam_dev_cairo mam_rebels }
 		provinces_to_highlight = { 
@@ -187,7 +186,7 @@ mam_disaster4 = {
 		}
 	}
 	mam_securesouth = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_cannons_firing
 		position = 2
 		required_missions = { mam_organize_army }
 		provinces_to_highlight = {
@@ -239,7 +238,7 @@ mam_disaster4 = {
 		}
 	}
 	mam_rebels = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_arabian_fort
 		position = 3
 		required_missions = { mam_securesouth mam_printingmoney }
 		trigger = {
@@ -288,7 +287,7 @@ mam_disaster5 = {
 	has_country_shield = yes
 
 	mam_printingmoney = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_war_chest
 		position = 2
 		required_missions = {  }
 		trigger = { 
@@ -318,7 +317,7 @@ mam_newera2 = {
 	has_country_shield = yes
 
 	mam_securenile = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_non-western_soldiers
 		position = 5
 		required_missions = { mam_enddisaster }
 		provinces_to_highlight = {
@@ -338,7 +337,7 @@ mam_newera2 = {
 		}
 	}
 	mam_farmthenile = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_conquer_malwa_mug
 		position = 6
 		required_missions = { mam_securenile }
 		provinces_to_highlight = {
@@ -377,7 +376,7 @@ mam_newera2 = {
 		}
 	}
 	mam_constructcanal = {
-		icon = mission_build_up_to_force_limit
+		icon = construct_the_kiel_canal
 		position = 8
 		required_missions = { mam_farmthenile }
 		trigger = {
@@ -412,7 +411,7 @@ mam_newera3 = {
 	has_country_shield = yes
 
 	mam_ambitiouslegacy = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_the_caliph
 		position = 5
 		required_missions = { mam_enddisaster }
 		trigger = { 
@@ -436,7 +435,7 @@ mam_newera3 = {
 		}
 	}
 	mam_securehejaz = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_bedouins
 		position = 6
 		required_missions = { mam_ambitiouslegacy }
 		provinces_to_highlight = {
@@ -495,7 +494,7 @@ mam_newera3 = {
 		}
 	}
 	mam_claimyeman = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_cradle_of_civilization
 		position = 7
 		required_missions = { mam_securehejaz }
 		provinces_to_highlight = {
@@ -569,7 +568,7 @@ mam_newera4 = {
 	has_country_shield = yes
 
 	mam_securesyriakurdistan = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_mansure_army
 		position = 5
 		required_missions = { mam_enddisaster }
 		provinces_to_highlight = {
@@ -604,7 +603,7 @@ mam_newera4 = {
 		}
 	}
 	mam_pushintoiraq = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_crusade_for_varna
 		position = 7
 		required_missions = { mam_securesyriakurdistan }
 		provinces_to_highlight = {
@@ -625,7 +624,7 @@ mam_newera4 = {
 		}
 	}
 	mam_newcaliphate = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_quran
 		position = 8
 		required_missions = { mam_claimyeman mam_pushintoiraq }
 		provinces_to_highlight = {
