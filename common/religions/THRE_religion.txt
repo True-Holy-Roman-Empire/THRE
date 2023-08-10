@@ -1734,6 +1734,24 @@ abrahamistic_group = { # Need proper name
 		
 		uses_piety = yes				# Uses piety mechanics
 	}
+	
+	abraham_lincolnism = {
+		color = { 103 145 114 }
+		icon = 31
+		country = {
+			global_unrest = -1
+			land_morale = 0.05
+		}
+		country_as_secondary = {
+			tolerance_own = 2
+			loot_amount = 0.25
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		
+		heretic = { SNAKE_CLAN }
+	}
 
 	jewish = {
 		icon = 20
