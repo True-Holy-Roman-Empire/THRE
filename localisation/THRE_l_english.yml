@@ -424,6 +424,18 @@
         po_subjugate_the_franks_desc: "Transfer all §YAppanges§! to §Y[Root.GetName]§!"
         CB_ALLOWED_po_subjugate_the_franks: "Transfer all §YAppanges§! to §Y[Root.GetName]§!"
         PEACE_po_subjugate_the_franks: "§TTransfer Appanges§!"
+        appanage_prs: "Appange"
+        appanage_prs_long_desc: "A type of subject which swears utmost loyalty to their lord."
+        appanage_prs_is_our: "$NAME|Y$ is a appange of us"
+        appanage_prs_title: "Appange"
+        appanage_prs_title_plural: "Appanges"
+        is_appanage_prs: "Is Appange"
+        appanage_bur: "Appange"
+        appanage_bur_long_desc: "A type of subject which swears utmost loyalty to their lord."
+        appanage_bur_is_our: "$NAME|Y$ is a appange of us"
+        appanage_bur_title: "Appange"
+        appanage_bur_title_plural: "Appanges"
+        is_appanage_bur: "Is Appange"
 
         
   # MISC:
