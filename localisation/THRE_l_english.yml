@@ -164,8 +164,14 @@
       ALX_ADJ: "Alexandrian"
       CYR: "Cyrenaica"
       CYR_ADJ: "Cyrenaican"
-
-
+    #Scandinavia
+      DLR: "Dalarna"
+      DLR_ADJ: "Dalarnan"
+      JMD: "Jämtland"
+      JMD_ADJ: "Jämtland"
+    #Italy
+      CPE: "Catepanate"
+      CPE_ADJ: "Catepanatean"
   # PROVINCES:
     # France:
       PROV4944:0 "Cluny"
@@ -175,7 +181,7 @@
       PROV_ADJ4943:0 "Ciudad Rodrigan"
     # Egypt:
       PROV4942:0 "Plinthine"
-      PROV_ADJ4942:0 "Plinthinean"\
+      PROV_ADJ4942:0 "Plinthinean"
       
   # ENGLISH MISSIONS, EVENTS, AND MISC
     #Modifiers
