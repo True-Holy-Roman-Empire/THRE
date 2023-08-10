@@ -2218,7 +2218,10 @@ greek_ideas = {
 	}
 	
 	trigger = {
-		primary_culture = greek
+		OR = {
+			primary_culture = greek
+			tag = CPE
+		}
 	}
 	free = yes
 	
@@ -2299,6 +2302,7 @@ french_culture_ideas = {
 	
 	trigger = {
 		culture_group = french
+		NOT = { tag = CPE }
 	}
 	free = yes
 	

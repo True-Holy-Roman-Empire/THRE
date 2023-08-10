@@ -28,16 +28,24 @@ appanage_prs = {
 	should_quit_wars_on_activation = yes
 
 	can_fight = {
-		same_overlord = appanage
+		same_overlord = appanage_prs
+		other_overlord = appanage_bur
+		independent_nations = yes
 	}
 	can_rival = {
-		same_overlord = appanage
+		same_overlord = appanage_prs
+		other_overlord = appanage_bur
+		independent_nations = yes
 	}
 	can_ally = {
-		same_overlord = appanage
+		same_overlord = appanage_prs
+		other_overlord = appanage_bur
+		independent_nations = yes
 	}
 	can_marry = {
-		same_overlord = appanage
+		same_overlord = appanage_prs
+		other_overlord = appanage_bur
+		independent_nations = yes
 	}
 	
 	# Subject Interactions
@@ -112,16 +120,20 @@ appanage_bur = {
 	should_quit_wars_on_activation = yes
 
 	can_fight = {
-		same_overlord = appanage
+		same_overlord = appanage_bur
+		other_overlord = appanage_prs
 	}
 	can_rival = {
-		same_overlord = appanage
+		same_overlord = appanage_bur
+		other_overlord = appanage_prs
 	}
 	can_ally = {
-		same_overlord = appanage
+		same_overlord = appanage_bur
+		other_overlord = appanage_prs
 	}
 	can_marry = {
-		same_overlord = appanage
+		same_overlord = appanage_bur
+		other_overlord = appanage_prs
 	}
 	
 	# Subject Interactions

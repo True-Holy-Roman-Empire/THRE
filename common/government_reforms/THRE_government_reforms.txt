@@ -124,6 +124,7 @@ paris_appanage_republic = {
 		diplomatic_reputation = 1
 		ae_impact = 0.1
 		core_creation = 0.1
+		no_stability_loss_on_monarch_death = yes
 	}
 
 	custom_attributes = {
@@ -137,6 +138,10 @@ paris_appanage_republic = {
 		government_abilities = {
 			appanages_mechanic
 		}
+	}
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		election_on_death = yes
 	}
 }
 

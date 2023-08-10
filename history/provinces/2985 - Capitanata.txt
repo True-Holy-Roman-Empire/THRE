@@ -1,6 +1,6 @@
-add_core = NAP
-owner = NAP
-controller = NAP
+add_core = CPE
+owner = CPE
+controller = CPE
 religion = abrahamism
 culture = neapolitan
 hre = yes

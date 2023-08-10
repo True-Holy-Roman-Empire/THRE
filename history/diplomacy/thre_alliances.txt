@@ -145,6 +145,12 @@ guarantee = {
 	start_date = 1444.1.1
 	end_date = 1555.1.1
 }
+guarantee = {
+	first = BYZ
+	second = CPE
+	start_date = 1444.1.1
+	end_date = 1555.1.1
+}
 
 # Poland-Hungary
 union = {
@@ -182,15 +188,6 @@ union = {
 	start_date = 1386.7.1
 	end_date = 1474.11.11
 }
-
-#Denmark vassal (Mann)
-Vassal = {
-	first = DAN 
-	second = KOI 
-	start_date = 1444.1.1
-	end_date = 1526.1.1 
-}
-
 #swedish vassal (Gotland)
 Vassal = {
 	first = SWE 

@@ -5,51 +5,370 @@ appanages_mechanic = {
 	alert_icon_gfx = GFX_alerticons_government_mechanics
 	alert_icon_index = 17
 	available = {
-		has_dlc = "Domination"
+		has_reform = paris_appanage_republic
 	}
-	
 	interactions = {
 		appa_mech_manpower = { # You get manpower (maybe even FL?), in return vassals lose that amount manpower and FL. Liberty Desire increases, no idea how much.
-			icon = GFX_expel_ronin # placeholder
+			icon = GFX_appanage_mech_manpower
 			trigger = {
+				legitimacy = 20
 				any_subject_country = {
-					is_subject_of_type = appanage
+					is_subject_of_type = appanage_prs
 				}
 			}
 			effect = {
+				add_legitimacy = -20
+				custom_tooltip = appa_mech_manpower_tt
+				tooltip = {
+					if = {
+						limit = {
+							capital_scope = {
+								OR = {
+									has_siege = yes
+									NOT = { controlled_by = ROOT }
+								}
+							}
+						}
+						random_owned_province = {
+							limit = {
+								has_siege = no
+								controlled_by = ROOT
+							}
+							infantry = ROOT
+						}
+					}
+					else = {
+						capital_scope = {
+							infantry = ROOT
+						}
+					}
+				}
+				hidden_effect = {
+					every_subject_country = {
+						limit = {
+							is_subject_of_type = appanage_prs
+						}
+						set_variable = {
+							which = subject_inf
+							value = 0
+						}
+						while = {
+							limit = {
+								any_province = {
+									country_or_non_sovereign_subject_holds = ROOT
+									infantry_in_province = PREV
+								}
+								NOT = { liberty_desire = 50 }
+							}
+							change_variable = {
+								which = subject_inf
+								value = 1
+							}
+							add_liberty_desire = 2
+							random_province = {
+								limit = {
+									country_or_non_sovereign_subject_holds = ROOT
+									infantry_in_province = PREV
+								}
+								kill_units = {
+									who = PREV
+									type = infantry
+									amount = 1
+								}
+							}
+						}
+						while = {
+							limit = {
+								check_variable = {
+									which = subject_inf
+									value = 1
+								}
+							}
+							subtract_variable = {
+								which = subject_inf
+								value = 1
+							}
+							overlord = {
+								if = {
+									limit = {
+										capital_scope = {
+											OR = {
+												has_siege = yes
+												NOT = { controlled_by = ROOT }
+											}
+										}
+									}
+									random_owned_province = {
+										limit = {
+											has_siege = no
+											controlled_by = ROOT
+										}
+										infantry = ROOT
+									}
+								}
+								else = {
+									capital_scope = {
+										infantry = ROOT
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 			cooldown_years = 10
+			cooldown_token = appanages_mechanic
+			cooldown_desc = appanages_mechanic_cooldown
 			ai_chance = {
 				factor = 0
 			}
 		}
 		appa_mech_income = { # You get money, vassals lose half of what overlord gains, so as not to go bankrupt. Liberty Desire increases, no idea how much.
-			icon = GFX_sankin_kotai # placeholder
+			icon = GFX_appanage_mech_income
 			trigger = { 
+				legitimacy = 20
 				any_subject_country = {
-					is_subject_of_type = appanage
+					is_subject_of_type = appanage_prs
 				}
 			}
 			effect = {
+				add_legitimacy = -20
+				custom_tooltip = appa_mech_income_tt
+				if = {
+					limit = {
+						ORL = { is_subject_of_type = appanage_prs }
+					}
+					add_country_modifier = {
+						name = appanage_prs_orl_tax 
+						hidden = yes
+						duration = 3650
+					}
+				}
+				if = {
+					limit = {
+						PIC = { is_subject_of_type = appanage_prs }
+					}
+					add_country_modifier = {
+						name = appanage_prs_pic_tax 
+						hidden = yes
+						duration = 3650
+					}
+				}
+				if = {
+					limit = {
+						NRM = { is_subject_of_type = appanage_prs }
+					}
+					add_country_modifier = {
+						name = appanage_prs_nrm_tax 
+						hidden = yes
+						duration = 3650
+					}
+				}
+				if = {
+					limit = {
+						ALE = { is_subject_of_type = appanage_prs }
+					}
+					add_country_modifier = {
+						name = appanage_prs_ale_tax 
+						hidden = yes
+						duration = 3650
+					}
+				}
+				if = {
+					limit = {
+						MNE = { is_subject_of_type = appanage_prs }
+					}
+					add_country_modifier = {
+						name = appanage_prs_mne_tax 
+						hidden = yes
+						duration = 3650
+					}
+				}
+				if = {
+					limit = {
+						ANJ = { is_subject_of_type = appanage_prs }
+					}
+					add_country_modifier = {
+						name = appanage_prs_anj_tax 
+						hidden = yes
+						duration = 3650
+					}
+				}
+				if = {
+					limit = {
+						POU = { is_subject_of_type = appanage_prs }
+					}
+					add_country_modifier = {
+						name = appanage_prs_pou_tax 
+						hidden = yes
+						duration = 3650
+					}
+				}
+				if = {
+					limit = {
+						AGO = { is_subject_of_type = appanage_prs }
+					}
+					add_country_modifier = {
+						name = appanage_prs_ago_tax 
+						hidden = yes
+						duration = 3650
+					}
+				}
+				if = {
+					limit = {
+						BER = { is_subject_of_type = appanage_prs }
+					}
+					add_country_modifier = {
+						name = appanage_prs_ber_tax 
+						hidden = yes
+						duration = 3650
+					}
+				}
+				if = {
+					limit = {
+						CHP = { is_subject_of_type = appanage_prs }
+					}
+					add_country_modifier = {
+						name = appanage_prs_chp_tax 
+						hidden = yes
+						duration = 3650
+					}
+				}
+				if = {
+					limit = {
+						NEV = { is_subject_of_type = appanage_prs }
+					}
+					add_country_modifier = {
+						name = appanage_prs_nev_tax 
+						hidden = yes
+						duration = 3650
+					}
+				}
+				if = {
+					limit = {
+						BAR = { is_subject_of_type = appanage_prs }
+					}
+					add_country_modifier = {
+						name = appanage_prs_bar_tax 
+						hidden = yes
+						duration = 3650
+					}
+				}
+				if = {
+					limit = {
+						BOU = { is_subject_of_type = appanage_prs }
+					}
+					add_country_modifier = {
+						name = appanage_prs_bou_tax 
+						hidden = yes
+						duration = 3650
+					}
+				}
+				if = {
+					limit = {
+						DAU = { is_subject_of_type = appanage_prs }
+					}
+					add_country_modifier = {
+						name = appanage_prs_dau_tax 
+						hidden = yes
+						duration = 3650
+					}
+				}
 			}
 			cooldown_years = 10
+			cooldown_token = appanages_mechanic
+			cooldown_desc = appanages_mechanic_cooldown
 			ai_chance = {
-				factor = 0
+				factor = 20
+				modifier = {
+					factor = 0
+					NOT = { num_of_loans = 1 }
+				}
+				modifier = {
+					factor = 0.5
+					is_in_deficit = no
+				}
+				modifier = {
+					factor = 1.25
+					has_any_disaster = yes
+				}
+				modifier = {
+					factor = 1.5
+					num_of_loans = 2
+					is_in_deficit = yes
+				}
+				modifier = {
+					factor = 20
+					num_of_loans = 1
+				}
+				modifier = {
+					factor = 100
+					num_of_loans = 3
+				}
+				modifier = {
+					factor = 100
+					num_of_loans = 5
+				}
+				modifier = {
+					factor = 100
+					num_of_loans = 7
+				}
 			}
 		}
-		appa_mech_not_certain = { # No idea what could fit here. Maybe favour or something to help in offensive wars?
-			icon = GFX_sword_hunt # placeholder
+		appa_mech_lower_liberty = {
+			icon = GFX_appanage_lower_liberty
 			trigger = {
 				legitimacy = 20
 				any_subject_country = {
-					is_subject_of_type = appanage
+					is_subject_of_type = appanage_prs
 				}
 			}
 			effect = {
+				add_legitimacy = -20
+				custom_tooltip = appa_mech_lower_liberty_tt
+				hidden_effect = {
+					every_subject_country = {
+						limit = {
+							is_subject_of_type = appanage_prs
+						}
+						add_country_modifier = {
+							name = appanage_prs_liberty_desire
+							duration = 3650
+						}
+					}
+				}
 			}
 			cooldown_years = 10
+			cooldown_token = appanages_mechanic
+			cooldown_desc = appanages_mechanic_cooldown
 			ai_chance = {
-				factor = 0
+				factor = 5
+				modifier = {
+					factor = 0
+					NOT = {
+						any_subject_country = {
+							liberty_desire = 40
+						}
+					}
+				}
+				modifier = {
+					factor = 2
+					any_subject_country = {
+						liberty_desire = 45
+					}
+				}
+				modifier = {
+					factor = 5
+					any_subject_country = {
+						liberty_desire = 50
+					}
+				}
+				modifier = {
+					factor = 10
+					any_subject_country = {
+						liberty_desire = 60
+					}
+				}
 			}
 		}
 	}

@@ -1,0 +1,628 @@
+namespace = thre_fra
+
+country_event = {
+	id = thre_fra.1
+	title = thre_fra.1.t
+	desc = thre_fra.1.d
+	picture = KING_SICK_IN_BED_eventPicture
+	
+	is_triggered_only = yes 
+	trigger = {
+		has_reform = paris_appanage_republic 
+	}
+	option = {
+		name = thre_fra.1.a
+		trigger = {
+			ORL = { is_subject_of_type = appanage_prs }
+			NOT = { has_country_flag = chosen_orl_ruler }
+		}
+		hidden_effect = {
+			ORL = {
+				if = {
+					limit = { has_heir = no }
+					define_heir = { }
+				}
+				exile_ruler_as = { name = orl_exiled_ruler }
+			}
+			set_ruler = orl_exiled_ruler
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = ORL }
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 10
+		}
+		ORL = { add_liberty_desire = -15 }
+		set_country_flag = chosen_orl_ruler
+		clr_country_flag = chosen_pic_ruler
+		clr_country_flag = chosen_nrm_ruler
+		clr_country_flag = chosen_ale_ruler
+		clr_country_flag = chosen_mne_ruler
+		clr_country_flag = chosen_anj_ruler
+		clr_country_flag = chosen_pou_ruler
+		clr_country_flag = chosen_ago_ruler
+		clr_country_flag = chosen_ber_ruler
+		clr_country_flag = chosen_chp_ruler
+		clr_country_flag = chosen_nev_ruler
+		clr_country_flag = chosen_bar_ruler
+		clr_country_flag = chosen_bou_ruler
+		clr_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = thre_fra.2.b
+		trigger = {
+			PIC = { is_subject_of_type = appanage_prs }
+			NOT = { has_country_flag = chosen_pic_ruler }
+		}
+		hidden_effect = {
+			PIC = {
+				if = {
+					limit = { has_heir = no }
+					define_heir = { }
+				}
+				exile_ruler_as = { name = pic_exiled_ruler }
+			}
+			set_ruler = pic_exiled_ruler
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = PIC }
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 10
+		}
+		PIC = { add_liberty_desire = -15 }
+		clr_country_flag = chosen_orl_ruler
+		set_country_flag = chosen_pic_ruler
+		clr_country_flag = chosen_nrm_ruler
+		clr_country_flag = chosen_ale_ruler
+		clr_country_flag = chosen_mne_ruler
+		clr_country_flag = chosen_anj_ruler
+		clr_country_flag = chosen_pou_ruler
+		clr_country_flag = chosen_ago_ruler
+		clr_country_flag = chosen_ber_ruler
+		clr_country_flag = chosen_chp_ruler
+		clr_country_flag = chosen_nev_ruler
+		clr_country_flag = chosen_bar_ruler
+		clr_country_flag = chosen_bou_ruler
+		clr_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = thre_fra.3.c
+		trigger = {
+			NRM = { is_subject_of_type = appanage_prs }
+			NOT = { has_country_flag = chosen_nrm_ruler }
+		}
+		hidden_effect = {
+			NRM = {
+				if = {
+					limit = { has_heir = no }
+					define_heir = { }
+				}
+				exile_ruler_as = { name = nrm_exiled_ruler }
+			}
+			set_ruler = nrm_exiled_ruler
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = NRM }
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 10
+		}
+		NRM = { add_liberty_desire = -15 }
+		clr_country_flag = chosen_orl_ruler
+		clr_country_flag = chosen_pic_ruler
+		set_country_flag = chosen_nrm_ruler
+		clr_country_flag = chosen_ale_ruler
+		clr_country_flag = chosen_mne_ruler
+		clr_country_flag = chosen_anj_ruler
+		clr_country_flag = chosen_pou_ruler
+		clr_country_flag = chosen_ago_ruler
+		clr_country_flag = chosen_ber_ruler
+		clr_country_flag = chosen_chp_ruler
+		clr_country_flag = chosen_nev_ruler
+		clr_country_flag = chosen_bar_ruler
+		clr_country_flag = chosen_bou_ruler
+		clr_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = thre_fra.4.e
+		trigger = {
+			ALE = { is_subject_of_type = appanage_prs }
+			NOT = { has_country_flag = chosen_ale_ruler }
+		}
+		hidden_effect = {
+			ALE = {
+				if = {
+					limit = { has_heir = no }
+					define_heir = { }
+				}
+				exile_ruler_as = { name = ale_exiled_ruler }
+			}
+			set_ruler = ale_exiled_ruler
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = ALE }
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 10
+		}
+		ALE = { add_liberty_desire = -15 }
+		clr_country_flag = chosen_orl_ruler
+		clr_country_flag = chosen_pic_ruler
+		clr_country_flag = chosen_nrm_ruler
+		set_country_flag = chosen_ale_ruler
+		clr_country_flag = chosen_mne_ruler
+		clr_country_flag = chosen_anj_ruler
+		clr_country_flag = chosen_pou_ruler
+		clr_country_flag = chosen_ago_ruler
+		clr_country_flag = chosen_ber_ruler
+		clr_country_flag = chosen_chp_ruler
+		clr_country_flag = chosen_nev_ruler
+		clr_country_flag = chosen_bar_ruler
+		clr_country_flag = chosen_bou_ruler
+		clr_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = thre_fra.5.f
+		trigger = {
+			MNE = { is_subject_of_type = appanage_prs }
+			NOT = { has_country_flag = chosen_mne_ruler }
+		}
+		hidden_effect = {
+			MNE = {
+				if = {
+					limit = { has_heir = no }
+					define_heir = { }
+				}
+				exile_ruler_as = { name = mne_exiled_ruler }
+			}
+			set_ruler = mne_exiled_ruler
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = MNE }
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 10
+		}
+		MNE = { add_liberty_desire = -15 }
+		clr_country_flag = chosen_orl_ruler
+		clr_country_flag = chosen_pic_ruler
+		clr_country_flag = chosen_nrm_ruler
+		clr_country_flag = chosen_ale_ruler
+		set_country_flag = chosen_mne_ruler
+		clr_country_flag = chosen_anj_ruler
+		clr_country_flag = chosen_pou_ruler
+		clr_country_flag = chosen_ago_ruler
+		clr_country_flag = chosen_ber_ruler
+		clr_country_flag = chosen_chp_ruler
+		clr_country_flag = chosen_nev_ruler
+		clr_country_flag = chosen_bar_ruler
+		clr_country_flag = chosen_bou_ruler
+		clr_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = thre_fra.6.g
+		trigger = {
+			ANJ = { is_subject_of_type = appanage_prs }
+			NOT = { has_country_flag = chosen_anj_ruler }
+		}
+		hidden_effect = {
+			ANJ = {
+				if = {
+					limit = { has_heir = no }
+					define_heir = { }
+				}
+				exile_ruler_as = { name = anj_exiled_ruler }
+			}
+			set_ruler = anj_exiled_ruler
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = ANJ }
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 10
+		}
+		ANJ = { add_liberty_desire = -15 }
+		clr_country_flag = chosen_orl_ruler
+		clr_country_flag = chosen_pic_ruler
+		clr_country_flag = chosen_nrm_ruler
+		clr_country_flag = chosen_ale_ruler
+		clr_country_flag = chosen_mne_ruler
+		set_country_flag = chosen_anj_ruler
+		clr_country_flag = chosen_pou_ruler
+		clr_country_flag = chosen_ago_ruler
+		clr_country_flag = chosen_ber_ruler
+		clr_country_flag = chosen_chp_ruler
+		clr_country_flag = chosen_nev_ruler
+		clr_country_flag = chosen_bar_ruler
+		clr_country_flag = chosen_bou_ruler
+		clr_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = thre_fra.7.h
+		trigger = {
+			POU = { is_subject_of_type = appanage_prs }
+			NOT = { has_country_flag = chosen_pou_ruler }
+		}
+		hidden_effect = {
+			POU = {
+				if = {
+					limit = { has_heir = no }
+					define_heir = { }
+				}
+				exile_ruler_as = { name = pou_exiled_ruler }
+			}
+			set_ruler = pou_exiled_ruler
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = POU }
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 10
+		}
+		POU = { add_liberty_desire = -15 }
+		clr_country_flag = chosen_orl_ruler
+		clr_country_flag = chosen_pic_ruler
+		clr_country_flag = chosen_nrm_ruler
+		clr_country_flag = chosen_ale_ruler
+		clr_country_flag = chosen_mne_ruler
+		clr_country_flag = chosen_anj_ruler
+		set_country_flag = chosen_pou_ruler
+		clr_country_flag = chosen_ago_ruler
+		clr_country_flag = chosen_ber_ruler
+		clr_country_flag = chosen_chp_ruler
+		clr_country_flag = chosen_nev_ruler
+		clr_country_flag = chosen_bar_ruler
+		clr_country_flag = chosen_bou_ruler
+		clr_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = thre_fra.8.i
+		trigger = {
+			AGO = { is_subject_of_type = appanage_prs }
+			NOT = { has_country_flag = chosen_ago_ruler }
+		}
+		hidden_effect = {
+			AGO = {
+				if = {
+					limit = { has_heir = no }
+					define_heir = { }
+				}
+				exile_ruler_as = { name = ago_exiled_ruler }
+			}
+			set_ruler = ago_exiled_ruler
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = AGO }
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 10
+		}
+		AGO = { add_liberty_desire = -15 }
+		clr_country_flag = chosen_orl_ruler
+		clr_country_flag = chosen_pic_ruler
+		clr_country_flag = chosen_nrm_ruler
+		clr_country_flag = chosen_ale_ruler
+		clr_country_flag = chosen_mne_ruler
+		clr_country_flag = chosen_anj_ruler
+		clr_country_flag = chosen_pou_ruler
+		set_country_flag = chosen_ago_ruler
+		clr_country_flag = chosen_ber_ruler
+		clr_country_flag = chosen_chp_ruler
+		clr_country_flag = chosen_nev_ruler
+		clr_country_flag = chosen_bar_ruler
+		clr_country_flag = chosen_bou_ruler
+		clr_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = thre_fra.9.j
+		trigger = {
+			BER = { is_subject_of_type = appanage_prs }
+			NOT = { has_country_flag = chosen_ber_ruler }
+		}
+		hidden_effect = {
+			BER = {
+				if = {
+					limit = { has_heir = no }
+					define_heir = { }
+				}
+				exile_ruler_as = { name = ber_exiled_ruler }
+			}
+			set_ruler = ber_exiled_ruler
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = BER }
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 10
+		}
+		BER = { add_liberty_desire = -15 }
+		clr_country_flag = chosen_orl_ruler
+		clr_country_flag = chosen_pic_ruler
+		clr_country_flag = chosen_nrm_ruler
+		clr_country_flag = chosen_ale_ruler
+		clr_country_flag = chosen_mne_ruler
+		clr_country_flag = chosen_anj_ruler
+		clr_country_flag = chosen_pou_ruler
+		clr_country_flag = chosen_ago_ruler
+		set_country_flag = chosen_ber_ruler
+		clr_country_flag = chosen_chp_ruler
+		clr_country_flag = chosen_nev_ruler
+		clr_country_flag = chosen_bar_ruler
+		clr_country_flag = chosen_bou_ruler
+		clr_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = thre_fra.10.k
+		trigger = {
+			CHP = { is_subject_of_type = appanage_prs }
+			NOT = { has_country_flag = chosen_chp_ruler }
+		}
+		hidden_effect = {
+			CHP = {
+				if = {
+					limit = { has_heir = no }
+					define_heir = { }
+				}
+				exile_ruler_as = { name = chp_exiled_ruler }
+			}
+			set_ruler = chp_exiled_ruler
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = CHP }
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 10
+		}
+		CHP = { add_liberty_desire = -15 }
+		clr_country_flag = chosen_orl_ruler
+		clr_country_flag = chosen_pic_ruler
+		clr_country_flag = chosen_nrm_ruler
+		clr_country_flag = chosen_ale_ruler
+		clr_country_flag = chosen_mne_ruler
+		clr_country_flag = chosen_anj_ruler
+		clr_country_flag = chosen_pou_ruler
+		clr_country_flag = chosen_ago_ruler
+		clr_country_flag = chosen_ber_ruler
+		set_country_flag = chosen_chp_ruler
+		clr_country_flag = chosen_nev_ruler
+		clr_country_flag = chosen_bar_ruler
+		clr_country_flag = chosen_bou_ruler
+		clr_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = thre_fra.11.l
+		trigger = {
+			NEV = { is_subject_of_type = appanage_prs }
+			NOT = { has_country_flag = chosen_nev_ruler }
+		}
+		hidden_effect = {
+			NEV = {
+				if = {
+					limit = { has_heir = no }
+					define_heir = { }
+				}
+				exile_ruler_as = { name = nev_exiled_ruler }
+			}
+			set_ruler = nev_exiled_ruler
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = NEV }
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 10
+		}
+		NEV = { add_liberty_desire = -15 }
+		clr_country_flag = chosen_orl_ruler
+		clr_country_flag = chosen_pic_ruler
+		clr_country_flag = chosen_nrm_ruler
+		clr_country_flag = chosen_ale_ruler
+		clr_country_flag = chosen_mne_ruler
+		clr_country_flag = chosen_anj_ruler
+		clr_country_flag = chosen_pou_ruler
+		clr_country_flag = chosen_ago_ruler
+		clr_country_flag = chosen_ber_ruler
+		clr_country_flag = chosen_chp_ruler
+		set_country_flag = chosen_nev_ruler
+		clr_country_flag = chosen_bar_ruler
+		clr_country_flag = chosen_bou_ruler
+		clr_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = thre_fra.12.m
+		trigger = {
+			BAR = { is_subject_of_type = appanage_prs }
+			NOT = { has_country_flag = chosen_bar_ruler }
+		}
+		hidden_effect = {
+			BAR = {
+				if = {
+					limit = { has_heir = no }
+					define_heir = { }
+				}
+				exile_ruler_as = { name = bar_exiled_ruler }
+			}
+			set_ruler = bar_exiled_ruler
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = BAR }
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 10
+		}
+		BAR = { add_liberty_desire = -15 }
+		clr_country_flag = chosen_orl_ruler
+		clr_country_flag = chosen_pic_ruler
+		clr_country_flag = chosen_nrm_ruler
+		clr_country_flag = chosen_ale_ruler
+		clr_country_flag = chosen_mne_ruler
+		clr_country_flag = chosen_anj_ruler
+		clr_country_flag = chosen_pou_ruler
+		clr_country_flag = chosen_ago_ruler
+		clr_country_flag = chosen_ber_ruler
+		clr_country_flag = chosen_chp_ruler
+		clr_country_flag = chosen_nev_ruler
+		set_country_flag = chosen_bar_ruler
+		clr_country_flag = chosen_bou_ruler
+		clr_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = thre_fra.13.n
+		trigger = {
+			BOU = { is_subject_of_type = appanage_prs }
+			NOT = { has_country_flag = chosen_bou_ruler }
+		}
+		hidden_effect = {
+			BOU = {
+				if = {
+					limit = { has_heir = no }
+					define_heir = { }
+				}
+				exile_ruler_as = { name = bou_exiled_ruler }
+			}
+			set_ruler = bou_exiled_ruler
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = BOU }
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 10
+		}
+		BOU = { add_liberty_desire = -15 }
+		clr_country_flag = chosen_orl_ruler
+		clr_country_flag = chosen_pic_ruler
+		clr_country_flag = chosen_nrm_ruler
+		clr_country_flag = chosen_ale_ruler
+		clr_country_flag = chosen_mne_ruler
+		clr_country_flag = chosen_anj_ruler
+		clr_country_flag = chosen_pou_ruler
+		clr_country_flag = chosen_ago_ruler
+		clr_country_flag = chosen_ber_ruler
+		clr_country_flag = chosen_chp_ruler
+		clr_country_flag = chosen_nev_ruler
+		clr_country_flag = chosen_bar_ruler
+		set_country_flag = chosen_bou_ruler
+		clr_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = thre_fra.14.o
+		trigger = {
+			DAU = { is_subject_of_type = appanage_prs }
+			NOT = { has_country_flag = chosen_dau_ruler }
+		}
+		hidden_effect = {
+			DAU = {
+				if = {
+					limit = { has_heir = no }
+					define_heir = { }
+				}
+				exile_ruler_as = { name = dau_exiled_ruler }
+			}
+			set_ruler = dau_exiled_ruler
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = DAU }
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 10
+		}
+		DAU = { add_liberty_desire = -15 }
+		clr_country_flag = chosen_orl_ruler
+		clr_country_flag = chosen_pic_ruler
+		clr_country_flag = chosen_nrm_ruler
+		clr_country_flag = chosen_ale_ruler
+		clr_country_flag = chosen_mne_ruler
+		clr_country_flag = chosen_anj_ruler
+		clr_country_flag = chosen_pou_ruler
+		clr_country_flag = chosen_ago_ruler
+		clr_country_flag = chosen_ber_ruler
+		clr_country_flag = chosen_chp_ruler
+		clr_country_flag = chosen_nev_ruler
+		clr_country_flag = chosen_bar_ruler
+		clr_country_flag = chosen_bou_ruler
+		set_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = thre_fra.15.p
+		every_subject_country = {
+			limit = {
+				is_subject_of_type = appanage_prs
+			}
+			add_liberty_desire = 30
+		}
+		add_legitimacy = -30
+		clr_country_flag = chosen_orl_ruler
+		clr_country_flag = chosen_pic_ruler
+		clr_country_flag = chosen_nrm_ruler
+		clr_country_flag = chosen_ale_ruler
+		clr_country_flag = chosen_mne_ruler
+		clr_country_flag = chosen_anj_ruler
+		clr_country_flag = chosen_pou_ruler
+		clr_country_flag = chosen_ago_ruler
+		clr_country_flag = chosen_ber_ruler
+		clr_country_flag = chosen_chp_ruler
+		clr_country_flag = chosen_nev_ruler
+		clr_country_flag = chosen_bar_ruler
+		clr_country_flag = chosen_bou_ruler
+		clr_country_flag = chosen_dau_ruler
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
