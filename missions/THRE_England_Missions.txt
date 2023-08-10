@@ -3582,6 +3582,13 @@ brit_miss_thre_one = {
 						duration = 3650
 					}
 				}
+				if = { #AI will never conquer Kent
+					limit = {
+						ai = yes
+						exists = KNT 
+					}
+					country_event = { id = thre_england_events.1 }
+				}
 			}
 		}
 		ai_weight = {
@@ -3711,9 +3718,25 @@ brit_miss_thre_two = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}		
 		trigger = { 
-			british_isles_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			if = {
+				limit = {
+					ai = no
+				}
+				british_isles_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			else = {
+				else = {
+					calc_true_if = {
+						british_isles_region = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						amount = 50
+					}
+				}
 			}
 		}	
 		effect = {
@@ -3888,6 +3911,7 @@ brit_miss_thre_three = {
 		provinces_to_highlight = {
 			region = british_isles_region
 			culture = english
+			NOT = { province_id = 235 }
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}		
 		trigger = { 
@@ -3898,6 +3922,7 @@ brit_miss_thre_three = {
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
 						NOT = { culture = english }
+						province_id = 235
 					}
 				}
 			}
@@ -4095,7 +4120,12 @@ brit_miss_thre_four = {
 			province_id = 1269
 		}		
 		trigger = { 
-			mercantilism = 30
+			if = {
+				limit = {
+					ai = no
+				}
+				mercantilism = 30
+			}
 			1269 = {
 				trade_share = {
 					country = ROOT

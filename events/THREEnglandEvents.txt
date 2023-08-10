@@ -472,7 +472,19 @@ country_event = {
 			declare_war_with_cb = {
 				who = event_target:revolter_roses_tag_thre
 				casus_belli = war_of_roses_special_cb
-			}	
+			}
+			YER = {
+				define_ruler = {
+					dynasty = "York"
+					claim = 95
+				}
+			}
+			LCR = {
+				define_ruler = {
+					dynasty = "Lancaster"
+					claim = 95
+				}
+			}
 		}
 	}
 	
