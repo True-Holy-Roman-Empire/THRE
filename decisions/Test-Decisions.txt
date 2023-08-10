@@ -2,7 +2,7 @@ country_decisions = {
 	test1 = {
 		major = yes
 		potential = {
-			ai = no
+			always = no
 		}
 		allow = {
 			always = yes
@@ -17,7 +17,7 @@ country_decisions = {
 	test2 = {
 		major = yes
 		potential = {
-			ai = no
+			always = no
 		}
 		allow = {
 			always = yes
