@@ -5,7 +5,10 @@ appanages_mechanic = {
 	alert_icon_gfx = GFX_alerticons_government_mechanics
 	alert_icon_index = 17
 	available = {
-		has_reform = paris_appanage_republic
+		OR = {
+			has_reform = paris_appanage_republic
+			has_reform = burgundian_state_reform
+		}
 	}
 	interactions = {
 		appa_mech_manpower = { # You get manpower (maybe even FL?), in return vassals lose that amount manpower and FL. Liberty Desire increases, no idea how much.
@@ -13,7 +16,10 @@ appanages_mechanic = {
 			trigger = {
 				legitimacy = 20
 				any_subject_country = {
-					is_subject_of_type = appanage_prs
+					OR = {
+						is_subject_of_type = appanage_prs
+						is_subject_of_type = appanage_bur
+					}
 				}
 			}
 			effect = {
@@ -46,7 +52,10 @@ appanages_mechanic = {
 				hidden_effect = {
 					every_subject_country = {
 						limit = {
-							is_subject_of_type = appanage_prs
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
 						}
 						set_variable = {
 							which = subject_inf
@@ -128,7 +137,10 @@ appanages_mechanic = {
 			trigger = { 
 				legitimacy = 20
 				any_subject_country = {
-					is_subject_of_type = appanage_prs
+					OR = {
+						is_subject_of_type = appanage_prs
+						is_subject_of_type = appanage_bur
+					}
 				}
 			}
 			effect = {
@@ -136,7 +148,12 @@ appanages_mechanic = {
 				custom_tooltip = appa_mech_income_tt
 				if = {
 					limit = {
-						ORL = { is_subject_of_type = appanage_prs }
+						ORL = {
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
+						}
 					}
 					add_country_modifier = {
 						name = appanage_prs_orl_tax 
@@ -146,7 +163,12 @@ appanages_mechanic = {
 				}
 				if = {
 					limit = {
-						PIC = { is_subject_of_type = appanage_prs }
+						PIC = {
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
+						}
 					}
 					add_country_modifier = {
 						name = appanage_prs_pic_tax 
@@ -156,7 +178,12 @@ appanages_mechanic = {
 				}
 				if = {
 					limit = {
-						NRM = { is_subject_of_type = appanage_prs }
+						NRM = {
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
+						}
 					}
 					add_country_modifier = {
 						name = appanage_prs_nrm_tax 
@@ -166,7 +193,12 @@ appanages_mechanic = {
 				}
 				if = {
 					limit = {
-						ALE = { is_subject_of_type = appanage_prs }
+						ALE = {
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
+						}
 					}
 					add_country_modifier = {
 						name = appanage_prs_ale_tax 
@@ -176,7 +208,12 @@ appanages_mechanic = {
 				}
 				if = {
 					limit = {
-						MNE = { is_subject_of_type = appanage_prs }
+						MNE = {
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
+						}
 					}
 					add_country_modifier = {
 						name = appanage_prs_mne_tax 
@@ -186,7 +223,12 @@ appanages_mechanic = {
 				}
 				if = {
 					limit = {
-						ANJ = { is_subject_of_type = appanage_prs }
+						ANJ = {
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
+						}
 					}
 					add_country_modifier = {
 						name = appanage_prs_anj_tax 
@@ -196,7 +238,12 @@ appanages_mechanic = {
 				}
 				if = {
 					limit = {
-						POU = { is_subject_of_type = appanage_prs }
+						POU = {
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
+						}
 					}
 					add_country_modifier = {
 						name = appanage_prs_pou_tax 
@@ -206,7 +253,12 @@ appanages_mechanic = {
 				}
 				if = {
 					limit = {
-						AGO = { is_subject_of_type = appanage_prs }
+						AGO = {
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
+						}
 					}
 					add_country_modifier = {
 						name = appanage_prs_ago_tax 
@@ -216,7 +268,12 @@ appanages_mechanic = {
 				}
 				if = {
 					limit = {
-						BER = { is_subject_of_type = appanage_prs }
+						BER = {
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
+						}
 					}
 					add_country_modifier = {
 						name = appanage_prs_ber_tax 
@@ -226,7 +283,12 @@ appanages_mechanic = {
 				}
 				if = {
 					limit = {
-						CHP = { is_subject_of_type = appanage_prs }
+						CHP = {
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
+						}
 					}
 					add_country_modifier = {
 						name = appanage_prs_chp_tax 
@@ -236,7 +298,12 @@ appanages_mechanic = {
 				}
 				if = {
 					limit = {
-						NEV = { is_subject_of_type = appanage_prs }
+						NEV = {
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
+						}
 					}
 					add_country_modifier = {
 						name = appanage_prs_nev_tax 
@@ -246,7 +313,12 @@ appanages_mechanic = {
 				}
 				if = {
 					limit = {
-						BAR = { is_subject_of_type = appanage_prs }
+						BAR = {
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
+						}
 					}
 					add_country_modifier = {
 						name = appanage_prs_bar_tax 
@@ -256,7 +328,12 @@ appanages_mechanic = {
 				}
 				if = {
 					limit = {
-						BOU = { is_subject_of_type = appanage_prs }
+						BOU = {
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
+						}
 					}
 					add_country_modifier = {
 						name = appanage_prs_bou_tax 
@@ -266,7 +343,12 @@ appanages_mechanic = {
 				}
 				if = {
 					limit = {
-						DAU = { is_subject_of_type = appanage_prs }
+						DAU = {
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
+						}
 					}
 					add_country_modifier = {
 						name = appanage_prs_dau_tax 
@@ -320,7 +402,10 @@ appanages_mechanic = {
 			trigger = {
 				legitimacy = 20
 				any_subject_country = {
-					is_subject_of_type = appanage_prs
+					OR = {
+						is_subject_of_type = appanage_prs
+						is_subject_of_type = appanage_bur
+					}
 				}
 			}
 			effect = {
@@ -329,7 +414,10 @@ appanages_mechanic = {
 				hidden_effect = {
 					every_subject_country = {
 						limit = {
-							is_subject_of_type = appanage_prs
+							OR = {
+								is_subject_of_type = appanage_prs
+								is_subject_of_type = appanage_bur
+							}
 						}
 						add_country_modifier = {
 							name = appanage_prs_liberty_desire

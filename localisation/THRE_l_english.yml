@@ -213,8 +213,11 @@
       appanage_bur_overlord: "Appanage Overlord"
       appanage_bur_subject: "Appanage Subject"
       appanage_bur_is_our: "§Y$NAME$§! is our Appanage."
+    # Government:
+      paris_appanage_republic: "Paris Appanage Government"
+      paris_appanage_republic_desc: "Ever since the fall divison of Charlemagne Empire, we have believed that in order to keep what little we have remaining, intact, we must choose new rulers and from all the different houses, not just only one and end up repeating history."
     # Government mechanic:
-      ability_appanages_mechanic_mechanic: "Appanages"
+      ability_appanages_mechanic: "Appanages"
       appanages_mechanic_cooldown: "An Appanages Policy"
       appa_mech_manpower: "Appanages Conscription"
       appa_mech_manpower_desc: ""

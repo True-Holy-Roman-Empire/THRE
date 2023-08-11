@@ -181,8 +181,8 @@ dharmic = {
 		icon = 15
 		allowed_conversion = {
 			hinduism
-			sunni
-			shiite
+			#sunni
+			#shiite
 		}
 		country = {
 			mil_tech_cost_modifier = -0.1
