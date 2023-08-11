@@ -234,7 +234,7 @@ country_event = {			#The Great Schism
 	trigger = {
 		is_emperor = yes
 		NOT = { has_global_flag = THRE_Great_Schism }
-		reform_desire = 1
+		reform_desire = 0.8
 	}
 
 	mean_time_to_happen = {

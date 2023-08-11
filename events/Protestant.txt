@@ -24,7 +24,7 @@ country_event = {
 		religion = catholic
 		is_defender_of_faith = no	
 		NOT = { is_papacy_trigger = yes }
-		reform_desire = 1
+		reform_desire = 1.2
 		capital_scope = {
 			continent = europe
 		}
@@ -55,23 +55,23 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			reform_desire = 1.05
-		}
-		modifier = {
-			factor = 0.9
-			reform_desire = 1.10
-		}
-		modifier = {
-			factor = 0.9
-			reform_desire = 1.15
-		}
-		modifier = {
-			factor = 0.9
-			reform_desire = 1.20
-		}
-		modifier = {
-			factor = 0.9
 			reform_desire = 1.25
+		}
+		modifier = {
+			factor = 0.9
+			reform_desire = 1.30
+		}
+		modifier = {
+			factor = 0.9
+			reform_desire = 1.35
+		}
+		modifier = {
+			factor = 0.9
+			reform_desire = 1.40
+		}
+		modifier = {
+			factor = 0.9
+			reform_desire = 1.45
 		}
 		
 		modifier = {
