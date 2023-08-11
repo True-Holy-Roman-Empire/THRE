@@ -3898,7 +3898,10 @@ swe_protestant_mission_slot = {
 		required_missions = { swe_the_theologian_discussions }
 		provinces_to_highlight = {}
 		trigger = {
-			religion_group = abrahamistic_group
+			OR = {
+				religion_group = abrahamistic_group
+				religion = norse_pagan_reformed
+			}		
 			NOT = { religion = catholic }
 			calc_true_if = {
 				all_known_country = {
@@ -3915,7 +3918,6 @@ swe_protestant_mission_slot = {
 				}
 				amount = 4
 			}
-			is_defender_of_faith = yes
 		}
 		effect = {
 			add_dip_power = 100
@@ -3926,6 +3928,7 @@ swe_protestant_mission_slot = {
 				name = swe_support_from_the_reformers
 				duration = 18250
 			}
+			hidden_effect = { set_country_flag = swe_can_provoke_religious_league_forming }
 		}
 	}
 	
@@ -3935,7 +3938,10 @@ swe_protestant_mission_slot = {
 		required_missions = { swe_defenders_of_the_reformers }
 		provinces_to_highlight = {}
 		trigger = {
-			religion_group = abrahamistic_group
+			OR = {
+				religion_group = abrahamistic_group
+				religion = norse_pagan_reformed
+			}	
 			NOT = { religion = catholic }
 			if = {
 				limit = {
